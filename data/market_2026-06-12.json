@@ -1,0 +1,147 @@
+{
+  "generated_at": "2026-06-12T23:58:17.600465Z",
+  "target_date": "2026-06-12",
+  "vix": {
+    "value": 17.68,
+    "prev": 19.44,
+    "chg_abs": -1.76,
+    "chg_pct": -9.0535,
+    "date": "2026-06-12"
+  },
+  "move": {
+    "value": 69.3565,
+    "prev": 69.45,
+    "chg_abs": -0.093498,
+    "chg_pct": -0.1346,
+    "date": "2026-06-12"
+  },
+  "y2": {
+    "value": 4.09,
+    "prev": 4.05,
+    "chg_abs": 0.04,
+    "chg_pct": 0.9877,
+    "date": "2026-06-12"
+  },
+  "y10": {
+    "value": 4.48,
+    "prev": 4.45,
+    "chg_abs": 0.03,
+    "chg_pct": 0.6742,
+    "date": "2026-06-12"
+  },
+  "y30": {
+    "value": 4.97,
+    "prev": 4.95,
+    "chg_abs": 0.02,
+    "chg_pct": 0.404,
+    "date": "2026-06-12"
+  },
+  "spread": 39,
+  "sox": {
+    "value": 13371.4697,
+    "prev": 13171.4404,
+    "chg_abs": 200.029297,
+    "chg_pct": 1.5187,
+    "date": "2026-06-12"
+  },
+  "stocks": {
+    "NVDA": {
+      "value": 205.19,
+      "prev": 204.87,
+      "chg_abs": 0.320007,
+      "chg_pct": 0.1562,
+      "date": "2026-06-12",
+      "name": "è¼é",
+      "emoji": "ð¢",
+      "grade": "IG1"
+    },
+    "TSM": {
+      "value": 423.93,
+      "prev": 421.07,
+      "chg_abs": 2.859985,
+      "chg_pct": 0.6792,
+      "date": "2026-06-12",
+      "name": "å°ç©é»",
+      "emoji": "ðµ",
+      "grade": "IG1"
+    },
+    "SMCI": {
+      "value": 30.46,
+      "prev": 31.97,
+      "chg_abs": -1.51,
+      "chg_pct": -4.7232,
+      "date": "2026-06-12",
+      "name": "è¶å¾®é»è¦",
+      "emoji": "â¡",
+      "grade": "HY1"
+    },
+    "ARM": {
+      "value": 380.81,
+      "prev": 342.23,
+      "chg_abs": 38.579987,
+      "chg_pct": 11.2731,
+      "date": "2026-06-12",
+      "name": "å®è¬æ§è¡",
+      "emoji": "ð»",
+      "grade": "IG1"
+    },
+    "TSLA": {
+      "value": 406.43,
+      "prev": 399.15,
+      "chg_abs": 7.279999,
+      "chg_pct": 1.8239,
+      "date": "2026-06-12",
+      "name": "ç¹æ¯æ",
+      "emoji": "ð",
+      "grade": "IG3"
+    }
+  },
+  "cds": {
+    "US": {
+      "value": 23.41,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
+      "date": "2026-06-12",
+      "name": "美國",
+      "flag": "🇺🇸"
+    },
+    "KR": {
+      "value": 43.52,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
+      "date": "2026-06-12",
+      "name": "南韓",
+      "flag": "🇰🇷"
+    },
+    "JP": {
+      "value": 28.01,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
+      "date": "2026-06-12",
+      "name": "日本",
+      "flag": "🇯🇵"
+    },
+    "CN": {
+      "value": 40.68,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
+      "date": "2026-06-12",
+      "name": "中國",
+      "flag": "🇨🇳"
+    },
+    "HK": {
+      "value": 27.28,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
+      "date": "2026-06-12",
+      "name": "香港",
+      "flag": "🇭🇰"
+    }
+  },
+  "cds_updated_at": "2026-06-23T11:40:41.596Z"
+}

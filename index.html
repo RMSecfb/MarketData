@@ -297,7 +297,7 @@ canvas{max-height:320px;}
       </div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;" id="cdsInputGrid"></div>
-    <div id="ghTokenRow" style="display:none;margin-top:12px;padding:10px 12px;background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.25);border-radius:8px;flex-wrap:wrap;gap:8px;">
+    <div id="ghTokenRow" style="display:none !important;margin-top:12px;padding:10px 12px;background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.25);border-radius:8px;flex-wrap:wrap;gap:8px;">
       <div style="font-size:12px;color:#f87171;margin-bottom:7px;">🔑 Token 驗證失敗，請重新輸入 GitHub Token</div>
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
         <input id="ghToken" type="password" placeholder="github_pat_..." autocomplete="off"
@@ -1232,46 +1232,71 @@ async function renderTrendChart(){
 }
 
 /* ══════════════════════════════════════
-   CDS 手動維護renew
+   CDS 手動維護－公司 Gist 自動取得 Token
 ══════════════════════════════════════ */
 
 const GH_REPO = 'RMSecfb/MarketData';
+const GIST_OWNER = 'RMSecfb';
+const GIST_ID = '9ec6f6c2be49cc11f57074332281a6c6';
+const TOKEN_CACHE_KEY = 'gh_token_rmsecfb_marketdata_v1';
+
 let _cachedToken = null;
 
-/* 取得 GitHub Token
-   Token 只保存在目前瀏覽器 localStorage，不讀取 Gist
-*/
-async function getToken(){
-  if(_cachedToken){
+async function getToken(forceReload = false){
+  if(!forceReload && _cachedToken){
     return _cachedToken;
   }
 
-  const cached = localStorage.getItem('gh_token');
-
-  if(cached){
-    _cachedToken = cached;
-    return cached;
+  if(!forceReload){
+    const cached = localStorage.getItem(TOKEN_CACHE_KEY);
+    if(cached){
+      _cachedToken = cached;
+      return cached;
+    }
   }
 
-  return null;
+  try{
+    const gistUrl =
+      `https://gist.githubusercontent.com/${GIST_OWNER}/${GIST_ID}/raw/token.json?t=${Date.now()}`;
+
+    const response = await fetch(gistUrl, {
+      method: 'GET',
+      cache: 'no-store'
+    });
+
+    if(!response.ok){
+      throw new Error(`無法讀取公司 Gist：HTTP ${response.status}`);
+    }
+
+    const data = await response.json();
+    const token =
+      typeof data.token === 'string'
+        ? data.token.trim()
+        : '';
+
+    if(!token){
+      throw new Error('公司 Gist 的 token.json 找不到 token 欄位');
+    }
+
+    _cachedToken = token;
+    localStorage.setItem(TOKEN_CACHE_KEY, token);
+    return token;
+
+  }catch(error){
+    console.error('取得公司 GitHub Token 失敗：', error);
+    return null;
+  }
 }
 
-/* 清除失效 Token 並顯示輸入欄 */
-function requestNewToken(message = '請輸入具有公司 Repository 寫入權限的 GitHub Token'){
+function requestNewToken(message = '公司 Gist Token 無效或沒有寫入權限'){
   _cachedToken = null;
-  localStorage.removeItem('gh_token');
+  localStorage.removeItem(TOKEN_CACHE_KEY);
 
   const row = document.getElementById('ghTokenRow');
-  const input = document.getElementById('ghToken');
   const errEl = document.getElementById('cdsSaveErr');
 
   if(row){
-    row.style.display = '';
-  }
-
-  if(input){
-    input.value = '';
-    input.focus();
+    row.style.display = 'none';
   }
 
   if(errEl){
@@ -1450,17 +1475,10 @@ async function saveCDS(){
   try{
     let token = await getToken();
 
-    const tokenInput =
-      tokenInputElement?.value.trim() || '';
-
-    if(tokenInput){
-      token = tokenInput;
-      _cachedToken = tokenInput;
-      localStorage.setItem('gh_token', tokenInput);
-    }
-
     if(!token){
-      requestNewToken('請先輸入 GitHub Token');
+      requestNewToken(
+        '無法從公司 Gist 取得 Token，請確認 token.json 設定'
+      );
       return;
     }
 
@@ -1546,7 +1564,7 @@ async function saveCDS(){
       getResp.status === 403
     ){
       requestNewToken(
-        'Token 無效，或沒有 RMSecfb/MarketData 的 Contents 寫入權限'
+        '公司 Gist Token 無效，或沒有 RMSecfb/MarketData 的 Contents 寫入權限'
       );
       return;
     }
@@ -1631,7 +1649,7 @@ async function saveCDS(){
       putResp.status === 403
     ){
       requestNewToken(
-        'Token 無效，或沒有 RMSecfb/MarketData 的 Contents 寫入權限'
+        '公司 Gist Token 無效，或沒有 RMSecfb/MarketData 的 Contents 寫入權限'
       );
       return;
     }
@@ -1696,36 +1714,25 @@ async function saveCDS(){
   }
 }
 
-function saveTokenOnly(){
-  const input =
-    document.getElementById('ghToken');
+async function saveTokenOnly(){
+  _cachedToken = null;
+  localStorage.removeItem(TOKEN_CACHE_KEY);
 
-  const value =
-    input?.value.trim() || '';
-
-  const errEl =
-    document.getElementById('cdsSaveErr');
-
-  if(!value){
-    if(errEl){
-      errEl.textContent =
-        '❌ 請先輸入 GitHub Token';
-
-      errEl.style.display =
-        'inline';
-    }
-
-    return;
-  }
-
-  _cachedToken = value;
-  localStorage.setItem('gh_token', value);
-
-  const row =
-    document.getElementById('ghTokenRow');
+  const row = document.getElementById('ghTokenRow');
+  const errEl = document.getElementById('cdsSaveErr');
 
   if(row){
     row.style.display = 'none';
+  }
+
+  const token = await getToken(true);
+
+  if(!token){
+    if(errEl){
+      errEl.textContent = '❌ 無法從公司 Gist 取得 Token';
+      errEl.style.display = 'inline';
+    }
+    return;
   }
 
   if(errEl){
@@ -1734,7 +1741,7 @@ function saveTokenOnly(){
 
   saveCDS();
 }
-      
+
 
 /* ══════════════════════════════════════
    設定維護
@@ -1880,20 +1887,20 @@ async function saveConfig(){
 
   try{
     const getUrl = `https://api.github.com/repos/${GH_REPO}/contents/config.json`;
-    const getResp = await fetch(getUrl, { headers:{ Authorization:`token ${token}`, Accept:'application/vnd.github.v3+json' }});
+    const getResp = await fetch(getUrl, { headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github.v3+json' }});
     let sha = null;
     if(getResp.ok){ const m = await getResp.json(); sha = m.sha; }
 
     const content = btoa(unescape(encodeURIComponent(JSON.stringify(newCFG, null, 2))));
     const putResp = await fetch(getUrl, {
       method:'PUT',
-      headers:{ Authorization:`token ${token}`, Accept:'application/vnd.github.v3+json', 'Content-Type':'application/json' },
+      headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github.v3+json', 'Content-Type':'application/json' },
       body: JSON.stringify({ message:'Update config', content, ...(sha?{sha}:{}) })
     });
 
     if(!putResp.ok){
       const err = await putResp.json();
-      if(putResp.status===401||putResp.status===403){ _cachedToken=null; localStorage.removeItem('gh_token'); }
+      if(putResp.status===401||putResp.status===403){ _cachedToken=null; localStorage.removeItem(TOKEN_CACHE_KEY); }
       throw new Error(err.message||`HTTP ${putResp.status}`);
     }
 

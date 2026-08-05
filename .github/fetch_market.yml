@@ -1,0 +1,48 @@
+name: Fetch Market Data Daily
+
+on:
+  schedule:
+    # 每天 UTC 22:30 執行（台灣時間 06:30，確保美市收盤後數據齊全）
+    - cron: '30 22 * * 1-5'   # 週一到週五
+  workflow_dispatch:           # 允許手動觸發
+    inputs:
+      target_date:
+        description: '補抓特定日期 (YYYY-MM-DD)，留空為今日'
+        required: false
+        default: ''
+
+jobs:
+  fetch-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install yfinance>=0.2.40 requests>=2.31.0 pandas>=2.0.0 beautifulsoup4>=4.12.0
+
+      - name: Run fetch script
+        env:
+          FRED_KEY: ${{ secrets.FRED_KEY }}
+        run: |
+          if [ -n "${{ github.event.inputs.target_date }}" ]; then
+            python fetch_market.py "${{ github.event.inputs.target_date }}"
+          else
+            python fetch_market.py
+          fi
+
+      - name: Commit and push data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "📊 Daily market data $(date -u +%Y-%m-%d)"
+          git push

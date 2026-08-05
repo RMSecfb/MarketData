@@ -1,0 +1,68 @@
+{
+  "_說明": "這個檔案控制儀表板所有可調整的設定，修改後 commit 到 GitHub 即生效，不需要動 index.html",
+  "thresholds": {
+    "vix": {
+      "warn": 20,
+      "danger": 30
+    },
+    "move": {
+      "warn": 110,
+      "danger": 120
+    },
+    "y2_bp_rise": {
+      "warn": 20,
+      "danger": 30
+    },
+    "y10_bp_rise": {
+      "warn": 15,
+      "danger": 25
+    },
+    "y30_bp_rise": {
+      "warn": 15,
+      "danger": 25
+    },
+    "sox_drop": {
+      "warn": -3,
+      "danger": -6
+    }
+  },
+  "stocks": [
+    {
+      "symbol": "NVDA",
+      "name": "輝達",
+      "emoji": "⭐",
+      "grade": "IG1"
+    },
+    {
+      "symbol": "TSM",
+      "name": "台積電",
+      "emoji": "🔵",
+      "grade": "IG1"
+    },
+    {
+      "symbol": "SMCI",
+      "name": "超微電腦",
+      "emoji": "⚡",
+      "grade": "HY3"
+    },
+    {
+      "symbol": "ARM",
+      "name": "安謀控股",
+      "emoji": "💻",
+      "grade": "IG1"
+    },
+    {
+      "symbol": "TSLA",
+      "name": "特斯拉",
+      "emoji": "🚗",
+      "grade": "IG1"
+    }
+  ],
+  "display": {
+    "_說明_history_days": "日期選單顯示幾天的歷史",
+    "history_days": 60,
+    "_說明_refresh": "頁面自動重新讀取 JSON 的間隔（毫秒）。3600000 = 1小時",
+    "auto_refresh_ms": 3600000
+  },
+  "recipients": []
+}

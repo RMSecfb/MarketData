@@ -1232,30 +1232,52 @@ async function renderTrendChart(){
 }
 
 /* ══════════════════════════════════════
-   CDS 手動維護
+   CDS 手動維護renew
 ══════════════════════════════════════ */
-const GH_REPO  = 'JUWangWang/MarketData';
-const GIST_ID  = '79308bf218675c4153e7e64d5f6fa146';
-let   _cachedToken = null;
 
+const GH_REPO = 'RMSecfb/MarketData';
+let _cachedToken = null;
+
+/* 取得 GitHub Token
+   Token 只保存在目前瀏覽器 localStorage，不讀取 Gist
+*/
 async function getToken(){
-  if(_cachedToken) return _cachedToken;
+  if(_cachedToken){
+    return _cachedToken;
+  }
+
   const cached = localStorage.getItem('gh_token');
-  if(cached){ _cachedToken = cached; return cached; }
-  try{
-    const r = await fetch(`https://gist.githubusercontent.com/JUWangWang/${GIST_ID}/raw/token.json?t=${Date.now()}`);
-    if(r.ok){
-      const j = await r.json();
-      if(j.token){
-        // 反轉解碼
-        const real = j.token.split('').reverse().join('');
-        _cachedToken = real;
-        localStorage.setItem('gh_token', real);
-        return real;
-      }
-    }
-  }catch(e){}
+
+  if(cached){
+    _cachedToken = cached;
+    return cached;
+  }
+
   return null;
+}
+
+/* 清除失效 Token 並顯示輸入欄 */
+function requestNewToken(message = '請輸入具有公司 Repository 寫入權限的 GitHub Token'){
+  _cachedToken = null;
+  localStorage.removeItem('gh_token');
+
+  const row = document.getElementById('ghTokenRow');
+  const input = document.getElementById('ghToken');
+  const errEl = document.getElementById('cdsSaveErr');
+
+  if(row){
+    row.style.display = '';
+  }
+
+  if(input){
+    input.value = '';
+    input.focus();
+  }
+
+  if(errEl){
+    errEl.textContent = `❌ ${message}`;
+    errEl.style.display = 'inline';
+  }
 }
 
 const CDS_LIST = [
@@ -1268,211 +1290,451 @@ const CDS_LIST = [
 
 function initCDSGrid(){
   const grid = document.getElementById('cdsInputGrid');
-  grid.innerHTML = CDS_LIST.map(c=>`
+
+  if(!grid){
+    return;
+  }
+
+  grid.innerHTML = CDS_LIST.map(c => `
     <div class="cds-inp-wrap">
-      <label><span class="cds-inp-flag">${c.flag}</span>${c.name} CDS (bps)</label>
-      <input class="cds-inp" id="cds_${c.key}" type="number" step="0.1" min="0" placeholder="—"
-        oninput="this.classList.toggle('has-val',!!this.value)">
+      <label>
+        <span class="cds-inp-flag">${c.flag}</span>
+        ${c.name} CDS (bps)
+      </label>
+
+      <input
+        class="cds-inp"
+        id="cds_${c.key}"
+        type="number"
+        step="0.1"
+        min="0"
+        placeholder="—"
+        oninput="this.classList.toggle('has-val', !!this.value)"
+      >
+
       <div class="cds-chg" id="cds_chg_${c.key}"></div>
-      <div id="cds_prev_${c.key}" style="font-size:10px;color:var(--text3);font-family:var(--mono);margin-top:2px;min-height:14px;"></div>
+
+      <div
+        id="cds_prev_${c.key}"
+        style="
+          font-size:10px;
+          color:var(--text3);
+          font-family:var(--mono);
+          margin-top:2px;
+          min-height:14px;
+        "
+      ></div>
     </div>
   `).join('');
 }
 
 function loadCDSValues(data){
-  document.getElementById('cdsDateLabel').textContent = fmtISO(selDate);
+  const dateLabel = document.getElementById('cdsDateLabel');
+
+  if(dateLabel){
+    dateLabel.textContent = fmtISO(selDate);
+  }
+
   for(const c of CDS_LIST){
-    const inp  = document.getElementById('cds_'+c.key);
-    const chg  = document.getElementById('cds_chg_'+c.key);
-    const prev = document.getElementById('cds_prev_'+c.key);
-    if(!inp) continue;
+    const inp = document.getElementById('cds_' + c.key);
+    const chg = document.getElementById('cds_chg_' + c.key);
+    const prev = document.getElementById('cds_prev_' + c.key);
+
+    if(!inp){
+      continue;
+    }
+
     const entry = data?.cds?.[c.key];
+
     if(entry && entry.value){
       inp.value = entry.value;
       inp.classList.add('has-val');
+
       if(entry.chg_abs != null){
         const sign = entry.chg_abs > 0 ? '+' : '';
-        const cl   = entry.chg_abs > 0 ? 'c-up' : entry.chg_abs < 0 ? 'c-dn' : 'c-neu';
-        if(chg) chg.innerHTML = `<span class="${cl}">${sign}${entry.chg_abs.toFixed(1)} bps</span>`;
-      } else {
-        if(chg) chg.innerHTML = '';
+        const cl =
+          entry.chg_abs > 0
+            ? 'c-up'
+            : entry.chg_abs < 0
+              ? 'c-dn'
+              : 'c-neu';
+
+        if(chg){
+          chg.innerHTML =
+            `<span class="${cl}">${sign}${entry.chg_abs.toFixed(1)} bps</span>`;
+        }
+      }else if(chg){
+        chg.innerHTML = '';
       }
-      // 前日值提示
+
       if(prev){
-        const prevVal = entry.prev ?? prevData?.cds?.[c.key]?.value ?? null;
-        prev.textContent = prevVal != null ? `前日：${prevVal.toFixed(2)}` : '';
+        const prevVal =
+          entry.prev ??
+          prevData?.cds?.[c.key]?.value ??
+          null;
+
+        prev.textContent =
+          prevVal != null
+            ? `前日：${prevVal.toFixed(2)}`
+            : '';
       }
-    } else {
+
+    }else{
       inp.value = '';
       inp.classList.remove('has-val');
-      if(chg) chg.innerHTML = '';
-      // 從 prevData 抓前日值
+
+      if(chg){
+        chg.innerHTML = '';
+      }
+
       if(prev){
-        const prevVal = prevData?.cds?.[c.key]?.value ?? null;
-        prev.textContent = prevVal != null ? `前日：${prevVal.toFixed(2)}` : '';
+        const prevVal =
+          prevData?.cds?.[c.key]?.value ??
+          null;
+
+        prev.textContent =
+          prevVal != null
+            ? `前日：${prevVal.toFixed(2)}`
+            : '';
       }
     }
   }
+}
+
+/* 將 Unicode JSON 轉成 GitHub API 所需 Base64 */
+function encodeGitHubContent(value){
+  return btoa(
+    unescape(
+      encodeURIComponent(
+        JSON.stringify(value, null, 2)
+      )
+    )
+  );
+}
+
+/* 將 GitHub API Base64 內容還原為 JSON */
+function decodeGitHubContent(content){
+  const decoded = atob(
+    content.replace(/\n/g, '')
+  );
+
+  return JSON.parse(
+    decodeURIComponent(
+      escape(decoded)
+    )
+  );
 }
 
 async function saveCDS(){
   const iso = fmtISO(selDate);
+
   const btn = document.getElementById('cdsSaveBtn');
   const toast = document.getElementById('cdsSaveToast');
   const errEl = document.getElementById('cdsSaveErr');
+  const tokenInputElement = document.getElementById('ghToken');
 
-  // 取得 Token（優先從 Gist 自動抓，失敗才顯示輸入列）
-  let token = await getToken();
-  const tokenInput = document.getElementById('ghToken')?.value.trim();
-  if(tokenInput){ token = tokenInput; _cachedToken = tokenInput; localStorage.setItem('gh_token', tokenInput); }
-  if(!token){
-    document.getElementById('ghTokenRow').style.display = '';
-    document.getElementById('ghToken').focus();
-    errEl.textContent = '❌ 無法取得 Token，請手動輸入';
-    errEl.style.display = 'inline';
-    btn.disabled = false;
-    btn.textContent = '💾 儲存';
-    return;
+  if(btn){
+    btn.disabled = true;
+    btn.textContent = '⏳ 儲存中...';
   }
 
-  // 收集輸入值
-  const newCDS = {};
-  for(const c of CDS_LIST){
-    const v = parseFloat(document.getElementById('cds_'+c.key).value);
-    if(!isNaN(v) && v > 0){
-      // 計算 chg_abs（與現有 prev 比較）
-      const existing = currentData?.cds?.[c.key];
-      const prev = existing?.prev ?? null;
-      newCDS[c.key] = {
-        value:    Math.round(v * 100) / 100,
-        prev:     prev,
-        chg_abs:  prev != null ? Math.round((v - prev) * 100) / 100 : null,
-        chg_pct:  prev != null ? Math.round((v - prev) / prev * 10000) / 100 : null,
-        date:     iso,
-        name:     c.name,
-        flag:     c.flag,
-      };
-    } else {
-      newCDS[c.key] = null;
-    }
+  if(errEl){
+    errEl.style.display = 'none';
+    errEl.textContent = '';
   }
 
-  // 準備寫入的 JSON（合併到現有 data）
-  const isToday = selDate.getTime() === todayD().getTime();
-  const filePath = isToday ? 'data/latest.json' : `data/market_${iso}.json`;
-
-  btn.disabled = true;
-  btn.textContent = '⏳ 儲存中...';
-  errEl.style.display = 'none';
+  if(toast){
+    toast.style.display = 'none';
+  }
 
   try{
-    // Step 1: 取得現有檔案的 SHA（GitHub API 需要）
-    const getUrl = `https://api.github.com/repos/${GH_REPO}/contents/${filePath}`;
-    const getResp = await fetch(getUrl, {
-      headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json' }
+    let token = await getToken();
+
+    const tokenInput =
+      tokenInputElement?.value.trim() || '';
+
+    if(tokenInput){
+      token = tokenInput;
+      _cachedToken = tokenInput;
+      localStorage.setItem('gh_token', tokenInput);
+    }
+
+    if(!token){
+      requestNewToken('請先輸入 GitHub Token');
+      return;
+    }
+
+    /* 收集輸入值 */
+    const newCDS = {};
+
+    for(const c of CDS_LIST){
+      const input = document.getElementById('cds_' + c.key);
+      const v = parseFloat(input?.value);
+
+      if(!isNaN(v) && v > 0){
+        const existing =
+          currentData?.cds?.[c.key];
+
+        /*
+          前日值優先使用：
+          1. 現有 entry 的 prev
+          2. 前一日 JSON 的 CDS value
+        */
+        const previousValue =
+          existing?.prev ??
+          prevData?.cds?.[c.key]?.value ??
+          null;
+
+        newCDS[c.key] = {
+          value:
+            Math.round(v * 100) / 100,
+
+          prev:
+            previousValue,
+
+          chg_abs:
+            previousValue != null
+              ? Math.round((v - previousValue) * 100) / 100
+              : null,
+
+          chg_pct:
+            previousValue != null && previousValue !== 0
+              ? Math.round(
+                  ((v - previousValue) / previousValue) * 10000
+                ) / 100
+              : null,
+
+          date:
+            iso,
+
+          name:
+            c.name,
+
+          flag:
+            c.flag
+        };
+
+      }else{
+        newCDS[c.key] = null;
+      }
+    }
+
+    const isToday =
+      selDate.getTime() === todayD().getTime();
+
+    const filePath =
+      isToday
+        ? 'data/latest.json'
+        : `data/market_${iso}.json`;
+
+    const apiUrl =
+      `https://api.github.com/repos/${GH_REPO}/contents/${filePath}`;
+
+    /* 取得現有檔案及 SHA */
+    const getResp = await fetch(apiUrl, {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        Accept: 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28'
+      },
+      cache: 'no-store'
     });
 
-    let sha = null, existingData = currentData ? {...currentData} : { target_date: iso };
+    if(
+      getResp.status === 401 ||
+      getResp.status === 403
+    ){
+      requestNewToken(
+        'Token 無效，或沒有 RMSecfb/MarketData 的 Contents 寫入權限'
+      );
+      return;
+    }
+
+    let sha = null;
+
+    let existingData =
+      currentData
+        ? JSON.parse(JSON.stringify(currentData))
+        : {
+            target_date: iso
+          };
 
     if(getResp.ok){
       const meta = await getResp.json();
       sha = meta.sha;
-      // 解碼現有內容
+
       try{
-        const decoded = atob(meta.content.replace(/\n/g,''));
-        existingData = JSON.parse(decoded);
-      }catch(e){}
+        existingData =
+          decodeGitHubContent(meta.content);
+      }catch(error){
+        console.warn(
+          '無法解碼現有 JSON，改用目前網頁資料',
+          error
+        );
+      }
+
+    }else if(getResp.status !== 404){
+      let message =
+        `讀取檔案失敗：HTTP ${getResp.status}`;
+
+      try{
+        const errorData = await getResp.json();
+
+        if(errorData.message){
+          message = errorData.message;
+        }
+      }catch(error){}
+
+      throw new Error(message);
     }
 
-    // 合併 CDS
+    /* 合併 CDS 資料 */
     existingData.cds = newCDS;
-    existingData.cds_updated_at = new Date().toISOString();
+    existingData.cds_updated_at =
+      new Date().toISOString();
 
-    // Step 2: 同時也要更新 latest.json（如果存的是歷史檔）
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(existingData, null, 2))));
+    /*
+      確保 target_date 存在。
+      歷史檔與今天 latest.json 都保留目前選取日期。
+    */
+    if(!existingData.target_date){
+      existingData.target_date = iso;
+    }
+
     const putBody = {
-      message: `Manual CDS update: ${iso}`,
-      content,
-      ...(sha ? { sha } : {})
+      message:
+        `Manual CDS update: ${iso}`,
+
+      content:
+        encodeGitHubContent(existingData),
+
+      branch:
+        'main',
+
+      ...(sha ? {sha} : {})
     };
 
-    const putResp = await fetch(getUrl, {
+    const putResp = await fetch(apiUrl, {
       method: 'PUT',
       headers: {
-        Authorization: `token ${token}`,
-        Accept: 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json'
+        Authorization: `Bearer ${token}`,
+        Accept: 'application/vnd.github+json',
+        'Content-Type': 'application/json',
+        'X-GitHub-Api-Version': '2022-11-28'
       },
       body: JSON.stringify(putBody)
     });
 
-    if(!putResp.ok){
-      const err = await putResp.json();
-      const msg = err.message || `HTTP ${putResp.status}`;
-      // 401/403 = Token 問題，清除快取後自動從 Gist 重抓並重試一次
-      if(putResp.status === 401 || putResp.status === 403 || msg.toLowerCase().includes('credential')){
-        _cachedToken = null;
-        localStorage.removeItem('gh_token');
-        // 從 Gist 重抓新 Token
-        const freshToken = await getToken();
-        if(freshToken){
-          // 自動重試一次
-          const retryResp = await fetch(getUrl, {
-            method:'PUT',
-            headers:{ Authorization:`token ${freshToken}`, Accept:'application/vnd.github.v3+json', 'Content-Type':'application/json' },
-            body: JSON.stringify(putBody)
-          });
-          if(retryResp.ok){
-            document.getElementById('ghTokenRow').style.display = 'none';
-            currentData = existingData;
-            toast.style.display = 'inline';
-            setTimeout(()=>toast.style.display='none', 3000);
-            loadCDSValues(currentData);
-            btn.disabled = false;
-            btn.textContent = '💾 儲存';
-            return;
-          }
-        }
-        // 重試也失敗，才顯示輸入框
-        document.getElementById('ghTokenRow').style.display = '';
-        document.getElementById('ghToken').value = '';
-        document.getElementById('ghToken').focus();
-      }
-      throw new Error(msg);
+    if(
+      putResp.status === 401 ||
+      putResp.status === 403
+    ){
+      requestNewToken(
+        'Token 無效，或沒有 RMSecfb/MarketData 的 Contents 寫入權限'
+      );
+      return;
     }
 
-    // 成功：確保 Token 列隱藏
-    document.getElementById('ghTokenRow').style.display = 'none';
+    if(!putResp.ok){
+      let message =
+        `寫入失敗：HTTP ${putResp.status}`;
 
-    // 同步更新 currentData
+      try{
+        const errorData = await putResp.json();
+
+        if(errorData.message){
+          message = errorData.message;
+        }
+      }catch(error){}
+
+      throw new Error(message);
+    }
+
+    /* 寫入成功 */
+    const tokenRow =
+      document.getElementById('ghTokenRow');
+
+    if(tokenRow){
+      tokenRow.style.display = 'none';
+    }
+
+    if(tokenInputElement){
+      tokenInputElement.value = '';
+    }
+
     currentData = existingData;
 
-    // 如果是歷史日期也更新 latest.json（若 target_date 相符）
-    if(!isToday && existingData.target_date === iso){
-      // 不自動覆蓋 latest，避免誤更新
+    loadCDSValues(currentData);
+    renderCDSTable(currentData);
+    renderSummary(currentData);
+
+    if(toast){
+      toast.style.display = 'inline';
+
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 3000);
     }
 
-    toast.style.display = 'inline';
-    setTimeout(()=>toast.style.display='none', 3000);
+  }catch(error){
+    console.error(error);
 
-    // 重新渲染 CDS 欄位
-    loadCDSValues(currentData);
+    if(errEl){
+      errEl.textContent =
+        `❌ ${error.message}`;
 
-  }catch(e){
-    errEl.textContent = `❌ ${e.message}`;
-    errEl.style.display = 'inline';
-  } finally {
-    btn.disabled = false;
-    btn.textContent = '💾 儲存';
+      errEl.style.display =
+        'inline';
+    }
+
+  }finally{
+    if(btn){
+      btn.disabled = false;
+      btn.textContent = '💾 儲存';
+    }
   }
 }
 
 function saveTokenOnly(){
-  const v = document.getElementById('ghToken').value.trim();
-  if(v){ _cachedToken = v; localStorage.setItem('gh_token', v); }
-  document.getElementById('ghTokenRow').style.display = 'none';
+  const input =
+    document.getElementById('ghToken');
+
+  const value =
+    input?.value.trim() || '';
+
+  const errEl =
+    document.getElementById('cdsSaveErr');
+
+  if(!value){
+    if(errEl){
+      errEl.textContent =
+        '❌ 請先輸入 GitHub Token';
+
+      errEl.style.display =
+        'inline';
+    }
+
+    return;
+  }
+
+  _cachedToken = value;
+  localStorage.setItem('gh_token', value);
+
+  const row =
+    document.getElementById('ghTokenRow');
+
+  if(row){
+    row.style.display = 'none';
+  }
+
+  if(errEl){
+    errEl.style.display = 'none';
+  }
+
   saveCDS();
 }
+      
 
 /* ══════════════════════════════════════
    設定維護

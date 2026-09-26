@@ -1,99 +1,140 @@
 {
-  "generated_at": "2026-09-19T00:27:47.447578Z",
+  "generated_at": "2026-09-26T13:05:06.373697+00:00",
   "target_date": "2026-09-18",
   "vix": {
     "value": 14.81,
     "prev": 15.44,
     "chg_abs": -0.629999,
     "chg_pct": -4.0803,
-    "date": "2026-09-18"
+    "date": "2026-09-18",
+    "target_date": "2026-09-18",
+    "is_stale": false,
+    "source": "yahoo_daily:query2.finance.yahoo.com"
   },
   "move": {
-    "value": 80.635,
+    "value": 80.64,
     "prev": 76.22,
-    "chg_abs": 4.415001,
-    "chg_pct": 5.7924,
-    "date": "2026-09-18"
+    "chg_abs": 4.419998,
+    "chg_pct": 5.799,
+    "date": "2026-09-18",
+    "target_date": "2026-09-18",
+    "is_stale": false,
+    "source": "yahoo_daily:query2.finance.yahoo.com"
   },
   "y2": {
     "value": 4.76,
     "prev": 4.67,
     "chg_abs": 0.09,
     "chg_pct": 1.9272,
-    "date": "2026-09-18"
+    "date": "2026-09-18",
+    "target_date": "2026-09-18",
+    "is_stale": false,
+    "source": "treasury_gov"
   },
   "y10": {
     "value": 5.01,
     "prev": 4.94,
     "chg_abs": 0.07,
     "chg_pct": 1.417,
-    "date": "2026-09-18"
+    "date": "2026-09-18",
+    "target_date": "2026-09-18",
+    "is_stale": false,
+    "source": "treasury_gov"
   },
   "y30": {
     "value": 5.34,
     "prev": 5.29,
     "chg_abs": 0.05,
     "chg_pct": 0.9452,
-    "date": "2026-09-18"
+    "date": "2026-09-18",
+    "target_date": "2026-09-18",
+    "is_stale": false,
+    "source": "treasury_gov"
   },
   "spread": 25.0,
   "sox": {
-    "value": 11921.6855,
+    "value": 11921.6904,
     "prev": 11599.4902,
-    "chg_abs": 322.195312,
+    "chg_abs": 322.200195,
     "chg_pct": 2.7777,
-    "date": "2026-09-18"
+    "date": "2026-09-18",
+    "target_date": "2026-09-18",
+    "is_stale": false,
+    "source": "yahoo_daily:query2.finance.yahoo.com"
   },
   "stocks": {
     "NVDA": {
-      "value": NaN,
+      "value": 222.27,
       "prev": 219.34,
-      "chg_abs": NaN,
-      "chg_pct": NaN,
+      "chg_abs": 2.930008,
+      "chg_pct": 1.3358,
       "date": "2026-09-18",
+      "target_date": "2026-09-18",
+      "is_stale": false,
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "輝達",
       "emoji": "🟢",
       "grade": "IG1"
     },
     "TSM": {
-      "value": NaN,
+      "value": 434.67,
       "prev": 430.26,
-      "chg_abs": NaN,
-      "chg_pct": NaN,
+      "chg_abs": 4.410004,
+      "chg_pct": 1.025,
       "date": "2026-09-18",
+      "target_date": "2026-09-18",
+      "is_stale": false,
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "台積電",
       "emoji": "🔵",
       "grade": "IG1"
     },
     "SMCI": {
-      "value": NaN,
+      "value": 39.09,
       "prev": 40.35,
-      "chg_abs": NaN,
-      "chg_pct": NaN,
+      "chg_abs": -1.259998,
+      "chg_pct": -3.1227,
       "date": "2026-09-18",
+      "target_date": "2026-09-18",
+      "is_stale": false,
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "超微電腦",
       "emoji": "⚡",
       "grade": "HY1"
     },
     "ARM": {
-      "value": NaN,
+      "value": 275.61,
       "prev": 264.9,
-      "chg_abs": NaN,
-      "chg_pct": NaN,
+      "chg_abs": 10.709991,
+      "chg_pct": 4.043,
       "date": "2026-09-18",
+      "target_date": "2026-09-18",
+      "is_stale": false,
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "安謀控股",
       "emoji": "💻",
       "grade": "IG1"
     },
     "TSLA": {
-      "value": NaN,
+      "value": 364.27,
       "prev": 366.2,
-      "chg_abs": NaN,
-      "chg_pct": NaN,
+      "chg_abs": -1.930023,
+      "chg_pct": -0.527,
       "date": "2026-09-18",
+      "target_date": "2026-09-18",
+      "is_stale": false,
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "特斯拉",
       "emoji": "🚗",
       "grade": "IG3"
     }
+  },
+  "data_quality": {
+    "target_date": "2026-09-18",
+    "stale_items": [],
+    "missing_items": [],
+    "has_stale": false,
+    "has_missing": false,
+    "all_same_day": true
   }
 }

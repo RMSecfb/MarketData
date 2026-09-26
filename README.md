@@ -5,6 +5,8 @@
 系統以 GitHub 作為程式及資料儲存來源，透過 GitHub Actions
 每日自動更新市場資料，並由 Cloudflare Pages 提供網頁介面。
 
+https://marketdata-dga.pages.dev/
+
 ------------------------------------------------------------------------
 
 ## 1. 系統功能
@@ -230,7 +232,7 @@ CDS 寫入對應日期：
   MOVE             Yahoo Finance
   SOX              Yahoo Finance
   個股             Yahoo Finance
-  美國公債殖利率   U.S. Treasury
+  美國公債殖利率    U.S. Treasury
   CDS              人工維護
 
 資料來源或第三方服務可能因網站/API
@@ -416,8 +418,7 @@ DATE 資料。
 1.  Cloudflare Pages Function 是否正常。
 2.  Cloudflare `GITHUB_TOKEN` Secret 是否存在。
 3.  Token 是否仍有效。
-4.  Token 是否具 `MarketData` Repository 的 Contents Read and write
-    權限。
+4.  Token 是否具 `MarketData` Repository 的 Contents Read and write權限。
 5.  GitHub Repository 是否有正常收到 Commit。
 
 ------------------------------------------------------------------------
@@ -425,8 +426,7 @@ DATE 資料。
 ## 13. 使用目的與資料說明
 
 本系統供內部市場風險監控及管理參考使用。
-
-市場資料可能受到資料來源更新時間、交易日差異、第三方服務異常等因素影響。Dashboard
-透過資料日期揭露、stale 標示及人工維護機制協助辨識資料狀態。
+市場資料可能受到資料來源更新時間、交易日差異、第三方服務異常等因素影響。
+Dashboard透過資料日期揭露、stale 標示及人工維護機制協助辨識資料狀態。
 
 如涉及正式風險控管、交易決策或對外資訊使用，仍應依公司正式資料來源及相關作業規範辦理。

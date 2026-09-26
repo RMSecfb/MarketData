@@ -158,6 +158,18 @@ export async function onRequestPost({request,env}){
     const body = await request.json();
     const actor = actorFromRequest(request);
 
+    if(body.action === 'ping'){
+      const repoCheck = await readJson(env,'config.json',{allow404:false});
+      return jsonResponse({
+        ok:true,
+        message:'Cloudflare Function / GITHUB_TOKEN / GitHub repository access are working',
+        repository:'RMSecfb/MarketData',
+        branch:'main',
+        token_access:true,
+        config_readable:!!repoCheck.exists
+      });
+    }    
+    
     if(body.action === 'cds') return await writeCDS(body,env,actor);
     if(body.action === 'manual') return await writeManual(body,env,actor);
     if(body.action === 'config') return await writeConfig(body,env,actor);

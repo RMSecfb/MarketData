@@ -2,24 +2,39 @@ name: Fetch Market Data Daily
 
 on:
   schedule:
-    # 每天 UTC 22:30 執行（台灣時間 06:30，確保美市收盤後數據齊全）
-    - cron: '30 22 * * 1-5'   # 週一到週五
-  workflow_dispatch:           # 允許手動觸發
+    # GitHub cron 使用 UTC。
+    # 目標：台灣時間 06:00 / 06:30 / 07:00 嘗試。
+    # 台灣 Tue-Sat 對應：
+    # 06:00 = UTC Mon-Fri 22:00
+    # 06:30 = UTC Mon-Fri 22:30
+    # 07:00 = UTC Mon-Fri 23:00
+    - cron: '0 22 * * 1-5'
+    - cron: '30 22 * * 1-5'
+    - cron: '0 23 * * 1-5'
+
+  workflow_dispatch:
     inputs:
       target_date:
-        description: '補抓特定日期 (YYYY-MM-DD)，留空為今日'
+        description: '補抓特定日期 (YYYY-MM-DD)，留空則自動抓前一個 NYSE 交易日'
         required: false
         default: ''
+
+concurrency:
+  group: market-data-daily
+  cancel-in-progress: false
 
 jobs:
   fetch-and-push:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,22 +42,157 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install yfinance>=0.2.40 requests>=2.31.0 pandas>=2.0.0 beautifulsoup4>=4.12.0
+        run: |
+          python -m pip install --upgrade pip
+          pip install \
+            yfinance>=0.2.40 \
+            requests>=2.31.0 \
+            pandas>=2.0.0 \
+            beautifulsoup4>=4.12.0 \
+            pandas_market_calendars>=4.4.0
 
-      - name: Run fetch script
+      - name: Determine target date
+        id: target
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && \
+             [ -n "${{ github.event.inputs.target_date }}" ]; then
+            TARGET="${{ github.event.inputs.target_date }}"
+          else
+            TARGET=$(python - <<'PY'
+          from datetime import datetime, timedelta
+          from zoneinfo import ZoneInfo
+          import pandas_market_calendars as mcal
+
+          now_tw = datetime.now(ZoneInfo("Asia/Taipei"))
+          nyse = mcal.get_calendar("NYSE")
+          schedule = nyse.schedule(
+              start_date=now_tw.date() - timedelta(days=14),
+              end_date=now_tw.date() - timedelta(days=1)
+          )
+          if schedule.empty:
+              raise RuntimeError("找不到最近的 NYSE 交易日")
+          print(schedule.index[-1].date().strftime("%Y-%m-%d"))
+          PY
+          )
+          fi
+
+          echo "target=$TARGET" >> "$GITHUB_OUTPUT"
+          echo "Target market date: $TARGET"
+          echo "Event: ${{ github.event_name }}"
+
+      - name: Check existing market data
+        id: existing
+        shell: bash
+        run: |
+          TARGET="${{ steps.target.outputs.target }}"
+
+          # 手動執行一律重新抓。
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "complete=false" >> "$GITHUB_OUTPUT"
+            echo "ℹ️ Manual run — force fetch."
+            exit 0
+          fi
+
+          # 自動排程：
+          # 只有「所有必要項目都是 TARGET 同日」才跳過。
+          # 若檔案存在但有 stale，06:30 / 07:00 仍會再嘗試更新。
+          python - "$TARGET" >> "$GITHUB_OUTPUT" <<'PY'
+          import json
+          import math
+          import sys
+          from pathlib import Path
+
+          target = sys.argv[1]
+          path = Path("data") / f"market_{target}.json"
+
+          required = ["vix", "move", "sox", "y2", "y10", "y30"]
+          required_stocks = ["NVDA", "TSM", "SMCI", "ARM", "TSLA"]
+
+          def valid_number(value):
+              try:
+                  return math.isfinite(float(value))
+              except (TypeError, ValueError):
+                  return False
+
+          def same_day_item(item):
+              return (
+                  isinstance(item, dict)
+                  and item.get("date") == target
+                  and valid_number(item.get("value"))
+              )
+
+          if not path.exists():
+              print("complete=false")
+              sys.exit(0)
+
+          try:
+              data = json.loads(path.read_text(encoding="utf-8"))
+          except Exception:
+              print("complete=false")
+              sys.exit(0)
+
+          if data.get("target_date") != target:
+              print("complete=false")
+              sys.exit(0)
+
+          if any(not same_day_item(data.get(key)) for key in required):
+              print("complete=false")
+              sys.exit(0)
+
+          stocks = data.get("stocks", {})
+          if any(not same_day_item(stocks.get(s)) for s in required_stocks):
+              print("complete=false")
+              sys.exit(0)
+
+          print("complete=true")
+          PY
+
+      - name: Show existing data status
+        run: |
+          echo "Target: ${{ steps.target.outputs.target }}"
+          echo "All required data same-day: ${{ steps.existing.outputs.complete }}"
+          if [ "${{ steps.existing.outputs.complete }}" = "true" ]; then
+            echo "✅ All required items already match TARGET. Skip."
+          else
+            echo "ℹ️ Missing/stale item exists. Fetch will run."
+          fi
+
+      - name: Fetch market data
+        if: steps.existing.outputs.complete != 'true'
         env:
           FRED_KEY: ${{ secrets.FRED_KEY }}
         run: |
-          if [ -n "${{ github.event.inputs.target_date }}" ]; then
-            python fetch_market.py "${{ github.event.inputs.target_date }}"
-          else
-            python fetch_market.py
-          fi
+          TARGET="${{ steps.target.outputs.target }}"
+          echo "Fetching market data for $TARGET"
+          python fetch_market.py "$TARGET"
 
       - name: Commit and push data
+        if: steps.existing.outputs.complete != 'true'
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add data/
-          git diff --staged --quiet || git commit -m "📊 Daily market data $(date -u +%Y-%m-%d)"
-          git push
+
+          if git diff --staged --quiet; then
+            echo "ℹ️ No data changes to commit."
+          else
+            TARGET="${{ steps.target.outputs.target }}"
+            git commit -m "📊 Market data ${TARGET}"
+            git push
+          fi
+
+      - name: Workflow summary
+        if: always()
+        run: |
+          echo "## Market Data Workflow" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Target: **${{ steps.target.outputs.target }}**" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Trigger: **${{ github.event_name }}**" >> "$GITHUB_STEP_SUMMARY"
+
+          if [ "${{ steps.existing.outputs.complete }}" = "true" ]; then
+            echo "- Result: ✅ All required items already same-day — skipped" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "- Result: Fetch attempted; stale fallback allowed" >> "$GITHUB_STEP_SUMMARY"
+          fi

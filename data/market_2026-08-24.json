@@ -18,8 +18,8 @@
   "y2": {
     "value": 4.24,
     "prev": 4.24,
-    "chg_abs": 0.0,
-    "chg_pct": 0.0,
+    "chg_abs": 0,
+    "chg_pct": 0,
     "date": "2026-08-24"
   },
   "y10": {
@@ -36,7 +36,7 @@
     "chg_pct": -0.759,
     "date": "2026-08-24"
   },
-  "spread": 46.0,
+  "spread": 46,
   "sox": {
     "value": 11423.1689,
     "prev": 11740.3701,
@@ -95,5 +95,59 @@
       "emoji": "🚗",
       "grade": "IG3"
     }
-  }
+  },
+  "cds": {
+    "US": {
+      "value": 38.93,
+      "prev": 38.72,
+      "chg_abs": 0.21,
+      "chg_pct": 0.54,
+      "date": "2026-08-24",
+      "name": "美國",
+      "flag": "🇺🇸",
+      "source": "manual"
+    },
+    "KR": {
+      "value": 22.38,
+      "prev": 22.44,
+      "chg_abs": -0.06,
+      "chg_pct": -0.27,
+      "date": "2026-08-24",
+      "name": "南韓",
+      "flag": "🇰🇷",
+      "source": "manual"
+    },
+    "JP": {
+      "value": 26.82,
+      "prev": 26.58,
+      "chg_abs": 0.24,
+      "chg_pct": 0.9,
+      "date": "2026-08-24",
+      "name": "日本",
+      "flag": "🇯🇵",
+      "source": "manual"
+    },
+    "CN": {
+      "value": 35.52,
+      "prev": 35.55,
+      "chg_abs": -0.03,
+      "chg_pct": -0.08,
+      "date": "2026-08-24",
+      "name": "中國",
+      "flag": "🇨🇳",
+      "source": "manual"
+    },
+    "HK": {
+      "value": 24.25,
+      "prev": 27.38,
+      "chg_abs": -3.13,
+      "chg_pct": -11.43,
+      "date": "2026-08-24",
+      "name": "香港",
+      "flag": "🇭🇰",
+      "source": "manual"
+    }
+  },
+  "cds_updated_at": "2026-09-26T14:53:54.639Z",
+  "cds_updated_by": "Cloudflare Pages user"
 }

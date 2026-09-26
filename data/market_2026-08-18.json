@@ -1,100 +1,141 @@
 {
-  "generated_at": "2026-08-18T23:03:24.601448Z",
+  "generated_at": "2026-09-26T14:51:09.458887+00:00",
   "target_date": "2026-08-18",
   "vix": {
     "value": 15.84,
-    "prev": 15.19,
-    "chg_abs": 0.650001,
-    "chg_pct": 4.2791,
-    "date": "2026-08-18"
-  },
-  "move": {
-    "value": 74.9787,
     "prev": null,
     "chg_abs": null,
     "chg_pct": null,
-    "date": "2026-08-18"
+    "date": "2026-08-18",
+    "target_date": "2026-08-18",
+    "is_stale": false,
+    "source": "yahoo_intraday_5m:query2.finance.yahoo.com"
+  },
+  "move": {
+    "value": 75.6302,
+    "prev": null,
+    "chg_abs": null,
+    "chg_pct": null,
+    "date": "2026-08-18",
+    "target_date": "2026-08-18",
+    "is_stale": false,
+    "source": "yahoo_intraday_5m:query2.finance.yahoo.com"
   },
   "y2": {
     "value": 4.19,
     "prev": 4.19,
-    "chg_abs": 0,
-    "chg_pct": 0,
-    "date": "2026-08-18"
+    "chg_abs": 0.0,
+    "chg_pct": 0.0,
+    "date": "2026-08-18",
+    "target_date": "2026-08-18",
+    "is_stale": false,
+    "source": "treasury_gov"
   },
   "y10": {
     "value": 4.71,
     "prev": 4.72,
     "chg_abs": -0.01,
     "chg_pct": -0.2119,
-    "date": "2026-08-18"
+    "date": "2026-08-18",
+    "target_date": "2026-08-18",
+    "is_stale": false,
+    "source": "treasury_gov"
   },
   "y30": {
     "value": 5.28,
     "prev": 5.31,
     "chg_abs": -0.03,
     "chg_pct": -0.565,
-    "date": "2026-08-18"
+    "date": "2026-08-18",
+    "target_date": "2026-08-18",
+    "is_stale": false,
+    "source": "treasury_gov"
   },
-  "spread": 52,
+  "spread": 52.0,
   "sox": {
-    "value": 11992.4629,
-    "prev": 12621,
-    "chg_abs": -628.537109,
-    "chg_pct": -4.9801,
-    "date": "2026-08-18"
+    "value": 11992.2139,
+    "prev": null,
+    "chg_abs": null,
+    "chg_pct": null,
+    "date": "2026-08-18",
+    "target_date": "2026-08-18",
+    "is_stale": false,
+    "source": "yahoo_intraday_5m:query2.finance.yahoo.com"
   },
   "stocks": {
     "NVDA": {
-      "value": 219.74,
-      "prev": 225.01,
-      "chg_abs": -5.269989,
-      "chg_pct": -2.3421,
+      "value": 219.8,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
       "date": "2026-08-18",
+      "target_date": "2026-08-18",
+      "is_stale": false,
+      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
       "name": "輝達",
       "emoji": "🟢",
       "grade": "IG1"
     },
     "TSM": {
-      "value": 413.41,
-      "prev": 430.97,
-      "chg_abs": -17.559998,
-      "chg_pct": -4.0745,
+      "value": 413.485,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
       "date": "2026-08-18",
+      "target_date": "2026-08-18",
+      "is_stale": false,
+      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
       "name": "台積電",
       "emoji": "🔵",
       "grade": "IG1"
     },
     "SMCI": {
       "value": 37.41,
-      "prev": 38.28,
-      "chg_abs": -0.869999,
-      "chg_pct": -2.2727,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
       "date": "2026-08-18",
+      "target_date": "2026-08-18",
+      "is_stale": false,
+      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
       "name": "超微電腦",
       "emoji": "⚡",
       "grade": "HY1"
     },
     "ARM": {
-      "value": 253.32,
-      "prev": 271.43,
-      "chg_abs": -18.109985,
-      "chg_pct": -6.6721,
+      "value": 253.4,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
       "date": "2026-08-18",
+      "target_date": "2026-08-18",
+      "is_stale": false,
+      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
       "name": "安謀控股",
       "emoji": "💻",
       "grade": "IG1"
     },
     "TSLA": {
-      "value": 336.87,
-      "prev": 339.3,
-      "chg_abs": -2.429993,
-      "chg_pct": -0.7162,
+      "value": 336.885,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
       "date": "2026-08-18",
+      "target_date": "2026-08-18",
+      "is_stale": false,
+      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
       "name": "特斯拉",
       "emoji": "🚗",
       "grade": "IG3"
     }
+  },
+  "data_quality": {
+    "target_date": "2026-08-18",
+    "stale_items": [],
+    "missing_items": [],
+    "has_stale": false,
+    "has_missing": false,
+    "all_same_day": true
   },
   "cds": {
     "US": {
@@ -148,6 +189,5 @@
       "source": "manual"
     }
   },
-  "cds_updated_at": "2026-09-26T14:48:56.976Z",
-  "cds_updated_by": "Cloudflare Pages user"
+  "cds_updated_at": "2026-09-26T14:48:56.976Z"
 }

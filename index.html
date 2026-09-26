@@ -301,15 +301,6 @@ canvas{max-height:320px;}
       </div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;" id="cdsInputGrid"></div>
-    <div id="ghTokenRow" style="display:none;margin-top:12px;padding:10px 12px;background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.25);border-radius:8px;flex-wrap:wrap;gap:8px;">
-      <div style="font-size:12px;color:#f87171;margin-bottom:7px;">🔑 Token 驗證失敗，請重新輸入 GitHub Token</div>
-      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
-        <input id="ghToken" type="password" placeholder="github_pat_..." autocomplete="off"
-          style="flex:1;min-width:200px;background:var(--card2);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:6px;font-size:12px;font-family:var(--mono);">
-        <button onclick="saveTokenOnly()" style="background:var(--card2);border:1px solid var(--border);color:var(--text2);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:12px;font-family:inherit;">確認</button>
-      </div>
-      <div style="font-size:11px;color:var(--text3);margin-top:4px;">Token 僅存於本機瀏覽器，不會上傳</div>
-    </div>
   </div>
 
   <!-- 產信件按鈕 -->
@@ -620,7 +611,7 @@ async function saveManualOverrides(){
   if(Object.keys(day).length)store[report]=day;else delete store[report];
   const msg=document.getElementById('manualMsg');
   try{
-    await githubPutJSON(MANUAL_OVERRIDE_PATH,store,`Manual market override: ${report}`);
+    await apiPost('/api/github-write',{action:'manual',report_date:report,overrides:day});
     manualStore=store;msg.style.color='var(--green)';msg.textContent='✅ 已儲存';
     if(fmtISO(selDate)===report) loadDate(selDate);
     renderManualGrid();
@@ -1373,66 +1364,23 @@ async function renderTrendChart(){
 }
 
 
-async function githubPutJSON(path,obj,message){
-  const token=await getToken();
-  if(!token) throw new Error('無法取得 GitHub Token');
-  const url=`https://api.github.com/repos/${GH_REPO}/contents/${path}`;
-  const getResp=await fetch(url,{headers:{Authorization:`token ${token}`,Accept:'application/vnd.github.v3+json'}});
-  let sha=null;
-  if(getResp.ok){ const meta=await getResp.json(); sha=meta.sha; }
-  const content=btoa(unescape(encodeURIComponent(JSON.stringify(obj,null,2))));
-  const putResp=await fetch(url,{method:'PUT',headers:{Authorization:`token ${token}`,Accept:'application/vnd.github.v3+json','Content-Type':'application/json'},
-    body:JSON.stringify({message,content,...(sha?{sha}:{})})});
-  if(!putResp.ok){const e=await putResp.json();throw new Error(e.message||`HTTP ${putResp.status}`);}
-}
-
 /* ══════════════════════════════════════
-   CDS 手動維護renew
+   Cloudflare Pages API 寫入
+   GitHub Token 僅存在 Cloudflare Secret，不進入瀏覽器
 ══════════════════════════════════════ */
-
-const GH_REPO = 'RMSecfb/MarketData';
-let _cachedToken = null;
-
-/* 取得 GitHub Token
-   Token 只保存在目前瀏覽器 localStorage，不讀取 Gist
-*/
-async function getToken(){
-  if(_cachedToken){
-    return _cachedToken;
+async function apiPost(path, payload){
+  const resp = await fetch(path, {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify(payload),
+    cache:'no-store'
+  });
+  let data={};
+  try{ data=await resp.json(); }catch(e){}
+  if(!resp.ok){
+    throw new Error(data.error || data.message || `API HTTP ${resp.status}`);
   }
-
-  const cached = localStorage.getItem('gh_token');
-
-  if(cached){
-    _cachedToken = cached;
-    return cached;
-  }
-
-  return null;
-}
-
-/* 清除失效 Token 並顯示輸入欄 */
-function requestNewToken(message = '請輸入具有公司 Repository 寫入權限的 GitHub Token'){
-  _cachedToken = null;
-  localStorage.removeItem('gh_token');
-
-  const row = document.getElementById('ghTokenRow');
-  const input = document.getElementById('ghToken');
-  const errEl = document.getElementById('cdsSaveErr');
-
-  if(row){
-    row.style.display = '';
-  }
-
-  if(input){
-    input.value = '';
-    input.focus();
-  }
-
-  if(errEl){
-    errEl.textContent = `❌ ${message}`;
-    errEl.style.display = 'inline';
-  }
+  return data;
 }
 
 const CDS_LIST = [
@@ -1582,314 +1530,50 @@ function decodeGitHubContent(content){
 
 async function saveCDS(){
   const iso = fmtISO(selDate);
-
   const btn = document.getElementById('cdsSaveBtn');
   const toast = document.getElementById('cdsSaveToast');
   const errEl = document.getElementById('cdsSaveErr');
-  const tokenInputElement = document.getElementById('ghToken');
 
-  if(btn){
-    btn.disabled = true;
-    btn.textContent = '⏳ 儲存中...';
-  }
-
-  if(errEl){
-    errEl.style.display = 'none';
-    errEl.textContent = '';
-  }
-
-  if(toast){
-    toast.style.display = 'none';
-  }
+  if(btn){ btn.disabled=true; btn.textContent='⏳ 儲存中...'; }
+  if(errEl){ errEl.style.display='none'; errEl.textContent=''; }
+  if(toast){ toast.style.display='none'; }
 
   try{
-    let token = await getToken();
-
-    const tokenInput =
-      tokenInputElement?.value.trim() || '';
-
-    if(tokenInput){
-      token = tokenInput;
-      _cachedToken = tokenInput;
-      localStorage.setItem('gh_token', tokenInput);
-    }
-
-    if(!token){
-      requestNewToken('請先輸入 GitHub Token');
-      return;
-    }
-
-    /* 收集輸入值 */
-    const newCDS = {};
-
+    const values = {};
+    const previous = {};
     for(const c of CDS_LIST){
-      const input = document.getElementById('cds_' + c.key);
-      const v = parseFloat(input?.value);
-
-      if(!isNaN(v) && v > 0){
-        const existing =
-          currentData?.cds?.[c.key];
-
-        /*
-          前日值優先使用：
-          1. 現有 entry 的 prev
-          2. 前一日 JSON 的 CDS value
-        */
-        const previousValue =
-          existing?.prev ??
-          prevData?.cds?.[c.key]?.value ??
-          null;
-
-        newCDS[c.key] = {
-          value:
-            Math.round(v * 100) / 100,
-
-          prev:
-            previousValue,
-
-          chg_abs:
-            previousValue != null
-              ? Math.round((v - previousValue) * 100) / 100
-              : null,
-
-          chg_pct:
-            previousValue != null && previousValue !== 0
-              ? Math.round(
-                  ((v - previousValue) / previousValue) * 10000
-                ) / 100
-              : null,
-
-          date:
-            iso,
-
-          name:
-            c.name,
-
-          flag:
-            c.flag
-        };
-
-      }else{
-        newCDS[c.key] = null;
-      }
+      const input=document.getElementById('cds_'+c.key);
+      const raw=input?.value?.trim() ?? '';
+      if(raw==='') continue; // 空白代表保留原值，不主動清除
+      const v=Number(raw);
+      if(!Number.isFinite(v) || v<=0) throw new Error(`${c.name} CDS 必須為大於 0 的數值`);
+      values[c.key]=Math.round(v*100)/100;
+      const old=currentData?.cds?.[c.key]?.prev ?? prevData?.cds?.[c.key]?.value ?? null;
+      if(old!=null && Number.isFinite(Number(old))) previous[c.key]=Number(old);
     }
+    if(!Object.keys(values).length) throw new Error('請至少輸入一筆 CDS 數值');
 
-    const isToday =
-      selDate.getTime() === todayD().getTime();
-
-    const filePath =
-      isToday
-        ? 'data/latest.json'
-        : `data/market_${iso}.json`;
-
-    const apiUrl =
-      `https://api.github.com/repos/${GH_REPO}/contents/${filePath}`;
-
-    /* 取得現有檔案及 SHA */
-    const getResp = await fetch(apiUrl, {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: 'application/vnd.github+json',
-        'X-GitHub-Api-Version': '2022-11-28'
-      },
-      cache: 'no-store'
-    });
-
-    if(
-      getResp.status === 401 ||
-      getResp.status === 403
-    ){
-      requestNewToken(
-        'Token 無效，或沒有 RMSecfb/MarketData 的 Contents 寫入權限'
-      );
-      return;
+    const result=await apiPost('/api/github-write',{action:'cds',report_date:iso,cds:values,previous});
+    if(result.data){
+      currentData=applyManualOverrides(result.data,manualStore,iso);
+      loadCDSValues(currentData);
+      renderCDSTable(currentData);
+      renderSummary(currentData);
+    }else{
+      await loadDate(selDate);
     }
-
-    let sha = null;
-
-    let existingData =
-      currentData
-        ? JSON.parse(JSON.stringify(currentData))
-        : {
-            target_date: iso
-          };
-
-    if(getResp.ok){
-      const meta = await getResp.json();
-      sha = meta.sha;
-
-      try{
-        existingData =
-          decodeGitHubContent(meta.content);
-      }catch(error){
-        console.warn(
-          '無法解碼現有 JSON，改用目前網頁資料',
-          error
-        );
-      }
-
-    }else if(getResp.status !== 404){
-      let message =
-        `讀取檔案失敗：HTTP ${getResp.status}`;
-
-      try{
-        const errorData = await getResp.json();
-
-        if(errorData.message){
-          message = errorData.message;
-        }
-      }catch(error){}
-
-      throw new Error(message);
-    }
-
-    /* 合併 CDS 資料 */
-    existingData.cds = newCDS;
-    existingData.cds_updated_at =
-      new Date().toISOString();
-
-    /*
-      確保 target_date 存在。
-      歷史檔與今天 latest.json 都保留目前選取日期。
-    */
-    if(!existingData.target_date){
-      existingData.target_date = iso;
-    }
-
-    const putBody = {
-      message:
-        `Manual CDS update: ${iso}`,
-
-      content:
-        encodeGitHubContent(existingData),
-
-      branch:
-        'main',
-
-      ...(sha ? {sha} : {})
-    };
-
-    const putResp = await fetch(apiUrl, {
-      method: 'PUT',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: 'application/vnd.github+json',
-        'Content-Type': 'application/json',
-        'X-GitHub-Api-Version': '2022-11-28'
-      },
-      body: JSON.stringify(putBody)
-    });
-
-    if(
-      putResp.status === 401 ||
-      putResp.status === 403
-    ){
-      requestNewToken(
-        'Token 無效，或沒有 RMSecfb/MarketData 的 Contents 寫入權限'
-      );
-      return;
-    }
-
-    if(!putResp.ok){
-      let message =
-        `寫入失敗：HTTP ${putResp.status}`;
-
-      try{
-        const errorData = await putResp.json();
-
-        if(errorData.message){
-          message = errorData.message;
-        }
-      }catch(error){}
-
-      throw new Error(message);
-    }
-
-    /* 寫入成功 */
-    const tokenRow =
-      document.getElementById('ghTokenRow');
-
-    if(tokenRow){
-      tokenRow.style.display = 'none';
-    }
-
-    if(tokenInputElement){
-      tokenInputElement.value = '';
-    }
-
-    currentData = existingData;
-
-    loadCDSValues(currentData);
-    renderCDSTable(currentData);
-    renderSummary(currentData);
-
     if(toast){
-      toast.style.display = 'inline';
-
-      setTimeout(() => {
-        toast.style.display = 'none';
-      }, 3000);
+      toast.style.display='inline';
+      toast.textContent=result.updated_by ? `✅ 已儲存（${result.updated_by}）` : '✅ 已儲存！';
+      setTimeout(()=>{toast.style.display='none';toast.textContent='✅ 已儲存！';},3000);
     }
-
   }catch(error){
     console.error(error);
-
-    if(errEl){
-      errEl.textContent =
-        `❌ ${error.message}`;
-
-      errEl.style.display =
-        'inline';
-    }
-
+    if(errEl){ errEl.textContent=`❌ ${error.message}`; errEl.style.display='inline'; }
   }finally{
-    if(btn){
-      btn.disabled = false;
-      btn.textContent = '💾 儲存';
-    }
+    if(btn){ btn.disabled=false; btn.textContent='💾 儲存'; }
   }
 }
-
-function saveTokenOnly(){
-  const input =
-    document.getElementById('ghToken');
-
-  const value =
-    input?.value.trim() || '';
-
-  const errEl =
-    document.getElementById('cdsSaveErr');
-
-  if(!value){
-    if(errEl){
-      errEl.textContent =
-        '❌ 請先輸入 GitHub Token';
-
-      errEl.style.display =
-        'inline';
-    }
-
-    return;
-  }
-
-  _cachedToken = value;
-  localStorage.setItem('gh_token', value);
-
-  const row =
-    document.getElementById('ghTokenRow');
-
-  if(row){
-    row.style.display = 'none';
-  }
-
-  if(errEl){
-    errEl.style.display = 'none';
-  }
-
-  saveCDS();
-}
-      
 
 /* ══════════════════════════════════════
    設定維護
@@ -1913,6 +1597,7 @@ function initSettingsPage(){
 // ── 警示門檻 ──
 function renderThresholdGrid(){
   const grid = document.getElementById('thresholdGrid');
+  if(!grid) return;
   grid.innerHTML = THRESHOLD_FIELDS.map(f => {
     const thr = CFG.thresholds?.[f.key] || {};
     const v1 = thr[f.k1] ?? '';
@@ -1952,6 +1637,7 @@ const EMOJI_OPTIONS = ['🟢','🔵','⚡','💻','🚗','🔴','🟡','⭐','�
 
 function renderStockList(){
   const list = document.getElementById('stockList');
+  if(!list) return;
   list.innerHTML = '';
   (CFG.stocks || []).forEach((s, i) => addStockRow(s, i));
 }
@@ -1991,12 +1677,14 @@ function collectStocks(){
 // ── 收件人名單 ──
 function renderRecipientList(){
   const list = document.getElementById('recipientList');
+  if(!list) return;
   list.innerHTML = '';
   (CFG.recipients || []).forEach(r => addRecipientRow(r));
 }
 
 function addRecipientRow(r=''){
   const list = document.getElementById('recipientList');
+  if(!list) return;
   const div = document.createElement('div');
   div.style.cssText = 'display:flex;gap:8px;align-items:center;';
   div.innerHTML = `
@@ -2014,49 +1702,24 @@ function collectRecipients(){
 
 // ── 儲存 config.json ──
 async function saveConfig(){
-  const btn = document.getElementById('cfgSaveBtn');
-  const toast = document.getElementById('cfgSaveToast');
-  const errEl = document.getElementById('cfgSaveErr');
-  btn.disabled = true; btn.textContent = '⏳ 儲存中...';
-  errEl.style.display = 'none';
+  const btn=document.getElementById('cfgSaveBtn');
+  const toast=document.getElementById('cfgSaveToast');
+  const errEl=document.getElementById('cfgSaveErr');
+  btn.disabled=true; btn.textContent='⏳ 儲存中...';
+  errEl.style.display='none';
 
-  const token = await getToken();
-  if(!token){
-    errEl.textContent = '❌ 無法取得 Token'; errEl.style.display='inline';
-    btn.disabled=false; btn.textContent='💾 儲存所有設定'; return;
-  }
-
-  const newCFG = {
+  const newCFG={
     ...CFG,
-    thresholds: collectThresholds(),
-    stocks:     collectStocks(),
-    recipients: collectRecipients(),
+    thresholds:collectThresholds(),
+    stocks:collectStocks(),
+    recipients:collectRecipients(),
   };
 
   try{
-    const getUrl = `https://api.github.com/repos/${GH_REPO}/contents/config.json`;
-    const getResp = await fetch(getUrl, { headers:{ Authorization:`token ${token}`, Accept:'application/vnd.github.v3+json' }});
-    let sha = null;
-    if(getResp.ok){ const m = await getResp.json(); sha = m.sha; }
-
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(newCFG, null, 2))));
-    const putResp = await fetch(getUrl, {
-      method:'PUT',
-      headers:{ Authorization:`token ${token}`, Accept:'application/vnd.github.v3+json', 'Content-Type':'application/json' },
-      body: JSON.stringify({ message:'Update config', content, ...(sha?{sha}:{}) })
-    });
-
-    if(!putResp.ok){
-      const err = await putResp.json();
-      if(putResp.status===401||putResp.status===403){ _cachedToken=null; localStorage.removeItem('gh_token'); }
-      throw new Error(err.message||`HTTP ${putResp.status}`);
-    }
-
-    // 更新本地 CFG
-    CFG = newCFG;
+    await apiPost('/api/github-write',{action:'config',config:newCFG});
+    CFG=newCFG;
     toast.style.display='inline';
-    setTimeout(()=>toast.style.display='none', 3000);
-
+    setTimeout(()=>toast.style.display='none',3000);
   }catch(e){
     errEl.textContent=`❌ ${e.message}`; errEl.style.display='inline';
   }finally{
@@ -2071,7 +1734,6 @@ async function saveConfig(){
   initDateNav();
   initSettingsPage();
   loadDate(selDate);
-  getToken();
   setInterval(()=>{ if(selDate.getTime()===todayD().getTime()) loadDate(selDate); }, CFG.display?.auto_refresh_ms||3600000);
 })();
 </script>

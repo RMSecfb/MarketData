@@ -226,18 +226,12 @@ CDS 寫入對應日期：
 
 目前市場資料主要透過以下來源取得：
 
-  資料             主要來源
-  ---------------- ---------------
-  VIX              Yahoo Finance
-  MOVE             Yahoo Finance
-  SOX              Yahoo Finance
-  個股             Yahoo Finance
-  美國公債殖利率    U.S. Treasury
-  CDS              人工維護
+Yahoo Finance：VIX | MOVE | SOX | 個股
+U.S. Treasury：美國公債殖利率    
+人工維護      ：CDS              
 
-資料來源或第三方服務可能因網站/API
-調整、更新時間或交易日差異而發生短暫異常，因此系統保留 stale fallback
-及人工維護機制。
+資料來源或第三方服務可能因網站/API調整、更新時間或交易日差異而發生短暫異常，
+因此系統保留 stale fallback 及人工維護機制。
 
 ------------------------------------------------------------------------
 

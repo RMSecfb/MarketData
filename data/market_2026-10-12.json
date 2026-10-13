@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T00:09:30.191335+00:00",
+  "generated_at": "2026-10-13T03:00:56.888929+00:00",
   "target_date": "2026-10-12",
   "vix": {
     "value": 15.21,
@@ -47,15 +47,15 @@
   "y30": {
     "value": 5.6,
     "prev": 5.6,
-    "chg_abs": 0,
-    "chg_pct": 0,
+    "chg_abs": 0.0,
+    "chg_pct": 0.0,
     "date": "2026-10-09",
     "target_date": "2026-10-12",
     "is_stale": true,
     "source": "treasury_gov",
     "fallback_reason": "target_date_unavailable"
   },
-  "spread": 44,
+  "spread": 44.0,
   "sox": {
     "value": 12236.7881,
     "prev": 12572.4199,
@@ -75,7 +75,7 @@
       "date": "2026-10-12",
       "target_date": "2026-10-12",
       "is_stale": false,
-      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "輝達",
       "emoji": "🟢",
       "grade": "IG1"
@@ -88,7 +88,7 @@
       "date": "2026-10-12",
       "target_date": "2026-10-12",
       "is_stale": false,
-      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "台積電",
       "emoji": "🔵",
       "grade": "IG1"
@@ -101,7 +101,7 @@
       "date": "2026-10-12",
       "target_date": "2026-10-12",
       "is_stale": false,
-      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "超微電腦",
       "emoji": "⚡",
       "grade": "HY1"
@@ -114,7 +114,7 @@
       "date": "2026-10-12",
       "target_date": "2026-10-12",
       "is_stale": false,
-      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "安謀控股",
       "emoji": "💻",
       "grade": "IG1"
@@ -127,7 +127,7 @@
       "date": "2026-10-12",
       "target_date": "2026-10-12",
       "is_stale": false,
-      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "特斯拉",
       "emoji": "🚗",
       "grade": "IG3"
@@ -198,6 +198,5 @@
       "source": "manual"
     }
   },
-  "cds_updated_at": "2026-10-13T00:41:34.628Z",
-  "cds_updated_by": "Cloudflare Pages user"
+  "cds_updated_at": "2026-10-13T00:41:34.628Z"
 }

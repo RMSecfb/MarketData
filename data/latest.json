@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T00:35:42.053168+00:00",
+  "generated_at": "2026-10-24T09:40:07.216714+00:00",
   "target_date": "2026-10-23",
   "vix": {
     "value": 19.45,
@@ -12,10 +12,10 @@
     "source": "yahoo_daily:query2.finance.yahoo.com"
   },
   "move": {
-    "value": 103.3123,
+    "value": 103.31,
     "prev": 106.84,
-    "chg_abs": -3.527695,
-    "chg_pct": -3.3018,
+    "chg_abs": -3.529999,
+    "chg_pct": -3.304,
     "date": "2026-10-23",
     "target_date": "2026-10-23",
     "is_stale": false,
@@ -53,9 +53,9 @@
   },
   "spread": 31.0,
   "sox": {
-    "value": 10779.4639,
+    "value": 10779.46,
     "prev": 10731.9805,
-    "chg_abs": 47.483398,
+    "chg_abs": 47.479492,
     "chg_pct": 0.4424,
     "date": "2026-10-23",
     "target_date": "2026-10-23",
@@ -71,7 +71,7 @@
       "date": "2026-10-23",
       "target_date": "2026-10-23",
       "is_stale": false,
-      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "輝達",
       "emoji": "🟢",
       "grade": "IG1"
@@ -84,7 +84,7 @@
       "date": "2026-10-23",
       "target_date": "2026-10-23",
       "is_stale": false,
-      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "台積電",
       "emoji": "🔵",
       "grade": "IG1"
@@ -97,7 +97,7 @@
       "date": "2026-10-23",
       "target_date": "2026-10-23",
       "is_stale": false,
-      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "超微電腦",
       "emoji": "⚡",
       "grade": "HY1"
@@ -110,7 +110,7 @@
       "date": "2026-10-23",
       "target_date": "2026-10-23",
       "is_stale": false,
-      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "安謀控股",
       "emoji": "💻",
       "grade": "IG1"
@@ -123,7 +123,7 @@
       "date": "2026-10-23",
       "target_date": "2026-10-23",
       "is_stale": false,
-      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "source": "yahoo_daily:query2.finance.yahoo.com",
       "name": "特斯拉",
       "emoji": "🚗",
       "grade": "IG3"
@@ -136,5 +136,170 @@
     "has_stale": false,
     "has_missing": false,
     "all_same_day": true
+  },
+  "markets_ext": {
+    "indices": {
+      "twii": {
+        "value": 46041.4297,
+        "prev": 46887.7695,
+        "chg_abs": -846.339844,
+        "chg_pct": -1.805,
+        "date": "2026-10-22",
+        "target_date": "2026-10-23",
+        "is_stale": true,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "fallback_reason": "target_date_unavailable",
+        "name": "台股加權",
+        "symbol": "^TWII"
+      },
+      "n225": {
+        "value": 62693.1602,
+        "prev": 62907.8398,
+        "chg_abs": -214.679688,
+        "chg_pct": -0.3413,
+        "date": "2026-10-23",
+        "target_date": "2026-10-23",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "日經 225",
+        "symbol": "^N225"
+      },
+      "kospi": {
+        "value": 5550.2998,
+        "prev": 5533.77,
+        "chg_abs": 16.529785,
+        "chg_pct": 0.2987,
+        "date": "2026-10-23",
+        "target_date": "2026-10-23",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "韓國 KOSPI",
+        "symbol": "^KS11"
+      },
+      "hsi": {
+        "value": 23093.3691,
+        "prev": 22934.6797,
+        "chg_abs": 158.689453,
+        "chg_pct": 0.6919,
+        "date": "2026-10-23",
+        "target_date": "2026-10-23",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "香港恒生",
+        "symbol": "^HSI"
+      },
+      "sse": {
+        "value": 3690.4751,
+        "prev": 3658.0259,
+        "chg_abs": 32.449219,
+        "chg_pct": 0.8871,
+        "date": "2026-10-23",
+        "target_date": "2026-10-23",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "上海綜合",
+        "symbol": "000001.SS"
+      },
+      "spx": {
+        "value": 7623.6802,
+        "prev": 7663.4302,
+        "chg_abs": -39.75,
+        "chg_pct": -0.5187,
+        "date": "2026-10-23",
+        "target_date": "2026-10-23",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "S&P 500",
+        "symbol": "^GSPC"
+      },
+      "ixic": {
+        "value": 25955.3398,
+        "prev": 26008.8594,
+        "chg_abs": -53.519531,
+        "chg_pct": -0.2058,
+        "date": "2026-10-23",
+        "target_date": "2026-10-23",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "NASDAQ 綜合",
+        "symbol": "^IXIC"
+      }
+    },
+    "fx": {
+      "usdtwd": {
+        "value": 32.597,
+        "prev": 32.57,
+        "chg_abs": 0.027,
+        "chg_pct": 0.0829,
+        "date": "2026-10-23",
+        "target_date": "2026-10-23",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "美元兌台幣",
+        "symbol": "TWD=X"
+      },
+      "usdhkd": {
+        "value": 7.8362,
+        "prev": 7.8413,
+        "chg_abs": -0.0051,
+        "chg_pct": -0.065,
+        "date": "2026-10-23",
+        "target_date": "2026-10-23",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "美元兌港幣",
+        "symbol": "HKD=X"
+      },
+      "usdjpy": {
+        "value": 156.494,
+        "prev": 156.814,
+        "chg_abs": -0.319992,
+        "chg_pct": -0.2041,
+        "date": "2026-10-23",
+        "target_date": "2026-10-23",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "美元兌日圓",
+        "symbol": "JPY=X"
+      },
+      "audusd": {
+        "value": 0.702,
+        "prev": 0.7029,
+        "chg_abs": -0.00095,
+        "chg_pct": -0.1351,
+        "date": "2026-10-23",
+        "target_date": "2026-10-23",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "澳幣兌美元",
+        "symbol": "AUDUSD=X"
+      }
+    },
+    "credit": {
+      "hy_oas": {
+        "value": 340.0,
+        "prev": 327.0,
+        "chg_abs": 13.0,
+        "chg_pct": 3.9755,
+        "date": "2026-10-22",
+        "target_date": "2026-10-23",
+        "is_stale": true,
+        "source": "fred_api",
+        "unit": "bp",
+        "fallback_reason": "target_date_unavailable",
+        "name": "美國高收益債利差",
+        "symbol": "FRED:BAMLH0A0HYM2"
+      }
+    },
+    "quality": {
+      "target_date": "2026-10-23",
+      "stale_items": [
+        "twii",
+        "hy_oas"
+      ],
+      "missing_items": [],
+      "has_stale": true,
+      "has_missing": false
+    }
   }
 }

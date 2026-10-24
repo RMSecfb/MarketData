@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-24T10:08:07.693136+00:00",
-  "date": "2026-10-24",
+  "generated_at": "2026-10-24T23:17:55.856320+00:00",
+  "date": "2026-10-25",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -8,156 +8,40 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 49
+      "count": 32
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 48
+      "count": 30
     },
     {
       "name": "Google News 市場",
       "ok": true,
-      "count": 97
+      "count": 98
     },
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 25
+      "count": 31
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 42
+      "count": 35
     },
     {
       "name": "CNBC",
       "ok": true,
-      "count": 30
+      "count": 17
     },
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 11
+      "count": 7
     }
   ],
-  "status": "ok",
-  "note": "",
-  "items": [
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "韓國央行示意進入高利率時代",
-      "summary": "韓國央行暗示將進入高利率時代，可能調升政策利率。",
-      "sources": [
-        {
-          "title": "South Korea's central bank signals shift to high-rate era",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPekc5ODRTSHFEbjRWbi10ZkF2VHBtMmpZNTNnbUItZHlzYkswLW1iTnl0UDlIN1lEME1XbFlLdGFJNlFlYVg1NWplZllNT0pTekIxTzVOLWJ4cTVhMDJGZUJwem05UUFJWHpzaWZSaGhIUlJRRHEyb2JRXzFvUHdTZXFPMmxvdGpfdjlPWDNsN0FCanFfTzhpX1NnallJVGlSb1lKU3Fad210UHFYRjJjZGxn?oc=5",
-          "source": "IntelliNews",
-          "published": "2026-10-24T05:23:21+00:00"
-        }
-      ]
-    },
-    {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "10年期美債收益率回落至5%",
-      "summary": "10年期美國國債收益率本週回落至5%，投資人因AI憂慮尋求避險。",
-      "sources": [
-        {
-          "title": "10-year Treasury yield drops back to 5% this week as investors seek cover from AI worries",
-          "url": "https://www.cnbc.com/2026/10/23/bonds-yields-us-treasurys.html",
-          "source": "CNBC",
-          "published": "2026-10-23T20:20:58+00:00"
-        }
-      ]
-    },
-    {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "法國債務危機：評等持平、債券上漲、歐元走弱",
-      "summary": "法國信用評等維持，債券殖利率因抗議上升，歐元因債務憂慮走弱。",
-      "sources": [
-        {
-          "title": "Moody's holds steady on France's credit rating as country grapples with turmoil and higher yields",
-          "url": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
-          "source": "CNBC",
-          "published": "2026-10-23T22:49:42+00:00"
-        },
-        {
-          "title": "U.S. Treasury Yields Turn Higher With Oil; French Bond Yields Rise on Protests",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSk1wWWp6WG1vZjdfYjZXX1hRU0lPVEl6WnVGbkozSXB5eTU5UHN2aG9nRHRpc1VMNlI5eF92YXNZNTFUOGFBMnk1anY0cUxFcG5YTTF0NFRhaGZ0VjkwbjNETmpiWkVXUHlNMmZJV014MlJ2LXRKZWlmS3E1N21wZHdnUXZybnJBRzlVSmdwUQ?oc=5",
-          "source": "WSJ",
-          "published": "2026-10-24T05:52:31+00:00"
-        },
-        {
-          "title": "Euro Slips on French Debt Worries as Yen Posts Best Week Since Early September",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ObTRDVUlCQTBvWEVQZUg2R0JBTUwxZkQtSHdKblVCUnV1Uk9EMW5GMnF0ZkR3eUZtNHB3X1A5VDZPT3hYNmVpd1lkNjFkMHNoaVdkM2RISk9HMGQ4MlFqNk51aGNNV3J6UTBmRXNwSGs0b1R5dWc?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-10-23T18:16:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "JetBlue債權人聘顧問 股債大跌",
-      "summary": "JetBlue債權人委託顧問處理，該公司股價與債券同步下跌。",
-      "sources": [
-        {
-          "title": "Exclusive | JetBlue Creditors Hire Advisers as Airline’s Shares, Bonds Sink",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbGNXMUZPOXJzRVEySm1hY2trdEJ5MGhJWlN0eUlPLU11WEZSTlJ5WG16TFdLQjg2aU43bDZRakRBYXJTb2hKZ3pyQmRBNFBfLUx0Mlh5UDZDN1JjWHF0alUyamwyVEt2bExqZjN0VW81NjYtNnlwLUpyTTZSdHRHWU9GNFVCTHhHSnNjZTRVcHhTTnFiQ1MwZk54MnRpUzVnSDlXZG1Dc0RUMkpEb2lPY2JNcnpIZFk?oc=5",
-          "source": "WSJ",
-          "published": "2026-10-24T02:35:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "fx",
-      "market_name": "匯市",
-      "title": "美元兌日圓跌破156",
-      "summary": "美元兌日圓跌至156區間，突破先前的158日圓僵局。",
-      "sources": [
-        {
-          "title": "Dollar-yen slides into 156 range: Why the 158-yen stalemate broke even as Brent crude tops $116",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5iOUZQN2kzRmJKeVh2THZKR0RnMkcxbDhKTU1VTW5vNExSVEV2cFF3SjRqQTJYdlgweTVYSzhmMDZXNjVLM3dFUHdJU3FmLTBVb25CMjlmWUItRHVCZjNUVU1jMFB6ZjhuMU1VVUdpLXB6clN4T1E?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-10-24T03:25:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "美國解除部分加國關稅",
-      "summary": "美國白宮取消部分對加拿大商品的關稅，影響雙邊貿易。",
-      "sources": [
-        {
-          "title": "White House lifts tariffs on some Canadian goods as midterm elections loom",
-          "url": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o?at_medium=RSS&at_campaign=rss",
-          "source": "BBC Business",
-          "published": "2026-10-24T00:36:47+00:00"
-        }
-      ]
-    },
-    {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "台積電強財報 股價卻下跌",
-      "summary": "台積電公布強勁財報，但外媒指出股價仍出現下跌。",
-      "sources": [
-        {
-          "title": "台積電繳超強財報股價卻下跌？外媒給出答案",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9GYXBhLVdodmk2M2RxYnAwVURzNk1NaGRfakd5MENlaVFqZWZyeGEwbThzX1VkV3JldUxVRU5SWmhHTUMyVW1XOFM2eTZtdExTOVM1YmFfUExNRG9Jd1ZB0gFkQVVfeXFMUDBaeWdoZFVyNjBmeEZhaUFUdUs2Um5hVVhCSHpNMVhwR1N5WVBJbVh3YmRvNWtYVS1TWjdEekNUakh4ZGxFSW5OUkszeEpwZFd5NUd4Z0hQMjJ3Wk5qVGktRnEwYg?oc=5",
-          "source": "自由財經",
-          "published": "2026-10-24T06:34:00+00:00"
-        }
-      ]
-    }
-  ],
-  "usage": {
-    "prompt_tokens": 2265,
-    "completion_tokens": 1960,
-    "total_tokens": 4225
-  }
+  "status": "llm_error",
+  "note": "模型呼叫失敗，今日不產生摘要",
+  "items": []
 }

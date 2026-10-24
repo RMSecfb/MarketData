@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-10-24T23:17:55.856320+00:00",
+  "date": "2026-10-25",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 32
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 30
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 98
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 31
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 35
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 17
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 7
+    }
+  ],
+  "status": "llm_error",
+  "note": "模型呼叫失敗，今日不產生摘要",
+  "items": []
+}

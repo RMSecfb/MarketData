@@ -435,7 +435,24 @@ DATE 資料。
 
 * * *
 
-## 14. 使用目的與資料說明
+## 14. 每日國際重要新聞（風險管理中心用）
+
+`fetch_news.py` 由 `.github/workflows/world_news.yml` 每天台灣時間 07:17 執行，與市場資料完全分開：
+
+1. 從 Google News（商業、國際、市場、亞洲、台灣財經）、CNBC、BBC Business 的 RSS 收集過去 24 小時標題，去重後最多 70 則。
+2. 交給 Groq `openai/gpt-oss-120b` 挑出 5–8 則對債市、股市、匯市影響最大的事件，寫成繁體中文摘要。
+3. 每則摘要必須引用清單中真實存在的編號，對不上的整則丟棄；原文連結由程式依編號帶入。
+4. 寫入 `news/latest.json` 與 `news/world_news_YYYY-MM-DD.json`。
+
+需要在 repo 的 Settings → Secrets and variables → Actions 新增 `GROQ_API_KEY`。沒有金鑰或模型呼叫失敗時，仍會寫出 `status`（`no_key`、`llm_error`、`no_headlines`）且 `items` 為空，入口網站據此顯示今日摘要未產生，不會沿用舊摘要。
+
+Groq 免費方案的限額以帳號為單位、各模型分開計算。負面新聞整合中心使用 `openai/gpt-oss-20b`，本程式使用 `openai/gpt-oss-120b`，兩者不互相佔用額度。
+
+手動測試：Actions →「World News Summary Daily」→ Run workflow，勾選 dry_run 只會列印收集到的標題。
+
+* * *
+
+## 15. 使用目的與資料說明
 
 本系統供內部市場風險監控及管理參考使用。
 市場資料可能受到資料來源更新時間、交易日差異、第三方服務異常等因素影響。

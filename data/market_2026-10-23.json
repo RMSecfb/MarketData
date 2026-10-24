@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-10-24T00:35:42.053168+00:00",
+  "target_date": "2026-10-23",
+  "vix": {
+    "value": 19.45,
+    "prev": 19.03,
+    "chg_abs": 0.42,
+    "chg_pct": 2.207,
+    "date": "2026-10-23",
+    "target_date": "2026-10-23",
+    "is_stale": false,
+    "source": "yahoo_daily:query2.finance.yahoo.com"
+  },
+  "move": {
+    "value": 103.3123,
+    "prev": 106.84,
+    "chg_abs": -3.527695,
+    "chg_pct": -3.3018,
+    "date": "2026-10-23",
+    "target_date": "2026-10-23",
+    "is_stale": false,
+    "source": "yahoo_daily:query2.finance.yahoo.com"
+  },
+  "y2": {
+    "value": 4.69,
+    "prev": 4.65,
+    "chg_abs": 0.04,
+    "chg_pct": 0.8602,
+    "date": "2026-10-23",
+    "target_date": "2026-10-23",
+    "is_stale": false,
+    "source": "treasury_gov"
+  },
+  "y10": {
+    "value": 5.0,
+    "prev": 4.96,
+    "chg_abs": 0.04,
+    "chg_pct": 0.8065,
+    "date": "2026-10-23",
+    "target_date": "2026-10-23",
+    "is_stale": false,
+    "source": "treasury_gov"
+  },
+  "y30": {
+    "value": 5.33,
+    "prev": 5.29,
+    "chg_abs": 0.04,
+    "chg_pct": 0.7561,
+    "date": "2026-10-23",
+    "target_date": "2026-10-23",
+    "is_stale": false,
+    "source": "treasury_gov"
+  },
+  "spread": 31.0,
+  "sox": {
+    "value": 10779.4639,
+    "prev": 10731.9805,
+    "chg_abs": 47.483398,
+    "chg_pct": 0.4424,
+    "date": "2026-10-23",
+    "target_date": "2026-10-23",
+    "is_stale": false,
+    "source": "yahoo_daily:query2.finance.yahoo.com"
+  },
+  "stocks": {
+    "NVDA": {
+      "value": 210.96,
+      "prev": 212.21,
+      "chg_abs": -1.25,
+      "chg_pct": -0.589,
+      "date": "2026-10-23",
+      "target_date": "2026-10-23",
+      "is_stale": false,
+      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "name": "輝達",
+      "emoji": "🟢",
+      "grade": "IG1"
+    },
+    "TSM": {
+      "value": 418.51,
+      "prev": 412.35,
+      "chg_abs": 6.160004,
+      "chg_pct": 1.4939,
+      "date": "2026-10-23",
+      "target_date": "2026-10-23",
+      "is_stale": false,
+      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "name": "台積電",
+      "emoji": "🔵",
+      "grade": "IG1"
+    },
+    "SMCI": {
+      "value": 32.94,
+      "prev": 33.72,
+      "chg_abs": -0.780003,
+      "chg_pct": -2.3132,
+      "date": "2026-10-23",
+      "target_date": "2026-10-23",
+      "is_stale": false,
+      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "name": "超微電腦",
+      "emoji": "⚡",
+      "grade": "HY1"
+    },
+    "ARM": {
+      "value": 210.33,
+      "prev": 210.1,
+      "chg_abs": 0.229996,
+      "chg_pct": 0.1095,
+      "date": "2026-10-23",
+      "target_date": "2026-10-23",
+      "is_stale": false,
+      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "name": "安謀控股",
+      "emoji": "💻",
+      "grade": "IG1"
+    },
+    "TSLA": {
+      "value": 372.22,
+      "prev": 374.58,
+      "chg_abs": -2.359985,
+      "chg_pct": -0.63,
+      "date": "2026-10-23",
+      "target_date": "2026-10-23",
+      "is_stale": false,
+      "source": "yahoo_intraday_5m:query2.finance.yahoo.com",
+      "name": "特斯拉",
+      "emoji": "🚗",
+      "grade": "IG3"
+    }
+  },
+  "data_quality": {
+    "target_date": "2026-10-23",
+    "stale_items": [],
+    "missing_items": [],
+    "has_stale": false,
+    "has_missing": false,
+    "all_same_day": true
+  }
+}

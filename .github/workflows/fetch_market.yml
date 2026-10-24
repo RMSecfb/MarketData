@@ -18,6 +18,11 @@ on:
         description: '補抓特定日期 (YYYY-MM-DD)，留空則自動抓前一個 NYSE 交易日'
         required: false
         default: ''
+      respect_complete:
+        description: '外部定時觸發用：若當日必要資料已齊全就跳過（同自動排程）'
+        type: boolean
+        required: false
+        default: false
 
 concurrency:
   group: market-data-daily
@@ -87,8 +92,9 @@ jobs:
         run: |
           TARGET="${{ steps.target.outputs.target }}"
 
-          # 手動執行一律重新抓。
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          # 手動執行一律重新抓；Cloudflare 定時觸發（respect_complete）比照自動排程。
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && \
+             [ "${{ github.event.inputs.respect_complete }}" != "true" ]; then
             echo "complete=false" >> "$GITHUB_OUTPUT"
             echo "ℹ️ Manual run — force fetch."
             exit 0

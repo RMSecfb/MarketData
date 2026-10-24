@@ -11,6 +11,11 @@ on:
         type: boolean
         required: false
         default: false
+      skip_if_done:
+        description: '外部定時觸發用：今日摘要已成功產生就跳過'
+        type: boolean
+        required: false
+        default: false
 
 concurrency:
   group: world-news-daily
@@ -40,6 +45,8 @@ jobs:
       - name: Collect headlines and summarize
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          # 自動排程與 Cloudflare 定時觸發：今日已成功就不重做，避免早上的摘要被晚到的排程覆蓋
+          SKIP_IF_DONE: ${{ (github.event_name == 'schedule' || github.event.inputs.skip_if_done == 'true') && 'true' || 'false' }}
         run: |
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             python fetch_news.py --dry-run

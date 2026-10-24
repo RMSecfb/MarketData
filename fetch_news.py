@@ -249,6 +249,16 @@ def write(result):
 def main():
     dry = "--dry-run" in sys.argv
     now_utc = datetime.now(timezone.utc)
+    today = now_utc.astimezone(TPE).strftime("%Y-%m-%d")
+    if not dry and os.environ.get("SKIP_IF_DONE") == "true":
+        done = NEWS_DIR / f"world_news_{today}.json"
+        try:
+            if json.loads(done.read_text(encoding="utf-8")).get("status") == "ok":
+                print(f"ℹ️ {today} 的摘要已成功產生，本次略過")
+                gh_notice("今日摘要", [f"{today} 已產生，本次略過"])
+                return
+        except (OSError, ValueError):
+            pass
     print("🕒 Taiwan time:", now_utc.astimezone(TPE).isoformat())
     print("📡 收集新聞標題")
     headlines, feeds = collect(now_utc)

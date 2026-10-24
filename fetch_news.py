@@ -49,11 +49,19 @@ HEADERS = {
     "Accept": "application/rss+xml,application/xml,text/xml,*/*",
 }
 
+# 例行報價表、投資推薦文等不屬於「事件」的標題，在交給模型前先排除
+NOISE = re.compile(
+    r"(exchange|currency|open market|interbank) rates?\b.*\b(today|on selected date)|\brates? today\b|"
+    r"\bprices? today\b|price in (pakistan|india)|\bRs ?\d|horoscope|lottery|"
+    r"stocks? (to|worth) (buy|consider|watch)|best stocks|\d+ (unloved |top )?stocks (to|of)|今日匯率|今日金價",
+    re.I,
+)
+
 GN = "https://news.google.com/rss"
 FEEDS = [
     ("Google News 商業", f"{GN}/headlines/section/topic/BUSINESS?hl=en-US&gl=US&ceid=US:en"),
     ("Google News 國際", f"{GN}/headlines/section/topic/WORLD?hl=en-US&gl=US&ceid=US:en"),
-    ("Google News 市場", f"{GN}/search?q=(stocks+OR+bonds+OR+%22Treasury+yields%22+OR+%22Federal+Reserve%22+OR+dollar)+when:1d&hl=en-US&gl=US&ceid=US:en"),
+    ("Google News 市場", f"{GN}/search?q=(%22stock+market%22+OR+%22bond+market%22+OR+%22Treasury+yields%22+OR+%22Federal+Reserve%22+OR+%22central+bank%22+OR+%22currency+markets%22)+when:1d&hl=en-US&gl=US&ceid=US:en"),
     ("Google News 亞洲", f"{GN}/search?q=(%22Asian+markets%22+OR+Nikkei+OR+%22Hang+Seng%22+OR+yuan+OR+%22Bank+of+Japan%22+OR+Taiwan+dollar)+when:1d&hl=en-US&gl=US&ceid=US:en"),
     ("Google News 台灣財經", f"{GN}/headlines/section/topic/BUSINESS?hl=zh-TW&gl=TW&ceid=TW:zh-Hant"),
     ("CNBC", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
@@ -115,7 +123,8 @@ def collect(now_utc):
             r = requests.get(url, headers=HEADERS, timeout=20)
             r.raise_for_status()
             items = parse_feed(r.content, name)
-            fresh = [x for x in items if x["published"] and cutoff <= x["published"] <= now_utc + timedelta(hours=1)]
+            fresh = [x for x in items if x["published"] and cutoff <= x["published"] <= now_utc + timedelta(hours=1)
+                     and not NOISE.search(x["title"])]
             fresh.sort(key=lambda x: x["published"], reverse=True)
             per_feed.append(fresh[:MAX_PER_FEED])
             status.append({"name": name, "ok": True, "count": len(fresh)})
@@ -141,12 +150,15 @@ def collect(now_utc):
 
 
 SYSTEM_PROMPT = (
-    "你是台灣一家證券公司風險管理部的市場助理。使用者會給你一份編號的國際新聞標題清單。"
+    "你是台灣一家證券公司風險管理部的市場助理，讀者是風控主管。使用者會給你一份編號的國際新聞標題清單。"
     "請只根據清單中的標題內容判斷，不要加入清單沒有的事實、數字或推測。"
-    f"挑出 {MIN_ITEMS} 到 {MAX_ITEMS} 則對全球債市、股市、匯市影響最大的事件；"
-    "同一事件的多則標題請合併成一則並列出所有相關編號。"
-    "優先順序：央行與利率、重大經濟數據、地緣政治與政策、大型企業或金融機構信用事件、主要貨幣大幅波動。"
-    "略過純個股財報細節、生活、體育、娛樂新聞。"
+    f"挑出最多 {MAX_ITEMS} 則對全球債市、股市、匯市影響最大、而且是具體事件的新聞；寧可少列，也不要湊數。"
+    "讀者關心的市場依序為：美國、台灣、中國、香港、日本、韓國、歐洲主要國家。"
+    "優先順序：央行利率決策與官員重要談話、重大經濟數據、地緣政治與貿易政策、"
+    "大型企業或金融機構的信用事件（違約、破產、評等調整、債權人行動）、主要貨幣或殖利率的大幅波動。"
+    "同一國家或同一事件的多則標題（例如同一場動盪與其後的評等消息）必須合併成一則，列出所有相關編號。"
+    "排除：例行性匯率或金價報價表、小型經濟體的日常報價、選股推薦或投資建議文章、"
+    "沒有具體事件的評論或觀點文章、生活、社會、犯罪、體育、娛樂新聞。"
     "輸出 JSON 物件，格式為 {\"items\": [{\"ids\": [編號], \"market\": \"bond|equity|fx|macro\", "
     "\"title\": \"繁體中文標題，20 字以內\", \"summary\": \"繁體中文摘要，1 到 2 句，60 字以內，只陳述標題中的事實\"}]}。"
     "依重要性由高到低排列。只輸出 JSON。"
@@ -163,7 +175,7 @@ def call_groq(headlines, api_key):
         ],
         "temperature": 0.2,
         "max_completion_tokens": 2500,
-        "reasoning_effort": "low",
+        "reasoning_effort": "medium",
         "response_format": {"type": "json_object"},
     }
     r = requests.post(GROQ_URL, json=body, timeout=90,

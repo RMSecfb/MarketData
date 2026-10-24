@@ -64,5 +64,9 @@
     "_說明_refresh": "頁面自動重新讀取 JSON 的間隔（毫秒）。3600000 = 1小時",
     "auto_refresh_ms": 3600000
   },
-  "recipients": []
+  "recipients": [],
+  "_說明_panel_thresholds": "風險管理中心大螢幕的延伸指標門檻（L1／L2）。type：above 高於、below 低於、pct_drop 當日跌幅。放在 thresholds 之外，儀表板設定頁儲存時才不會被清掉。",
+  "panel_thresholds": {
+    "usdtwd": { "type": "below", "l1": 30, "l2": 29 }
+  }
 }

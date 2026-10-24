@@ -19,10 +19,17 @@ Fetch order for Yahoo symbols:
 
 Treasury yields:
 - Treasury.gov official XML; latest confirmed row <= TARGET
+
+Extended indicators (markets_ext):
+- Asia/US equity indices, FX and US high-yield OAS for the Risk Intelligence Center.
+- Stored under data["markets_ext"] with their own quality block.
+- NOT part of checks_for()/validate_data(): a missing or stale extended item
+  never blocks writing the day's JSON and never triggers the 06:30/07:00 retry.
 """
 
 import json
 import math
+import os
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -394,6 +401,142 @@ def treasury_get(target_date):
         return entry
     return build(1), build(2), build(3)
 
+# ── 延伸指標（markets_ext）────────────────────────────────
+# 供風險管理中心大螢幕使用。與主要監控項目分開：抓不到只標示該項，
+# 不影響主要資料寫入，也不納入 data_quality 與排程重抓判斷。
+EXT_SYMBOLS = {
+    "indices": [
+        ("twii", "^TWII", "台股加權"),
+        ("n225", "^N225", "日經 225"),
+        ("kospi", "^KS11", "韓國 KOSPI"),
+        ("hsi", "^HSI", "香港恒生"),
+        ("sse", "000001.SS", "上海綜合"),
+        ("spx", "^GSPC", "S&P 500"),
+        ("ixic", "^IXIC", "NASDAQ 綜合"),
+    ],
+    "fx": [
+        ("usdtwd", "TWD=X", "美元兌台幣"),
+        ("usdhkd", "HKD=X", "美元兌港幣"),
+        ("usdjpy", "JPY=X", "美元兌日圓"),
+        ("audusd", "AUDUSD=X", "澳幣兌美元"),
+    ],
+}
+FRED_SERIES = {
+    "hy_oas": ("BAMLH0A0HYM2", "美國高收益債利差"),
+}
+
+def ext_market_get(symbol, target_date):
+    """延伸指標只用日線來源；美股盤中 5 分鐘線的交易時段不適用亞洲指數與外匯。"""
+    for getter in (yahoo_daily_get, yfinance_history_get):
+        result = getter(symbol, target_date)
+        if result:
+            return result
+    for getter in (yahoo_daily_get, yfinance_history_get):
+        result = getter(symbol, target_date, allow_stale=True)
+        if result:
+            result["fallback_reason"] = "target_date_unavailable"
+            return result
+    return None
+
+def fred_get(series_id, target_date):
+    """FRED 序列（百分比）轉為 bp。有 FRED_KEY 用官方 API，否則用公開 CSV。"""
+    rows = []
+    key = os.environ.get("FRED_KEY", "").strip()
+    try:
+        if key:
+            response = requests.get(
+                "https://api.stlouisfed.org/fred/series/observations",
+                params={
+                    "series_id": series_id,
+                    "api_key": key,
+                    "file_type": "json",
+                    "sort_order": "desc",
+                    "limit": 15,
+                    "observation_end": target_date,
+                },
+                timeout=20,
+            )
+            response.raise_for_status()
+            for obs in response.json().get("observations", []):
+                if is_valid_number(obs.get("value")):
+                    rows.append((obs["date"], float(obs["value"])))
+            source = "fred_api"
+        else:
+            start = (
+                datetime.strptime(target_date, "%Y-%m-%d") - timedelta(days=30)
+            ).strftime("%Y-%m-%d")
+            response = requests.get(
+                "https://fred.stlouisfed.org/graph/fredgraph.csv",
+                params={"id": series_id, "cosd": start, "coed": target_date},
+                headers=HEADERS,
+                timeout=20,
+            )
+            response.raise_for_status()
+            for line in response.text.splitlines()[1:]:
+                obs_date, _, value = line.partition(",")
+                if is_valid_number(value):
+                    rows.append((obs_date.strip(), float(value)))
+            source = "fred_csv"
+    except Exception as exc:
+        print(f"  ⚠ FRED {series_id}: {type(exc).__name__}: {exc}")
+        return None
+    rows = sorted((r for r in rows if r[0] <= target_date), reverse=True)
+    if not rows:
+        return None
+    curr = rows[0]
+    prev = rows[1] if len(rows) > 1 else None
+    entry = make_entry(
+        curr[1] * 100, prev[1] * 100 if prev else None, curr[0], source, target_date
+    )
+    if entry:
+        entry["unit"] = "bp"
+        if entry["is_stale"]:
+            entry["fallback_reason"] = "target_date_unavailable"
+        print(f"  {'⚠' if entry['is_stale'] else '✅'} {series_id}: {entry['value']}bp ({entry['date']})")
+    return entry
+
+def fetch_ext(target_date):
+    ext = {"indices": {}, "fx": {}, "credit": {}}
+    stale, missing = [], []
+
+    def put(group, key, name, symbol, entry):
+        if entry:
+            entry.update({"name": name, "symbol": symbol})
+            if entry.get("is_stale"):
+                stale.append(key)
+        else:
+            missing.append(key)
+        ext[group][key] = entry
+
+    for group, items in EXT_SYMBOLS.items():
+        for key, symbol, name in items:
+            print(f"\n📡 [延伸] {name} {symbol}")
+            try:
+                entry = ext_market_get(symbol, target_date)
+            except Exception as exc:
+                print(f"  ⚠ {symbol}: {type(exc).__name__}: {exc}")
+                entry = None
+            put(group, key, name, symbol, entry)
+            time.sleep(0.3)
+    for key, (series_id, name) in FRED_SERIES.items():
+        print(f"\n📡 [延伸] {name} FRED {series_id}")
+        try:
+            entry = fred_get(series_id, target_date)
+        except Exception as exc:
+            print(f"  ⚠ FRED {series_id}: {type(exc).__name__}: {exc}")
+            entry = None
+        put("credit", key, name, f"FRED:{series_id}", entry)
+
+    ext["quality"] = {
+        "target_date": target_date,
+        "stale_items": stale,
+        "missing_items": missing,
+        "has_stale": bool(stale),
+        "has_missing": bool(missing),
+    }
+    print(f"\n📊 延伸指標：非同日 {len(stale)} 項、缺漏 {len(missing)} 項（不影響主要資料）")
+    return ext
+
 def fetch_all(target_date):
     data = {
         "generated_at": datetime.now(ZoneInfo("UTC")).isoformat(),
@@ -565,5 +708,9 @@ if __name__ == "__main__":
     if not validate_data(data, TARGET):
         print("\n❌ DATA_UNAVAILABLE")
         sys.exit(2)
+    try:
+        data["markets_ext"] = fetch_ext(TARGET)
+    except Exception as exc:
+        print(f"⚠️ 延伸指標抓取失敗，不影響主要資料：{type(exc).__name__}: {exc}")
     write_data(data, TARGET)
     print_summary(data)

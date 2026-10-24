@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T10:06:33.016741+00:00",
+  "generated_at": "2026-10-24T10:08:07.693136+00:00",
   "date": "2026-10-24",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
@@ -13,22 +13,22 @@
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 46
+      "count": 48
     },
     {
       "name": "Google News 市場",
       "ok": true,
-      "count": 100
+      "count": 97
     },
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 27
+      "count": 25
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 41
+      "count": 42
     },
     {
       "name": "CNBC",
@@ -45,10 +45,24 @@
   "note": "",
   "items": [
     {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "韓國央行示意進入高利率時代",
+      "summary": "韓國央行暗示將進入高利率時代，可能調升政策利率。",
+      "sources": [
+        {
+          "title": "South Korea's central bank signals shift to high-rate era",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPekc5ODRTSHFEbjRWbi10ZkF2VHBtMmpZNTNnbUItZHlzYkswLW1iTnl0UDlIN1lEME1XbFlLdGFJNlFlYVg1NWplZllNT0pTekIxTzVOLWJ4cTVhMDJGZUJwem05UUFJWHpzaWZSaGhIUlJRRHEyb2JRXzFvUHdTZXFPMmxvdGpfdjlPWDNsN0FCanFfTzhpX1NnallJVGlSb1lKU3Fad210UHFYRjJjZGxn?oc=5",
+          "source": "IntelliNews",
+          "published": "2026-10-24T05:23:21+00:00"
+        }
+      ]
+    },
+    {
       "market": "bond",
       "market_name": "債市",
       "title": "10年期美債收益率回落至5%",
-      "summary": "10年期美國國債收益率本週跌回5%，投資人因AI風險尋求避險。",
+      "summary": "10年期美國國債收益率本週回落至5%，投資人因AI憂慮尋求避險。",
       "sources": [
         {
           "title": "10-year Treasury yield drops back to 5% this week as investors seek cover from AI worries",
@@ -59,10 +73,50 @@
       ]
     },
     {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "法國債務危機：評等持平、債券上漲、歐元走弱",
+      "summary": "法國信用評等維持，債券殖利率因抗議上升，歐元因債務憂慮走弱。",
+      "sources": [
+        {
+          "title": "Moody's holds steady on France's credit rating as country grapples with turmoil and higher yields",
+          "url": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
+          "source": "CNBC",
+          "published": "2026-10-23T22:49:42+00:00"
+        },
+        {
+          "title": "U.S. Treasury Yields Turn Higher With Oil; French Bond Yields Rise on Protests",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSk1wWWp6WG1vZjdfYjZXX1hRU0lPVEl6WnVGbkozSXB5eTU5UHN2aG9nRHRpc1VMNlI5eF92YXNZNTFUOGFBMnk1anY0cUxFcG5YTTF0NFRhaGZ0VjkwbjNETmpiWkVXUHlNMmZJV014MlJ2LXRKZWlmS3E1N21wZHdnUXZybnJBRzlVSmdwUQ?oc=5",
+          "source": "WSJ",
+          "published": "2026-10-24T05:52:31+00:00"
+        },
+        {
+          "title": "Euro Slips on French Debt Worries as Yen Posts Best Week Since Early September",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ObTRDVUlCQTBvWEVQZUg2R0JBTUwxZkQtSHdKblVCUnV1Uk9EMW5GMnF0ZkR3eUZtNHB3X1A5VDZPT3hYNmVpd1lkNjFkMHNoaVdkM2RISk9HMGQ4MlFqNk51aGNNV3J6UTBmRXNwSGs0b1R5dWc?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-10-23T18:16:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "JetBlue債權人聘顧問 股債大跌",
+      "summary": "JetBlue債權人委託顧問處理，該公司股價與債券同步下跌。",
+      "sources": [
+        {
+          "title": "Exclusive | JetBlue Creditors Hire Advisers as Airline’s Shares, Bonds Sink",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbGNXMUZPOXJzRVEySm1hY2trdEJ5MGhJWlN0eUlPLU11WEZSTlJ5WG16TFdLQjg2aU43bDZRakRBYXJTb2hKZ3pyQmRBNFBfLUx0Mlh5UDZDN1JjWHF0alUyamwyVEt2bExqZjN0VW81NjYtNnlwLUpyTTZSdHRHWU9GNFVCTHhHSnNjZTRVcHhTTnFiQ1MwZk54MnRpUzVnSDlXZG1Dc0RUMkpEb2lPY2JNcnpIZFk?oc=5",
+          "source": "WSJ",
+          "published": "2026-10-24T02:35:00+00:00"
+        }
+      ]
+    },
+    {
       "market": "fx",
       "market_name": "匯市",
-      "title": "美元兌日圓跌至156區間",
-      "summary": "美元對日圓匯率滑落至156左右，因布倫特油價突破116美元。",
+      "title": "美元兌日圓跌破156",
+      "summary": "美元兌日圓跌至156區間，突破先前的158日圓僵局。",
       "sources": [
         {
           "title": "Dollar-yen slides into 156 range: Why the 158-yen stalemate broke even as Brent crude tops $116",
@@ -73,85 +127,37 @@
       ]
     },
     {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "法國騷亂衝擊股市與債市",
-      "summary": "法國街頭騷亂波及3000家店鋪，LVMH、Kering 股價下跌，法國債券殖利率升至2002年最高。",
-      "sources": [
-        {
-          "title": "LVMH, Kering and Hermès shares fall as France riots damage 3,000 shops and bond yields surge to 2002 highs",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVVhfTkd1UzBZWGxSOVRKTDN6TUJqYmc4TlllcUJMQnd2OHFHT1VSWjlueEtkSEdINmwxRG9aMVVYME5XeXNYNjBtelhySVdVUlBhVXZYQnVHWFpRM3BQbERXR0ZkaC1Vc3F2Y0Zac1RSLWFHSlhxUzdqcnZfeG1fU2VFaXdEZGNGZHJBbXF2WlUxYzVpNHA0NQ?oc=5",
-          "source": "Yahoo Finance",
-          "published": "2026-10-24T09:15:00+00:00"
-        },
-        {
-          "title": "France riots damage 3,000 shops, sink LVMH and Kering shares as bond yields hit highest level since 2002",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWEdUZEZHS2ZXdkJEc1liTkl5UWYwb2pRMkVfTUNhd0xHRkd2NFN5bTJYQlptdVZjN3lBandLYkVud1U1UEd0d1ZxYVZEcUVIZmphRW5WUS1EU2VDSXpnM09SdkhTdTVLT1NwX2lfMkpZd0IyQm9UYzZHS2pucExtNHhPVDk5LWZwSjhxbA?oc=5",
-          "source": "MoneyWise.com",
-          "published": "2026-10-24T08:46:01+00:00"
-        }
-      ]
-    },
-    {
-      "market": "fx",
-      "market_name": "匯市",
-      "title": "巴基斯坦盧比兌美元報280",
-      "summary": "巴基斯坦官方匯率顯示美元兌盧比為280，英鎊兌盧比為375。",
-      "sources": [
-        {
-          "title": "Pakistan Currency Rates Today: US Dollar at Rs280, Pound Sterling Hits Rs375",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdXJGNHFKTXd3aWNveVFlWEZKelB6QzRrQjF0dl83Z1VVd29QTEc1TjIyei1uNWVJUXNrTUhsNEhFcFhMclFpbnVuVlhrVFlDbnU5RkJKay1RUE1TQVpGWmhQWDNfcXAzNFpQVEJXM0hGMU12dDBWSW9nTThuMHVaQXlCbFM2d1M0X2tEWDBSVmpza1hLNmdhVA?oc=5",
-          "source": "MM News",
-          "published": "2026-10-24T06:25:15+00:00"
-        }
-      ]
-    },
-    {
       "market": "macro",
       "market_name": "總經",
-      "title": "俄央行公布選定匯率",
-      "summary": "俄羅斯央行發布當日選定匯率，作為官方參考。",
+      "title": "美國解除部分加國關稅",
+      "summary": "美國白宮取消部分對加拿大商品的關稅，影響雙邊貿易。",
       "sources": [
         {
-          "title": "Official exchange rates on selected date | Bank of Russia",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5YcldQcEpOMEd0OGVlTzFTZnlKM2lYZ1JxQ2FvLUVUMDI2WnQ0bnk2SzlEV01pb2RKNW40WVJTTzNUTTdDeFJmSDFJN3pnZE5tS3QtakRR?oc=5",
-          "source": "Центральный Банк России",
-          "published": "2026-10-24T04:21:35+00:00"
+          "title": "White House lifts tariffs on some Canadian goods as midterm elections loom",
+          "url": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-10-24T00:36:47+00:00"
         }
       ]
     },
     {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "穆迪維持法國信用評等",
-      "summary": "穆迪在法國面臨動盪與殖利率上升的情況下，仍維持其信用評等不變。",
+      "market": "equity",
+      "market_name": "股市",
+      "title": "台積電強財報 股價卻下跌",
+      "summary": "台積電公布強勁財報，但外媒指出股價仍出現下跌。",
       "sources": [
         {
-          "title": "Moody's holds steady on France's credit rating as country grapples with turmoil and higher yields",
-          "url": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
-          "source": "CNBC",
-          "published": "2026-10-23T22:49:42+00:00"
-        }
-      ]
-    },
-    {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "投資者尋找債市機會",
-      "summary": "投資者開始在受創的債券市場中尋找投資機會。",
-      "sources": [
-        {
-          "title": "Investors are starting to find opportunities in the battered bond market",
-          "url": "https://www.cnbc.com/2026/10/23/investors-are-starting-to-find-opportunities-in-the-battered-bond-market.html",
-          "source": "CNBC",
-          "published": "2026-10-23T20:09:36+00:00"
+          "title": "台積電繳超強財報股價卻下跌？外媒給出答案",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9GYXBhLVdodmk2M2RxYnAwVURzNk1NaGRfakd5MENlaVFqZWZyeGEwbThzX1VkV3JldUxVRU5SWmhHTUMyVW1XOFM2eTZtdExTOVM1YmFfUExNRG9Jd1ZB0gFkQVVfeXFMUDBaeWdoZFVyNjBmeEZhaUFUdUs2Um5hVVhCSHpNMVhwR1N5WVBJbVh3YmRvNWtYVS1TWjdEekNUakh4ZGxFSW5OUkszeEpwZFd5NUd4Z0hQMjJ3Wk5qVGktRnEwYg?oc=5",
+          "source": "自由財經",
+          "published": "2026-10-24T06:34:00+00:00"
         }
       ]
     }
   ],
   "usage": {
-    "prompt_tokens": 2122,
-    "completion_tokens": 687,
-    "total_tokens": 2809
+    "prompt_tokens": 2265,
+    "completion_tokens": 1960,
+    "total_tokens": 4225
   }
 }

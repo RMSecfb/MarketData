@@ -297,7 +297,9 @@ def main():
         result["usage"] = {k: usage.get(k) for k in ("prompt_tokens", "completion_tokens", "total_tokens")}
     except Exception as exc:
         print(f"❌ 模型呼叫失敗：{type(exc).__name__}: {exc}")
-        result.update(status="llm_error", note="模型呼叫失敗，今日不產生摘要")
+        detail = re.sub(r"(Bearer|gsk_)\S+", "***", f"{type(exc).__name__}: {exc}")[:300]
+        result.update(status="llm_error", note="模型呼叫失敗，今日不產生摘要", error=detail)
+        gh_notice("今日摘要", ["模型呼叫失敗", detail])
         write(result)
         return
     if not items:

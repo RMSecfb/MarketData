@@ -1,0 +1,66 @@
+name: World News Summary Daily
+
+on:
+  schedule:
+    # GitHub cron 使用 UTC。台灣時間每天 07:17（市場資料 06:00–07:00 之後）。
+    - cron: '17 23 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '只收集標題並列印，不呼叫模型、不寫檔'
+        type: boolean
+        required: false
+        default: false
+
+concurrency:
+  group: world-news-daily
+  cancel-in-progress: false
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install "requests>=2.31.0"
+
+      - name: Collect headlines and summarize
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python fetch_news.py --dry-run
+          else
+            python fetch_news.py
+          fi
+
+      - name: Commit and push news
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add news/
+          if git diff --staged --quiet; then
+            echo "ℹ️ No news changes to commit."
+            exit 0
+          fi
+          git commit -m "📰 World news $(TZ=Asia/Taipei date +%F)"
+          # 市場資料排程可能同時推送，失敗時重新同步再推
+          for i in 1 2 3; do
+            git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep 5
+          done
+          exit 1

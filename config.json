@@ -67,6 +67,14 @@
   "recipients": [],
   "_說明_panel_thresholds": "風險管理中心大螢幕的延伸指標門檻（L1／L2）。type：above 高於、below 低於、pct_drop 當日跌幅。放在 thresholds 之外，儀表板設定頁儲存時才不會被清掉。",
   "panel_thresholds": {
-    "usdtwd": { "type": "below", "l1": 30, "l2": 29 }
+    "usdtwd": { "type": "below", "l1": 30, "l2": 29 },
+    "hy_oas": { "type": "above", "l1": 500, "l2": 700 },
+    "twii": { "type": "pct_drop", "l1": -3, "l2": -6 },
+    "n225": { "type": "pct_drop", "l1": -3, "l2": -6 },
+    "kospi": { "type": "pct_drop", "l1": -3, "l2": -6 },
+    "hsi": { "type": "pct_drop", "l1": -3, "l2": -6 },
+    "sse": { "type": "pct_drop", "l1": -3, "l2": -6 },
+    "spx": { "type": "pct_drop", "l1": -3, "l2": -6 },
+    "ixic": { "type": "pct_drop", "l1": -3, "l2": -6 }
   }
 }

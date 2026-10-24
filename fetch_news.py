@@ -25,6 +25,7 @@ import json
 import os
 import re
 import sys
+import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -178,8 +179,23 @@ def call_groq(headlines, api_key):
         "reasoning_effort": "medium",
         "response_format": {"type": "json_object"},
     }
-    r = requests.post(GROQ_URL, json=body, timeout=90,
-                      headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"})
+    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+    for attempt in range(1, 4):
+        try:
+            r = requests.post(GROQ_URL, json=body, timeout=120, headers=headers)
+        except requests.RequestException as exc:
+            if attempt == 3:
+                raise
+            print(f"  ⚠ Groq 第 {attempt} 次連線失敗：{type(exc).__name__}，30 秒後重試")
+            time.sleep(30)
+            continue
+        # 429 額度、5xx 服務忙碌屬暫時性錯誤，稍後重試
+        if (r.status_code == 429 or r.status_code >= 500) and attempt < 3:
+            wait = min(int(r.headers.get("retry-after", "30") or 30), 90)
+            print(f"  ⚠ Groq 第 {attempt} 次 HTTP {r.status_code}，{wait} 秒後重試")
+            time.sleep(wait)
+            continue
+        break
     if r.status_code >= 400:
         raise RuntimeError(f"Groq HTTP {r.status_code}: {r.text[:300]}")
     payload = r.json()

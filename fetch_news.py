@@ -219,6 +219,13 @@ def validate(content, headlines):
     return items
 
 
+def gh_notice(title, lines):
+    """在 GitHub Actions 執行頁顯示摘要通知（本機執行時不輸出）。"""
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        msg = "%0A".join(str(x).replace("%", "%25").replace("\r", "").replace("\n", " ") for x in lines)
+        print(f"::notice title={title}::{msg}")
+
+
 def write(result):
     NEWS_DIR.mkdir(exist_ok=True)
     text = json.dumps(result, ensure_ascii=False, indent=2)
@@ -234,6 +241,8 @@ def main():
     print("📡 收集新聞標題")
     headlines, feeds = collect(now_utc)
     print(f"📰 去重後 {len(headlines)} 則")
+    gh_notice("新聞來源", [f"{f['name']}：{'成功' if f['ok'] else '失敗 ' + f.get('error', '')}，{f['count']} 則" for f in feeds]
+              + [f"去重後共 {len(headlines)} 則"])
     result = {
         "generated_at": now_utc.isoformat(),
         "date": now_utc.astimezone(TPE).strftime("%Y-%m-%d"),
@@ -248,6 +257,7 @@ def main():
     if dry:
         for h in headlines:
             print(f"  [{h['id']}] {h['published'].astimezone(TPE):%m/%d %H:%M} {h['title']}（{h['source']}）")
+        gh_notice("標題範例", [f"[{h['id']}] {h['title']}（{h['source']}）" for h in headlines[:30]])
         print("ℹ️ dry run：不呼叫模型、不寫檔")
         return
     if len(headlines) < MIN_ITEMS:
@@ -274,6 +284,8 @@ def main():
     print(f"🧾 有效摘要 {len(items)} 則")
     for it in items:
         print(f"  [{it['market_name']}] {it['title']}：{it['summary']}")
+    gh_notice("今日摘要", [f"狀態 {result['status']}，有效 {len(items)} 則"]
+              + [f"[{it['market_name']}] {it['title']}" for it in items])
     write(result)
 
 

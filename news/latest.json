@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-24T23:32:21.348658+00:00",
-  "date": "2026-10-25",
+  "generated_at": "2026-10-25T23:17:56.385769+00:00",
+  "date": "2026-10-26",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -8,32 +8,32 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 32
+      "count": 49
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 28
+      "count": 46
     },
     {
       "name": "Google News 市場",
       "ok": true,
-      "count": 98
+      "count": 100
     },
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 16
+      "count": 28
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 35
+      "count": 45
     },
     {
       "name": "CNBC",
       "ok": true,
-      "count": 17
+      "count": 11
     },
     {
       "name": "BBC Business",
@@ -47,119 +47,109 @@
     {
       "market": "macro",
       "market_name": "總經",
-      "title": "土耳其央行大幅降息至 36%",
-      "summary": "土耳其央行在連續逮捕後將利率降至 36%，顯示政策寬鬆。",
+      "title": "美、歐、日等央行本週持續利率決策",
+      "summary": "本週美國、歐盟、日本等央行預計維持利率不變，影響全球債市與匯市。",
       "sources": [
         {
-          "title": "After Five Times Arrested, the Turkish Central Bank Cuts Interest Rates to 36 Percent",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE52dkxsVDAyeWhnb0ZfMXJCTGY1ZFdSNHB4NE16c0ItbkJ1YU45NHFRN0FyLUxxc3g4T0ZUMHlhS3p0cVJ4ODcw0gFCQVVfeXFMUDY2RnZ0ZlU1QXNseXNYbnVteGUwUVkzdm1uUldjaG1ORDJvVHhfOG1BR2JuWDhMaVZoYzlya3B0NTZ3?oc=5",
-          "source": "VOI.ID",
-          "published": "2026-10-24T20:55:01+00:00"
+          "title": "Rate 'Superweek' Begins... U.S., EU, and Japan Expected to Hold Rates",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HamtBelBFM2NnNm5TWFlHc1VFN2RKYTluRWtzSE9wVUt6dTR2VmdaLWpMNUlFbHRPWGhvU0xVY1RGUW4tdjFuVXBmUjlDNVlYbUFKYlEwLXRsS1NaV19weFdiOWI?oc=5",
+          "source": "아시아경제",
+          "published": "2026-10-25T22:43:39+00:00"
+        },
+        {
+          "title": "本週操盤筆記：Fed議息會議、歐加日紐泰央行利率決議、谷歌微軟英特爾財報",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKc3ZPei1FazVzb25UX3BmaVRXSXRxdUt2ZHpSQXVlck1nNXZZR0t4Ty1IblpoTFpsYVd3bFR1WGRJZWp1WkVWQmktTVFwdEk?oc=5",
+          "source": "鉅亨網",
+          "published": "2026-10-25T13:50:03+00:00"
         }
       ]
     },
     {
       "market": "bond",
       "market_name": "債市",
-      "title": "美債殖利率升至 24 年高點",
-      "summary": "美國國債殖利率飆升至近 24 年最高，顯示債市波動加劇。",
+      "title": "SpaceX 40億美元債務融資",
+      "summary": "SpaceX 宣布完成 40 億美元債務發行，提升企業債券供給。",
       "sources": [
         {
-          "title": "股市變天前兆？美債殖利率飆上24年高點 投資人該落跑還是續抱",
-          "url": "https://news.google.com/rss/articles/CBMimANBVV95cUxQelNIb25RYl9jVEFVTW12TFF2WTJDRVFUTlVRa2JheGNmTWpVNTZXenFkVEQ2ZGdWdjF5b3pGN1pFLXlmaklKdGFXb2dycmdMUTNhUWdNMFRYRUVQRXltWlUwbXZVaVBIY1F3Q0Y1cTlVbm5RVDZSbkNfVXMwTnp6ZWhXRllyWjJwZXNzQUhuVVNwcWpFVldpd09wbHQyNDFBVkcwWFBrU0wwUmxGVG5KVHRnU0ZCU2l5Nl9TcW5STnV6SU1NMHpvM0RsSkpQNkQ2bGdOTnNvUlRRbmRQOE1UWXJuSWJVN1EzT2QyUGhnSTJfQXRNWG9xWGRGQlhTR1FkQ0lFNjZjc1NBLTF6LXozU09qcHZXZTJ6QnRwdEFRNWtYLXZJVzA2ZUh4eVNPVzVHblkyU2Qtc3YzdzJNRkljYzltbmQ2NGgtcVZjRGVIVkFNWHJpeml0NXBLX015d1Rvb3lsMVB6Z1IzTlc3ZFA3S2c3OUZDR0p5QVB6ODVMSlJFb0tSQVRBamNRVERfZG1jbzFLYjdSZW0?oc=5",
-          "source": "Yahoo股市",
-          "published": "2026-10-24T14:30:00+00:00"
+          "title": "Musk says SpaceX raised $40 billion in debt deal, predicts neocloud shakeout",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUXFtN2R4aGlycUhma055anhqaWRzSVFqRHg3NDJHQXpJb1ZXZGtqZF8wSENhc2xNTjlBNmJyMWdzaWdQZmU2d0NvWDJ1VzI4RlVCUG1ERDFnWlJpUmlEdTJDZUt2ckM1bjBleS11a3ZQaDF1QjByVzNYV1Y4YV9CWEFOYWFVaHhhM1l3d29kQm55MjFUUTlZWm9mVnlnamJBUWg3NWVR?oc=5",
+          "source": "Reuters",
+          "published": "2026-10-25T22:39:23+00:00"
         }
       ]
     },
     {
       "market": "macro",
       "market_name": "總經",
-      "title": "布蘭特油價升至每桶 117 美元",
-      "summary": "布蘭特原油價格突破 117 美元，可能推高全球通膨預期。",
+      "title": "AI 情緒測試衝擊納斯達克與美債",
+      "summary": "AI 市場情緒波動使納斯達克、國債殖利率與美元面臨壓力。",
       "sources": [
         {
-          "title": "布蘭特奔向每桶117美元！美國期中選舉過後 油價會續漲或回跌？",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE90eWFac1ZpTFYxMGlSUzBiUWZEcEFBdFhRbkp5OGNIU2c0djNiQ2FzZmF4SWxZbEdYbk5NUXl3eFdYd29qXzN3WEpHcnNrX05K?oc=5",
-          "source": "UDN",
-          "published": "2026-10-24T13:48:10+00:00"
+          "title": "Nasdaq, Treasury yields and dollar face a major AI sentiment test",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZlpmc3pTTnVwTkp5aS1HMXpISUhTSnBndTNiTWdzMmlkZ21QOUJsRm1CaWtidGtKVWVvV3N2cm5KTnE0NW93X2JfRUtzcjZoR1VVZWp5NzFheUEyOWFRd19vTjBCTUFVdnFaMWhaTXBBOW5rSDBRakQzNXBraTEyVklqajEyUjhaWUFIZXViVWZ3SFpkZmhfQmh1N1NQRXZjVUQyeDZyMGlaemNNdElyNGdB?oc=5",
+          "source": "StoneX",
+          "published": "2026-10-25T16:47:45+00:00"
         }
       ]
     },
     {
       "market": "fx",
       "market_name": "匯市",
-      "title": "美元兌日圓跌破關鍵支撐",
-      "summary": "USD/JPY 匯率下跌至重要支撐位，顯示風險偏好下降。",
+      "title": "美元兌日圓與日經跌破關鍵位",
+      "summary": "美元兌日圓持續走弱，日經指數同步下跌，顯示風險偏好下降。",
       "sources": [
+        {
+          "title": "USD/JPY, Nikkei Break Lower as AI Meltdown Spreads",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdEh3cnhzU1o4NmdUTTRWVmlOQjZCNFdaaFcxcjU1TjdfZVJfUzlLb2g5MW1uUW9uVkdrNXRMbVNiUEFsMnFWTzFIdGNSNzFuOHUwNktIRWlqakFmNTdtalFXaERuaUxkMHJLNUtRVGxpTS1pY2U2Ty04UWZTeVpvZUNPNGJibVc4QXAtYUIwT0dZQUIyLWNtZGZlVVF3UQ?oc=5",
+          "source": "StoneX",
+          "published": "2026-10-25T21:25:57+00:00"
+        },
         {
           "title": "USD/JPY Sinks to Familiar Support as Risk Off Fears Grow",
           "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPV1YyWnRON1pPbV9ueUNmbmtjSmFqb05TZE5qUVE1dFlQdjh0aExyajRmZ0kzUDlUcUxKNVN6eE9sTzAzelBCOHZSVVNRZTdOVi1FbGJEY0sxTHVxSDRITExxT1FkR0htV1ZSaUFiMVQtbkU4NjRrYTdXU0JmZXhNdy1ERlZDQ2tjajZkX1dsLVVieUNnOU1kbW1qaHlhTzZROGlCZkxzdw?oc=5",
           "source": "StoneX",
-          "published": "2026-10-24T17:58:51+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "中國汽油柴油價格維持不變",
-      "summary": "中國國家發改委宣布下週汽油與柴油價格保持不變，緩解燃油成本壓力。",
-      "sources": [
+          "published": "2026-10-25T16:45:29+00:00"
+        },
         {
-          "title": "CPC to leave domestic gasoline, diesel prices unchanged next week",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE01dnphaHlZLXRKR0diUFk0d1VBaVZhaDRaQWZwXzlKRHdBeWRPSHlNUW9rQVNEbmFQd2UyRC02T3VKV2otX0tsVXRZTmtCUWpwMWtPSjdRWQ?oc=5",
-          "source": "Focus Taiwan",
-          "published": "2026-10-24T10:18:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "美日歐央行同時會議聚焦政策走向",
-      "summary": "美國、日銀與歐央行同時召開會議，市場關注核心 PCE 與 AI 企業財報。",
-      "sources": [
-        {
-          "title": "US, Japanese and European Central Banks Meet Simultaneously; US Core PCE and AI Giants' Earnings to Be Market Watershed",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9hdXhITjBuWW44bW9xckFrZkRDZ1YxT21MSy00cGppaXJtZUlTUFhJcUpLcWx3aEN4M3lkWmRJOWRVMHpqYXh6Yk9kRWV3SlBlbVFUNFJNc0hyWUY0bDB3Z1REaUpMRG50ckNJZ3NMdGo1QlpRdkE?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-10-24T07:05:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "高風險債務「全面崩盤」震撼市場",
-      "summary": "信用週報指出最危險的債務市場出現大規模拋售，提升風險警示。",
-      "sources": [
-        {
-          "title": "‘Total Meltdown’ in Riskiest Debt Unnerves Market: Credit Weekly",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaGdkV3gxaDZHd2ZxRDVhaFlBdWtLNFJ3Y0c5MXZiWktESnRPNmJlTWczMVdRZ29JaUVHa0R2Mmdabm5NdXhyLWlYam5xaU54Ty1UdHphaVotVkx5RGo1a1hYUkpsS1IxSlhsd3ZJcGxkWEh0Q016YkJHS1J1Sk4xS1pub0tnTjlCbDdrWU5sTi14dXNrZDVOLTdkUnFxQkdvQ2Y5TFROY3JFcGVQbWtjYTlnUQ?oc=5",
-          "source": "Bloomberg.com",
-          "published": "2026-10-24T15:21:35+00:00"
+          "title": "RISK OF THE CARRY TRADE UNWIND IS GROWING AS THE YEN CROSSES A CRITICAL LEVEL - TRILLIONS AT STAKE Adriana Volpe Compagno (OsxdKMbBwj)",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1hb0ZXbmp0ekwtalNqQm54SG5YdzFONjN1cFNySzBoVVhIYmN5dnRza2xlNVdUUFAxUEZrNF9BaDRBM2IwYUgxbWlxVVN5MzlvUk9yTG41TEZvRFRTUkFzLTJTUFZNdw?oc=5",
+          "source": "Unisba Media",
+          "published": "2026-10-25T12:52:55+00:00"
         }
       ]
     },
     {
       "market": "equity",
       "market_name": "股市",
-      "title": "Nvidia、特斯拉投 900 億綁定三星",
-      "summary": "Nvidia 與特斯拉斥資 900 億美元與三星簽訂記憶體供應協議，影響台灣半導體股。",
+      "title": "美股期貨因油價回落上揚",
+      "summary": "美國股指期貨受油價下跌提振，呈現上漲走勢。",
       "sources": [
         {
-          "title": "輝達、特斯拉砸900億綁定三星載板！法人示警：台廠恐長線衝擊- 產業",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1OS25fYlE1NWtZUWxBNEQ2bllqRDBBUEM2S3JxME1RN0FWZ3B3bkFPU21ad001OURyUGI1bExUVWIxejlNT1VvUUpIc0ZDaFF3ZVVvQzdwbjNSc3NRVVN3?oc=5",
-          "source": "工商時報",
-          "published": "2026-10-24T09:58:00+00:00"
+          "title": "US Equity Futures Climb as Crude Oil Price Dips: Markets Wrap",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeGVmU0kxdjhvRF9ZU0VaeFFkODlaUTRlN1dQaHNSV1JiOTBwSV9nb1RKejQ2clRzQ0doN3VjVEtHb0RaTlVBNUdhMFI3aUtTRHB1dEE3NWdXZS1ZbktuMVUtYnE0ellyLWlNa29aWThtQkdSQW5FRzFIVUZlb3hEUlg1czdXd3FyV0VwNW0wVEMyTUg4ZEpoTVg0SzIyZ0VmLTAxOUlPTUtLXy1kS0ozbw?oc=5",
+          "source": "Bloomberg.com",
+          "published": "2026-10-25T22:09:07+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "俄艦被扣引發北極衝突升溫",
+      "summary": "俄羅斯船隻被扣事件加劇烏克蘭戰爭在北極的緊張局勢。",
+      "sources": [
+        {
+          "title": "How the Seizure of a Russian Vessel Brought the Ukraine War to the Arctic",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSW05UHQ5YjRDajJGVFZOdDRXWVM4YWZ0ZVZEakU1R2xFWk02Z1MwWHBic3Q0ZW1BUVk0YXFRLUpwd3d1MTAtdkxsNjVxenAtLVpJakpZTDJXOEVxSHFOYVotNjc3QWE4MEhEbWktZ3cycndLc0dERDJzaU01N1EyRGJwSU1pVXliOG13TmZUZllNU1c1ak00TWVoRDlFSFFEWXBuSlBYd1pnckJKdUJQTWNqa2Y2Zw?oc=5",
+          "source": "WSJ",
+          "published": "2026-10-25T21:00:00+00:00"
         }
       ]
     }
   ],
   "usage": {
-    "prompt_tokens": 2306,
-    "completion_tokens": 2092,
-    "total_tokens": 4398
+    "prompt_tokens": 2281,
+    "completion_tokens": 2500,
+    "total_tokens": 4781
   }
 }

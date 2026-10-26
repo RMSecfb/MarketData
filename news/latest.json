@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-25T23:17:56.385769+00:00",
-  "date": "2026-10-26",
+  "generated_at": "2026-10-26T23:17:23.785399+00:00",
+  "date": "2026-10-27",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -8,12 +8,12 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 49
+      "count": 62
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 46
+      "count": 44
     },
     {
       "name": "Google News 市場",
@@ -23,17 +23,17 @@
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 28
+      "count": 32
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 45
+      "count": 42
     },
     {
       "name": "CNBC",
       "ok": true,
-      "count": 11
+      "count": 27
     },
     {
       "name": "BBC Business",
@@ -47,109 +47,143 @@
     {
       "market": "macro",
       "market_name": "總經",
-      "title": "美、歐、日等央行本週持續利率決策",
-      "summary": "本週美國、歐盟、日本等央行預計維持利率不變，影響全球債市與匯市。",
+      "title": "美聯儲十月可能維持利率不變",
+      "summary": "美聯儲十月可能維持利率不變，市場預期持平。",
       "sources": [
         {
-          "title": "Rate 'Superweek' Begins... U.S., EU, and Japan Expected to Hold Rates",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HamtBelBFM2NnNm5TWFlHc1VFN2RKYTluRWtzSE9wVUt6dTR2VmdaLWpMNUlFbHRPWGhvU0xVY1RGUW4tdjFuVXBmUjlDNVlYbUFKYlEwLXRsS1NaV19weFdiOWI?oc=5",
-          "source": "아시아경제",
-          "published": "2026-10-25T22:43:39+00:00"
-        },
-        {
-          "title": "本週操盤筆記：Fed議息會議、歐加日紐泰央行利率決議、谷歌微軟英特爾財報",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKc3ZPei1FazVzb25UX3BmaVRXSXRxdUt2ZHpSQXVlck1nNXZZR0t4Ty1IblpoTFpsYVd3bFR1WGRJZWp1WkVWQmktTVFwdEk?oc=5",
+          "title": "通膨升溫為何不升息？Fed傳聲筒揭本周料按兵不動原因",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE51OGhfVWVwa0pObUg2VlJyYUdmTm5JUF92NWJVZjA2a0ZoWkcwcFlUbHdvelhZczNHZEUyRl81b1VWY0tkdlV4Z0djWm5jb0k?oc=5",
           "source": "鉅亨網",
-          "published": "2026-10-25T13:50:03+00:00"
-        }
-      ]
-    },
-    {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "SpaceX 40億美元債務融資",
-      "summary": "SpaceX 宣布完成 40 億美元債務發行，提升企業債券供給。",
-      "sources": [
-        {
-          "title": "Musk says SpaceX raised $40 billion in debt deal, predicts neocloud shakeout",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUXFtN2R4aGlycUhma055anhqaWRzSVFqRHg3NDJHQXpJb1ZXZGtqZF8wSENhc2xNTjlBNmJyMWdzaWdQZmU2d0NvWDJ1VzI4RlVCUG1ERDFnWlJpUmlEdTJDZUt2ckM1bjBleS11a3ZQaDF1QjByVzNYV1Y4YV9CWEFOYWFVaHhhM1l3d29kQm55MjFUUTlZWm9mVnlnamJBUWg3NWVR?oc=5",
-          "source": "Reuters",
-          "published": "2026-10-25T22:39:23+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "AI 情緒測試衝擊納斯達克與美債",
-      "summary": "AI 市場情緒波動使納斯達克、國債殖利率與美元面臨壓力。",
-      "sources": [
-        {
-          "title": "Nasdaq, Treasury yields and dollar face a major AI sentiment test",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZlpmc3pTTnVwTkp5aS1HMXpISUhTSnBndTNiTWdzMmlkZ21QOUJsRm1CaWtidGtKVWVvV3N2cm5KTnE0NW93X2JfRUtzcjZoR1VVZWp5NzFheUEyOWFRd19vTjBCTUFVdnFaMWhaTXBBOW5rSDBRakQzNXBraTEyVklqajEyUjhaWUFIZXViVWZ3SFpkZmhfQmh1N1NQRXZjVUQyeDZyMGlaemNNdElyNGdB?oc=5",
-          "source": "StoneX",
-          "published": "2026-10-25T16:47:45+00:00"
-        }
-      ]
-    },
-    {
-      "market": "fx",
-      "market_name": "匯市",
-      "title": "美元兌日圓與日經跌破關鍵位",
-      "summary": "美元兌日圓持續走弱，日經指數同步下跌，顯示風險偏好下降。",
-      "sources": [
-        {
-          "title": "USD/JPY, Nikkei Break Lower as AI Meltdown Spreads",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdEh3cnhzU1o4NmdUTTRWVmlOQjZCNFdaaFcxcjU1TjdfZVJfUzlLb2g5MW1uUW9uVkdrNXRMbVNiUEFsMnFWTzFIdGNSNzFuOHUwNktIRWlqakFmNTdtalFXaERuaUxkMHJLNUtRVGxpTS1pY2U2Ty04UWZTeVpvZUNPNGJibVc4QXAtYUIwT0dZQUIyLWNtZGZlVVF3UQ?oc=5",
-          "source": "StoneX",
-          "published": "2026-10-25T21:25:57+00:00"
+          "published": "2026-10-26T15:40:03+00:00"
         },
         {
-          "title": "USD/JPY Sinks to Familiar Support as Risk Off Fears Grow",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPV1YyWnRON1pPbV9ueUNmbmtjSmFqb05TZE5qUVE1dFlQdjh0aExyajRmZ0kzUDlUcUxKNVN6eE9sTzAzelBCOHZSVVNRZTdOVi1FbGJEY0sxTHVxSDRITExxT1FkR0htV1ZSaUFiMVQtbkU4NjRrYTdXU0JmZXhNdy1ERlZDQ2tjajZkX1dsLVVieUNnOU1kbW1qaHlhTzZROGlCZkxzdw?oc=5",
-          "source": "StoneX",
-          "published": "2026-10-25T16:45:29+00:00"
+          "title": "Federal Reserve to announce its latest interest rate move this week. Here's what economists expect.",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQTjc3SWhXX3BBd29iUjJQRC1HZ1k2M1ZzU3RORWEySTQ4TGdaSjdaMjIwNTVUWFJpZW5OZmU4X2JPYlNSOWEzRW1BNHJVRTk3azhSRExhRTRlNG8tNzhsMHhIcUpIZGdScG5jWnNGR1A1VVdpWTVNcDhMYm5kZjFWSzJn?oc=5",
+          "source": "CBS News",
+          "published": "2026-10-26T20:10:30+00:00"
         },
         {
-          "title": "RISK OF THE CARRY TRADE UNWIND IS GROWING AS THE YEN CROSSES A CRITICAL LEVEL - TRILLIONS AT STAKE Adriana Volpe Compagno (OsxdKMbBwj)",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1hb0ZXbmp0ekwtalNqQm54SG5YdzFONjN1cFNySzBoVVhIYmN5dnRza2xlNVdUUFAxUEZrNF9BaDRBM2IwYUgxbWlxVVN5MzlvUk9yTG41TEZvRFRTUkFzLTJTUFZNdw?oc=5",
-          "source": "Unisba Media",
-          "published": "2026-10-25T12:52:55+00:00"
+          "title": "Federal Reserve is likely to hold interest rates steady in October. Here's what that means for consumers",
+          "url": "https://www.cnbc.com/2026/10/26/fed-decision-expectations-october-meeting.html",
+          "source": "CNBC",
+          "published": "2026-10-26T18:51:23+00:00"
         }
       ]
     },
     {
       "market": "equity",
       "market_name": "股市",
-      "title": "美股期貨因油價回落上揚",
-      "summary": "美國股指期貨受油價下跌提振，呈現上漲走勢。",
+      "title": "Anthropic 史上最大 IPO",
+      "summary": "Anthropic 申請上市，預計成為史上最大 IPO。",
       "sources": [
         {
-          "title": "US Equity Futures Climb as Crude Oil Price Dips: Markets Wrap",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeGVmU0kxdjhvRF9ZU0VaeFFkODlaUTRlN1dQaHNSV1JiOTBwSV9nb1RKejQ2clRzQ0doN3VjVEtHb0RaTlVBNUdhMFI3aUtTRHB1dEE3NWdXZS1ZbktuMVUtYnE0ellyLWlNa29aWThtQkdSQW5FRzFIVUZlb3hEUlg1czdXd3FyV0VwNW0wVEMyTUg4ZEpoTVg0SzIyZ0VmLTAxOUlPTUtLXy1kS0ozbw?oc=5",
-          "source": "Bloomberg.com",
-          "published": "2026-10-25T22:09:07+00:00"
+          "title": "From Wall Street to Silicon Valley, Anthropic IPO poised to have massive 'trickle-down effect'",
+          "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-might-trigger-tech-reset-if-ipo-underperforms.html",
+          "source": "CNBC",
+          "published": "2026-10-26T22:50:07+00:00"
+        },
+        {
+          "title": "Anthropic's blockbuster share listing - 5 surprising things we now know",
+          "url": "https://www.bbc.co.uk/news/articles/cwn8d7g29vd9o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-10-26T19:57:23+00:00"
+        },
+        {
+          "title": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
+          "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-10-26T16:27:17+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "巴西市場因盧拉當選暴跌",
+      "summary": "巴西市場在盧拉意外當選後大幅下跌。",
+      "sources": [
+        {
+          "title": "Brazilian Markets Crash After Lula’s Surprise Election Win Stuns Investors",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOblVTTEF5cnF5WUdUNUc2bG53aS1WY0ljVjhhZkZ6X1dINTFZcElFUUlDTEJFSE5PdUUzT2hELXRJT1oydExsM1R2eWJGX09Rdm5FVnRUa2VsckE4cHVCQzFreXluSlZxUWdfczc3STAtcXdaMlJURW96dFNlenFXbnBVTjdIZWlhaUhlVkhIcENYNG1aZVlySFVvX0k?oc=5",
+          "source": "WSJ",
+          "published": "2026-10-26T21:15:00+00:00"
         }
       ]
     },
     {
       "market": "macro",
       "market_name": "總經",
-      "title": "俄艦被扣引發北極衝突升溫",
-      "summary": "俄羅斯船隻被扣事件加劇烏克蘭戰爭在北極的緊張局勢。",
+      "title": "沙特防長會伊朗致油價下跌",
+      "summary": "沙特防長與伊朗總統會面，油價因此小幅下跌。",
       "sources": [
         {
-          "title": "How the Seizure of a Russian Vessel Brought the Ukraine War to the Arctic",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSW05UHQ5YjRDajJGVFZOdDRXWVM4YWZ0ZVZEakU1R2xFWk02Z1MwWHBic3Q0ZW1BUVk0YXFRLUpwd3d1MTAtdkxsNjVxenAtLVpJakpZTDJXOEVxSHFOYVotNjc3QWE4MEhEbWktZ3cycndLc0dERDJzaU01N1EyRGJwSU1pVXliOG13TmZUZllNU1c1ak00TWVoRDlFSFFEWXBuSlBYd1pnckJKdUJQTWNqa2Y2Zw?oc=5",
-          "source": "WSJ",
-          "published": "2026-10-25T21:00:00+00:00"
+          "title": "Oil ticks lower as Saudi defense minister meets with Iran's president in Tehran to de-escalate",
+          "url": "https://www.cnbc.com/2026/10/26/oil-prices-today-wti-brent.html",
+          "source": "CNBC",
+          "published": "2026-10-26T18:50:05+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "AI與油價擾動亞洲貨幣",
+      "summary": "AI與油價擔憂使台灣至菲律賓等亞洲貨幣波動。",
+      "sources": [
+        {
+          "title": "AI and oil worries rattle Asian currencies from Taiwan to Philippines",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTXA1dllVUE80bm5TWjZVOVFaVXJTRlBnMk0xVFRHRlBtTVRGT1pNV29MeVhkcVFQRFEzZTJwbi1QbUxVWEFxNkxBeHIxWDNjeTViOGRRSjRvQW9TN2VIWmdKTGJhWG5ZcG4wZGNEa1gxX1FKNzlTWDV2U1lGRGRJQXVlTUYxNUpJYmpyTUU5RHVPRWZjLTB2NjlhczBBWXlvMG5Ea1hVVEJIOVdYYllMdXNaVml3UUh0d0Zablh3?oc=5",
+          "source": "Nikkei Asia",
+          "published": "2026-10-26T19:51:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "美元回升 歐元滑落",
+      "summary": "美元回升，歐元在主要央行決策前走弱。",
+      "sources": [
+        {
+          "title": "Dollar rebounds as euro slips ahead of key central bank decisions",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbUV4c3VobUxpNXJEbkNTMnNUanJhZ0U0OE1xTFZpYllnNlhocnNiV0x6aU1EV0Q0SXFBQ2RneENDaTdRNUFoWWdUcTVvRTFVaWZrWTBBUnEwNWFka3dmNk1XOE1ieC1Nd3k0LTQ5NzFkcTR5WmtSeEtJTllQT0FrWHM4QWUtVDVBQ3Z0OGo2VWRyaVd2MmVoTV9sZjhReGYtUUdxaFZWLTVzSUdmMW9maDRIYlNENV9hVHpPZDFua3kwVkNu?oc=5",
+          "source": "Investing.com",
+          "published": "2026-10-26T15:53:09+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "哥倫比亞發行美元債券",
+      "summary": "哥倫比亞因財政壓力發行新美元債券。",
+      "sources": [
+        {
+          "title": "Colombia to Sell New Dollar Bonds Amid Fiscal Pressures",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVzlUUnIyejF1NW5lUkdTMUVqN0pveTZIb2MzcS1IaEwwbW1zdjNZRmlyWmtENHJIbGZjb2N2Q2lxSG4xZkdXc1JvYWF6aEF1S19HckRGc1lnT3QwMkdFTFRFYkZaR245ODcxajBVcFQ4VWlvbm15MzIxUDdCTzNQR2Z4NkluSXNTWDFuOU9jZEdPd0oxYkl4QVZXQVN2aDdKX2lnbHhhdUtqQQ?oc=5",
+          "source": "Bloomberg.com",
+          "published": "2026-10-26T21:27:06+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "台幣仍需外資流入復甦",
+      "summary": "台幣復甦仍仰賴外資流入。",
+      "sources": [
+        {
+          "title": "Taiwan Dollar: Recovery still needs foreign inflows – OCBC",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOd3cyaTl6NFJ3N2IwbFVucEpQdEkwVFN1ZnlYcmVsMV96TlBlWWJkT19LRkQ5Z0NDUEhIdmZSNGlQVno1TjF5Nk9ybjBKbmFmVGVqUE1sVW0ydnB4NlY4Z0RxYWlKNGlZWXR5X3hiM0pCMGhNZEpxVF9NNk04OFNtVGxiZmxqOXlDTk5mbUhGaWJkMFJHM1BjdUMyajRpVG8?oc=5",
+          "source": "FXStreet",
+          "published": "2026-10-26T17:12:00+00:00"
         }
       ]
     }
   ],
   "usage": {
-    "prompt_tokens": 2281,
-    "completion_tokens": 2500,
-    "total_tokens": 4781
+    "prompt_tokens": 2304,
+    "completion_tokens": 2391,
+    "total_tokens": 4695
   }
 }

@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-10-27T23:17:23.081723+00:00",
+  "date": "2026-10-28",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 59
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 43
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 99
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 23
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 43
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 29
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 15
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "台央行稱資金外流致台幣貶",
+      "summary": "台央行指出約540億美元資金外流致台幣走弱。",
+      "sources": [
+        {
+          "title": "Taiwan’s central bank links currency weakening to $54.3bn outflow — Taipei Times",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaWpsVlN3WXhQRFJpRVRwV2pKRDc4aVQ5MWdsX0VnSFRXbURVeC1IWE1xTXlYQTRRSURmQk1ES3B5Zzd6blpmMlJycVFWejFzTG96dkxIdHBkSHJmZmUxUXQydVVSTEltR1ZncEhIRnZyQkRCd1g2MWc5WnRKUEI2YWlOWE14WmptRXIzejJ5bHBobG1vNGRuWG5WeWNEYUFwa3EwcG84S18ydWZpSFJxVw?oc=5",
+          "source": "UA.NEWS",
+          "published": "2026-10-27T22:59:56+00:00"
+        },
+        {
+          "title": "Foreign fund outflows send Taiwan dollar sharply lower: Central bank",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE10N0UzZjBOZjBINnNBM0szeTZJV0hGVjRTMjNwTHRVaTVBRHhlMkhuUVhPWllxRXRoY2pMeEdGakw0d2FzZWtkLVEwakhrZHVtMkZZWkxkVXpjV1QwRm0walhRUUhiTVdzOGQ3NXpMWWg3MDEweUE?oc=5",
+          "source": "Taipei Times",
+          "published": "2026-10-27T16:00:00+00:00"
+        },
+        {
+          "title": "Taiwan dollar reverses early losses to close at NT$32.452 as foreign selling eases, exporters dump dollars",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE03ODJaalRxYTBacGJxc1ZFVU95RHBTMlRidXlIMTROVXJtNGxucEFJQXNrMTRfcDBFa2NLZVNyZTI2eWc3U2JnUDZFanpZdVBCMjRDQkIta3VzTEdDTU92WGRTSW5qS2ZyWEd0VWRuVm9HeUtUYWc?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-10-27T12:05:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美國消費者季報顯韌性 兼有壓力",
+      "summary": "美國第三季早期財報顯示消費者仍具韌性，但出現疲弱跡象。",
+      "sources": [
+        {
+          "title": "Early third-quarter earnings show a 'resilient' U.S. consumer, with signs of strain",
+          "url": "https://www.cnbc.com/2026/10/27/q3-earnings-resilient-consumer.html",
+          "source": "CNBC",
+          "published": "2026-10-27T21:12:55+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美聯儲將公布利率決策 市場關注",
+      "summary": "美聯儲即將公布利率決策，市場預期影響股債走向。",
+      "sources": [
+        {
+          "title": "Stocks rise ahead of tech earnings, Fed decision",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdC1IVG9VaEdqQnF2YU1UWDJUQ1Z0SGg3YTRGZF9rdktyczhZRFJxbUVYdW5ySlZOOGh5S2NpemFhbnBwcTlSVDdYWF96ZEhYV19JX0hNNkk0dnA3M2NHSnFpRGJQV0JGa3d5a0lpb0RERVRUNWg3bkxfM0dFOTN4bVpFN1lWTV9MUjJQODdfal9HVFhMM2pKSGlFRWs?oc=5",
+          "source": "Yahoo Finance",
+          "published": "2026-10-27T23:04:53+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "波音財報不及預期 股價大跌",
+      "summary": "波音公布財報低於預期，股價大幅下跌。",
+      "sources": [
+        {
+          "title": "Boeing Stock Plunges After Earnings. 737 Progress Isn’t Fast Enough.",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBqTDlic1FKMVhoYkNvVEtMRXp2RXdPT2sxdWRHdzZBMUlEMzlwSDFweGFBVVVWaGtOa0JuTml0b2VsamV0Yi1xVXhuM205SHRQWWVVXzBNenRRUngtZWk1bk9CZmJBM2phOGdoYmE4TWpkeDlobnZwUg?oc=5",
+          "source": "Barron's",
+          "published": "2026-10-27T20:09:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "UPS財報好於預期 股價上漲",
+      "summary": "UPS公布好於預期的財報，股價上漲。",
+      "sources": [
+        {
+          "title": "UPS Stock Jumps After Earnings Deliver Good News for the U.S. Economy",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1oQ01IR1dkcnp3bmQzRWkxMXctS25GQ1pWTEtDRHVfY3FncWVsMVZ6aGRSMFlpN2I1VVVveGVwdU9XUWhEQTJPZUQwRDdJalpLV20yNzR3T3Vsb2lVN2NVVGhzTlhZaUNVQ0s2TTdzN3F3Z2ln?oc=5",
+          "source": "Barron's",
+          "published": "2026-10-27T20:19:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "Polymarket遭CFTC再度調查",
+      "summary": "Polymarket再次受到美國商品期貨交易委員會調查。",
+      "sources": [
+        {
+          "title": "Polymarket faces renewed CFTC probe over U.S. access to offshore platform",
+          "url": "https://www.cnbc.com/2026/10/27/cftc-probes-polymarket-over-2022-settlement.html",
+          "source": "CNBC",
+          "published": "2026-10-27T21:24:06+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2339,
+    "completion_tokens": 2500,
+    "total_tokens": 4839
+  }
+}

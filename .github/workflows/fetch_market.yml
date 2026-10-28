@@ -154,6 +154,29 @@ jobs:
           print("complete=true")
           PY
 
+      - name: Check extension indicators
+        id: ext
+        if: steps.existing.outputs.complete == 'true'
+        shell: bash
+        run: |
+          # 主要資料已齊全時，若延伸指標（亞洲指數、匯率等）不是同日資料，只重抓延伸指標。
+          # 高收益債利差（FRED）固定晚 1 個營業日，不列入判斷。
+          python - "${{ steps.target.outputs.target }}" >> "$GITHUB_OUTPUT" <<'PY'
+          import json, sys
+          from pathlib import Path
+          target = sys.argv[1]
+          try:
+              data = json.loads((Path("data") / f"market_{target}.json").read_text(encoding="utf-8"))
+              q = (data.get("markets_ext") or {}).get("quality") or {}
+              items = [k for k in q.get("stale_items", []) + q.get("missing_items", []) if k != "hy_oas"]
+              if not q:
+                  items = ["markets_ext"]
+          except Exception:
+              items = ["markets_ext"]
+          print(f"refresh={'true' if items else 'false'}")
+          print(f"items={','.join(items)}")
+          PY
+
       - name: Show existing data status
         run: |
           echo "Target: ${{ steps.target.outputs.target }}"
@@ -173,8 +196,14 @@ jobs:
           echo "Fetching market data for $TARGET"
           python fetch_market.py "$TARGET"
 
+      - name: Refresh extension indicators only
+        if: steps.ext.outputs.refresh == 'true'
+        run: |
+          echo "延伸指標非同日或缺漏：${{ steps.ext.outputs.items }}，只重抓延伸指標"
+          python fetch_market.py "${{ steps.target.outputs.target }}" --ext-only
+
       - name: Commit and push data
-        if: steps.existing.outputs.complete != 'true'
+        if: steps.existing.outputs.complete != 'true' || steps.ext.outputs.refresh == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -185,8 +214,17 @@ jobs:
             echo "ℹ️ No data changes to commit."
           else
             TARGET="${{ steps.target.outputs.target }}"
-            git commit -m "📊 Market data ${TARGET}"
-            git push
+            if [ "${{ steps.existing.outputs.complete }}" = "true" ]; then
+              git commit -m "📊 Market data ${TARGET}（延伸指標更新）"
+            else
+              git commit -m "📊 Market data ${TARGET}"
+            fi
+            # 儀表板可能同時寫入 CDS，推送失敗時重新同步再推
+            for i in 1 2 3; do
+              git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push && exit 0
+              sleep 5
+            done
+            exit 1
           fi
 
       - name: Workflow summary

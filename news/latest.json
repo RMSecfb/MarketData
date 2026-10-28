@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-27T23:17:23.081723+00:00",
-  "date": "2026-10-28",
+  "generated_at": "2026-10-28T23:17:23.494524+00:00",
+  "date": "2026-10-29",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -8,12 +8,12 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 59
+      "count": 57
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 43
+      "count": 48
     },
     {
       "name": "Google News 市場",
@@ -23,12 +23,12 @@
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 23
+      "count": 20
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 43
+      "count": 35
     },
     {
       "name": "CNBC",
@@ -38,112 +38,132 @@
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 15
+      "count": 24
     }
   ],
   "status": "ok",
   "note": "",
   "items": [
     {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美聯儲維持利率不變",
+      "summary": "美聯儲宣布利率保持不變，市場關注通膨與未來政策走向。",
+      "sources": [
+        {
+          "title": "Stock Market Today: Alphabet, Microsoft Earnings in Focus; Fed Holds Rates — Live Updates",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeHBTLV91dEdLdmpNVWd5OF9kT2VWUEx2eTgzbU9LN2Rhd2lyakl2dDhELTlPVmJ2Q3ZreUEwODhNcVBWSERWVlZ5YWZxS3gwVVdnNnZnNkVKY3N3Smt3MWdyWFVaR2M2Tk1pLU40X1M1TDlVMlJBSURRMTZKZnpJdlR5TGo?oc=5",
+          "source": "WSJ",
+          "published": "2026-10-28T21:51:20+00:00"
+        },
+        {
+          "title": "一文掌握Fed重點決策：2張反對票、減少利率決策次數、物價穩定優先",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0yYWRCa0lickhCZnFNVTl5RWFSUjdQa3BhQjdLd3V0SmxjSWpMUlVlWXpZTkxGZHdZOUlyMDA3eUZEVFAyeHF6bmt0WGRXSXM?oc=5",
+          "source": "鉅亨網",
+          "published": "2026-10-28T21:22:36+00:00"
+        },
+        {
+          "title": "Stock Market Today: Dow, Nasdaq Rise After No Fed Rate Hike; Labcorp Blasts Off",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQOUJ6cUFDcnYwVWZjWWQzRkpLUWJOTGtwXzhNRGFTczhCNF9XOGF5SXlEVUJQc3k2NWtnZkxfRDhtaUVjTFNGd0FfYUQzWkx4V0ZqRnhiZEpBbXpHU1QxZThKT29ERGhIeDJ3Y25XdEwwTUdIeFRxNjQzWnJoOWFnVWtKTk9MNDVTOW1KbkJkaDR3bDR0ODNzX19idTF1YTQ1bmdsX0xXQzdRaFJwZDJ5WlU0OXlSLUhQdWZHYmZ2Vnd6TG40R1FQVVpWaEQ?oc=5",
+          "source": "Investor's Business Daily",
+          "published": "2026-10-28T21:41:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "香港維持基準利率4.25%",
+      "summary": "香港金管局在美聯儲決策後，維持基準利率於4.25%。",
+      "sources": [
+        {
+          "title": "Hong Kong holds base rate at 4.25% after US Fed decision",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeUctOExnUFVXamJLNGhmdUhGVmhsZkF2d19fT01HLVVWdGVZQ0hScEpfdC1FVkxCYW9LNUNBNjZNM1VJbWp6WngwMVlwSzFYMFl0bXhPT0M2aGtjOVRiV2xXalBfRlZOVGUzcDRnM19obkExRWRkOUdZX250MWVCUHJkQlFCV180MjRYNFNadzE1Q2RQcmRvUTZ3aldMdmk2Mm44cUhvRVVQYWR1WW1LNWFEekI3aGZya1JiN0thOWJ3MFXSAcMBQVVfeXFMUEU2Rm5peENYZ3VaWkdRY2xZNjd4NE1GWjVCdXlqMW93ZVlMaktXdlg4MjVFLXJMTnBoT014bU9CRC1zbUlYU1c5cXg2N09yeWpuMWdPRU5zNmpxSlBTWkMxeW9ubjRoSjUwMXgyaTdtVmFncnRJN0w3TW1EN3kxdFB0b0hYVFhqRnFQd1Uya2htUTl2d253RzVpcDRvcUE2dURfU2NKTFNtMmFkaElCVmZ1Qk1EaUFRdTZFcktWWUpBeHdF?oc=5",
+          "source": "South China Morning Post",
+          "published": "2026-10-28T23:09:59+00:00"
+        }
+      ]
+    },
+    {
       "market": "fx",
       "market_name": "匯市",
-      "title": "台央行稱資金外流致台幣貶",
-      "summary": "台央行指出約540億美元資金外流致台幣走弱。",
+      "title": "日圓跌破158兌美元",
+      "summary": "日圓兌美元匯率逼近158，受美聯儲與日本央行政策影響。",
       "sources": [
         {
-          "title": "Taiwan’s central bank links currency weakening to $54.3bn outflow — Taipei Times",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaWpsVlN3WXhQRFJpRVRwV2pKRDc4aVQ5MWdsX0VnSFRXbURVeC1IWE1xTXlYQTRRSURmQk1ES3B5Zzd6blpmMlJycVFWejFzTG96dkxIdHBkSHJmZmUxUXQydVVSTEltR1ZncEhIRnZyQkRCd1g2MWc5WnRKUEI2YWlOWE14WmptRXIzejJ5bHBobG1vNGRuWG5WeWNEYUFwa3EwcG84S18ydWZpSFJxVw?oc=5",
-          "source": "UA.NEWS",
-          "published": "2026-10-27T22:59:56+00:00"
-        },
+          "title": "Yen weakens toward 158 per dollar ahead of Fed and Bank of Japan decisions",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQXBQNmpvcGtLUzRQWnRnVHN0b1NfNmEzM2tJcGx2b0pTTjZidDVzdmJWaU5mZ2R0eE1sWEI4djJZekFWWHVXcEhiTGphUGoxSGZuNW9EWGdnTDFTdmtXQXFaa3A3dTdkZUcxVDZiaE1iU0ZiUVA3T0lYVnE2NUFBNWlJX180clotdjhpODhKWTZNZzNBU3o0V1IzWjdHYXotaVdGNW9FYnlSUVlrb3JFRXdrTi1lTm9venpBYWlmV2l1ekNHSVJHZkFGUEQ?oc=5",
+          "source": "Economies.com",
+          "published": "2026-10-28T16:06:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "央行澄清外匯儲備使用說法",
+      "summary": "台灣央行回應官員言論，強調有能力設立外匯儲備基金。",
+      "sources": [
         {
-          "title": "Foreign fund outflows send Taiwan dollar sharply lower: Central bank",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE10N0UzZjBOZjBINnNBM0szeTZJV0hGVjRTMjNwTHRVaTVBRHhlMkhuUVhPWllxRXRoY2pMeEdGakw0d2FzZWtkLVEwakhrZHVtMkZZWkxkVXpjV1QwRm0walhRUUhiTVdzOGQ3NXpMWWg3MDEweUE?oc=5",
-          "source": "Taipei Times",
-          "published": "2026-10-27T16:00:00+00:00"
-        },
-        {
-          "title": "Taiwan dollar reverses early losses to close at NT$32.452 as foreign selling eases, exporters dump dollars",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE03ODJaalRxYTBacGJxc1ZFVU95RHBTMlRidXlIMTROVXJtNGxucEFJQXNrMTRfcDBFa2NLZVNyZTI2eWc3U2JnUDZFanpZdVBCMjRDQkIta3VzTEdDTU92WGRTSW5qS2ZyWEd0VWRuVm9HeUtUYWc?oc=5",
+          "title": "Taiwan's Central Bank Issues Rare Clarification: Yang Chin-long Did Not Say Sovereign Fund Cannot Use Foreign Exchange Reserves, Stresses Taiwan Has Capacity to Establish One",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4zSDAwajhpZzNuV2xvMkRxajd3d2pielpPVm9hUHFIazR0UVh4N1RJNExDM1dqaWVoVXJjQVhYM2RkOGRZdUF3M3BSaG1idGRVc1FVcTU5OTRLMW1lU0ZkOURDV2FqWldUMUF5dWJFTTZmV0c0T3c?oc=5",
           "source": "BigGo Finance",
-          "published": "2026-10-27T12:05:00+00:00"
+          "published": "2026-10-28T16:05:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "台幣跌破32.7元",
+      "summary": "台幣匯率跌至32.7元以下，官員指出與股市走勢相關。",
+      "sources": [
+        {
+          "title": "NT dollar’s drop tied to stocks: official",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5xaktoNUV4NVBFcFVHejFfbDJBTGw4Q19PMFlLcllJRUlXdzJYM2VUYzRKSWJPbHhhYjhfQ3g0S2FEUzUwZjNfVEFvOHhoOXMxazQ0X0hoX3VPajZxQUQwZEZVbWJxNmF1Z0ljc0RVN01oYmx2bXc?oc=5",
+          "source": "Taipei Times",
+          "published": "2026-10-28T16:00:00+00:00"
+        },
+        {
+          "title": "台幣貶破32.7元！賴士葆問「睡得好嗎」 楊金龍笑回：很安穩",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTX3A1Mi1xOGJVN3k4em9QMkhDMkFPU1hrQ2xwWlRJcERnLTlMbFJNNHkzOHJRMzNRMUNIeGdabnFiaEctREhVWmtyRUxiYV8tTFHSAVBBVV95cUxNZjhObnktRkNYRzg4N2lrQzhQeGdNdzJEbHNGbVhzOElqMGE1b1RoN0tBWDVpbDZienE5SjFUdHBxeVExWjNzR2dSNEpudjlBQg?oc=5",
+          "source": "ETtoday財經雲",
+          "published": "2026-10-28T13:48:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "人民幣升至四年新高",
+      "summary": "人民幣兌美元升至四年來最高點，市場聚焦即將舉行的政策會議。",
+      "sources": [
+        {
+          "title": "China's yuan climbs to fresh 4-year high ahead of key policy meetings",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9nTHlYa1pLMzYwUDZTNmt6UzBmOVdnX093aVRIeEFDNUpwZDR3WTRoWDYtRnU3Vy1TYXRNSFlYWWRYc3VSZWI5NWRGaDRfZWhD?oc=5",
+          "source": "The Edge Malaysia",
+          "published": "2026-10-28T19:26:08+00:00"
         }
       ]
     },
     {
       "market": "macro",
       "market_name": "總經",
-      "title": "美國消費者季報顯韌性 兼有壓力",
-      "summary": "美國第三季早期財報顯示消費者仍具韌性，但出現疲弱跡象。",
+      "title": "伊朗拒絕調解方案",
+      "summary": "伊朗官員稱最新調解方案不可接受，顯示中東緊張局勢升溫。",
       "sources": [
         {
-          "title": "Early third-quarter earnings show a 'resilient' U.S. consumer, with signs of strain",
-          "url": "https://www.cnbc.com/2026/10/27/q3-earnings-resilient-consumer.html",
-          "source": "CNBC",
-          "published": "2026-10-27T21:12:55+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "美聯儲將公布利率決策 市場關注",
-      "summary": "美聯儲即將公布利率決策，市場預期影響股債走向。",
-      "sources": [
-        {
-          "title": "Stocks rise ahead of tech earnings, Fed decision",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdC1IVG9VaEdqQnF2YU1UWDJUQ1Z0SGg3YTRGZF9rdktyczhZRFJxbUVYdW5ySlZOOGh5S2NpemFhbnBwcTlSVDdYWF96ZEhYV19JX0hNNkk0dnA3M2NHSnFpRGJQV0JGa3d5a0lpb0RERVRUNWg3bkxfM0dFOTN4bVpFN1lWTV9MUjJQODdfal9HVFhMM2pKSGlFRWs?oc=5",
-          "source": "Yahoo Finance",
-          "published": "2026-10-27T23:04:53+00:00"
-        }
-      ]
-    },
-    {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "波音財報不及預期 股價大跌",
-      "summary": "波音公布財報低於預期，股價大幅下跌。",
-      "sources": [
-        {
-          "title": "Boeing Stock Plunges After Earnings. 737 Progress Isn’t Fast Enough.",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBqTDlic1FKMVhoYkNvVEtMRXp2RXdPT2sxdWRHdzZBMUlEMzlwSDFweGFBVVVWaGtOa0JuTml0b2VsamV0Yi1xVXhuM205SHRQWWVVXzBNenRRUngtZWk1bk9CZmJBM2phOGdoYmE4TWpkeDlobnZwUg?oc=5",
-          "source": "Barron's",
-          "published": "2026-10-27T20:09:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "UPS財報好於預期 股價上漲",
-      "summary": "UPS公布好於預期的財報，股價上漲。",
-      "sources": [
-        {
-          "title": "UPS Stock Jumps After Earnings Deliver Good News for the U.S. Economy",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1oQ01IR1dkcnp3bmQzRWkxMXctS25GQ1pWTEtDRHVfY3FncWVsMVZ6aGRSMFlpN2I1VVVveGVwdU9XUWhEQTJPZUQwRDdJalpLV20yNzR3T3Vsb2lVN2NVVGhzTlhZaUNVQ0s2TTdzN3F3Z2ln?oc=5",
-          "source": "Barron's",
-          "published": "2026-10-27T20:19:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "Polymarket遭CFTC再度調查",
-      "summary": "Polymarket再次受到美國商品期貨交易委員會調查。",
-      "sources": [
-        {
-          "title": "Polymarket faces renewed CFTC probe over U.S. access to offshore platform",
-          "url": "https://www.cnbc.com/2026/10/27/cftc-probes-polymarket-over-2022-settlement.html",
-          "source": "CNBC",
-          "published": "2026-10-27T21:24:06+00:00"
+          "title": "Iran sees only unacceptable ideas in latest mediation to end war, official says",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMTAtQ19McEJXRVg0bmN2S1JaMm9lX2VsbUpzSjZnZi1md09fZnBoREF1U2lKT25ybDRzR0lxcC13XzcxRU1UTFFFUXRzem9TVjdNMHA4cjVPel9Rdk02UHk4M1BDUXFZcGRyR0FqcnlhUDNtTFczdy1Nd0VNNktvM3V0bUEzNC1qdXNLQngwOE9HVGtydEFIa1hqdm5sWjRHVHNNaFVteUZSbnVwa2U0MWxvd2RleGJpaXIxeg?oc=5",
+          "source": "Reuters",
+          "published": "2026-10-28T20:37:00+00:00"
         }
       ]
     }
   ],
   "usage": {
-    "prompt_tokens": 2339,
-    "completion_tokens": 2500,
-    "total_tokens": 4839
+    "prompt_tokens": 2291,
+    "completion_tokens": 1656,
+    "total_tokens": 3947
   }
 }

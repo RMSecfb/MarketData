@@ -29,6 +29,7 @@ Extended indicators (markets_ext):
 
 import json
 import math
+import re
 import os
 import sys
 import time
@@ -425,13 +426,113 @@ FRED_SERIES = {
     "hy_oas": ("BAMLH0A0HYM2", "美國高收益債利差"),
 }
 
+def yahoo_meta_get(symbol, target_date):
+    """Yahoo 日線最新一根的收盤價有時是空值（非美國指數常見），真正的收盤放在 meta 的
+    regularMarketPrice／regularMarketTime。只在 meta 的市場日期等於目標日時採用，
+    前一日收盤取日線中早於目標日的最後一筆。"""
+    result, host = yahoo_chart_request(
+        symbol, {"interval": "1d", "range": "1mo", "includePrePost": "false"}
+    )
+    if result is None:
+        return None
+    meta = result.get("meta", {}) or {}
+    tz_name = meta.get("exchangeTimezoneName")
+    timestamps = result.get("timestamp") or []
+    quotes = result.get("indicators", {}).get("quote") or [{}]
+    closes = quotes[0].get("close") or []
+    tail = [
+        (market_date_from_timestamp(ts, tz_name), c)
+        for ts, c in list(zip(timestamps, closes))[-3:]
+    ]
+    price, mtime = meta.get("regularMarketPrice"), meta.get("regularMarketTime")
+    mdate = market_date_from_timestamp(mtime, tz_name) if mtime else None
+    print(f"  🔎 {symbol} 日線最後 3 筆 {tail}；meta 價格 {price}（{mdate}）")
+    if not is_valid_number(price) or mdate != target_date:
+        return None
+    prev_rows = sorted(
+        (
+            (market_date_from_timestamp(ts, tz_name), float(c))
+            for ts, c in zip(timestamps, closes)
+            if is_valid_number(c)
+        ),
+        reverse=True,
+    )
+    prev_val = next((v for d, v in prev_rows if d < target_date), None)
+    entry = make_entry(price, prev_val, mdate, f"yahoo_meta:{host}", target_date)
+    if entry:
+        print(f"  ✅ {symbol} Yahoo meta: {entry['value']} ({entry['date']})")
+    return entry
+
+TWSE_INDEX_URLS = (
+    "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX",
+    "https://www.twse.com.tw/exchangeReport/MI_INDEX",
+)
+
+def twse_taiex_on(day):
+    """證交所每日收盤行情：回傳該日發行量加權股價指數的 (收盤, 前一日收盤)，休市回傳 None。"""
+    ymd = day.replace("-", "")
+    for url in TWSE_INDEX_URLS:
+        try:
+            response = requests.get(
+                url,
+                params={"date": ymd, "type": "IND", "response": "json"},
+                headers=HEADERS,
+                timeout=20,
+            )
+            response.raise_for_status()
+            payload = response.json()
+        except Exception as exc:
+            print(f"  ⚠ TWSE {day}: {type(exc).__name__}: {exc}")
+            continue
+        tables = [t.get("data") or [] for t in payload.get("tables") or []]
+        tables += [v for k, v in payload.items() if k.startswith("data") and isinstance(v, list)]
+        for rows in tables:
+            for row in rows:
+                if not row or "發行量加權股價指數" not in str(row[0]):
+                    continue
+                try:
+                    close = float(str(row[1]).replace(",", ""))
+                    points = float(str(row[3]).replace(",", ""))
+                except (ValueError, IndexError):
+                    continue
+                sign = -1 if "-" in re.sub(r"<[^>]+>", "", str(row[2])) or "green" in str(row[2]) else 1
+                return close, round(close - sign * points, 2)
+        return None  # 有回應但沒有指數資料：休市
+    return None
+
+def twse_taiex_get(target_date, allow_stale=False):
+    """台股加權指數改用證交所官方資料（Yahoo ^TWII 曾長時間停在舊日期）。"""
+    day = datetime.strptime(target_date, "%Y-%m-%d")
+    for back in range(0, 8 if allow_stale else 1):
+        d = (day - timedelta(days=back)).strftime("%Y-%m-%d")
+        if (day - timedelta(days=back)).weekday() >= 5:
+            continue
+        got = twse_taiex_on(d)
+        time.sleep(0.5)
+        if got:
+            entry = make_entry(got[0], got[1], d, "twse_mi_index", target_date)
+            if entry:
+                print(f"  {'⚠' if entry['is_stale'] else '✅'} TWSE 加權指數: {entry['value']} ({d})")
+            return entry
+    return None
+
 def ext_market_get(symbol, target_date):
-    """延伸指標只用日線來源；美股盤中 5 分鐘線的交易時段不適用亞洲指數與外匯。"""
-    for getter in (yahoo_daily_get, yfinance_history_get):
+    """延伸指標只用日線來源；美股盤中 5 分鐘線的交易時段不適用亞洲指數與外匯。
+    順序：同日日線 → Yahoo meta 最新收盤 → 最近一筆（標示非同日）。台股加權以證交所為主。"""
+    strict = [yahoo_daily_get, yfinance_history_get]
+    if symbol == "^TWII":
+        strict = [lambda s, t, **k: twse_taiex_get(t, **k)] + strict
+    for getter in strict:
         result = getter(symbol, target_date)
         if result:
             return result
-    for getter in (yahoo_daily_get, yfinance_history_get):
+    result = yahoo_meta_get(symbol, target_date)
+    if result:
+        return result
+    stale = [yahoo_daily_get, yfinance_history_get]
+    if symbol == "^TWII":
+        stale = [lambda s, t, **k: twse_taiex_get(t, **k)] + stale
+    for getter in stale:
         result = getter(symbol, target_date, allow_stale=True)
         if result:
             result["fallback_reason"] = "target_date_unavailable"
@@ -701,9 +802,27 @@ def print_summary(data):
     quality = data.get("data_quality", {})
     print(f"  Stale items: {quality.get('stale_items', [])}")
 
+def refresh_ext_only(target_date):
+    """只重抓延伸指標：主要資料與人工 CDS 完全不動，只替換 markets_ext。"""
+    ext = fetch_ext(target_date)
+    for path in (DATA_DIR / f"market_{target_date}.json", DATA_DIR / "latest.json"):
+        existing = load_existing_json(path)
+        if not isinstance(existing, dict) or existing.get("target_date") != target_date:
+            print(f"ℹ️ {path} 不是 {target_date} 的資料，略過")
+            continue
+        existing["markets_ext"] = ext
+        path.write_text(
+            json.dumps(existing, ensure_ascii=False, indent=2, allow_nan=False),
+            encoding="utf-8",
+        )
+        print(f"✅ 已更新 {path} 的延伸指標")
+
 if __name__ == "__main__":
     print("🕒 Taiwan time:", datetime.now(ZoneInfo("Asia/Taipei")).isoformat())
     print("🗓 Target market date:", TARGET)
+    if "--ext-only" in sys.argv[2:]:
+        refresh_ext_only(TARGET)
+        sys.exit(0)
     data = fetch_all(TARGET)
     if not validate_data(data, TARGET):
         print("\n❌ DATA_UNAVAILABLE")

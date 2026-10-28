@@ -802,15 +802,45 @@ def print_summary(data):
     quality = data.get("data_quality", {})
     print(f"  Stale items: {quality.get('stale_items', [])}")
 
+def merge_ext(old, new, target_date):
+    """逐項比較：新值抓不到、或日期比原值舊時保留原值（例如亞洲盤中重抓只拿得到前一日、
+    FRED 暫時失敗），避免重抓反而讓資料變差。"""
+    old = old if isinstance(old, dict) else {}
+    merged = {}
+    for group in ("indices", "fx", "credit"):
+        merged[group] = {}
+        keys = list((new.get(group) or {}).keys()) + [
+            k for k in (old.get(group) or {}) if k not in (new.get(group) or {})
+        ]
+        for key in keys:
+            n = (new.get(group) or {}).get(key)
+            o = (old.get(group) or {}).get(key)
+            if o and (not n or str(n.get("date", "")) < str(o.get("date", ""))):
+                print(f"  ↩ {key} 保留原值（{o.get('date')}），新抓結果 {n.get('date') if n else '無'}")
+                merged[group][key] = o
+            else:
+                merged[group][key] = n
+    stale = [k for g in ("indices", "fx", "credit") for k, v in merged[g].items() if v and v.get("is_stale")]
+    missing = [k for g in ("indices", "fx", "credit") for k, v in merged[g].items() if not v]
+    merged["quality"] = {
+        "target_date": target_date,
+        "stale_items": stale,
+        "missing_items": missing,
+        "has_stale": bool(stale),
+        "has_missing": bool(missing),
+    }
+    return merged
+
 def refresh_ext_only(target_date):
-    """只重抓延伸指標：主要資料與人工 CDS 完全不動，只替換 markets_ext。"""
+    """只重抓延伸指標：主要資料與人工 CDS 完全不動，只更新 markets_ext。"""
     ext = fetch_ext(target_date)
     for path in (DATA_DIR / f"market_{target_date}.json", DATA_DIR / "latest.json"):
         existing = load_existing_json(path)
         if not isinstance(existing, dict) or existing.get("target_date") != target_date:
             print(f"ℹ️ {path} 不是 {target_date} 的資料，略過")
             continue
-        existing["markets_ext"] = ext
+        existing["markets_ext"] = merge_ext(existing.get("markets_ext"), ext, target_date)
+        print(f"📊 合併後非同日 {existing['markets_ext']['quality']['stale_items']}、缺漏 {existing['markets_ext']['quality']['missing_items']}")
         path.write_text(
             json.dumps(existing, ensure_ascii=False, indent=2, allow_nan=False),
             encoding="utf-8",

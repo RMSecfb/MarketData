@@ -1,0 +1,181 @@
+{
+  "generated_at": "2026-10-29T23:17:23.262177+00:00",
+  "date": "2026-10-30",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 45
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 49
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 100
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 13
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 38
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 30
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 20
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "美聯儲維持利率不變",
+      "summary": "美聯儲宣布基準利率維持在3.75%至4%區間，未作變動。",
+      "sources": [
+        {
+          "title": "Federal Reserve Holds Interest Rates Steady at 3.75% to 4%",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPN3EwS0JCMThHMFlMbFgzMElkb05xbHpXWjNOb00tTVM0TzBhMm9qcmRyV1N5SFdXdlBpVEdLaWhMUWdXWFFXNl9lWVJ4bk4taGVMbmNYWktCem1jeERkbjgxZC16U0Iwa2FJbUl2OXN0SE4tM2NxNUpoVXc3WjdRZVE1NXNCRWVXTW5mV0UyTFU?oc=5",
+          "source": "Hardware Retailing",
+          "published": "2026-10-29T22:52:58+00:00"
+        },
+        {
+          "title": "US interest rates held steady and economy grows - what it means for you",
+          "url": "https://www.bbc.co.uk/news/articles/cr15jxzv4w24o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-10-29T17:15:05+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "Alphabet財報失望股市大跌",
+      "summary": "Alphabet財報未達預期，股價下跌逾12%，市值蒸發約5000億美元。",
+      "sources": [
+        {
+          "title": "Stock Market Today: Nasdaq Sinks 400 Points; Google Stock's Tumble in Focus — Live Updates",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQM3ZEU2VfQkFyaEZwcGF4RkM4N3VrTXRYWlFFY1hFbFJDNk9OcWdFNnluMlVCelI4akpOWnlNZmVCNDhKdWhkQ1p1aE5Vell1NkpZM1JOakxUQUlNVko4RmRhOWhubzNkY2ttUmh0b3VlZGtvWkkwYzk1N082RERRV0FOOGljcDg?oc=5",
+          "source": "WSJ",
+          "published": "2026-10-29T22:55:12+00:00"
+        },
+        {
+          "title": "Google value plunges by $500bn as AI fears rattle Wall Street",
+          "url": "https://www.bbc.co.uk/news/articles/cm9qzdqpxy48o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-10-29T22:17:52+00:00"
+        },
+        {
+          "title": "Nasdaq Dives As Alphabet Has Worst Day Ever. But Note These Stock Market Silver Linings.",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdTZmdnViVXpWYjZ4bjBYM2ZBRXVxb0VCdUxBV0h2dmUzUFYwWS1HM0NyWHdGZ3U4SG82M2dNdGoyZmpNdTVmSGRtazVJRzVET3F4ZkhzQnlJc1VLTmNOcVlUOU1qQjAydWhPN2JLQmN1U1BJcjdVcG5xR0VNamczX01lTlRtR1R6UERPY0N2akpEMV82SnZqX2hoZ1B5T0tZLVhZaWc3MVhFbk8yb01kMDF3bXYzckIyS0tWc1djd00ya1ZDNzdz?oc=5",
+          "source": "Investor's Business Daily",
+          "published": "2026-10-29T22:26:07+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "日圓升至157上限受美債影響",
+      "summary": "日圓升至157上限，因美國國債殖利率下降提供支撐，投資人調整部位。",
+      "sources": [
+        {
+          "title": "Yen Extends Gains to Upper 157 Range as Falling U.S. Treasury Yields Provide Support; Position Adjustment Ahead of BOJ Meeting",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5GOHF4WFNjeFlCN0stY0ZuV1huME1IUHROam55T0pSM0k1dlNOMnVfUWkxWFlQTy1pb1RScU1NYzFIU3hGV1R1WWZiWjhKeUJTZjRGdllYdi1nUHQ4Rl9sazR5eGtTeWxRM0tXT3hSSmM4cktPX1E?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-10-29T22:55:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "人民幣升至四年高點美聯儲決策後",
+      "summary": "人民幣兌美元升至四年高點，因美聯儲維持利率不變後走強。",
+      "sources": [
+        {
+          "title": "PBOC Nudges Yuan Fix Stronger Against Dollar",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVjM1aEZXeTlNaXpmSHdEOVdJWVZCTUVwQTFqZ29zVFpCS0lHN1cxRHJJRE9MOGg5YTlncXY4c0xmVU1tMnk0eG9URXQ5aDRwT0pGUFpLSXNvaHMwbkgyOWVyb1J4NUE5N3NFcmgtbkxRZXc0MGFnQkhNZDF6STVtZ2N3Q3RsT3NDZ0t6TVE4amY?oc=5",
+          "source": "TradingPedia",
+          "published": "2026-10-29T06:43:39+00:00"
+        },
+        {
+          "title": "China's yuan hits 4-year high versus dollar after Fed decision",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMGgtbVN3X01OeThRSzJ4YW1reDBCbXJpSmpVRF9US21mVHF1bXRfbTl4YXRWdFVQaUpyeDRDVE5wOTgzRktaV2tPeE5sUEhjWDgtMmpyczZidEJhSm9ZcTBNS0htOGZXU28wTmRpcDg3cmpFYmNON3ExUFlBZnN3N2duZnVYOTh5SVd5bS1HTnlXbE53T3JhcFJaVFktUDVNTHA3TXRxSGk?oc=5",
+          "source": "Investify",
+          "published": "2026-10-29T06:18:18+00:00"
+        },
+        {
+          "title": "Global Market: China’s yuan hits four-year high against dollar after Fed holds rates",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOT29MaVdFMTRCOFNWUFg1OG5OdWhWR1FyZzRXRlBmOVNyejhVMG1LU2E5Zkd2b0FPaXM2ckpzU1IyMVduTGdWVnMtZC1oQWRrNnVFdzhueElyMUFIWWdmSzBwV2VRd3YzUjBtUzI3WnJFOVFPRl9sZFNLejJnTmdMakh1MXlLbS1HWjVRVnRvOXJmZ3ljeDhjal9pNHFZWUdQMUJwaDVJUUNnVzlkcGNRTE80X0xyckRLZU14T2MwYVNmV3FXMXZWWnN6RlA5VVd1TU5DOTN0UU51aWxBbmNMSEFtNTdROFRqczYzTHJTR07SAfYBQVVfeXFMUHhiQ1JKcndsMkw2QklhREZIRG5NWlBKbjN6Uk5JUWUwOEJkdGI1UXNLbTd0c05rOUNNS0trSHh3ZHNCRVF6V2RCT3g1N2NVYm53RWtNeU9GOHk2SjBDUFhnZXlvdDIwel9GRnB2TEhfNjlnUERxYk5iUTZuRGttZ0R0RkNXR3NCWk1Ld1RiOFgxOVFuQVJCcS1ubFNsbmZXbUJkS2hXWjc1MWNLYnRrYlFjZ1dRZUoxLVZFSzNaQko3VlppamJYcXlzV3c0M2JCWWJxYWRmSzEySDFHVlFWQlo5RkdTNjN4b1otck43MDVYVE85Nk13?oc=5",
+          "source": "The Economic Times",
+          "published": "2026-10-29T04:32:38+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "外資連續四天賣超逾2300億台股受壓",
+      "summary": "外資連續四天賣超台股超2300億元，三檔股票賣出近14萬張。",
+      "sources": [
+        {
+          "title": "外資賣瘋了！4天賣超逾2300億元 這3檔砍近14萬張居前3",
+          "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxNVGtBWmZxbW94cmpCQ2EtM0Y2T0N0SXFseTBueTlXNW0zcHdFQ1l0dzNVZ0lKU3RWemEyWVN5Vkk5N25icmlvY3haUTBvNUc1UVQzYUxXeWNrQ3hjR1dJOWQ0T2IwVlIybmZpamR6ZGRlV2dRcEtMMTgyUjROZnJhdHlhWXZ1WDRHWTY3NWMxUnpnZkZXWmctWkc4c21qUjZ5UXZheG9sTzN6WmlzUVNTcDZ5cGM5S2tkTEMycDZzM3hvQVl0YnVrbjcyejZPYWZoUEVHLUswZmJ6c0lmTkhNLWhlM2F0LXhqLU9BUklLalJtOGR1X3NpVW40LTY0c0lMazEwV0R0dTdsWmZTakVKT3BoNFN1dVBHeEhYaHpHZktPSnBxLUQ3SHBkSEJLc3NPR3M4TEE3eWpGTDc2bzRQOGR5bUtyUQ?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-10-29T20:25:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "Binance暫停提領疑遭駭客盜資",
+      "summary": "Binance暫停用戶提領，懷疑駭客盜走數十億美元資金。",
+      "sources": [
+        {
+          "title": "Binance pauses withdrawals as hackers suspected of stealing billions in crypto",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbm5LZnZPOUNfY002TlpQTUVSVlhqekxhbGdld0V3V2RENUJwWjBtTFFhV1NKMHQ5THI2SjhwZkFIM25QZkRUYVNiWm5RdWF5Ty1paDNWbVhtQUtsOWQyLXEyRVRMSmJiSmRoUkY0OHI1T2pkbWQ4LTBGdmxWNFNNenM1UEtwMXp4M0lqR1RXa1MxcHNEdUU1dVJuZ2tEZllCVEJNajFoQ0tMODhpUjcxaVNKMA?oc=5",
+          "source": "TechCrunch",
+          "published": "2026-10-29T22:27:23+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美國第三季消費支出強勁AI推動經濟",
+      "summary": "美國第三季消費支出強勁，AI相關投資推動經濟成長。",
+      "sources": [
+        {
+          "title": "Robust consumer spending, AI-related investment power US economy in third quarter",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNd0JuSzdaWWtxaGJGdW5CV0pONGc2dlpzMVJnaGl2UUIwQmtkc1FNSUVNQzhxTFRycVZ4dGpRaVlvbGdraXBWenkzY1otSno3TC1zWTlQUmFRandmM0hlSm14a1pfWTJMNjdNclo5bFlFQWt3UlpIcFlPY3RtZzBQVXhKUzVPSWMxUXZFckNVM3ZXZEU?oc=5",
+          "source": "Reuters",
+          "published": "2026-10-29T20:29:42+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2305,
+    "completion_tokens": 1860,
+    "total_tokens": 4165
+  }
+}

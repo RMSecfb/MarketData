@@ -51,9 +51,9 @@
     "is_stale": false,
     "source": "treasury_gov"
   },
-  "spread": 38.0,
+  "spread": 38,
   "sox": {
-    "value": 11684.0,
+    "value": 11684,
     "prev": 11482.5,
     "chg_abs": 201.5,
     "chg_pct": 1.7548,
@@ -276,9 +276,9 @@
     },
     "credit": {
       "hy_oas": {
-        "value": 318.0,
-        "prev": 330.0,
-        "chg_abs": -12.0,
+        "value": 318,
+        "prev": 330,
+        "chg_abs": -12,
         "chg_pct": -3.6364,
         "date": "2026-10-27",
         "target_date": "2026-10-28",
@@ -299,5 +299,59 @@
       "has_stale": true,
       "has_missing": false
     }
-  }
+  },
+  "cds": {
+    "US": {
+      "value": 48,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
+      "date": "2026-10-28",
+      "name": "美國",
+      "flag": "🇺🇸",
+      "source": "manual"
+    },
+    "KR": {
+      "value": 24.96,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
+      "date": "2026-10-28",
+      "name": "南韓",
+      "flag": "🇰🇷",
+      "source": "manual"
+    },
+    "JP": {
+      "value": 30.91,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
+      "date": "2026-10-28",
+      "name": "日本",
+      "flag": "🇯🇵",
+      "source": "manual"
+    },
+    "CN": {
+      "value": 37.92,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
+      "date": "2026-10-28",
+      "name": "中國",
+      "flag": "🇨🇳",
+      "source": "manual"
+    },
+    "HK": {
+      "value": 26.59,
+      "prev": null,
+      "chg_abs": null,
+      "chg_pct": null,
+      "date": "2026-10-28",
+      "name": "香港",
+      "flag": "🇭🇰",
+      "source": "manual"
+    }
+  },
+  "cds_updated_at": "2026-10-29T00:44:35.966Z",
+  "cds_updated_by": "Cloudflare Pages user"
 }

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-29T23:17:23.262177+00:00",
-  "date": "2026-10-30",
+  "generated_at": "2026-10-30T23:17:26.782000+00:00",
+  "date": "2026-10-31",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -8,27 +8,27 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 45
+      "count": 50
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 49
+      "count": 39
     },
     {
       "name": "Google News 市場",
       "ok": true,
-      "count": 100
+      "count": 99
     },
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 13
+      "count": 21
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 38
+      "count": 34
     },
     {
       "name": "CNBC",
@@ -38,7 +38,7 @@
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 20
+      "count": 16
     }
   ],
   "status": "ok",
@@ -47,135 +47,143 @@
     {
       "market": "bond",
       "market_name": "債市",
-      "title": "美聯儲維持利率不變",
-      "summary": "美聯儲宣布基準利率維持在3.75%至4%區間，未作變動。",
+      "title": "美聯儲官員稱需再度升息",
+      "summary": "美國聯儲官員表示需回到升息以抑制通膨，暗示未來加息可能。",
       "sources": [
         {
-          "title": "Federal Reserve Holds Interest Rates Steady at 3.75% to 4%",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPN3EwS0JCMThHMFlMbFgzMElkb05xbHpXWjNOb00tTVM0TzBhMm9qcmRyV1N5SFdXdlBpVEdLaWhMUWdXWFFXNl9lWVJ4bk4taGVMbmNYWktCem1jeERkbjgxZC16U0Iwa2FJbUl2OXN0SE4tM2NxNUpoVXc3WjdRZVE1NXNCRWVXTW5mV0UyTFU?oc=5",
-          "source": "Hardware Retailing",
-          "published": "2026-10-29T22:52:58+00:00"
-        },
-        {
-          "title": "US interest rates held steady and economy grows - what it means for you",
-          "url": "https://www.bbc.co.uk/news/articles/cr15jxzv4w24o?at_medium=RSS&at_campaign=rss",
-          "source": "BBC Business",
-          "published": "2026-10-29T17:15:05+00:00"
-        }
-      ]
-    },
-    {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "Alphabet財報失望股市大跌",
-      "summary": "Alphabet財報未達預期，股價下跌逾12%，市值蒸發約5000億美元。",
-      "sources": [
-        {
-          "title": "Stock Market Today: Nasdaq Sinks 400 Points; Google Stock's Tumble in Focus — Live Updates",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQM3ZEU2VfQkFyaEZwcGF4RkM4N3VrTXRYWlFFY1hFbFJDNk9OcWdFNnluMlVCelI4akpOWnlNZmVCNDhKdWhkQ1p1aE5Vell1NkpZM1JOakxUQUlNVko4RmRhOWhubzNkY2ttUmh0b3VlZGtvWkkwYzk1N082RERRV0FOOGljcDg?oc=5",
-          "source": "WSJ",
-          "published": "2026-10-29T22:55:12+00:00"
-        },
-        {
-          "title": "Google value plunges by $500bn as AI fears rattle Wall Street",
-          "url": "https://www.bbc.co.uk/news/articles/cm9qzdqpxy48o?at_medium=RSS&at_campaign=rss",
-          "source": "BBC Business",
-          "published": "2026-10-29T22:17:52+00:00"
-        },
-        {
-          "title": "Nasdaq Dives As Alphabet Has Worst Day Ever. But Note These Stock Market Silver Linings.",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdTZmdnViVXpWYjZ4bjBYM2ZBRXVxb0VCdUxBV0h2dmUzUFYwWS1HM0NyWHdGZ3U4SG82M2dNdGoyZmpNdTVmSGRtazVJRzVET3F4ZkhzQnlJc1VLTmNOcVlUOU1qQjAydWhPN2JLQmN1U1BJcjdVcG5xR0VNamczX01lTlRtR1R6UERPY0N2akpEMV82SnZqX2hoZ1B5T0tZLVhZaWc3MVhFbk8yb01kMDF3bXYzckIyS0tWc1djd00ya1ZDNzdz?oc=5",
-          "source": "Investor's Business Daily",
-          "published": "2026-10-29T22:26:07+00:00"
+          "title": "Fed officials are already saying they’ll need to get back to hiking rates",
+          "url": "https://www.cnbc.com/2026/10/30/musalem-fed-monetary-policy-tightening.html",
+          "source": "CNBC",
+          "published": "2026-10-30T21:53:10+00:00"
         }
       ]
     },
     {
       "market": "fx",
       "market_name": "匯市",
-      "title": "日圓升至157上限受美債影響",
-      "summary": "日圓升至157上限，因美國國債殖利率下降提供支撐，投資人調整部位。",
+      "title": "日銀維持政策、美元兌日圓微跌",
+      "summary": "日本央行宣示通膨目標已達成並維持現行利率，美元兌日圓小幅下跌。",
       "sources": [
         {
-          "title": "Yen Extends Gains to Upper 157 Range as Falling U.S. Treasury Yields Provide Support; Position Adjustment Ahead of BOJ Meeting",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5GOHF4WFNjeFlCN0stY0ZuV1huME1IUHROam55T0pSM0k1dlNOMnVfUWkxWFlQTy1pb1RScU1NYzFIU3hGV1R1WWZiWjhKeUJTZjRGdllYdi1nUHQ4Rl9sazR5eGtTeWxRM0tXT3hSSmM4cktPX1E?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-10-29T22:55:00+00:00"
+          "title": "Dollar vs Yen edges lower as Bank of Japan signals inflation goal met and maintains policy",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNdmU3RUVuaUVRd3d2UmFiWk9KWXdKMHRJWHpWRklWRHUzb1E5b2E4VDJrRlJkcUtCYjFVZ3hXeVQyZFY5M3lWYUpnTHlyb3ZtVndIa2dUS3VGLUZMVFBGQWxVNzlVZjF6R3NzMXFMNGMwS1R6TjVpLXFHaUVXQU9iT2ItT1U?oc=5",
+          "source": "Traders Union",
+          "published": "2026-10-30T15:46:39+00:00"
+        },
+        {
+          "title": "US dollar to Japanese yen rate steady after Bank of Japan holds rates: Can USD/JPY avoid further losses?",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdHBYSDNEdHJHLVhSRllSU0Y0eGtoTjZscGQ1eWREMjdrcnIxaFprRlhqcTV6NkE0R3BxSzUyeG5vMmR2LXlMR3NKVFpNbDVYQkFGLVRhVHVrR3BOblFUNjMxTlJfYW01TDdmd2x5cUx0SG5OUlozUng0X1hIbi16VVMtYkI?oc=5",
+          "source": "Traders Union",
+          "published": "2026-10-30T11:19:26+00:00"
         }
       ]
     },
     {
       "market": "fx",
       "market_name": "匯市",
-      "title": "人民幣升至四年高點美聯儲決策後",
-      "summary": "人民幣兌美元升至四年高點，因美聯儲維持利率不變後走強。",
+      "title": "中國央行微調人民幣中間價升值",
+      "summary": "中國人民銀行將人民幣中間價略微上調，對美元走強。",
       "sources": [
         {
-          "title": "PBOC Nudges Yuan Fix Stronger Against Dollar",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVjM1aEZXeTlNaXpmSHdEOVdJWVZCTUVwQTFqZ29zVFpCS0lHN1cxRHJJRE9MOGg5YTlncXY4c0xmVU1tMnk0eG9URXQ5aDRwT0pGUFpLSXNvaHMwbkgyOWVyb1J4NUE5N3NFcmgtbkxRZXc0MGFnQkhNZDF6STVtZ2N3Q3RsT3NDZ0t6TVE4amY?oc=5",
+          "title": "PBOC Nudges Yuan Fix Slightly Stronger Against U.S. Dollar",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQYnRIcjZ4anVYTnVEUkU4WjVmMkQ1YkV2S1N0RWd4emdyZlRSUE5mNzFjUkJBNllfcVdadEFvYmtfNnRTTkkzWWRCVmYtWHJQOUFtRmxfVkltd0twOHgzeDQ0MUNNbEN2TDgweV9yS0NGU1J0d3RvTjhOQWZXVldMY1o3YzM0TGNKbWlqYnZ5d1F6RVFZZjl4VHpESl9jX25nVlE?oc=5",
           "source": "TradingPedia",
-          "published": "2026-10-29T06:43:39+00:00"
-        },
+          "published": "2026-10-30T07:13:18+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美國聯邦債務超過GDP",
+      "summary": "美國聯邦債務在2026財政年度突破國內生產總值，顯示財政赤字擴大。",
+      "sources": [
         {
-          "title": "China's yuan hits 4-year high versus dollar after Fed decision",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMGgtbVN3X01OeThRSzJ4YW1reDBCbXJpSmpVRF9US21mVHF1bXRfbTl4YXRWdFVQaUpyeDRDVE5wOTgzRktaV2tPeE5sUEhjWDgtMmpyczZidEJhSm9ZcTBNS0htOGZXU28wTmRpcDg3cmpFYmNON3ExUFlBZnN3N2duZnVYOTh5SVd5bS1HTnlXbE53T3JhcFJaVFktUDVNTHA3TXRxSGk?oc=5",
-          "source": "Investify",
-          "published": "2026-10-29T06:18:18+00:00"
-        },
+          "title": "Federal debt surpassed GDP for fiscal 2026",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80eDg1SVc2N3ZhQXVzVUlWQmh2N2ZiWGl6LTk3SVFBRThHWDg5TGJzUHVpaHZxdjlPeDZ2MFlheWlPZkZ6YW1EOGdweWJ3TDFmaTBpYzdxd2tva19ySGktVUhYZ0h0T1NzXzRlQ0xXemROTWVDazIwNm0tVdIBgAFBVV95cUxObkl4dFNudW9wdVRhMlRkRjE4dWFtRldtaUZ0SzVKMEY5Z3hhM0VwYy1QX04wVEVBcmFtejNIVGY1NEZhU1lPMF9Vc0VSMHZnR08xNzkyQ0RwUVhETXoxVTVCSXNQMlZVb2FRQ1J3Y1FyaHdsVmxkYkFHMnVaNXYxYg?oc=5",
+          "source": "The Hill",
+          "published": "2026-10-30T21:05:43+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "油價因中東與烏克蘭衝突上漲",
+      "summary": "中東與俄烏衝突加劇供應憂慮，推升全球油價。",
+      "sources": [
         {
-          "title": "Global Market: China’s yuan hits four-year high against dollar after Fed holds rates",
-          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOT29MaVdFMTRCOFNWUFg1OG5OdWhWR1FyZzRXRlBmOVNyejhVMG1LU2E5Zkd2b0FPaXM2ckpzU1IyMVduTGdWVnMtZC1oQWRrNnVFdzhueElyMUFIWWdmSzBwV2VRd3YzUjBtUzI3WnJFOVFPRl9sZFNLejJnTmdMakh1MXlLbS1HWjVRVnRvOXJmZ3ljeDhjal9pNHFZWUdQMUJwaDVJUUNnVzlkcGNRTE80X0xyckRLZU14T2MwYVNmV3FXMXZWWnN6RlA5VVd1TU5DOTN0UU51aWxBbmNMSEFtNTdROFRqczYzTHJTR07SAfYBQVVfeXFMUHhiQ1JKcndsMkw2QklhREZIRG5NWlBKbjN6Uk5JUWUwOEJkdGI1UXNLbTd0c05rOUNNS0trSHh3ZHNCRVF6V2RCT3g1N2NVYm53RWtNeU9GOHk2SjBDUFhnZXlvdDIwel9GRnB2TEhfNjlnUERxYk5iUTZuRGttZ0R0RkNXR3NCWk1Ld1RiOFgxOVFuQVJCcS1ubFNsbmZXbUJkS2hXWjc1MWNLYnRrYlFjZ1dRZUoxLVZFSzNaQko3VlppamJYcXlzV3c0M2JCWWJxYWRmSzEySDFHVlFWQlo5RkdTNjN4b1otck43MDVYVE85Nk13?oc=5",
-          "source": "The Economic Times",
-          "published": "2026-10-29T04:32:38+00:00"
+          "title": "Oil Prices Rise as Middle East, Ukraine-Russia Conflict Fuel Supply Worries",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUnhpZVZHQUliUnJIQUJWb3JmbVl6VV9GZ3NJN0M3X0EzZU9pa2N4SEcybGNlakZkcmxyeVNqV0E5LWRxTU1VZUM4Uk9TdGZTS0RJLU1CZ1JVVFBlM0pTcWFPd2U0b1RFTkVyV2oxSzNwZzYzMjBwVmRtbUFvWUowS1RPSEQ3eE1Qa2ZQQVJ5SExsbzVXQTQtNlZYRC1Bbnh2YmpnZ2VGaHZLQlJDRWJRZEZOU2VCZ1hPcENQcTUtYw?oc=5",
+          "source": "WSJ",
+          "published": "2026-10-30T20:19:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "台幣十月大跌 6.26 分",
+      "summary": "台幣在十月跌幅創近十年最大月跌，成為亞洲最弱貨幣。",
+      "sources": [
+        {
+          "title": "Taiwan Dollar Plunges 6.26 Cents in October, Weakest Asian Currency and Biggest Monthly Drop in Nearly a Decade",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBXay1wUXFhbVZpNlZGQUhMV28wcXRwRXBYeEtkdk10eUF2ZW1PamFFRTZ5OUdWcFFHRVNTYnIyM3VGckpFNXI3djBWdTktbjhuV3lUbHRuWXVGMUExYlZFVG9lYjlEUFlQRDgyVGpFeDYwZlBlVkE?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-10-30T12:06:00+00:00"
         }
       ]
     },
     {
       "market": "equity",
       "market_name": "股市",
-      "title": "外資連續四天賣超逾2300億台股受壓",
-      "summary": "外資連續四天賣超台股超2300億元，三檔股票賣出近14萬張。",
+      "title": "AI 恐慌致美股大幅下跌",
+      "summary": "因AI現金燃燒疑慮與油價上漲，美國股市大幅下挫。",
       "sources": [
         {
-          "title": "外資賣瘋了！4天賣超逾2300億元 這3檔砍近14萬張居前3",
-          "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxNVGtBWmZxbW94cmpCQ2EtM0Y2T0N0SXFseTBueTlXNW0zcHdFQ1l0dzNVZ0lKU3RWemEyWVN5Vkk5N25icmlvY3haUTBvNUc1UVQzYUxXeWNrQ3hjR1dJOWQ0T2IwVlIybmZpamR6ZGRlV2dRcEtMMTgyUjROZnJhdHlhWXZ1WDRHWTY3NWMxUnpnZkZXWmctWkc4c21qUjZ5UXZheG9sTzN6WmlzUVNTcDZ5cGM5S2tkTEMycDZzM3hvQVl0YnVrbjcyejZPYWZoUEVHLUswZmJ6c0lmTkhNLWhlM2F0LXhqLU9BUklLalJtOGR1X3NpVW40LTY0c0lMazEwV0R0dTdsWmZTakVKT3BoNFN1dVBHeEhYaHpHZktPSnBxLUQ3SHBkSEJLc3NPR3M4TEE3eWpGTDc2bzRQOGR5bUtyUQ?oc=5",
-          "source": "Yahoo新聞",
-          "published": "2026-10-29T20:25:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "Binance暫停提領疑遭駭客盜資",
-      "summary": "Binance暫停用戶提領，懷疑駭客盜走數十億美元資金。",
-      "sources": [
-        {
-          "title": "Binance pauses withdrawals as hackers suspected of stealing billions in crypto",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbm5LZnZPOUNfY002TlpQTUVSVlhqekxhbGdld0V3V2RENUJwWjBtTFFhV1NKMHQ5THI2SjhwZkFIM25QZkRUYVNiWm5RdWF5Ty1paDNWbVhtQUtsOWQyLXEyRVRMSmJiSmRoUkY0OHI1T2pkbWQ4LTBGdmxWNFNNenM1UEtwMXp4M0lqR1RXa1MxcHNEdUU1dVJuZ2tEZllCVEJNajFoQ0tMODhpUjcxaVNKMA?oc=5",
-          "source": "TechCrunch",
-          "published": "2026-10-29T22:27:23+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "美國第三季消費支出強勁AI推動經濟",
-      "summary": "美國第三季消費支出強勁，AI相關投資推動經濟成長。",
-      "sources": [
-        {
-          "title": "Robust consumer spending, AI-related investment power US economy in third quarter",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNd0JuSzdaWWtxaGJGdW5CV0pONGc2dlpzMVJnaGl2UUIwQmtkc1FNSUVNQzhxTFRycVZ4dGpRaVlvbGdraXBWenkzY1otSno3TC1zWTlQUmFRandmM0hlSm14a1pfWTJMNjdNclo5bFlFQWt3UlpIcFlPY3RtZzBQVXhKUzVPSWMxUXZFckNVM3ZXZEU?oc=5",
+          "title": "Wall Street closes sharply lower as AI cash burn fears spark tech selloff",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPblVtZktXRjdPbHJBWDM4WWJsV2RyMlhnOVFYRTZPc01udjZNZTVjeHdIN1dVY0w1M1NHbHpxNjV6Vm9jQ3FOUjBIaElyZEdSWWxycmNZdnJwNnBfdTJDc1FBMWVJZ19vR0s3Y1h2Uml2LThWc2NzQ2sxN3NnVzFEeGhvNnpPSElHSFRIQnJreHpCR2c3dnRQbEVYTDlJVjhzVVk3b1gxaFczMFhkb2NDSw?oc=5",
           "source": "Reuters",
-          "published": "2026-10-29T20:29:42+00:00"
+          "published": "2026-10-30T20:38:32+00:00"
+        },
+        {
+          "title": "Tech Stock Selloff Deepens on Earnings, Oil Rises: Markets Wrap",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNLWZRMVRrOG1xQ1NBUE55MXNIWTFyTFBfUDBwVnUwbDRHOHNibGNUazhpRVVJamItaGc5UndhUngwMTFOLUE1M3dscmdtSDBvWUJrNmoyWnFGZ2tBcm9VZjZ5MXcyQXFuSDZmWmE4WVlheXZBeTVTci1CXzFQMUxnMkpFRXBVTjh0SlI0N0hobUZzOHh3?oc=5",
+          "source": "Bloomberg.com",
+          "published": "2026-10-30T21:40:03+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "Binance 6.3億美元被盜案",
+      "summary": "加密交易所 Binance 遭遇 6.3 億美元盜竊，為史上最大加密劫案。",
+      "sources": [
+        {
+          "title": "Binance's $6.3bn crypto hack biggest in history",
+          "url": "https://www.bbc.co.uk/news/videos/c6m2dpz0yxn8o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-10-30T17:41:10+00:00"
+        },
+        {
+          "title": "Binance loses $6.3 billion in crypto heist—what happens to your money when an exchange gets hacked",
+          "url": "https://www.cnbc.com/make-it/2026/10/30/binance-crypto-hack-customer-funds.html",
+          "source": "CNBC",
+          "published": "2026-10-30T21:45:52+00:00"
+        },
+        {
+          "title": "What we know about Binance's $6.3bn hack",
+          "url": "https://www.bbc.co.uk/news/videos/cv2d62e34rw5o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-10-30T12:27:28+00:00"
         }
       ]
     }
   ],
   "usage": {
-    "prompt_tokens": 2305,
-    "completion_tokens": 1860,
-    "total_tokens": 4165
+    "prompt_tokens": 2345,
+    "completion_tokens": 1763,
+    "total_tokens": 4108
   }
 }

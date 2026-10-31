@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-10-31T23:17:23.614129+00:00",
+  "date": "2026-11-01",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 31
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 37
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 100
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 24
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 28
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 19
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 0
+    }
+  ],
+  "status": "llm_error",
+  "note": "模型呼叫失敗，今日不產生摘要",
+  "items": [],
+  "error": "RuntimeError: Groq HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n"
+}

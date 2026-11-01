@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T23:17:23.614129+00:00",
+  "generated_at": "2026-11-01T02:17:20.187562+00:00",
   "date": "2026-11-01",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
@@ -8,27 +8,27 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 31
+      "count": 35
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 37
+      "count": 36
     },
     {
       "name": "Google News 市場",
       "ok": true,
-      "count": 100
+      "count": 99
     },
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 24
+      "count": 42
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 28
+      "count": 36
     },
     {
       "name": "CNBC",
@@ -38,11 +38,72 @@
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 0
+      "count": 1
     }
   ],
-  "status": "llm_error",
-  "note": "模型呼叫失敗，今日不產生摘要",
-  "items": [],
-  "error": "RuntimeError: Groq HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n"
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美聯儲維持利率，股市上漲、國債殖利率分化",
+      "summary": "美國聯準會宣布維持政策利率不變，股市上漲，國債殖利率呈現混合走勢。",
+      "sources": [
+        {
+          "title": "U.S. Stocks Up, Treasury Yields Mixed After Fed Hold",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQLVpkc0tPSDBPVHptQ0w1dG1CTjVvTXpYZTAwbWlJOVpJUHc3UTN5R2pPeTA0QnoyVWpRVGpLS3JFd0xSeDdoWjJtRlJBNHZXVm5kcTBRaUdxQTNNeGdNQmFxYWE0MjBoZG80SVlscnJSaGRDdDBmUFRsT3BtWnd5TjlwZ3dqWDNDRnFVamJ4RlVqZThYTm5tVTJB?oc=5",
+          "source": "WSJ",
+          "published": "2026-10-31T22:31:31+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "10年期美債殖利率突破5%",
+      "summary": "10年期美國國債殖利率升至5%以上，投資人追求收益。",
+      "sources": [
+        {
+          "title": "10-Year Treasury Yields Top 5% as Savers Hunt for Income. Even Tax-Free Municipal Bond Interest Can Make Social Security Taxable",
+          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPTDdiYjMtOU41dDNsam1nbzVkVUd4T0w2TjZrODJWdVdQb04wOXpmQnRwMUsycUd6NFVGWXhSTHVEX2JTeGJQTS16cG9oMjJfMXQtYWd5UmVNVkNRM05vTlg0UjN6QTB2Rno0M0ZUZFl6cU9uQ3FNSndrRXNhVjRuOGRLZjhCQi1kY0FqV09CdG5OWUpFTHdacEVxQk5ZU3lnZW5MRU5ycEpjaVhBcUh5RnpZVURwLXRHTEZnd2tuNTM0ckpHOUNTYmQwaFlHS05IYjdmLXNOWGpkN0hvMzNCd1g0cDFKeEJyV0F4QUJjVEpVdzJJWjRPa2Ixd3VUeXJ4MUV6dTdtV3NuQ3VoUjNZbDZpT1pLeVRXYlNaRzV3?oc=5",
+          "source": "24/7 Wall St.",
+          "published": "2026-10-31T23:02:06+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "美元兌日圓跌破重要支撐",
+      "summary": "美元兌日圓匯率下跌至關鍵支撐位以下，顯示風險偏好下降。",
+      "sources": [
+        {
+          "title": "USD/JPY Sinks to Familiar Support as Risk Off Fears Grow",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPV1YyWnRON1pPbV9ueUNmbmtjSmFqb05TZE5qUVE1dFlQdjh0aExyajRmZ0kzUDlUcUxKNVN6eE9sTzAzelBCOHZSVVNRZTdOVi1FbGJEY0sxTHVxSDRITExxT1FkR0htV1ZSaUFiMVQtbkU4NjRrYTdXU0JmZXhNdy1ERlZDQ2tjajZkX1dsLVVieUNnOU1kbW1qaHlhTzZROGlCZkxzdw?oc=5",
+          "source": "StoneX",
+          "published": "2026-10-31T16:52:37+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "北韓測試大型武器系統",
+      "summary": "北韓防務研究機構測試一項重大武器系統，引發地緣政治緊張。",
+      "sources": [
+        {
+          "title": "North Korea says defence research institutes tested major weapon system",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOa2szXzlwbFhuTl8xcVFPLU9JTTFnUTYtT1pYWGxTbEFhUmxWV1E5NkxvbTZvOEtETEp4YjdMaEhDbG1MSzIweE5kYXpSM3FWVEpUWEFFNUZTUFdaNzN2UldqMHlVdDZsT3NaNm9PQl9xSFpfMm1FR3JCUTA0Z2hiQ0EtUXpKZ3MwLThwQmZ3R0JxZ2lRZ2hjcEpkWjI0R2FyUGdIQ3VZZUVwRl96UVByZklTSm1KY1RVRExaSlptRUtLbHRld0FVN2lEYUcwbUU?oc=5",
+          "source": "Reuters",
+          "published": "2026-10-31T21:48:05+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2349,
+    "completion_tokens": 1890,
+    "total_tokens": 4239
+  }
 }

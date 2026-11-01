@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-11-01T23:17:27.720803+00:00",
+  "date": "2026-11-02",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 49
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 48
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 96
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 37
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 44
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 13
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 7
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "美國國債大規模拋售計畫",
+      "summary": "美國將進行多年來最大規模的國債拋售，影響全球債市。",
+      "sources": [
+        {
+          "title": "Wall Street Braces for Biggest Treasury Sales Overhaul in Years",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ3N2ZVdrWVZaekU3UUdvbWgzZE4wTUF5X2tsajg4V042UDRJeEpwa2RqY1RxLWlNNk5sWTl4QUFlQk1mQjhsTzh3STlDR0lVN3ByaVQyUFRFUnlpZG95dGpuZjVtN3lMX3lfQkZRWnUyM3FqSnAyeE9sQ25fSHI1Mmo2M1dPT3d4RkwxM1hjSkRYbFBrdlFtUXpnUlNCc05aRkJvOWNFSFZBQjRqaXFHUVVGZzQ?oc=5",
+          "source": "Bloomberg",
+          "published": "2026-11-01T20:00:01+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "全球垃圾債券血災式拋售",
+      "summary": "信用投資人面臨大規模垃圾債券拋售，波及全球債市。",
+      "sources": [
+        {
+          "title": "Junk debt rout sparks ‘bloodbath’ for credit investors",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQY05sR3JWdGJzWDE5U2J3TVpBb1RoSklOd0wwMW56WGdEYVh3NjBYNEZZUkFGeW8tTTFiMlg5VEJQcVV0Q3dWOHRsaURNR1J3RUd5SjdXdVYyVVpKMHd1M3pfUDd4ckVtVXhncEJaQUF2X1YyYk9hT05iNFRkemdER0RETE0?oc=5",
+          "source": "Financial Times",
+          "published": "2026-11-01T14:54:55+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "亞洲股市因AI恐慌大跌",
+      "summary": "科技股拋售引發亞洲市場下跌，投資人擔憂AI風險。",
+      "sources": [
+        {
+          "title": "Asian Stocks to Fall as Tech Rout Fuels AI Fears: Markets Wrap",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUXhSWUZpNlU1UFZVSEtvY3QwQVB4T3FuYlpCT3lpaE05MThfMFFTZVZWWllFZDZDYkJFdTBIWEx1X1ZMVXlESFdaX3Noc2VSSW1QRHFzYzhPZkowLVNZeWR1N2dBN2hlLXY1VlJ3SHJNR3Ayc29JOXN4cXN3bklZQzN5bEctRER1aGp1eFdUVjhITWM0?oc=5",
+          "source": "Bloomberg",
+          "published": "2026-11-01T21:28:04+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "美股拋售衝擊台股表現",
+      "summary": "美國市場大幅下跌，對台灣加權指數形成壓力。",
+      "sources": [
+        {
+          "title": "US sell-offs pose challenge for TAIEX",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1PVjFWcktzR29UT2wzMXhOaTdldUNPWFZ5Rk1wYmNrV3FIY1BkYmRDT2xpWmtOTVhEUmRiQWZpUGdKcG54eFVjT3loUUNOT3NoN01BNDQtNzlEeHpvMmozSHJiZXBKWHptbVFnVUNveGF0ZUMySkE?oc=5",
+          "source": "Taipei Times",
+          "published": "2026-11-01T16:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "中國央行召開會議討論股市支撐",
+      "summary": "中國人民銀行與監管部門會議聚焦支撐股市，回應連續下跌。",
+      "sources": [
+        {
+          "title": "China’s central bank, regulators to meet on stock support after record 12-week slide",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeXF4QTNobDNuUGtrWDZXNUtJMzZSNVFPT3hCMmwxWWIzbjBPUmJzaFJkN2xubWRRWmxSaEx4dU1haDg0UkJBR3ZmQnk4eG9uekxJODg2WnpVT3p4S0J2NlkyZWUzOWJqa2hraDFTNno2aTJOc3lsY0xHYllvYzdLU3YtSXdyRW5lWndCWlNEVTJvRXVYbUhaYlZFa2ktVUdPWGRfbXltTUZXYm5DcEpwUUVtdk5yNWJXendsOGhQZl9BcnhnN18zaHJR?oc=5",
+          "source": "investingLive",
+          "published": "2026-11-01T21:23:43+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "澳洲股指受美科技拋售與RBA決策影響",
+      "summary": "美國科技股走弱及澳洲央行政策使ASX期貨下跌。",
+      "sources": [
+        {
+          "title": "Australian Stock Market Today: ASX Futures Dip On US Tech Selloff And RBA Decision",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNU85eUw0RnhYc3VEV3d5YmxpbUo3bGFueGRuejc5UUZJd3REMDB4TkZRSTUwaXQ4WlR1V2NvUVBqRUtfMXhjN1U0dFA2Tm56MTEyT21JY1NCZWJRbUhfVFk5LXpjdDA2TnNWdUJVSlY3UTB1RHh3SmJQQjBlTzNTS3dHbG1KV0JZNHZvMUFTMXdaM01kVUlRNXF5YlVUMVU?oc=5",
+          "source": "Yahoo Finance",
+          "published": "2026-11-01T21:11:55+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "對日圓是否已見底存疑",
+      "summary": "對沖基金放棄日圓弱勢押注，顯示日圓可能已見底。",
+      "sources": [
+        {
+          "title": "Has the Yen Really Bottomed? Hedge Funds Abandon Bets on Further Yen Weakness",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8ySU1IcVRVOVg2MWJZMmh3TWZQaXFsb3JlVVhtWmhKRFY1akYzRnhqc05nSHNsTzRYcFBFYW11bjZjaE9LaEt2YlQ5M1RaUmg5cXhkcQ?oc=5",
+          "source": "bloomingbit",
+          "published": "2026-11-01T22:05:51+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "海灣地區因美以伊朗衝突升級風險",
+      "summary": "美國與以色列聯盟對伊朗的緊張局勢可能擴大，影響區域市場。",
+      "sources": [
+        {
+          "title": "Gulf braced for escalation of war between US-Israel alliance and Iran",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYlZjTzdFYjAzeVItVzFIMWE4QXVhblR1SlVvMnFjLWxBczktR3o3V0kyMGRvMXFibUhmOUNoRGlQZ0dTanNhaUktM1dOeXBIcU9PS3Nyc01GbEhtX0t2VDZDckdQMGg5NGluZ3ZzOE11a3BYVGp4RHNEY243U0VUbGU5dk0?oc=5",
+          "source": "Financial Times",
+          "published": "2026-11-01T18:02:52+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2257,
+    "completion_tokens": 1627,
+    "total_tokens": 3884
+  }
+}

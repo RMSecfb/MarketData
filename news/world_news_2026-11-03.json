@@ -1,0 +1,183 @@
+{
+  "generated_at": "2026-11-02T23:17:24.898488+00:00",
+  "date": "2026-11-03",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 56
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 50
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 97
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 25
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 45
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 28
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 9
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "中國央行小幅上調美元兌人民幣中間價",
+      "summary": "中國人民銀行將美元兌人民幣中間價微調至6.7146，顯示匯率政策微調。",
+      "sources": [
+        {
+          "title": "PBOC Marginally Lifts Daily Yuan Fix Against the Dollar",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRlllME5BQVA0MVhWNkFQRXlVZHIwNElYcUlXRVhlWnlvQ0pmMDNNYlQ1bm9hWlB1SFBJbWZpdVFyLUp4Zm43S0pkY0VBUnN1YVF5cllSVlBON1FuWFkxX016UUhHeGVuZmJ3S1pUUnJrUzBFaVFiVTFZa2loS2RfaVU3aWpRMW8xYXhhV0FxT3kyZHlLbS1URlhlQWg?oc=5",
+          "source": "TradingPedia",
+          "published": "2026-11-02T06:51:24+00:00"
+        },
+        {
+          "title": "The People's Bank of China sets the dollar price against the yuan at 6.7146",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV2V2VGZ1ZzFsWmpwSW5VMF9qNHFSOXJnNFd0SzJVMkp0cHBBMkdPNWVJVERuaFhtWFhpcXZfWGtMdnJiUzJVTmRFM29tX2QySlJYR2xZQzlxY2lmN29LZlExd3JtU1BZOUNCaTRxeUUzS2pkaHA4b1RMOEs4TnVweGdVcWJKaW8wTGdlMDdiVW1rdG5ZVGE2Z1YtQzV3dkNEcndKRXRuMmZWTk55c0EwY2xqbnhINlhvdG1TTVgtWUthX2FsMkJhVWc1VQ?oc=5",
+          "source": "المتداول العربي",
+          "published": "2026-11-02T06:27:54+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "美元、歐元、人民幣首日大幅上漲",
+      "summary": "美元、歐元與人民幣在十一月首個交易日同步走高，提振外匯市場。",
+      "sources": [
+        {
+          "title": "Dollar, Euro and Yuan Rise in First Trading Session of November",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYjEtclE2SGFOTHBoQjBrN08yeUlqZDVSaUpFQjZvX0pFX2RrZUtNekRGRXJFN0RjZENMUl95S3VISzl3bGtZLTJ3QldCNzkzZ1lPMkdQVjZIVUg4UmNqeFBvalJsWHdhZk9MU0JKX2FqdHo3dFBNQm5DME5lTWtpSktsWmJHUjNEMnctVy1KUdIBlAFBVV95cUxNZjNFamloU0ViN3h4OGFGWm8xWHdqSEk1NGNYNGpuRnBWVTJnYmJSVFI4NnRpQUxtM3lzTmxLdWtCRnVTcC1IeUFXUEpJVXhGZUpEYmQ1STR4OUl4VEI1RV9QUVlJUHdhc0g0SWljbUVfNDZnZFY3MHNDOElNUzV3YTVzcXZIS1VzaTlXTUJMSGgyVGx1?oc=5",
+          "source": "REFORM.news",
+          "published": "2026-11-02T10:17:30+00:00"
+        },
+        {
+          "title": "U.S. dollar closes sharply higher on Taipei forex market",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9MVFZEMW5kbWMtM0luM2gxeGtPOXEzMVg0VFZHamprVkliS2NyOFYzbEVCbDdXM2FMYVg4WkUtZUJNWndYVVBEN3hfTzQ0WmxBdS1tQVg0aw?oc=5",
+          "source": "Focus Taiwan",
+          "published": "2026-11-02T08:30:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "長期美國國債殖利率顯著下跌",
+      "summary": "美國長期國債殖利率下降，帶動公用事業與金融股上揚。",
+      "sources": [
+        {
+          "title": "Utilities Up as Long-Term Treasury Yields Fall - Utilities Roundup",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdU9GYWRtZzBOUEJfZkp1NWRGSE1DcHNlVjFOY0RRcjRuaWI5RnRMSzVzVkNDbFFyLXpjbjNUUTlmeTNQWUNvcWJFZERjYzlrNUt1OF9zMkY1dUM5LXJWbk96WndqQjZMN0tzM3dnNEI5RDlOd3V4eDZZc3UyakVPcVNXNEJ6RXBFc3c3NFdUVmZTbnREemhGeGFtamhiNVhPUXd3NmkyelhvMGRSUmhsSXRyaU9KYmRk?oc=5",
+          "source": "marketscreener.com",
+          "published": "2026-11-02T22:18:38+00:00"
+        },
+        {
+          "title": "Financials Up as Long-Term Treasury Yields Fall - Financials Roundup",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQa1dEZFVnbExzNGNLTUpCSElvekxfdU01b2dqVTY2SWpac0tSM2FmNDRNREpxS1BWQ1MtdW5mS1NlcGR1cjg3NlRKNmFtNjc2VU81VnJLNmJPLTl2SHpCcHpqR2FCX0RVczkwaFpDTXQwSmZzd0sySzFWaG00dGpIb3BlcXpqUTY3U2xFSFgzd3I0MGQxMTJYNldYSDdrcFhIQm9CazZFTjBXTG0xSzJidzBhOC1sTloycFhV?oc=5",
+          "source": "marketscreener.com",
+          "published": "2026-11-02T22:17:40+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "美國I債票息升至5.51%",
+      "summary": "美國政府發行的I債票息調升至5.51%，對固定收益市場形成正面刺激。",
+      "sources": [
+        {
+          "title": "I bonds now pay 5.51% — but there are trade-offs. What to know before buying",
+          "url": "https://www.cnbc.com/2026/11/02/i-bonds-rate.html",
+          "source": "CNBC",
+          "published": "2026-11-02T20:57:50+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美國汽車製造商要求禁售中國車",
+      "summary": "多家美國大型汽車製造商向國會施壓，要求永久禁止中國製造汽車進口。",
+      "sources": [
+        {
+          "title": "Major automakers urge US Congress to pass permanent ban on Chinese vehicles",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTTVhdFlwU2VQcjVwVnVwdGZHQkpGcEtJbWVjcW1uOC1aQ2ZuZ3hmblRmWkRRMU1RdWZrM1ZoN3k5eDZfem1UVTZRMVQtbkRTV1hnR1RZNUN4VndSMzJEV0FRUGprVWtmbnVhZFc5WDdrX3EyWWw4WDNyTEk3UmgtUy1uWGtvejg2MWI3RDhJVVFrZFBOUDRxLXFFS1I4WHhHOFc3LU5BbWVuR1pPY09OMTlubFI4dHduM2RaMExUUQ?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-02T21:56:56+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "香港金管局試行代幣化存款結算",
+      "summary": "香港金融管理局推出試點，允許銀行以央行貨幣於週末結算代幣化存款。",
+      "sources": [
+        {
+          "title": "HKMA Pilot Lets Banks Settle Tokenized Deposits Nights and Weekends in Central Bank Money",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZHZZbVRjbk5TZ2VyMkZHWEdGcUtIczBLcDI1Z3labkgteTVBVWFPaG1rcDZwVWNnUE9ENm56aWJlUi1fX2ZTX1FrbHpadXVUMVJ5bHg3cXhtRVVKaWlWNlhZLUtOOVVELTBFbERSUmNpWHdqQ0tFckxYb1d0TXVfdlhXRkZXWlY0NnV5cUVsUkx0MG5tcDB1Rw?oc=5",
+          "source": "Yahoo Finance",
+          "published": "2026-11-02T22:35:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "也門胡塞武裝逼近亞丁港口",
+      "summary": "胡塞武裝部隊向亞丁港口推進至80公里內，提升中東地緣風險。",
+      "sources": [
+        {
+          "title": "Yemen's Houthis advance to within 80 km of Aden, sources say",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYlRCZUUyWF9VckZ3NWJGbUV2Z3luSldoNGZIVk1zTkN4MEZ1ajdSZm4zYmNLYjhVbU5TQU9yYTU2YVVrSFY3QzNPU21wT2EwVlFlRG9mMGxkeG84RHptSzlsOUw3Zmd6SHRqZGdzM1UxQnpWZlZ4MFJSYTFTZ296c2U1T1NGZFBqd3hnazg3clVMUFJ4SWNzYUtjOVoxY2FHMHpzY3RKZkNudw?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-02T20:23:43+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "納斯達克下跌、油價因伊朗緩和下滑",
+      "summary": "受伊朗緩和局勢影響，油價下跌，導致納斯達克指數在亞洲開盤後走低。",
+      "sources": [
+        {
+          "title": "Nasdaq Slide Clouds Asian Open, Oil Falls on Iran: Markets Wrap",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTGEyREpLdzRYM3VsY3NTclQ1Y2xud2pYNVl6Y0JhZ3RNczRVVjJ0aG43NmgyWkQ5SU85SmtVWGVCU0wySnBTdkhzZXR3R3RpMWloMWdlckxKM3BBUFB4VU9FbzhDQ2l2dm5xZlIwbFZJTHdJQVVyaU1Qc3djSmowcHdGMDNOVUIyMDdURnFwWWpUbmZN?oc=5",
+          "source": "Bloomberg.com",
+          "published": "2026-11-02T22:25:14+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2277,
+    "completion_tokens": 2238,
+    "total_tokens": 4515
+  }
+}

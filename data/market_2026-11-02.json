@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T23:07:36.682608+00:00",
+  "generated_at": "2026-11-03T03:26:46.162962+00:00",
   "target_date": "2026-11-02",
   "vix": {
     "value": 21.15,
@@ -54,7 +54,7 @@
     "source": "treasury_gov",
     "fallback_reason": "target_date_unavailable"
   },
-  "spread": 38,
+  "spread": 38.0,
   "sox": {
     "value": 10328.3291,
     "prev": 10688.7998,
@@ -159,50 +159,50 @@
         "symbol": "^TWII"
       },
       "n225": {
-        "value": 63081.86,
+        "value": 63081.8594,
         "prev": 63290.1094,
-        "chg_abs": -208.249375,
+        "chg_abs": -208.25,
         "chg_pct": -0.329,
         "date": "2026-11-02",
         "target_date": "2026-11-02",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "日經 225",
         "symbol": "^N225"
       },
       "kospi": {
-        "value": 5859.08,
+        "value": 5859.0801,
         "prev": 5730.7402,
-        "chg_abs": 128.339766,
+        "chg_abs": 128.339844,
         "chg_pct": 2.2395,
         "date": "2026-11-02",
         "target_date": "2026-11-02",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "韓國 KOSPI",
         "symbol": "^KS11"
       },
       "hsi": {
-        "value": 23393.32,
+        "value": 23393.3203,
         "prev": 23294.4199,
-        "chg_abs": 98.900078,
+        "chg_abs": 98.900391,
         "chg_pct": 0.4246,
         "date": "2026-11-02",
         "target_date": "2026-11-02",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "香港恒生",
         "symbol": "^HSI"
       },
       "sse": {
         "value": 3638.031,
         "prev": 3599.0171,
-        "chg_abs": 39.01391,
+        "chg_abs": 39.013916,
         "chg_pct": 1.084,
         "date": "2026-11-02",
         "target_date": "2026-11-02",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "上海綜合",
         "symbol": "000001.SS"
       },
@@ -219,10 +219,10 @@
         "symbol": "^GSPC"
       },
       "ixic": {
-        "value": 25164.3164,
-        "prev": 25437,
-        "chg_abs": -272.683594,
-        "chg_pct": -1.072,
+        "value": 25164.3633,
+        "prev": 25437.0,
+        "chg_abs": -272.636719,
+        "chg_pct": -1.0718,
         "date": "2026-11-02",
         "target_date": "2026-11-02",
         "is_stale": false,
@@ -233,10 +233,10 @@
     },
     "fx": {
       "usdtwd": {
-        "value": 32.592,
+        "value": 32.6064,
         "prev": 32.5669,
-        "chg_abs": 0.025101,
-        "chg_pct": 0.0771,
+        "chg_abs": 0.039501,
+        "chg_pct": 0.1213,
         "date": "2026-11-02",
         "target_date": "2026-11-02",
         "is_stale": false,
@@ -245,10 +245,10 @@
         "symbol": "TWD=X"
       },
       "usdhkd": {
-        "value": 7.8461,
+        "value": 7.8439,
         "prev": 7.8457,
-        "chg_abs": 0.0004,
-        "chg_pct": 0.0051,
+        "chg_abs": -0.00183,
+        "chg_pct": -0.0233,
         "date": "2026-11-02",
         "target_date": "2026-11-02",
         "is_stale": false,
@@ -257,10 +257,10 @@
         "symbol": "HKD=X"
       },
       "usdjpy": {
-        "value": 157.947,
+        "value": 157.677,
         "prev": 157.804,
-        "chg_abs": 0.143005,
-        "chg_pct": 0.0906,
+        "chg_abs": -0.126999,
+        "chg_pct": -0.0805,
         "date": "2026-11-02",
         "target_date": "2026-11-02",
         "is_stale": false,
@@ -269,10 +269,10 @@
         "symbol": "JPY=X"
       },
       "audusd": {
-        "value": 0.6998,
+        "value": 0.7029,
         "prev": 0.7027,
-        "chg_abs": -0.002861,
-        "chg_pct": -0.4072,
+        "chg_abs": 0.00018,
+        "chg_pct": 0.0256,
         "date": "2026-11-02",
         "target_date": "2026-11-02",
         "is_stale": false,
@@ -283,9 +283,9 @@
     },
     "credit": {
       "hy_oas": {
-        "value": 344,
-        "prev": 326,
-        "chg_abs": 18,
+        "value": 344.0,
+        "prev": 326.0,
+        "chg_abs": 18.0,
         "chg_pct": 5.5215,
         "date": "2026-10-30",
         "target_date": "2026-11-02",
@@ -359,6 +359,5 @@
       "source": "manual"
     }
   },
-  "cds_updated_at": "2026-11-03T00:37:46.030Z",
-  "cds_updated_by": "Cloudflare Pages user"
+  "cds_updated_at": "2026-11-03T00:37:46.030Z"
 }

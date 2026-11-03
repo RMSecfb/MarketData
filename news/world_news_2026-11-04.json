@@ -1,0 +1,175 @@
+{
+  "generated_at": "2026-11-03T23:17:23.505845+00:00",
+  "date": "2026-11-04",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 42
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 36
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 99
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 28
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 37
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 30
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 15
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "美股於選舉日反彈，標普500止跌三日",
+      "summary": "選舉日美國股市回升，晶片股領漲，標普500結束連跌三天。",
+      "sources": [
+        {
+          "title": "S&P 500 snaps 3-day skid on Election Day as chip stocks rebound",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5PbWNuUmM3YXpROGVjV016d1ZUZzlCQmc4a3dJaWpoLTcxeXVzTEFMbTY2bjNGWXljaUtXLWo2bE1QNzZ5NGlTMnA3M0VVQjlhaWN6eUVzOW4xS05EQnd0bEJYMEw0aXJJT3NXWklaNmcxcjVnOWVz0gF8QVVfeXFMTVAyTUQ0UV9iNzQyaThOY04yU1FlSEtRRHpLQXBXZnpvLUV5TklWSzhRaGw2ckowNEtJcXRtWldwelIxYnhDMDFSTzVJVFZwbXZ1Q2QxZWlTUHdUdzdqaW0xMGZIUHlpWlBYWHJ6UGE3cVhRWkpDdTExU29VRQ?oc=5",
+          "source": "CNBC",
+          "published": "2026-11-03T21:15:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "美元因中東與美國中期選舉波動",
+      "summary": "美元在中東局勢與美國中期選舉風險下走弱，澳元與人民幣同步下跌。",
+      "sources": [
+        {
+          "title": "US dollar drifts on Middle East, midterm risks; Aussie and yuan dip",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNbEc3OExlMktOYVJycjlWakhQRlQ1U1Z2V251Y2s1NXJLTUItZldLSklBdE1aLXkxZUwtS0tqUGxHd3JJVENJdUR4LUU5bTM4Y2VwaERmekwzVm5XcktNd2J4V1hTbkpTQXpYTE9tcUFkck15a0hWMno1R3FpNmRWZS1LSi1Ya2p0OUk4eERGNmd6ajlMTUdTNmFKNlFLSW5qQTBuTFR4OF9vU19uNWtHU3ZOaEpua0tRWjdYcXVGal9YRjhkaWtqckMydkxhVEdoeEdwUHN5RQ?oc=5",
+          "source": "The Business Times",
+          "published": "2026-11-03T13:41:00+00:00"
+        },
+        {
+          "title": "Dollar drifts on Mideast, midterm risks; Aussie and yuan dip",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTjdBdDFwbDIwMkJNRWZYaWZsYl83TGdCdmRxdUItQnBiWTZ5WkEzVkpFUFRNaWEyZVBBd3JxcVUzeUpRZlJlTm5jTktnSGNhWmY5MWpITUZPdXVRaURLT0pHNy1FOVNkbUJkOWtETHBGUndpMVdXMW5xaDlRWk9RZHpDbUN4dUtyS2QyQ2l4cHlPZjRZT3BKZjI3SEhVQ3pGU2ZHSGFKeEJTTzVIa2RDVTA3SnVERE51UVl1WDF5U29WTW1IU1ZJ?oc=5",
+          "source": "TradingView",
+          "published": "2026-11-03T09:25:02+00:00"
+        },
+        {
+          "title": "Dollar Holds Steady Amid Midterm and Mideast Risks; Aussie, Yuan Dip",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVFR5dV9wS1pqYVRIWlNwcWpCYUpTRTNrMTh5WEJpSGVncWdpZXZlUHVLVjVaX0E3YkNvd09RZ3dZa0JtWms5MFJRNzlwQ19rUTE2RVdLeGdSejluTTdJSllvUG15YnNUMjZNZHFMd2hwX2tuYjNNdGlJd05GbG1IVUc3VVhNbnVYTFRXdUU4blZtZHdmV3BWeGtrTUt0UQ?oc=5",
+          "source": "Global Banking & Finance Review",
+          "published": "2026-11-03T07:56:35+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "外資大規模撤出台股，台幣同步下滑",
+      "summary": "外資本年撤出新台幣2.55兆元，台股指數跌逾3%，台幣匯率跌至32.76。",
+      "sources": [
+        {
+          "title": "Foreign Investors Pull Record NT$2.55 Trillion From Taiwan Stocks This Year as Taiwan Dollar Slides 1.68 Cents to 32.76, a More Than One-and-a-Half-Year Low",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5UTDlsb3A5dmFjbVA2NGxxZGtSQTViOXFWSEJoMmtUVzdXeTZ1ZnhSRXlYQlItSDduVUxlNmZWbEVwQTZIRkFGNVg2d05hU29pLXdyU3R2UldJTXBQWVEzVkZvdTl6T1FIdWxsM1M4aUZuNnp5LVE?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-03T23:05:00+00:00"
+        },
+        {
+          "title": "TAIEX tumbles 3.59% as NT dollar falls",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5EQndHTzRZZllFSlBWZ216RmExZTJZM2xYTVNHZmZLNHhROThlXzRwa1p2V2xxTGtmci1GVVJaWWVpLThtRDE4Y1VXS2MtOGFvZkFHcVVvNEM2UFdCTUY0ZWU2dEpVQ0hzMXRRU3VMZjFFZVIwdVE?oc=5",
+          "source": "Taipei Times",
+          "published": "2026-11-03T16:00:00+00:00"
+        },
+        {
+          "title": "Foreign Investors Pull NT$107.3 Billion in a Single Day as Taiwan Dollar Plunges 1.68 Cents on Massive Volume, Breaching NT$32.8",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1oc1ZhSnJuM1ZhNVN4V3FPMzljaXhlMkNYT3Q4ZWNMMHlUT092ZHcxbXBDYk51VkdkOC1ZVHZ0eWZ1eW9Jd0NKSlQxS3IxOHFGdWJ3ZE9nWXJOQ1prclZYT19SN0hhZEc4djAtdWJRcVhkZ3JETXc?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-03T08:56:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "中國與阿曼簽署30億人民幣貨幣互換",
+      "summary": "中國與阿曼簽訂為期五年的貨幣互換協議，金額約300億人民幣。",
+      "sources": [
+        {
+          "title": "China, Oman Sign Five-Year, 30 Billion Yuan Currency Swap",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE96Q2hfTFNDaF9uNnNHN2MzakpvcHMzT3NpT1hKQVFnRkluMld1RUVoV0ZWWWZkdFNmdGpjTGxqVUduRXMwR3BvN1RLNURfbkZXMGlOR3FMWVk?oc=5",
+          "source": "www.tokenpost.com",
+          "published": "2026-11-03T12:13:27+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "沙烏地阿美獲利大增儘管管線受攻擊",
+      "summary": "沙烏地阿美公司在管線與煉油廠受攻擊情況下，報告利潤大幅上升。",
+      "sources": [
+        {
+          "title": "Saudi Aramco Profit Jumps Despite Damaging Attacks on Pipelines and Refineries",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8yNWtyRjVSdzJFSk4xeXctTEFXSloyU0VMWk11R0libnQ2ZnRkRVZfNkJTaGtYSng0akhzT21GSFRfTkRQNG80WDFubEpUWmVRbDJUa0RhcU0zMXFOdWFrc2dGS2dlOHMxQ2NoVGU4M3JUSTNtbzFCbGJvWVBqdw?oc=5",
+          "source": "The New York Times",
+          "published": "2026-11-03T20:23:22+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "德國梅爾茲警告歐洲需在烏克蘭談判中發聲",
+      "summary": "德國財政部長梅爾茲指出，歐洲在美國總統特朗普重啟烏克蘭談判時必須發聲。",
+      "sources": [
+        {
+          "title": "Germany’s Merz warns Europe needs seat at the table as Trump renews Ukraine talks",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSTV6NFVXRnNFM1F4RlhRbkRhS3ZzUFh5TGt4U2F2NnNsQnZheGYwb3ZUdmpPdFF3SFZKTnJ1Mnh1VTgwNXlIOE5UclZMZFc4TjdOTFZYbG9SZk1QZkQydnJGRHFtRG5LU05OdlBzZzdZREtnbERRalV4dnBkcGloRTlVVlpkM3V3bGN6ZWpNcXloTWJZOUtkS2l3?oc=5",
+          "source": "POLITICO.eu",
+          "published": "2026-11-03T18:25:42+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "房利美、房地美因艾克曼壓力股價上揚",
+      "summary": "因艾克曼推動結束保守人管理，房利美與房地美股價出現上漲。",
+      "sources": [
+        {
+          "title": "Fannie Mae, Freddie Mac rally as Ackman presses for conservatorship exit",
+          "url": "https://www.cnbc.com/2026/11/03/ackman-fannie-mae-freddie-mac-conservatorship.html",
+          "source": "CNBC",
+          "published": "2026-11-03T20:52:14+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2348,
+    "completion_tokens": 2500,
+    "total_tokens": 4848
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T23:17:24.574965+00:00",
+  "generated_at": "2026-11-05T03:31:46.914126+00:00",
   "date": "2026-11-05",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
@@ -8,27 +8,27 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 56
+      "count": 57
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 33
+      "count": 42
     },
     {
       "name": "Google News 市場",
       "ok": true,
-      "count": 100
+      "count": 99
     },
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 25
+      "count": 26
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 35
+      "count": 42
     },
     {
       "name": "CNBC",
@@ -38,7 +38,7 @@
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 8
+      "count": 9
     }
   ],
   "status": "llm_error",

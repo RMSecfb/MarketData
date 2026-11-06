@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-05T23:17:24.390064+00:00",
-  "date": "2026-11-06",
+  "generated_at": "2026-11-06T23:17:23.314810+00:00",
+  "date": "2026-11-07",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -13,7 +13,7 @@
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 48
+      "count": 42
     },
     {
       "name": "Google News 市場",
@@ -23,12 +23,12 @@
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 27
+      "count": 31
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 40
+      "count": 33
     },
     {
       "name": "CNBC",
@@ -38,7 +38,7 @@
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 16
+      "count": 13
     }
   ],
   "status": "ok",
@@ -47,125 +47,131 @@
     {
       "market": "macro",
       "market_name": "總經",
-      "title": "美聯儲升息至4% 首次三年內加息",
-      "summary": "美國聯邦儲備局將基準利率調升至4%，為三年以來首次加息。",
+      "title": "美國非農就業大增，失業率降至4.1%",
+      "summary": "美國非農就業增加16.5萬，失業率降至4.1%，提升升息機率。",
       "sources": [
         {
-          "title": "Interest rates hiked to 4% in first increase in over three years",
-          "url": "https://www.bbc.co.uk/news/articles/ck5ynw45jrgqo?at_medium=RSS&at_campaign=rss",
-          "source": "BBC Business",
-          "published": "2026-11-05T17:09:55+00:00"
-        }
-      ]
-    },
-    {
-      "market": "fx",
-      "market_name": "匯市",
-      "title": "中國央行調整外匯儲備規則 穩定人民幣",
-      "summary": "中國人民銀行微調外匯儲備管理規則，旨在穩定人民幣匯率。",
-      "sources": [
-        {
-          "title": "China’s Central Bank Tweaks Forex Reserve Rules to Steady Yuan",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaUVpai1RSG9LWk82anFJT1hrZlgtM0t3LTQ5ZDBHLXFOLVpyOFhiR0xZa3pLMkluNnpOdzBHWDdwbnZESzk2bWhybUhmdGZUSFFVd0owXzV1ZXJlcXliazhtclhMTV9vQzlSOGlZd0VlNUFLM2V2RUFwNG9SUjFWSG5aeXNUdzBlcmlvRl9RR3JvNUJwZFluUGVrVGduVXpNUEdCcjFTVFI5RktrU1JyMnd0R2E?oc=5",
-          "source": "WSJ",
-          "published": "2026-11-05T16:37:11+00:00"
-        }
-      ]
-    },
-    {
-      "market": "fx",
-      "market_name": "匯市",
-      "title": "台灣外匯儲備跌破6000億 並央行呼籲出口商",
-      "summary": "台灣外匯儲備跌至6000億以下，外資10月流入創紀錄；央行外匯主管呼籲出口商勿等待更好匯率。",
-      "sources": [
-        {
-          "title": "Taiwan's Foreign Exchange Reserves Fall Below $600 Billion as Foreign Investors Pull Record $28 Billion in October",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1DYVlmQnMycUoxUEgxMXl6NkdDWXBRQmxuN1UtemFsSHl5OEluX1lsMktCVFpxU1BseC1rVjA1MUhvRUFUYmJYS1V2ZWxmRW9seEVJdnR0R290ZnFKX05Bdk1yUW1KS0NCXzNIRnpUNENUcVZ3MFE?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-11-05T12:25:00+00:00"
+          "title": "US labor market regains ground as job growth surges, unemployment rate falls to 4.1%",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPakNLaDVCMElHQkc5cjV5SmVJcFNPdVpMbnZHRmVFMkoxR3hhbERYTnBZcUlmQVZBanhMeVhEZHpsN3JxM0xrUHNsYVZPWW1EdXBWam1pNk5lSEZVNHkwcUV1VG9xbmVYek80a3JXelRIcW9fQjQ3TUljTUdpZkhYWUJaZHhxNTUybWQwME81bUtPTmJ4UUg4ZjVrZjVlLUx2azFkWjhmeThDWkp2MHJwdTVR?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-06T22:04:06+00:00"
         },
         {
-          "title": "Taiwan Dollar Nears NT$33 Mark Intraday as Taiwan Central Bank FX Chief Issues Rare Call to Exporters: Stop Waiting for a Better Rate",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1YaGI1cXE4aXdqTm50b2t4UEQ4MWkyZ0tFckUtTklwVnE5ekViUVg4ZVdDN0s1VWZ0YnhTSmVBMENORnlxeW1XWUxaNEVWNnQ3YzVQSmZjMzZOZ2UwRmVXNzFpYmpGa1haTmdobUp0QXlKZ0pHYWc?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-11-05T11:05:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "蘋果發行75億美元債券 市場需求強勁",
-      "summary": "蘋果公司在債券市場籌得75億美元，同時科技股出現下跌。",
-      "sources": [
-        {
-          "title": "Apple raises US$7.5bn in bond market as tech stocks sink",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR1d1YTVlMFZDLUVMRDN5N0V3VHhnWU16cHpyb0wzbFVpbVhtX0FLalZkOFYtc25sTTRlYnJ4NUFqdWRlVjRTYTdDT291djZEVS1TRm5Ec0UyZmtwU2FTc2MteEQtZ1p1ekRBYjZKdGZUZFpySFZYU0pEWFRHTWZSVFNEQWlyYkZIcEtsMnUxOTI1RHZl?oc=5",
-          "source": "International Financing Review",
-          "published": "2026-11-05T22:13:41+00:00"
-        }
-      ]
-    },
-    {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "AI股大逃殺 VIX飆升 道瓊跌1800點 台積電ADR跌逾10%",
-      "summary": "AI相關股票大幅拋售，VIX指數上漲逾60%，道瓊指數跌1800點，台積電ADR跌超10%。",
-      "sources": [
-        {
-          "title": "〈美股盤後〉AI股大逃殺！VIX狂飆逾60% 道瓊狂瀉1800點費半血崩逾12% 台積電ADR下殺逾10%",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBTZ01WOC1jeGJEMnlyeWQ5NlFKNkc1UVFYRXBmV0FyVTlyUXVna0FEZmtySXlabTdPQldaQ1dVeVJQeXEzY1lCdXlZX25GU00?oc=5",
-          "source": "鉅亨網",
-          "published": "2026-11-05T22:07:30+00:00"
+          "title": "意外！美國非農就業大增16.5萬人聯準會12月升息機率升- 國際",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE95eFdEWnpYM3BJWmc1cEo4RTViczNQeHFqd1lsZk5kY29BT3ZaT0V0MmkxM19VV2FheTA3dDZBbFB2V1RuckZNNzZ4QTRkSGN2cFlwbnc2a2pYTzcySWRN?oc=5",
+          "source": "工商時報",
+          "published": "2026-11-06T14:29:00+00:00"
         }
       ]
     },
     {
       "market": "fx",
       "market_name": "匯市",
-      "title": "美元走弱 民主黨全勝 英鎊暫停升值",
-      "summary": "美國大選後美元走弱，英鎊短暫停升，市場關注英格蘭銀行政策。",
+      "title": "台幣匯率干預與通膨風險",
+      "summary": "外匯市場顯示央行介入台幣，同時通膨風險升高。",
       "sources": [
         {
-          "title": "Dollar slides after Democratic sweep; Sterling pauses ahead of BoE By Investing.com",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeXd1MzRoQzNPUXZOOFM5X01UdGFfSDZRN3FuTGxBZWZoM0cyVkFNVTUtcHI4ZWNuLXh1b2hrS2RGTWRWRlFKQzVTZDZfbkxvQlVkQTRrVldLU2JOUS1BU2E3QVFESHR3Unl0OWVCcXVodUlBSkZuT0dMdHF6azF2MHFRSktqeUJFWmc4THFXaGFYVXY5NmY0Nk5KNXFrWmdBOW5OaVU5QlIwM3F5UGpnSlZ2aUpDVkZ2eGRnS0o1bw?oc=5",
-          "source": "Investing.com India",
-          "published": "2026-11-05T13:28:14+00:00"
+          "title": "Taiwan Dollar: CBC intervention and inflation risks – Commerzbank",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSUUxYmJxRmFYMWpieXR6d2FvLVc5MEtYNmdpa1d6T09LT09lbXBmRU4xaVRWZm53QmNDRGhORmVMN1NtYkotZ0tIeER6MTU0UG9FclRBT01HZjJkMTMzMG4xUFMxNzdvWWhhUW4yMDByNVE1VmxkUDZ3bGNfeGRYREJIbGxkbEpkMUdnZWhiNDNYUkFiejY5aHRVbHJOTHdtaXNaRU5YS0k?oc=5",
+          "source": "FXStreet",
+          "published": "2026-11-06T20:58:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "台灣外匯儲備跌破6000億美元",
+      "summary": "台灣外匯儲備跌至600億美元以下，顯示資金外流壓力。",
+      "sources": [
+        {
+          "title": "Foreign exchange reserves dip below US$600 billion",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5YN01VdUxLZ3lTNHpWWmVsUExBaWVDQVFXQ05nNnhZd2taWjhyeTZRWEZsN1ZjRGRPS3cwbGxrX2VLbHhRam1PSU11VFkxN1FWd0pJLVJxNjFmUWRQdWVUM3ZJQzlSaHBhU1RKRzdCQmVZYlRrN3c?oc=5",
+          "source": "Taipei Times",
+          "published": "2026-11-06T16:00:00+00:00"
         }
       ]
     },
     {
       "market": "equity",
       "market_name": "股市",
-      "title": "美光股價暴跌17% 晶片板塊受挫",
-      "summary": "美光科技股價下跌17%，帶動整體晶片板塊大幅下挫。",
+      "title": "台股重挫金管會限空等五大救市措施",
+      "summary": "金管會實施限空等五項救市措施，台股出現大幅下跌。",
       "sources": [
         {
-          "title": "Micron stock sinks 17% as chip sector crashes",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOLTZDb3VRSUh2cUtoWFVfbU83NFI2TGdiVzN3Ql95TTNuQkktVERweFVsYlRDcWhMUlQzaUVISTN0SjhHdGVQa1hUQUdPN0NxTGVRd1UyQzZ1eDN0dnpkRHdxT3lqLTQ5cFAxbW9udVFoMFhnRGpFRVl1NDVpN0J4Yi0yWkx6RWlpUmE1TlBtVFp2d000VnQ4ZXhxVlJEeDJja2c?oc=5",
-          "source": "Yahoo Finance",
-          "published": "2026-11-05T21:10:47+00:00"
+          "title": "台股重挫金管會祭限空令等5大救市措施 11/9實施",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5HU2t0VXhkd1k2cVJwMkZ2WV9fNHVKNUZKUk5jRFlKTS1YUWhoTHE0REtwbnlmRjBXMG8wZkZZVm95bl82RUJhelhySFEtRTB0N20xOFFYZ0JtMFJLVWc?oc=5",
+          "source": "中央社 CNA",
+          "published": "2026-11-06T10:48:00+00:00"
         }
       ]
     },
     {
       "market": "equity",
       "market_name": "股市",
-      "title": "亞洲股市因AI拋售恐慌面臨賣壓",
-      "summary": "亞洲主要股市因AI股市拋售加劇出現賣壓，投資人情緒轉弱。",
+      "title": "外資連第七天撤資，台股大幅波動",
+      "summary": "外資連續第七天賣出台股，資金流出導致市場波動加劇。",
       "sources": [
         {
-          "title": "Asian Stocks Brace for Selloff as AI Rout Deepens: Markets Wrap",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOX2RxUlFvNmxoUFFUd2pmeUk3MTJoSkNvTkxwOS1TUlNFd1hDZkNZZ0huMHIxQXhDeWtpWVdVcmJGcDQwdVcwMFJTaHg2Q040OTBCZm5Ja2doTnpQcTh1OFFSdDNucHFXVzFRR2EyTEJfa3BRWDFUY19lcFNNXzRmR2F2UEw4dlVOUW1xSnFqNmI1Wmtr?oc=5",
-          "source": "Bloomberg.com",
-          "published": "2026-11-05T22:17:59+00:00"
+          "title": "Foreign Investors Pull Funds for 7th Straight Day as Taiwan Stocks Swing Wildly After Record Intraday Plunge",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1IeWpQQ0VzZEFmQWlXNkdQTmhMM1VpYmUtWjctWmpWOGhFeWNMdjRQYnNXcTRhQXljWEZseHFQbmhfWFRPQ1J3bkJ2TFdnNnRZX2dlMnoxMy1uOGw5Y2FvaFNYVlBtVlJoYTZFY2JLSFRNVEJxOVE?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-06T09:35:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "伊朗願談核議題，油價跌破100美元",
+      "summary": "伊朗表示願就核議題談判，油價跌破每桶100美元。",
+      "sources": [
+        {
+          "title": "美伊離停戰近了？伊朗願談核議題 布蘭特原油跌破100美元",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB6aE1XX0FOczlfWlE1aHcxTlhtQ1VFamRrR3RWMGJkTUJKcjRGZ0pFNU5RSXdRMVFHeHgxdXdvejVvWnZQWUZ0aEZrak5HRVU?oc=5",
+          "source": "鉅亨網",
+          "published": "2026-11-06T13:00:06+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "日本東部6.1級地震，可能衝擊市場",
+      "summary": "日本東部發生6.1級地震，可能影響當地企業與股市。",
+      "sources": [
+        {
+          "title": "Strong magnitude 6.1 earthquake rattles Japanese coast near Tokyo",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZU1NWExNVTlmeG5zNkFvaTBTNWJUOGNZR0NBTXdpZ2RXdHVIQ3dBbXh6cjFiSHF2NV83SlFFZUktWmN6aWU5YXctVEdLVUtjOWh0cWlSTWN0cmUxcEY3MDJaVE1TLXc5Yy1JdWtxU0RZdmQtcUFwVWt6dk80U0FyYWtwcnhwT3RYQ3BDYW9WdmdRLWZ0R3FORDBoTXVGUWNUQkVtbWx30gGrAUFVX3lxTE1WNzhFaGdmcm9RZkxmY29IVEJTbW5UT045aC1TYl9Pb0wzV3AyTWxvYy1XRUZiaUNub3VoUTJ6X3dNeXZJeE9HZ2pEODN2THYtbW5GQzhDOFZ3M2pMUHR1bnBMd2VvZHZvVTYwQ0RKREpaV3BCMjU1VGFaVVNPc2FkcW1QX0pOU1k5XzljMExyakFKajFJLTNaVVNGdXByX1g3bGJLZ3lSdGRIaw?oc=5",
+          "source": "FOX Weather",
+          "published": "2026-11-06T18:11:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "美元因避險需求上升走強",
+      "summary": "美元因避險需求上升而走強，帶動亞洲市場下跌。",
+      "sources": [
+        {
+          "title": "Dollar climbs on safe haven demand as AI rout saps Asian markets",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNR1gwWTE1Mk8zVjRhWU8zVWJaRng3YUNvWmJESk1YSW1oUHJYVm9GU1llcjRXVDk4TFdmczVmSDIxVFJ2VWdkTUx2QUVMeWJFVkwwNmNpSGpVNnhmZHJ6aEVyT0tmZi1pZ25XSW5WQ0xRWUpSNk9nZ0ZTUjhseE1IMnhsTFBCR0dZcEkxQWl6OEI4TG94WUJNSTZuNlZ2OTVTYVN5akhrS04tdw?oc=5",
+          "source": "Zawya",
+          "published": "2026-11-06T11:13:00+00:00"
+        },
+        {
+          "title": "US dollar climbs on safe haven demand as AI rout saps Asian markets",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTGVvZ3lJM0tlUW9RbjRZeVcwZlpqbDV5ai02dmNiYmhzQWFxZ3B4WFZPLUIteExuS2VCYjBOQjlTUmgxeTNONEo5b1NfNmhmNTJwbm1TZmN6MkFfZFRTYXlZenZSdHV0WjA3LXFHTXJLOW8zbHdEUG9ucmRTalFRMHhuR0FvYmNkUUHSAY8BQVVfeXFMTW1lUC04VURDVmt3OVVHYnNIbnBDamprTkJNSkdhcVphcW5aX2xCdFNxeTBWUExkWWNUd1lOQm90R0dMRWNnVGRjWUdSTG96V2xVTDZqbDgtMDVmWFpTRW00MDJoMHRRY0pqYlQxNmczM2dtalRxT1NsVG1sRkJJVzkxZTZBdnY4dmRRTXRzSDA?oc=5",
+          "source": "Forex Factory",
+          "published": "2026-11-06T09:53:00+00:00"
         }
       ]
     }
   ],
   "usage": {
-    "prompt_tokens": 2322,
-    "completion_tokens": 2119,
-    "total_tokens": 4441
+    "prompt_tokens": 2237,
+    "completion_tokens": 1918,
+    "total_tokens": 4155
   }
 }

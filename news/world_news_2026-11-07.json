@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-11-06T23:17:23.314810+00:00",
+  "date": "2026-11-07",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 51
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 42
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 99
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 31
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 33
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 29
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 13
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美國非農就業大增，失業率降至4.1%",
+      "summary": "美國非農就業增加16.5萬，失業率降至4.1%，提升升息機率。",
+      "sources": [
+        {
+          "title": "US labor market regains ground as job growth surges, unemployment rate falls to 4.1%",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPakNLaDVCMElHQkc5cjV5SmVJcFNPdVpMbnZHRmVFMkoxR3hhbERYTnBZcUlmQVZBanhMeVhEZHpsN3JxM0xrUHNsYVZPWW1EdXBWam1pNk5lSEZVNHkwcUV1VG9xbmVYek80a3JXelRIcW9fQjQ3TUljTUdpZkhYWUJaZHhxNTUybWQwME81bUtPTmJ4UUg4ZjVrZjVlLUx2azFkWjhmeThDWkp2MHJwdTVR?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-06T22:04:06+00:00"
+        },
+        {
+          "title": "意外！美國非農就業大增16.5萬人聯準會12月升息機率升- 國際",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE95eFdEWnpYM3BJWmc1cEo4RTViczNQeHFqd1lsZk5kY29BT3ZaT0V0MmkxM19VV2FheTA3dDZBbFB2V1RuckZNNzZ4QTRkSGN2cFlwbnc2a2pYTzcySWRN?oc=5",
+          "source": "工商時報",
+          "published": "2026-11-06T14:29:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "台幣匯率干預與通膨風險",
+      "summary": "外匯市場顯示央行介入台幣，同時通膨風險升高。",
+      "sources": [
+        {
+          "title": "Taiwan Dollar: CBC intervention and inflation risks – Commerzbank",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSUUxYmJxRmFYMWpieXR6d2FvLVc5MEtYNmdpa1d6T09LT09lbXBmRU4xaVRWZm53QmNDRGhORmVMN1NtYkotZ0tIeER6MTU0UG9FclRBT01HZjJkMTMzMG4xUFMxNzdvWWhhUW4yMDByNVE1VmxkUDZ3bGNfeGRYREJIbGxkbEpkMUdnZWhiNDNYUkFiejY5aHRVbHJOTHdtaXNaRU5YS0k?oc=5",
+          "source": "FXStreet",
+          "published": "2026-11-06T20:58:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "台灣外匯儲備跌破6000億美元",
+      "summary": "台灣外匯儲備跌至600億美元以下，顯示資金外流壓力。",
+      "sources": [
+        {
+          "title": "Foreign exchange reserves dip below US$600 billion",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5YN01VdUxLZ3lTNHpWWmVsUExBaWVDQVFXQ05nNnhZd2taWjhyeTZRWEZsN1ZjRGRPS3cwbGxrX2VLbHhRam1PSU11VFkxN1FWd0pJLVJxNjFmUWRQdWVUM3ZJQzlSaHBhU1RKRzdCQmVZYlRrN3c?oc=5",
+          "source": "Taipei Times",
+          "published": "2026-11-06T16:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "台股重挫金管會限空等五大救市措施",
+      "summary": "金管會實施限空等五項救市措施，台股出現大幅下跌。",
+      "sources": [
+        {
+          "title": "台股重挫金管會祭限空令等5大救市措施 11/9實施",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5HU2t0VXhkd1k2cVJwMkZ2WV9fNHVKNUZKUk5jRFlKTS1YUWhoTHE0REtwbnlmRjBXMG8wZkZZVm95bl82RUJhelhySFEtRTB0N20xOFFYZ0JtMFJLVWc?oc=5",
+          "source": "中央社 CNA",
+          "published": "2026-11-06T10:48:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "外資連第七天撤資，台股大幅波動",
+      "summary": "外資連續第七天賣出台股，資金流出導致市場波動加劇。",
+      "sources": [
+        {
+          "title": "Foreign Investors Pull Funds for 7th Straight Day as Taiwan Stocks Swing Wildly After Record Intraday Plunge",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1IeWpQQ0VzZEFmQWlXNkdQTmhMM1VpYmUtWjctWmpWOGhFeWNMdjRQYnNXcTRhQXljWEZseHFQbmhfWFRPQ1J3bkJ2TFdnNnRZX2dlMnoxMy1uOGw5Y2FvaFNYVlBtVlJoYTZFY2JLSFRNVEJxOVE?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-06T09:35:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "伊朗願談核議題，油價跌破100美元",
+      "summary": "伊朗表示願就核議題談判，油價跌破每桶100美元。",
+      "sources": [
+        {
+          "title": "美伊離停戰近了？伊朗願談核議題 布蘭特原油跌破100美元",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB6aE1XX0FOczlfWlE1aHcxTlhtQ1VFamRrR3RWMGJkTUJKcjRGZ0pFNU5RSXdRMVFHeHgxdXdvejVvWnZQWUZ0aEZrak5HRVU?oc=5",
+          "source": "鉅亨網",
+          "published": "2026-11-06T13:00:06+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "日本東部6.1級地震，可能衝擊市場",
+      "summary": "日本東部發生6.1級地震，可能影響當地企業與股市。",
+      "sources": [
+        {
+          "title": "Strong magnitude 6.1 earthquake rattles Japanese coast near Tokyo",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZU1NWExNVTlmeG5zNkFvaTBTNWJUOGNZR0NBTXdpZ2RXdHVIQ3dBbXh6cjFiSHF2NV83SlFFZUktWmN6aWU5YXctVEdLVUtjOWh0cWlSTWN0cmUxcEY3MDJaVE1TLXc5Yy1JdWtxU0RZdmQtcUFwVWt6dk80U0FyYWtwcnhwT3RYQ3BDYW9WdmdRLWZ0R3FORDBoTXVGUWNUQkVtbWx30gGrAUFVX3lxTE1WNzhFaGdmcm9RZkxmY29IVEJTbW5UT045aC1TYl9Pb0wzV3AyTWxvYy1XRUZiaUNub3VoUTJ6X3dNeXZJeE9HZ2pEODN2THYtbW5GQzhDOFZ3M2pMUHR1bnBMd2VvZHZvVTYwQ0RKREpaV3BCMjU1VGFaVVNPc2FkcW1QX0pOU1k5XzljMExyakFKajFJLTNaVVNGdXByX1g3bGJLZ3lSdGRIaw?oc=5",
+          "source": "FOX Weather",
+          "published": "2026-11-06T18:11:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "美元因避險需求上升走強",
+      "summary": "美元因避險需求上升而走強，帶動亞洲市場下跌。",
+      "sources": [
+        {
+          "title": "Dollar climbs on safe haven demand as AI rout saps Asian markets",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNR1gwWTE1Mk8zVjRhWU8zVWJaRng3YUNvWmJESk1YSW1oUHJYVm9GU1llcjRXVDk4TFdmczVmSDIxVFJ2VWdkTUx2QUVMeWJFVkwwNmNpSGpVNnhmZHJ6aEVyT0tmZi1pZ25XSW5WQ0xRWUpSNk9nZ0ZTUjhseE1IMnhsTFBCR0dZcEkxQWl6OEI4TG94WUJNSTZuNlZ2OTVTYVN5akhrS04tdw?oc=5",
+          "source": "Zawya",
+          "published": "2026-11-06T11:13:00+00:00"
+        },
+        {
+          "title": "US dollar climbs on safe haven demand as AI rout saps Asian markets",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTGVvZ3lJM0tlUW9RbjRZeVcwZlpqbDV5ai02dmNiYmhzQWFxZ3B4WFZPLUIteExuS2VCYjBOQjlTUmgxeTNONEo5b1NfNmhmNTJwbm1TZmN6MkFfZFRTYXlZenZSdHV0WjA3LXFHTXJLOW8zbHdEUG9ucmRTalFRMHhuR0FvYmNkUUHSAY8BQVVfeXFMTW1lUC04VURDVmt3OVVHYnNIbnBDamprTkJNSkdhcVphcW5aX2xCdFNxeTBWUExkWWNUd1lOQm90R0dMRWNnVGRjWUdSTG96V2xVTDZqbDgtMDVmWFpTRW00MDJoMHRRY0pqYlQxNmczM2dtalRxT1NsVG1sRkJJVzkxZTZBdnY4dmRRTXRzSDA?oc=5",
+          "source": "Forex Factory",
+          "published": "2026-11-06T09:53:00+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2237,
+    "completion_tokens": 1918,
+    "total_tokens": 4155
+  }
+}

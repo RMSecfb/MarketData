@@ -1,0 +1,157 @@
+{
+  "generated_at": "2026-11-07T23:17:25.309396+00:00",
+  "date": "2026-11-08",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 33
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 39
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 98
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 26
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 23
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 23
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 3
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美國10月新增165千工作",
+      "summary": "美國10月就業人數增加165千，顯示勞動市場仍強勁。",
+      "sources": [
+        {
+          "title": "US Adds 165,000 Jobs in October: Why Bitcoin Traders Are Watching the Fed",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOOU4ybzRxTVlrZUtLZWJPWWZ3SmxWLTV6Znp0c0xLQjNHTlhiOWVmbl9sVmlyYnNhd3dmZkdNTEFkd1lrVEp4UDFCTXhSdG4zMkpqaV9TNm5KNVRWMG5QaW9iQTFiVXBKOGwyNXpmWVAyZ3dHR0ZzbC1QQzRVLThkVlBvZFZkbHI4UkxzWkRiaVZSODdDZl9URjNTUlB6RUtyRmZwd25Wc0o1SElyeEYxTlR3akZTaVRLVERaZTNQb2Z4cUl3SnlfbGFB?oc=5",
+          "source": "TradingView",
+          "published": "2026-11-07T21:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "伊朗導彈射程限制解除，升高戰爭風險",
+      "summary": "伊朗伊斯蘭革命衛隊稱導彈射程限制已解除，顯示伊朗與以色列衝突升級風險。",
+      "sources": [
+        {
+          "title": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections",
+          "url": "https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html",
+          "source": "CNBC",
+          "published": "2026-11-07T22:17:52+00:00"
+        },
+        {
+          "title": "IRGC claims a self-imposed limit on ballistic missile range ‘has been lifted’",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOV2FpM1prWWlfTEtQdVR2Qk5GQWRLRHpqTjNyVTRCMVFfU05pVlI3Mk5IaThDd3RuMjhzdmUtSFh1TzRhb2FQRHEwcFFnZmNpV0tqbWplQUs5UGlfelU5OWp6UlIxUmhCVV9ORVZNOTVnMmNpckZpTTMtaFJJWW1Vd0RkczdLTUtoQTJkNjh4WGVtVDFOZmxzdEZ2bE1JWF9xTS1UOGVGNzM5QdIBrwFBVV95cUxNNjZOY0NUaW1TWlFORmdoWFdHdmU3cU9Ud2NKNnFfSWNmbGFWUVZyWWhOS3hZN3BKMWNMMHQxbFg5RVhZNDNLTllwSXNwOUpITzBFMTBZSW5RVmJXeFItblVwOWJtYVMyc1NoWktDMkpERkVYOHlSWWZLZ1U0UlJ4VFFvb09Kc0xwbXdpWU9QOWRHYVdQUjFjYWxzeldkUUctemRFbXdSSmVZcU9WNE1R?oc=5",
+          "source": "The Times of Israel",
+          "published": "2026-11-07T21:07:46+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "烏克蘭發動無人機與導彈襲擊",
+      "summary": "烏克蘭發生無人機與導彈攻擊，正備談判，提升地緣政治風險。",
+      "sources": [
+        {
+          "title": "Drone and missile attacks wound 9 as Ukraine prepares for talks with Russia and the US",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSEJTUU1HSllBRS1hYUxLTGNzSGpQdEwzQVgyUnBnRmdUN1dRdmtUaGxMb2lEVHh2MjBOaUVfQk5Ed0tnaUduaFFxcXhPdnhRa1lCTFNRQjRUWk5URDhJeFVENWNJUUVEUnd4V0J0bDFpY3Z5Y09jc3NpRS0zZk5RVHBHNVlxM0Q0RGFXSExYN1YyRm5CeHdEZ3ZCUFJVV1VT?oc=5",
+          "source": "AP News",
+          "published": "2026-11-07T17:30:06+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "台股單日跌逾1,800點",
+      "summary": "台灣股市單日下跌1,873點，出現大幅拋售。",
+      "sources": [
+        {
+          "title": "Taiwan Stocks Plunge 1,873 Points in a Single Day; Million-Follower Influencer Jokes 'Bottom-Fishing Became Getting Wiped Out,' Laments a Year's Work Wasted",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxVUJERXRXcGI3b3pEWWduWlVYeTZZNzlMeUhxQUFpZV83bnlrVGEtSnp2X1oxYmtpODMtQXJiVklScWZORjU4TFlJT3hWWHk0Y1RlSWxROVR6TWpYeXJKX2hTMjZVSmk4d2E1YUE0dXVPUGNwQ1E?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-07T16:05:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "國安基金第十次市場救援創新高",
+      "summary": "台灣國家安全基金以創新高金額投入8檔股票，總投入12.25兆台幣。",
+      "sources": [
+        {
+          "title": "Taiwan's National Stabilization Fund Launches 10th Market Rescue at Record-High Entry Level; Last NT$12.25 Billion Deployment Across 8 Stocks Netted NT$9.932 Billion, TSMC Contributed Over 77%",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1EWjdmSWhYb01Yek1DTm4wajN3OTQwbXIybFE2enk4RWFEVER3LWNVbXk3U3ZpMGJjWnZYNzdIOUdQRFVaVnVCX0dOc19HRi1rM1NhX19uWndMU3Qwa1lnbEl5VENsakx6T3d1OWFPTG94QndjOWc?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-07T09:25:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美國民主黨全勝國會，歷史影響股市",
+      "summary": "民主黨在美國中期選舉全勝，歷史上此類結果常伴隨股市走勢變化。",
+      "sources": [
+        {
+          "title": "Democrats Just Swept Congress — and 80 Years of Stock Market History Says This Happens Next",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOREFXdVVPNWdPS1BaQjlXY1hCR1NraUkyODVMb3NFTDhxYmNDM3c1VmQxQ2JJaGZvVlRnRjE1c0VHNjljQi03WE1lNzJTaGZ1NU4zeDJocHFveUxCa29UeWVaMkJiVDRlcHFfMU52SDk0YjlLbjVkZEZIODhsOEZJOEhfNEdkNUhHOEpOLXJhMmFPSUNZRmdSZm9KT2MxVi1sMVZEMW9qQ29RcGhDX2ZSWEYwTG1ndHN6Q2s5QUNYSXliX1VaZGo4ZmFpeFdIdw?oc=5",
+          "source": "24/7 Wall St.",
+          "published": "2026-11-07T15:22:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "美國國債殖利率持高",
+      "summary": "三檔金融股受益於美國國債殖利率維持在較高水平。",
+      "sources": [
+        {
+          "title": "3 Financial Stocks Retail Investors Are Watching As Treasury Yields Stay Higher",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRVhkT3dDWDJwU1VWSGxzWkpOblE0XzFBNlIwQmIxaDhFRzEzZHRRaTJiZW1uNTRKT3J5ekhnNnNRWUM1ajlPdEhPbHJWMEkzN0hwVm5zQ2tUTUJrekJ3NVllanQza3FOU240ME5ESmNUa2w4ckRrT2pwYnVuaWY3OEdxS0JUZ2FGZm40STFuMDNVMHN1OXBEYTAxb0YzYXdrWGc?oc=5",
+          "source": "Yahoo Finance",
+          "published": "2026-11-07T17:12:13+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2376,
+    "completion_tokens": 2500,
+    "total_tokens": 4876
+  }
+}

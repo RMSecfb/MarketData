@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-07T23:17:25.309396+00:00",
-  "date": "2026-11-08",
+  "generated_at": "2026-11-08T23:17:26.230401+00:00",
+  "date": "2026-11-09",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -8,37 +8,37 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 33
+      "count": 43
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 39
+      "count": 45
     },
     {
       "name": "Google News 市場",
       "ok": true,
-      "count": 98
+      "count": 97
     },
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 26
+      "count": 14
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 23
+      "count": 33
     },
     {
       "name": "CNBC",
       "ok": true,
-      "count": 23
+      "count": 14
     },
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 3
+      "count": 2
     }
   ],
   "status": "ok",
@@ -47,111 +47,83 @@
     {
       "market": "macro",
       "market_name": "總經",
-      "title": "美國10月新增165千工作",
-      "summary": "美國10月就業人數增加165千，顯示勞動市場仍強勁。",
+      "title": "沙烏地阿美塔遭胡塞襲擊",
+      "summary": "胡塞武裝對沙烏地阿美大樓發動襲擊，可能衝擊油價與相關債、匯市場。",
       "sources": [
         {
-          "title": "US Adds 165,000 Jobs in October: Why Bitcoin Traders Are Watching the Fed",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOOU4ybzRxTVlrZUtLZWJPWWZ3SmxWLTV6Znp0c0xLQjNHTlhiOWVmbl9sVmlyYnNhd3dmZkdNTEFkd1lrVEp4UDFCTXhSdG4zMkpqaV9TNm5KNVRWMG5QaW9iQTFiVXBKOGwyNXpmWVAyZ3dHR0ZzbC1QQzRVLThkVlBvZFZkbHI4UkxzWkRiaVZSODdDZl9URjNTUlB6RUtyRmZwd25Wc0o1SElyeEYxTlR3akZTaVRLVERaZTNQb2Z4cUl3SnlfbGFB?oc=5",
-          "source": "TradingView",
-          "published": "2026-11-07T21:00:00+00:00"
+          "title": "Aramco Tower hit in heart of Saudi capital as Houthis launch fresh strikes",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA3VFhjNFMxVXpNZWhoTnJhcEs4clhMM3BveHNLUkpSUGhubGF5VDdWemd5aTVWLVY1aWNoT1l2Tm5kTWczXzVCTUoyMjJXcGtFdXVzZjgxcHVrYzg?oc=5",
+          "source": "BBC",
+          "published": "2026-11-08T21:37:36+00:00"
         }
       ]
     },
     {
       "market": "macro",
       "market_name": "總經",
-      "title": "伊朗導彈射程限制解除，升高戰爭風險",
-      "summary": "伊朗伊斯蘭革命衛隊稱導彈射程限制已解除，顯示伊朗與以色列衝突升級風險。",
+      "title": "伊拉克Khor Mor氣田因無人機停產",
+      "summary": "伊拉克Khor Mor天然氣田因無人機襲擊暫停生產，影響能源供應與全球商品市場。",
       "sources": [
         {
-          "title": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections",
-          "url": "https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html",
-          "source": "CNBC",
-          "published": "2026-11-07T22:17:52+00:00"
+          "title": "Production suspended at Iraq's Khor Mor gas field after drone attack, sources say",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSjc4dFNBUmN3UHp3Uk5FLUhNOElWeTVLRDNzSHZsSTAyUWZ4elN0eHdYUVJ5MDZBb0Y3MDNaNzlWbTRHMnctUFY5dGdNWWtKUnZTdHRPeXl1UUhlUE9mdTU0d2ZWTk9Hak9HaHVXaVBJQ3BoVXdfZnFxelF2aUc1MEV1U0JFQ1lDQ0s3RXhtRnk2dmoxZ2h4a3FRazE4Y3VpbGlDYW1zdE1DcDYxU3R4aE9zOWxkdTNuRVFxMzRlTDEtMDNHRmpr?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-08T21:49:07+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "台灣短線禁令與國安基金救市",
+      "summary": "台股大跌後，政府實施短線賣空限制並動用國安基金穩定市場。",
+      "sources": [
+        {
+          "title": "Taiwan Will Limit Short Sales After AI Selloff Pushes Stocks Into Bear Market",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPU0RFOUNNV3o2VzNuQklwS0RVNVJRTkFqeFQzY2pSTEJaLWYyNV9ib2o0U3gyS3FIbDRkVkUwYzNUbDBRemJQRV82Y0hWQWdzUmhuYTBLQlVHQQ?oc=5",
+          "source": "TOKENPOST",
+          "published": "2026-11-08T07:55:24+00:00"
         },
         {
-          "title": "IRGC claims a self-imposed limit on ballistic missile range ‘has been lifted’",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOV2FpM1prWWlfTEtQdVR2Qk5GQWRLRHpqTjNyVTRCMVFfU05pVlI3Mk5IaThDd3RuMjhzdmUtSFh1TzRhb2FQRHEwcFFnZmNpV0tqbWplQUs5UGlfelU5OWp6UlIxUmhCVV9ORVZNOTVnMmNpckZpTTMtaFJJWW1Vd0RkczdLTUtoQTJkNjh4WGVtVDFOZmxzdEZ2bE1JWF9xTS1UOGVGNzM5QdIBrwFBVV95cUxNNjZOY0NUaW1TWlFORmdoWFdHdmU3cU9Ud2NKNnFfSWNmbGFWUVZyWWhOS3hZN3BKMWNMMHQxbFg5RVhZNDNLTllwSXNwOUpITzBFMTBZSW5RVmJXeFItblVwOWJtYVMyc1NoWktDMkpERkVYOHlSWWZLZ1U0UlJ4VFFvb09Kc0xwbXdpWU9QOWRHYVdQUjFjYWxzeldkUUctemRFbXdSSmVZcU9WNE1R?oc=5",
-          "source": "The Times of Israel",
-          "published": "2026-11-07T21:07:46+00:00"
+          "title": "After Taiwan Stock Market Plunges 5,510 Points in a Single Week, Short-Selling Curbs and National Stabilization Fund Join Forces to Rescue Market on the 9th",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HeHB3V2xhRjdCdGxxN3BIMlZUOW00bWpqQTh1THg1NjBCN2MxRlltR1JITXN2NU9JQlp6eVZ3RXEwNWZyTkNMTndyYVU5RGJwSUkzVjVvVXAwMkUyS0VkZXpCWTNZMHZvLW9jaXY3NzN6YWlCaWc?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-08T07:35:00+00:00"
         }
       ]
     },
     {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "烏克蘭發動無人機與導彈襲擊",
-      "summary": "烏克蘭發生無人機與導彈攻擊，正備談判，提升地緣政治風險。",
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "台灣拘捕中共黨員涉選舉資助",
+      "summary": "台灣逮捕一名中共黨員，指控其接受中國資金干預選舉，提升政治風險。",
       "sources": [
         {
-          "title": "Drone and missile attacks wound 9 as Ukraine prepares for talks with Russia and the US",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSEJTUU1HSllBRS1hYUxLTGNzSGpQdEwzQVgyUnBnRmdUN1dRdmtUaGxMb2lEVHh2MjBOaUVfQk5Ed0tnaUduaFFxcXhPdnhRa1lCTFNRQjRUWk5URDhJeFVENWNJUUVEUnd4V0J0bDFpY3Z5Y09jc3NpRS0zZk5RVHBHNVlxM0Q0RGFXSExYN1YyRm5CeHdEZ3ZCUFJVV1VT?oc=5",
-          "source": "AP News",
-          "published": "2026-11-07T17:30:06+00:00"
+          "title": "Taiwan detains a Communist Party leader over alleged Chinese sponsorship in election",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcmxBcm1BQzNYOUdWenV5TF9MYVFOV2xGV0Z2UXo0cVd0Tkg4M1VIaW5QaHpEM0NadVowT2tha0Rsa0pfX2dOUmZwc0JVZmkyX0NmU3ZvanZVdVk0U0pzVERZUWE3bWh6Qm9DcnhJLWNTakhuR1luVWJZYXdDazRxSnJodnMyQUFmZEs1N1hxNUthb2pkTTJPTWNCR1ozQm42VDAxNlgtWDRLc0dzdkdkTXNKRFVlQk1jYTZz0gHAAUFVX3lxTE9fS2J5VERzZENLQ3ZTM1JCNWZ4NWc5c3Qxdm95TDVDb0NsRFNPRVFFdWk4OWJCOENpTG1WQkRMZFBGZ0hJQnFwREFEYjhwZ2ZmYmdfN0EwSGs1ZS1RMWpRYV9JWmdxeDZYMEYxUzNxeUF6VkZIR1hsWElsdWhhTUg0TUdQYmtJZjJlRS1PZWdyRlJsb0FyTElXSERrVW5PTkFpSEFwVzc1U18tR21KcnIwN0lfNlpHdEVPM2o2bkpjTw?oc=5",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "published": "2026-11-08T16:29:33+00:00"
         }
       ]
     },
     {
       "market": "equity",
       "market_name": "股市",
-      "title": "台股單日跌逾1,800點",
-      "summary": "台灣股市單日下跌1,873點，出現大幅拋售。",
+      "title": "金控季內蒸發7,500億資產",
+      "summary": "大型金控公司本季投資虧損近7,500億新台幣，對金融股與債市造成衝擊。",
       "sources": [
         {
-          "title": "Taiwan Stocks Plunge 1,873 Points in a Single Day; Million-Follower Influencer Jokes 'Bottom-Fishing Became Getting Wiped Out,' Laments a Year's Work Wasted",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAxVUJERXRXcGI3b3pEWWduWlVYeTZZNzlMeUhxQUFpZV83bnlrVGEtSnp2X1oxYmtpODMtQXJiVklScWZORjU4TFlJT3hWWHk0Y1RlSWxROVR6TWpYeXJKX2hTMjZVSmk4d2E1YUE0dXVPUGNwQ1E?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-11-07T16:05:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "國安基金第十次市場救援創新高",
-      "summary": "台灣國家安全基金以創新高金額投入8檔股票，總投入12.25兆台幣。",
-      "sources": [
-        {
-          "title": "Taiwan's National Stabilization Fund Launches 10th Market Rescue at Record-High Entry Level; Last NT$12.25 Billion Deployment Across 8 Stocks Netted NT$9.932 Billion, TSMC Contributed Over 77%",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1EWjdmSWhYb01Yek1DTm4wajN3OTQwbXIybFE2enk4RWFEVER3LWNVbXk3U3ZpMGJjWnZYNzdIOUdQRFVaVnVCX0dOc19HRi1rM1NhX19uWndMU3Qwa1lnbEl5VENsakx6T3d1OWFPTG94QndjOWc?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-11-07T09:25:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "美國民主黨全勝國會，歷史影響股市",
-      "summary": "民主黨在美國中期選舉全勝，歷史上此類結果常伴隨股市走勢變化。",
-      "sources": [
-        {
-          "title": "Democrats Just Swept Congress — and 80 Years of Stock Market History Says This Happens Next",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOREFXdVVPNWdPS1BaQjlXY1hCR1NraUkyODVMb3NFTDhxYmNDM3c1VmQxQ2JJaGZvVlRnRjE1c0VHNjljQi03WE1lNzJTaGZ1NU4zeDJocHFveUxCa29UeWVaMkJiVDRlcHFfMU52SDk0YjlLbjVkZEZIODhsOEZJOEhfNEdkNUhHOEpOLXJhMmFPSUNZRmdSZm9KT2MxVi1sMVZEMW9qQ29RcGhDX2ZSWEYwTG1ndHN6Q2s5QUNYSXliX1VaZGo4ZmFpeFdIdw?oc=5",
-          "source": "24/7 Wall St.",
-          "published": "2026-11-07T15:22:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "美國國債殖利率持高",
-      "summary": "三檔金融股受益於美國國債殖利率維持在較高水平。",
-      "sources": [
-        {
-          "title": "3 Financial Stocks Retail Investors Are Watching As Treasury Yields Stay Higher",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRVhkT3dDWDJwU1VWSGxzWkpOblE0XzFBNlIwQmIxaDhFRzEzZHRRaTJiZW1uNTRKT3J5ekhnNnNRWUM1ajlPdEhPbHJWMEkzN0hwVm5zQ2tUTUJrekJ3NVllanQza3FOU240ME5ESmNUa2w4ckRrT2pwYnVuaWY3OEdxS0JUZ2FGZm40STFuMDNVMHN1OXBEYTAxb0YzYXdrWGc?oc=5",
-          "source": "Yahoo Finance",
-          "published": "2026-11-07T17:12:13+00:00"
+          "title": "金控投資大失血！一季蒸發近7,500億年底恐轉虧 明年股息拉警報",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9UYXNKYkhXendsaGdGdGlWaERvZ1dPWC1sZmkyQUJyOS1rcGdiQWpXRVZkc2E2QmRLZDJUYkVhazhBaGNSTEdSNTZIVm5OMjQ50gFWQVVfeXFMTzNKOENmTnVUWVEtNUh2RzlETDRvU2E0b0tGZXhuQVpQczBqa28tRVRpSEo5NDJmb1ptN1puN1lxRElpdTBJNkdNWHFZQmhHRk9jSnFoZlE?oc=5",
+          "source": "UDN",
+          "published": "2026-11-08T13:37:59+00:00"
         }
       ]
     }
   ],
   "usage": {
-    "prompt_tokens": 2376,
+    "prompt_tokens": 2268,
     "completion_tokens": 2500,
-    "total_tokens": 4876
+    "total_tokens": 4768
   }
 }

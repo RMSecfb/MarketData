@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-11-08T23:17:26.230401+00:00",
+  "date": "2026-11-09",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 43
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 45
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 97
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 14
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 33
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 14
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 2
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "沙烏地阿美塔遭胡塞襲擊",
+      "summary": "胡塞武裝對沙烏地阿美大樓發動襲擊，可能衝擊油價與相關債、匯市場。",
+      "sources": [
+        {
+          "title": "Aramco Tower hit in heart of Saudi capital as Houthis launch fresh strikes",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA3VFhjNFMxVXpNZWhoTnJhcEs4clhMM3BveHNLUkpSUGhubGF5VDdWemd5aTVWLVY1aWNoT1l2Tm5kTWczXzVCTUoyMjJXcGtFdXVzZjgxcHVrYzg?oc=5",
+          "source": "BBC",
+          "published": "2026-11-08T21:37:36+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "伊拉克Khor Mor氣田因無人機停產",
+      "summary": "伊拉克Khor Mor天然氣田因無人機襲擊暫停生產，影響能源供應與全球商品市場。",
+      "sources": [
+        {
+          "title": "Production suspended at Iraq's Khor Mor gas field after drone attack, sources say",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSjc4dFNBUmN3UHp3Uk5FLUhNOElWeTVLRDNzSHZsSTAyUWZ4elN0eHdYUVJ5MDZBb0Y3MDNaNzlWbTRHMnctUFY5dGdNWWtKUnZTdHRPeXl1UUhlUE9mdTU0d2ZWTk9Hak9HaHVXaVBJQ3BoVXdfZnFxelF2aUc1MEV1U0JFQ1lDQ0s3RXhtRnk2dmoxZ2h4a3FRazE4Y3VpbGlDYW1zdE1DcDYxU3R4aE9zOWxkdTNuRVFxMzRlTDEtMDNHRmpr?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-08T21:49:07+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "台灣短線禁令與國安基金救市",
+      "summary": "台股大跌後，政府實施短線賣空限制並動用國安基金穩定市場。",
+      "sources": [
+        {
+          "title": "Taiwan Will Limit Short Sales After AI Selloff Pushes Stocks Into Bear Market",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPU0RFOUNNV3o2VzNuQklwS0RVNVJRTkFqeFQzY2pSTEJaLWYyNV9ib2o0U3gyS3FIbDRkVkUwYzNUbDBRemJQRV82Y0hWQWdzUmhuYTBLQlVHQQ?oc=5",
+          "source": "TOKENPOST",
+          "published": "2026-11-08T07:55:24+00:00"
+        },
+        {
+          "title": "After Taiwan Stock Market Plunges 5,510 Points in a Single Week, Short-Selling Curbs and National Stabilization Fund Join Forces to Rescue Market on the 9th",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HeHB3V2xhRjdCdGxxN3BIMlZUOW00bWpqQTh1THg1NjBCN2MxRlltR1JITXN2NU9JQlp6eVZ3RXEwNWZyTkNMTndyYVU5RGJwSUkzVjVvVXAwMkUyS0VkZXpCWTNZMHZvLW9jaXY3NzN6YWlCaWc?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-08T07:35:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "台灣拘捕中共黨員涉選舉資助",
+      "summary": "台灣逮捕一名中共黨員，指控其接受中國資金干預選舉，提升政治風險。",
+      "sources": [
+        {
+          "title": "Taiwan detains a Communist Party leader over alleged Chinese sponsorship in election",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcmxBcm1BQzNYOUdWenV5TF9MYVFOV2xGV0Z2UXo0cVd0Tkg4M1VIaW5QaHpEM0NadVowT2tha0Rsa0pfX2dOUmZwc0JVZmkyX0NmU3ZvanZVdVk0U0pzVERZUWE3bWh6Qm9DcnhJLWNTakhuR1luVWJZYXdDazRxSnJodnMyQUFmZEs1N1hxNUthb2pkTTJPTWNCR1ozQm42VDAxNlgtWDRLc0dzdkdkTXNKRFVlQk1jYTZz0gHAAUFVX3lxTE9fS2J5VERzZENLQ3ZTM1JCNWZ4NWc5c3Qxdm95TDVDb0NsRFNPRVFFdWk4OWJCOENpTG1WQkRMZFBGZ0hJQnFwREFEYjhwZ2ZmYmdfN0EwSGs1ZS1RMWpRYV9JWmdxeDZYMEYxUzNxeUF6VkZIR1hsWElsdWhhTUg0TUdQYmtJZjJlRS1PZWdyRlJsb0FyTElXSERrVW5PTkFpSEFwVzc1U18tR21KcnIwN0lfNlpHdEVPM2o2bkpjTw?oc=5",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "published": "2026-11-08T16:29:33+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "金控季內蒸發7,500億資產",
+      "summary": "大型金控公司本季投資虧損近7,500億新台幣，對金融股與債市造成衝擊。",
+      "sources": [
+        {
+          "title": "金控投資大失血！一季蒸發近7,500億年底恐轉虧 明年股息拉警報",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9UYXNKYkhXendsaGdGdGlWaERvZ1dPWC1sZmkyQUJyOS1rcGdiQWpXRVZkc2E2QmRLZDJUYkVhazhBaGNSTEdSNTZIVm5OMjQ50gFWQVVfeXFMTzNKOENmTnVUWVEtNUh2RzlETDRvU2E0b0tGZXhuQVpQczBqa28tRVRpSEo5NDJmb1ptN1puN1lxRElpdTBJNkdNWHFZQmhHRk9jSnFoZlE?oc=5",
+          "source": "UDN",
+          "published": "2026-11-08T13:37:59+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2268,
+    "completion_tokens": 2500,
+    "total_tokens": 4768
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-08T23:17:26.230401+00:00",
-  "date": "2026-11-09",
+  "generated_at": "2026-11-09T23:17:27.623759+00:00",
+  "date": "2026-11-10",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -8,122 +8,176 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 43
+      "count": 64
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 45
+      "count": 48
     },
     {
       "name": "Google News 市場",
       "ok": true,
-      "count": 97
+      "count": 99
     },
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 14
+      "count": 18
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 33
+      "count": 43
     },
     {
       "name": "CNBC",
       "ok": true,
-      "count": 14
+      "count": 29
     },
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 2
+      "count": 16
     }
   ],
   "status": "ok",
   "note": "",
   "items": [
     {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "沙烏地阿美塔遭胡塞襲擊",
-      "summary": "胡塞武裝對沙烏地阿美大樓發動襲擊，可能衝擊油價與相關債、匯市場。",
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "中國央行設定美元兌人民幣匯率6.7188",
+      "summary": "中國人民銀行將美元兌人民幣中間價設定為6.7188。",
       "sources": [
         {
-          "title": "Aramco Tower hit in heart of Saudi capital as Houthis launch fresh strikes",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA3VFhjNFMxVXpNZWhoTnJhcEs4clhMM3BveHNLUkpSUGhubGF5VDdWemd5aTVWLVY1aWNoT1l2Tm5kTWczXzVCTUoyMjJXcGtFdXVzZjgxcHVrYzg?oc=5",
-          "source": "BBC",
-          "published": "2026-11-08T21:37:36+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "伊拉克Khor Mor氣田因無人機停產",
-      "summary": "伊拉克Khor Mor天然氣田因無人機襲擊暫停生產，影響能源供應與全球商品市場。",
-      "sources": [
-        {
-          "title": "Production suspended at Iraq's Khor Mor gas field after drone attack, sources say",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSjc4dFNBUmN3UHp3Uk5FLUhNOElWeTVLRDNzSHZsSTAyUWZ4elN0eHdYUVJ5MDZBb0Y3MDNaNzlWbTRHMnctUFY5dGdNWWtKUnZTdHRPeXl1UUhlUE9mdTU0d2ZWTk9Hak9HaHVXaVBJQ3BoVXdfZnFxelF2aUc1MEV1U0JFQ1lDQ0s3RXhtRnk2dmoxZ2h4a3FRazE4Y3VpbGlDYW1zdE1DcDYxU3R4aE9zOWxkdTNuRVFxMzRlTDEtMDNHRmpr?oc=5",
-          "source": "Reuters",
-          "published": "2026-11-08T21:49:07+00:00"
-        }
-      ]
-    },
-    {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "台灣短線禁令與國安基金救市",
-      "summary": "台股大跌後，政府實施短線賣空限制並動用國安基金穩定市場。",
-      "sources": [
-        {
-          "title": "Taiwan Will Limit Short Sales After AI Selloff Pushes Stocks Into Bear Market",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPU0RFOUNNV3o2VzNuQklwS0RVNVJRTkFqeFQzY2pSTEJaLWYyNV9ib2o0U3gyS3FIbDRkVkUwYzNUbDBRemJQRV82Y0hWQWdzUmhuYTBLQlVHQQ?oc=5",
-          "source": "TOKENPOST",
-          "published": "2026-11-08T07:55:24+00:00"
-        },
-        {
-          "title": "After Taiwan Stock Market Plunges 5,510 Points in a Single Week, Short-Selling Curbs and National Stabilization Fund Join Forces to Rescue Market on the 9th",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HeHB3V2xhRjdCdGxxN3BIMlZUOW00bWpqQTh1THg1NjBCN2MxRlltR1JITXN2NU9JQlp6eVZ3RXEwNWZyTkNMTndyYVU5RGJwSUkzVjVvVXAwMkUyS0VkZXpCWTNZMHZvLW9jaXY3NzN6YWlCaWc?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-11-08T07:35:00+00:00"
+          "title": "The People's Bank of China sets the dollar price against the yuan at 6.7188",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOanVuUDhjZUUyRDlRVFBzaGF0c3ZhQ0VqWkExa2pWV3dhcjg0S3VzM3ZQLUZiOWZpdzltQUlSWTNTZHBBaGV5M0JNakpoalN4RkVYRlJ0azJVNXpNUjRhWThVMVhSOWFVd0tmTmNXR1JXZ1dCeXhrcEdKRUFNcmtBdGlDRThYN20tdGZrNVZFZEwzT0V1VS1TSFFBR2phWGlBeWtXWm9GQjdCRDdpaERYZlo4aG1UbGMzN2lBdF9UeDVFSEdmZHVvbDY1bw?oc=5",
+          "source": "المتداول العربي",
+          "published": "2026-11-09T06:16:28+00:00"
         }
       ]
     },
     {
       "market": "fx",
       "market_name": "匯市",
-      "title": "台灣拘捕中共黨員涉選舉資助",
-      "summary": "台灣逮捕一名中共黨員，指控其接受中國資金干預選舉，提升政治風險。",
+      "title": "中國銀行上調美元存款利率抑制人民幣升值",
+      "summary": "多家中國銀行提升美元存款利率，以抑制人民幣匯率上漲。",
       "sources": [
         {
-          "title": "Taiwan detains a Communist Party leader over alleged Chinese sponsorship in election",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcmxBcm1BQzNYOUdWenV5TF9MYVFOV2xGV0Z2UXo0cVd0Tkg4M1VIaW5QaHpEM0NadVowT2tha0Rsa0pfX2dOUmZwc0JVZmkyX0NmU3ZvanZVdVk0U0pzVERZUWE3bWh6Qm9DcnhJLWNTakhuR1luVWJZYXdDazRxSnJodnMyQUFmZEs1N1hxNUthb2pkTTJPTWNCR1ozQm42VDAxNlgtWDRLc0dzdkdkTXNKRFVlQk1jYTZz0gHAAUFVX3lxTE9fS2J5VERzZENLQ3ZTM1JCNWZ4NWc5c3Qxdm95TDVDb0NsRFNPRVFFdWk4OWJCOENpTG1WQkRMZFBGZ0hJQnFwREFEYjhwZ2ZmYmdfN0EwSGs1ZS1RMWpRYV9JWmdxeDZYMEYxUzNxeUF6VkZIR1hsWElsdWhhTUg0TUdQYmtJZjJlRS1PZWdyRlJsb0FyTElXSERrVW5PTkFpSEFwVzc1U18tR21KcnIwN0lfNlpHdEVPM2o2bkpjTw?oc=5",
-          "source": "ABC News - Breaking News, Latest News and Videos",
-          "published": "2026-11-08T16:29:33+00:00"
+          "title": "Chinese Banks Raise US Dollar Deposit Rates To Cool The Yuan",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQWI2M0xJNURFc2lpaVZFSFFpUHVodUx3UXdhUHJfMnYzN1dGU1JxTndISUlaR0JNZFBBTUNPQWtKcXJNR2ZxcWZMUWxTdTUwUGdEM3VFeTllUnA0akVGWGdmVTNQSUYwN29zcGZKVzBiLVZrV1ZFeXpFNURDQ1JIdU93T1JVQ0JBdlNNVWh5b3JDMW8?oc=5",
+          "source": "Finimize",
+          "published": "2026-11-09T06:39:37+00:00"
+        },
+        {
+          "title": "Chinese banks lift dollar deposit rates to slow the yuan rally, Reuters says",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSXpBVnNrckJLN1lSYXdnbU51VUpnVmwtT1A3Q3luM1RBT0dyd2xiUXN5RFd6Z3cwX2drdmdleVFvZ0dyUUdxbUZhSDVNVm9YQlZWSXRfbHc1c1pSY2xKdVVYdV8wV2UzLVpveXRhZXBNQWE4aVRZTUV2eUotUzJmTTNOcDJmVnpuQ2NuVkd5N2ZCUTBCOFhJZlB0M2d3RUpycmp2U0x3?oc=5",
+          "source": "Startup Fortune",
+          "published": "2026-11-09T06:01:49+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "台研院警示台幣過度貶值與通膨升至3%",
+      "summary": "台灣經濟研究院指出台幣已大幅貶值，燃油與電價上漲可能使CPI超過3%，迫使央行加息。",
+      "sources": [
+        {
+          "title": "Taiwan Institute of Economic Research's Chang Chien-yi: Taiwan Dollar Has \"Fallen Too Far\"; Full Fuel and Power Price Hikes Could Push CPI Above 3% and Force Taiwan's Central Bank to Raise Rates",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50anQtZ1JuMDlmRmc1aGRtelBDT1VfcGUzVUh2QTRNZVB3eWFXSzV1ZkROWThtX2RJUW9yRVM3eHIwazJCR3pyd3ZzQlMtQlhuM2I1R2ZHRFRycDBLcWJlVU5PQkhXRHBIWFd4R3JzZ2I0Z3BHR1E?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-09T10:45:00+00:00"
         }
       ]
     },
     {
       "market": "equity",
       "market_name": "股市",
-      "title": "金控季內蒸發7,500億資產",
-      "summary": "大型金控公司本季投資虧損近7,500億新台幣，對金融股與債市造成衝擊。",
+      "title": "道瓊指數上漲千點 Nvidia 股價下滑",
+      "summary": "美國道瓊指數當日上漲約1000點，然而Nvidia股價因相關消息下跌。",
       "sources": [
         {
-          "title": "金控投資大失血！一季蒸發近7,500億年底恐轉虧 明年股息拉警報",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9UYXNKYkhXendsaGdGdGlWaERvZ1dPWC1sZmkyQUJyOS1rcGdiQWpXRVZkc2E2QmRLZDJUYkVhazhBaGNSTEdSNTZIVm5OMjQ50gFWQVVfeXFMTzNKOENmTnVUWVEtNUh2RzlETDRvU2E0b0tGZXhuQVpQczBqa28tRVRpSEo5NDJmb1ptN1puN1lxRElpdTBJNkdNWHFZQmhHRk9jSnFoZlE?oc=5",
-          "source": "UDN",
-          "published": "2026-11-08T13:37:59+00:00"
+          "title": "Stock Market Today: Dow Pushes 1000 Points Higher, Nvidia Stock Slides Over Jensen Huang Affair Probe",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSV9fWHdCZGw4OGdCbVpVMVJreGluVnp1TVhmT1JkemQ0RGdWQTZfNFNuODhETWJUQUt6NTVlUlRGY0NwNkRXOVd6VFlLSWFlTERpMEJWODJraHlyX3ZtRnFpSjUtVzhmOVVKNkRfS0RPZ3l4WHBnWEdwTTRRaVVDdmM3TEhxR0k?oc=5",
+          "source": "WSJ",
+          "published": "2026-11-09T22:35:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "Nvidia CEO 婚外情調查致股價大跌",
+      "summary": "多家媒體報導Nvidia執行長Jensen Huang捲入與疑似中國間諜的婚外情調查，致股價下跌。",
+      "sources": [
+        {
+          "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
+          "url": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-11-09T23:01:32+00:00"
+        },
+        {
+          "title": "Trump says FBI is investigating Nvidia CEO Jensen Huang’s relationship with alleged Chinese spy",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQU3JYMUpGSGdOUUZwTDRZSjM2bmlSLTJlbU1rQmFMNTdfalVuWE9aRndmUUxtOU0xazBWdkIzUmVhamNqdHhVTzJtQ1FjZHNpZFZveG1DNnZULVZLbTRJekJmOTBET2pHdmVrWEhFcy16TEZlR05WN3N2MU5RWDhHemJvT05mQi1KX1FRNFdRMjUzUjN1VWstaEZ0SVE?oc=5",
+          "source": "NBC News",
+          "published": "2026-11-09T22:25:00+00:00"
+        },
+        {
+          "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+          "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-11-09T19:58:01+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "油價因伊朗緩和霍爾木茲需求跌6.8%",
+      "summary": "因伊朗傳出緩和霍爾木茲海峽需求的未確認報導，全球油價下跌6.8%。",
+      "sources": [
+        {
+          "title": "【盤前】油價大跌費半狂飆6.8%！台指夜盤漲1064點 台股今拚續攻",
+          "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxPYjJDNF80VDRMSDF1dEtFS2tBek1jc3lOLUZ0UGtZdmlzWUM4cFBPUkdVYWNBajhLTVZWMk1MUVc5bHR5bER1TEVrTlF1NHZqXzltc3VrdEdud1FDMnliZnZibHVWQ1BUaEhIREtzMmQ2d2dEQk1zNUxHNkpSM0lGbEhNMFNRVFZLOWFGUWg1b1o1RWIyTVBjNExSYmNneEtOWnhvMEoyR3JDQ19kbnlBb1c5N2RvblE0T3lfdk1RUzdUQ3luaHMyUF95YzdxVjNoOWlDSWxyV1NuRmR1aFpCM1Z3cTliVTFXeWJ4ZktnQVFSb01kcUJ5QW1rUFgtUzVUZklzNkI2ckJFM3pSUXJvXzhDNy1GdmJ1bl93SEl3NUk3bWRsbjhnc3JjVkxxMk5sV3NOZkltcDk5Sk56YlpsbktVb1hsdW1fRDFoLW9tVzRCdGhzbmFwdTFZMmhNWGZsd3M4ZDNiSHI?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-11-09T22:18:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "白宮對俄烏和平談判持謹慎樂觀態度",
+      "summary": "美國白宮表示對本週俄烏和平談判持謹慎樂觀的態度。",
+      "sources": [
+        {
+          "title": "White House cautiously upbeat about Russia-Ukraine peace talks this week",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSkNHc3NqUF9fbkxzbkdRMmZGOHlLTjhkZVBMV1ZnNTZNdF9SWG9VMWowOGdXM0NUVkdNUGpTV1RYWVJSQ2g4ckxoMzhZTldVazdqMHVpXzRjVHppY194S1VpYlV5WnA1R2RhUUEzek5QN2NVeFlqTWVKUERKTkxfdUZESGE?oc=5",
+          "source": "Axios",
+          "published": "2026-11-09T20:51:40+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "十月美國就業報告強勁出現三大原因",
+      "summary": "分析指出十月美國就業報告強勁的三個意外因素。",
+      "sources": [
+        {
+          "title": "3 unexpected reasons the October jobs report was so strong",
+          "url": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html",
+          "source": "CNBC",
+          "published": "2026-11-09T22:23:56+00:00"
         }
       ]
     }
   ],
   "usage": {
-    "prompt_tokens": 2268,
-    "completion_tokens": 2500,
-    "total_tokens": 4768
+    "prompt_tokens": 2385,
+    "completion_tokens": 2052,
+    "total_tokens": 4437
   }
 }

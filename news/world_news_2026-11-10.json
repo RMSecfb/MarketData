@@ -1,0 +1,183 @@
+{
+  "generated_at": "2026-11-09T23:17:27.623759+00:00",
+  "date": "2026-11-10",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 64
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 48
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 99
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 18
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 43
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 29
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 16
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "中國央行設定美元兌人民幣匯率6.7188",
+      "summary": "中國人民銀行將美元兌人民幣中間價設定為6.7188。",
+      "sources": [
+        {
+          "title": "The People's Bank of China sets the dollar price against the yuan at 6.7188",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOanVuUDhjZUUyRDlRVFBzaGF0c3ZhQ0VqWkExa2pWV3dhcjg0S3VzM3ZQLUZiOWZpdzltQUlSWTNTZHBBaGV5M0JNakpoalN4RkVYRlJ0azJVNXpNUjRhWThVMVhSOWFVd0tmTmNXR1JXZ1dCeXhrcEdKRUFNcmtBdGlDRThYN20tdGZrNVZFZEwzT0V1VS1TSFFBR2phWGlBeWtXWm9GQjdCRDdpaERYZlo4aG1UbGMzN2lBdF9UeDVFSEdmZHVvbDY1bw?oc=5",
+          "source": "المتداول العربي",
+          "published": "2026-11-09T06:16:28+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "中國銀行上調美元存款利率抑制人民幣升值",
+      "summary": "多家中國銀行提升美元存款利率，以抑制人民幣匯率上漲。",
+      "sources": [
+        {
+          "title": "Chinese Banks Raise US Dollar Deposit Rates To Cool The Yuan",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQWI2M0xJNURFc2lpaVZFSFFpUHVodUx3UXdhUHJfMnYzN1dGU1JxTndISUlaR0JNZFBBTUNPQWtKcXJNR2ZxcWZMUWxTdTUwUGdEM3VFeTllUnA0akVGWGdmVTNQSUYwN29zcGZKVzBiLVZrV1ZFeXpFNURDQ1JIdU93T1JVQ0JBdlNNVWh5b3JDMW8?oc=5",
+          "source": "Finimize",
+          "published": "2026-11-09T06:39:37+00:00"
+        },
+        {
+          "title": "Chinese banks lift dollar deposit rates to slow the yuan rally, Reuters says",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSXpBVnNrckJLN1lSYXdnbU51VUpnVmwtT1A3Q3luM1RBT0dyd2xiUXN5RFd6Z3cwX2drdmdleVFvZ0dyUUdxbUZhSDVNVm9YQlZWSXRfbHc1c1pSY2xKdVVYdV8wV2UzLVpveXRhZXBNQWE4aVRZTUV2eUotUzJmTTNOcDJmVnpuQ2NuVkd5N2ZCUTBCOFhJZlB0M2d3RUpycmp2U0x3?oc=5",
+          "source": "Startup Fortune",
+          "published": "2026-11-09T06:01:49+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "台研院警示台幣過度貶值與通膨升至3%",
+      "summary": "台灣經濟研究院指出台幣已大幅貶值，燃油與電價上漲可能使CPI超過3%，迫使央行加息。",
+      "sources": [
+        {
+          "title": "Taiwan Institute of Economic Research's Chang Chien-yi: Taiwan Dollar Has \"Fallen Too Far\"; Full Fuel and Power Price Hikes Could Push CPI Above 3% and Force Taiwan's Central Bank to Raise Rates",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50anQtZ1JuMDlmRmc1aGRtelBDT1VfcGUzVUh2QTRNZVB3eWFXSzV1ZkROWThtX2RJUW9yRVM3eHIwazJCR3pyd3ZzQlMtQlhuM2I1R2ZHRFRycDBLcWJlVU5PQkhXRHBIWFd4R3JzZ2I0Z3BHR1E?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-09T10:45:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "道瓊指數上漲千點 Nvidia 股價下滑",
+      "summary": "美國道瓊指數當日上漲約1000點，然而Nvidia股價因相關消息下跌。",
+      "sources": [
+        {
+          "title": "Stock Market Today: Dow Pushes 1000 Points Higher, Nvidia Stock Slides Over Jensen Huang Affair Probe",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSV9fWHdCZGw4OGdCbVpVMVJreGluVnp1TVhmT1JkemQ0RGdWQTZfNFNuODhETWJUQUt6NTVlUlRGY0NwNkRXOVd6VFlLSWFlTERpMEJWODJraHlyX3ZtRnFpSjUtVzhmOVVKNkRfS0RPZ3l4WHBnWEdwTTRRaVVDdmM3TEhxR0k?oc=5",
+          "source": "WSJ",
+          "published": "2026-11-09T22:35:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "Nvidia CEO 婚外情調查致股價大跌",
+      "summary": "多家媒體報導Nvidia執行長Jensen Huang捲入與疑似中國間諜的婚外情調查，致股價下跌。",
+      "sources": [
+        {
+          "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
+          "url": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-11-09T23:01:32+00:00"
+        },
+        {
+          "title": "Trump says FBI is investigating Nvidia CEO Jensen Huang’s relationship with alleged Chinese spy",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQU3JYMUpGSGdOUUZwTDRZSjM2bmlSLTJlbU1rQmFMNTdfalVuWE9aRndmUUxtOU0xazBWdkIzUmVhamNqdHhVTzJtQ1FjZHNpZFZveG1DNnZULVZLbTRJekJmOTBET2pHdmVrWEhFcy16TEZlR05WN3N2MU5RWDhHemJvT05mQi1KX1FRNFdRMjUzUjN1VWstaEZ0SVE?oc=5",
+          "source": "NBC News",
+          "published": "2026-11-09T22:25:00+00:00"
+        },
+        {
+          "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+          "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-11-09T19:58:01+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "油價因伊朗緩和霍爾木茲需求跌6.8%",
+      "summary": "因伊朗傳出緩和霍爾木茲海峽需求的未確認報導，全球油價下跌6.8%。",
+      "sources": [
+        {
+          "title": "【盤前】油價大跌費半狂飆6.8%！台指夜盤漲1064點 台股今拚續攻",
+          "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxPYjJDNF80VDRMSDF1dEtFS2tBek1jc3lOLUZ0UGtZdmlzWUM4cFBPUkdVYWNBajhLTVZWMk1MUVc5bHR5bER1TEVrTlF1NHZqXzltc3VrdEdud1FDMnliZnZibHVWQ1BUaEhIREtzMmQ2d2dEQk1zNUxHNkpSM0lGbEhNMFNRVFZLOWFGUWg1b1o1RWIyTVBjNExSYmNneEtOWnhvMEoyR3JDQ19kbnlBb1c5N2RvblE0T3lfdk1RUzdUQ3luaHMyUF95YzdxVjNoOWlDSWxyV1NuRmR1aFpCM1Z3cTliVTFXeWJ4ZktnQVFSb01kcUJ5QW1rUFgtUzVUZklzNkI2ckJFM3pSUXJvXzhDNy1GdmJ1bl93SEl3NUk3bWRsbjhnc3JjVkxxMk5sV3NOZkltcDk5Sk56YlpsbktVb1hsdW1fRDFoLW9tVzRCdGhzbmFwdTFZMmhNWGZsd3M4ZDNiSHI?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-11-09T22:18:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "白宮對俄烏和平談判持謹慎樂觀態度",
+      "summary": "美國白宮表示對本週俄烏和平談判持謹慎樂觀的態度。",
+      "sources": [
+        {
+          "title": "White House cautiously upbeat about Russia-Ukraine peace talks this week",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSkNHc3NqUF9fbkxzbkdRMmZGOHlLTjhkZVBMV1ZnNTZNdF9SWG9VMWowOGdXM0NUVkdNUGpTV1RYWVJSQ2g4ckxoMzhZTldVazdqMHVpXzRjVHppY194S1VpYlV5WnA1R2RhUUEzek5QN2NVeFlqTWVKUERKTkxfdUZESGE?oc=5",
+          "source": "Axios",
+          "published": "2026-11-09T20:51:40+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "十月美國就業報告強勁出現三大原因",
+      "summary": "分析指出十月美國就業報告強勁的三個意外因素。",
+      "sources": [
+        {
+          "title": "3 unexpected reasons the October jobs report was so strong",
+          "url": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html",
+          "source": "CNBC",
+          "published": "2026-11-09T22:23:56+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2385,
+    "completion_tokens": 2052,
+    "total_tokens": 4437
+  }
+}

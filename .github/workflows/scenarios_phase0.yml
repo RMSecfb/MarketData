@@ -1,0 +1,27 @@
+name: Scenarios Phase0 Inventory (research)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: pip install pandas numpy yfinance pytest
+      - name: Unit tests
+        run: python -m pytest -q scenarios/test_engine.py
+      - name: Run inventory
+        run: python scenarios/phase0_inventory.py --out inventory_report.json
+      - name: Upload report (artifact only, not committed)
+        uses: actions/upload-artifact@v4
+        with:
+          name: inventory_report
+          path: inventory_report.json

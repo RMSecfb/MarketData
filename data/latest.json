@@ -290,6 +290,20 @@
         "symbol": "FRED:BAMLH0A0HYM2"
       }
     },
+    "volatility": {
+      "vxn": {
+        "value": 28.97,
+        "prev": 34.02,
+        "chg_abs": -5.050001,
+        "chg_pct": -14.8442,
+        "date": "2026-11-09",
+        "target_date": "2026-11-09",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "VXN 那斯達克100波動率",
+        "symbol": "^VXN"
+      }
+    },
     "quality": {
       "target_date": "2026-11-09",
       "stale_items": [

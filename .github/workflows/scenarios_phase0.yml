@@ -25,8 +25,13 @@ jobs:
         run: python scenarios/phase0_inventory.py --out inventory_report.json
       - name: Print report (summary only)
         run: cat inventory_report.json
+      - name: VXN study (summary stats only)
+        working-directory: scenarios
+        run: python run_vxn_study.py ../vxn_study.json
       - name: Upload report (artifact only, not committed)
         uses: actions/upload-artifact@v4
         with:
           name: inventory_report
-          path: inventory_report.json
+          path: |
+            inventory_report.json
+            vxn_study.json

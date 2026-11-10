@@ -109,15 +109,13 @@ def _stat(c: np.ndarray, o: np.ndarray):
 
 
 def stationary_bootstrap_idx(n: int, mean_block: int, rng: np.random.Generator) -> np.ndarray:
-    """Politis–Romano 環狀 stationary bootstrap 的索引。"""
-    p = 1.0 / mean_block
-    idx = np.empty(n, dtype=np.int64)
-    idx[0] = rng.integers(n)
-    jump = rng.random(n) < p
-    starts = rng.integers(n, size=n)
-    for i in range(1, n):
-        idx[i] = starts[i] if jump[i] else (idx[i - 1] + 1) % n
-    return idx
+    """Politis–Romano 環狀 stationary bootstrap 的索引（向量化）。"""
+    jump = rng.random(n) < 1.0 / mean_block
+    jump[0] = True
+    bid = np.cumsum(jump) - 1
+    first = np.flatnonzero(jump)
+    starts = rng.integers(n, size=len(first))
+    return (starts[bid] + (np.arange(n) - first[bid])) % n
 
 
 def conditional_vs_baseline(cond: pd.Series, outcome: pd.Series,

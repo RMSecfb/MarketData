@@ -127,6 +127,7 @@ def conditional_vs_baseline(cond: pd.Series, outcome: pd.Series,
     c = df["c"].to_numpy(bool); o = df["o"].to_numpy(float); n = len(df)
     pc, pu, diff, n_c = _stat(c, o)
     res = {"n_eligible": n, "observation_days": n_c,
+           "events_cond": int(o[c].sum()), "events_base": int(o.sum()),
            "p_cond": pc, "p_base": pu, "diff": diff, "ci": {}}
     rng = np.random.default_rng(seed)
     for L in block_lengths:

@@ -23,6 +23,8 @@ jobs:
         run: python -m pytest -q scenarios/test_engine.py
       - name: Run inventory
         run: python scenarios/phase0_inventory.py --out inventory_report.json
+      - name: Print report (summary only)
+        run: cat inventory_report.json
       - name: Upload report (artifact only, not committed)
         uses: actions/upload-artifact@v4
         with:

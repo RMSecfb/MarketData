@@ -1,0 +1,46 @@
+name: VXN Backtest (research)
+
+# 離線研究用：只在 research/vxn-backtest 分支執行，不影響每日排程與 main 的資料。
+on:
+  push:
+    branches: ['research/vxn-backtest']
+    paths:
+      - 'research/vxn_backtest.py'
+      - '.github/workflows/vxn_backtest.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: vxn-backtest
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install "yfinance>=0.2.40" "requests>=2.31.0" "pandas>=2.0.0" "pandas_market_calendars>=4.4.0"
+
+      - name: Run data check and backtest
+        run: python research/vxn_backtest.py || echo "backtest exited with $?"
+
+      - name: Commit results to this branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add research/output/
+          if git diff --staged --quiet; then
+            echo "No output changes."
+          else
+            git commit -m "VXN 回測結果"
+            git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push
+          fi

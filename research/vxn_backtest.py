@@ -28,7 +28,7 @@ import numpy as np
 import pandas as pd
 
 OUT = Path(__file__).parent / "output"
-SYMBOLS = {"VXN": "^VXN", "VIX": "^VIX", "NDX": "^NDX", "SOX": "^SOX"}
+SYMBOLS = {"VXN": "^VXN", "VIX": "^VIX", "NDX": "^NDX", "SOX": "^SOX", "SPX": "^GSPC"}
 HOSTS = ("query2.finance.yahoo.com", "query1.finance.yahoo.com")
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -150,8 +150,9 @@ def spike(s):
 
 def build(series):
     df = pd.DataFrame({k: series[k] for k in ("VXN", "VIX", "NDX")}).dropna()
-    if "SOX" in series:
-        df["SOX"] = series["SOX"].reindex(df.index)
+    for extra in ("SOX", "SPX"):
+        if extra in series:
+            df[extra] = series[extra].reindex(df.index)
     df["ratio"] = df["VXN"] / df["VIX"]
     df["vxn_pct"] = trailing_pct(df["VXN"])
     df["vix_pct"] = trailing_pct(df["VIX"])
@@ -344,6 +345,98 @@ def vol_tests(df):
     return corr, by_pct, by_lvl, by_lvl_late
 
 
+# ── VXN 與 VIX 的相對變化：同步走揚、比率變大 ──────────────
+def outcomes(df):
+    d = df.copy()
+    lr = np.log(d["NDX"]).diff()
+    d["rv20_fut"] = (lr.rolling(20).std() * np.sqrt(252) * 100).shift(-20)
+    d["abs5_fut"] = (d["NDX"].shift(-5) / d["NDX"] - 1).abs() * 100
+    d["ret20_fut"] = (d["NDX"].shift(-20) / d["NDX"] - 1) * 100
+    for h in HORIZONS:
+        d[f"mdd{h}"] = forward_stats(d["NDX"], h)[0]
+    if "SPX" in d:
+        d["rel20_fut"] = d["ret20_fut"] - (d["SPX"].shift(-20) / d["SPX"] - 1) * 100
+    return d
+
+
+def summarize(d, key, order):
+    g = d.dropna(subset=["rv20_fut"]).groupby(key, observed=True)
+    cols = {
+        "天數": g.size(),
+        "VXN 平均": g["VXN"].mean(),
+        "VXN/VIX 平均": g["ratio"].mean(),
+        "未來 20 日實現波動率%": g["rv20_fut"].mean(),
+        "未來 5 日絕對報酬%": g["abs5_fut"].mean(),
+        "未來 10 日最大回撤%（平均）": g["mdd10"].mean(),
+        "未來 20 日最大回撤%（平均）": g["mdd20"].mean(),
+        "10 日內回撤 ≥5% 機率%": g["mdd10"].apply(lambda v: (v <= -5).mean() * 100),
+        "20 日內回撤 ≥8% 機率%": g["mdd20"].apply(lambda v: (v <= -8).mean() * 100),
+        "未來 20 日報酬%": g["ret20_fut"].mean(),
+    }
+    if "rel20_fut" in d:
+        cols["未來 20 日 NDX−S&P500 報酬差%"] = g["rel20_fut"].mean()
+    t = pd.DataFrame(cols).reindex(order).round(2)
+    t.index.name = "分組"
+    return t.reset_index()
+
+
+def relation_tests(df):
+    d = outcomes(df)
+    v5, x5 = d["VXN"].pct_change(5) * 100, d["VIX"].pct_change(5) * 100
+    d["ratio_chg5"] = d["ratio"].pct_change(5) * 100
+    out = {}
+
+    def state(th):
+        up_v, up_x = v5 >= th, x5 >= th
+        lab = np.select([up_v & up_x, up_v & ~up_x, ~up_v & up_x],
+                        ["VXN、VIX 都升", "只有 VXN 升", "只有 VIX 升"], "都沒升")
+        return pd.Series(lab, index=d.index).where(v5.notna() & x5.notna())
+
+    order = ["VXN、VIX 都升", "只有 VXN 升", "只有 VIX 升", "都沒升"]
+    d["st0"], d["st10"] = state(0.0001), state(10)
+    out["A1｜5 日變動方向（>0 算升）"] = summarize(d, "st0", order)
+    out["A2｜5 日升幅 ≥10% 才算升"] = summarize(d, "st10", order)
+
+    lvl_labels = ["<20", "20–25", "25–30", "≥30"]
+    d["lvl"] = pd.cut(d["VXN"], [0, 20, 25, 30, 1000], labels=lvl_labels, right=False).astype(str)
+    d["lvl_st"] = d["lvl"] + "｜" + np.where(d["st10"] == "VXN、VIX 都升", "同步走揚", "其他")
+    d.loc[d["st10"].isna(), "lvl_st"] = np.nan
+    out["A3｜同一 VXN 水準下，同步走揚（5 日各升 ≥10%）與否"] = summarize(
+        d, "lvl_st", [f"{a}｜{b}" for a in lvl_labels for b in ("同步走揚", "其他")])
+
+    pl = ["0–20", "20–40", "40–60", "60–80", "80–90", "90–100"]
+    d["rp"] = pd.cut(d["ratio_pct"], [-0.1, 20, 40, 60, 80, 90, 100], labels=pl)
+    out["B1｜VXN/VIX 比率的歷史百分位"] = summarize(d, "rp", pl)
+    cl = ["≤−5%", "−5～−2%", "−2～+2%", "+2～+5%", "≥+5%"]
+    d["rc"] = pd.cut(d["ratio_chg5"], [-1000, -5, -2, 2, 5, 1000], labels=cl)
+    out["B2｜VXN/VIX 比率的 5 日變動"] = summarize(d, "rc", cl)
+    d["lvl_r"] = d["lvl"] + "｜" + np.where(d["ratio_pct"] >= 80, "比率高（≥80 百分位）", "比率一般")
+    out["B3｜同一 VXN 水準下，比率高與否"] = summarize(
+        d, "lvl_r", [f"{a}｜{b}" for a in lvl_labels for b in ("比率高（≥80 百分位）", "比率一般")])
+    d["rc_src"] = np.select(
+        [(d["ratio_chg5"] >= 5) & (v5 > 0), (d["ratio_chg5"] >= 5) & (v5 <= 0)],
+        ["比率升 ≥5%：VXN 上升帶動", "比率升 ≥5%：VXN 沒升（VIX 跌較多）"], "比率未升 ≥5%")
+    d.loc[d["ratio_chg5"].isna(), "rc_src"] = np.nan
+    out["B4｜比率變大的來源"] = summarize(
+        d, "rc_src", ["比率升 ≥5%：VXN 上升帶動", "比率升 ≥5%：VXN 沒升（VIX 跌較多）", "比率未升 ≥5%"])
+
+    # 控制 VXN 水準後，比率是否還有額外資訊：對未來波動率做迴歸殘差的相關
+    y = d[["VXN", "ratio", "ratio_chg5", "rv20_fut", "mdd20"]].dropna()
+    rows = []
+    for target in ("rv20_fut", "mdd20"):
+        b = np.polyfit(y["VXN"], y[target], 1)
+        resid = y[target] - np.polyval(b, y["VXN"])
+        for name, col in (("VXN/VIX 比率", "ratio"), ("比率 5 日變動", "ratio_chg5")):
+            rows.append({
+                "對象": "未來 20 日實現波動率" if target == "rv20_fut" else "未來 20 日最大回撤",
+                "變數": name,
+                "直接相關": round(float(y[col].corr(y[target])), 3),
+                "扣除 VXN 水準後的相關": round(float(y[col].corr(resid)), 3),
+            })
+    out["C｜扣除 VXN 水準後，比率的額外資訊"] = pd.DataFrame(rows)
+    return out
+
+
 def md_table(d):
     d = d.astype(object).where(d.notna(), "—")
     head = "| " + " | ".join(map(str, d.columns)) + " |\n|" + "---|" * len(d.columns) + "\n"
@@ -413,6 +506,13 @@ def main():
     if by_lvl_late is not None:
         by_lvl_late.to_csv(OUT / "vol_by_level_late.csv", index=False, encoding="utf-8-sig")
         parts += [f"## 9. 依 VXN 絕對水準分組（{SPLIT[:4]} 起）\n", md_table(by_lvl_late)]
+    rel = relation_tests(df)
+    parts += ["## 10. VXN 與 VIX 同步走揚、VXN/VIX 比率變大，與後續波動及回撤\n",
+              "各組數字是該狀態之後的平均結果；A3、B3 在相同 VXN 水準下比較，用來看是否有 VXN 水準以外的資訊。"
+              "最大回撤為負值，越負越差。\n"]
+    for i, (title, t) in enumerate(rel.items()):
+        t.to_csv(OUT / f"rel_{i + 1:02d}.csv", index=False, encoding="utf-8-sig")
+        parts += [f"### {title}\n", md_table(t)]
     (OUT / "report.md").write_text("\n".join(parts), encoding="utf-8")
     print(f"✅ 已輸出 {OUT}")
     return 0

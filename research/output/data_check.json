@@ -58,5 +58,20 @@
     "missing_days": 0,
     "missing_recent": [],
     "missing_by_year": {}
+  },
+  "SPX": {
+    "symbol": "^GSPC",
+    "source": "yahoo_chart:query2.finance.yahoo.com",
+    "rows": 6481,
+    "first": "2001-02-01",
+    "last": "2026-11-09",
+    "min": 676.53,
+    "max": 7818.93,
+    "non_positive": 0,
+    "max_abs_daily_change_pct": 12.0,
+    "nyse_days": 6481,
+    "missing_days": 0,
+    "missing_recent": [],
+    "missing_by_year": {}
   }
 }

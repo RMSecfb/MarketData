@@ -303,7 +303,7 @@ def vol_tests(df):
                 corr_rows.append({
                     "檢驗": label, "期間": pname, "預測變數": pred, "樣本數": len(y),
                     "Pearson": round(float(y[pcol].corr(y[target])), 3),
-                    "Spearman": round(float(y[pcol].corr(y[target], method="spearman")), 3),
+                    "Spearman": round(float(y[pcol].rank().corr(y[target].rank())), 3),
                     "不重疊樣本 Pearson": round(float(nov[pcol].corr(nov[target])), 3),
                     "不重疊樣本數": len(nov),
                 })

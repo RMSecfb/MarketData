@@ -75,6 +75,7 @@
     "hsi": { "type": "pct_drop", "l1": -3, "l2": -6 },
     "sse": { "type": "pct_drop", "l1": -3, "l2": -6 },
     "spx": { "type": "pct_drop", "l1": -3, "l2": -6 },
-    "ixic": { "type": "pct_drop", "l1": -3, "l2": -6 }
+    "ixic": { "type": "pct_drop", "l1": -3, "l2": -6 },
+    "vxn": { "type": "above", "l1": 25, "l2": 30 }
   }
 }

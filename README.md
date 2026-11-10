@@ -426,11 +426,13 @@ DATE 資料。
 | `indices` | 台股加權、日經 225、韓國 KOSPI、香港恒生、上海綜合、S&P 500、NASDAQ 綜合 | Yahoo 日線 |
 | `fx` | 美元兌台幣、美元兌港幣、美元兌日圓、澳幣兌美元（市場慣例 AUD/USD） | Yahoo 日線 |
 | `credit` | 美國高收益債利差 `hy_oas`（bp） | FRED BAMLH0A0HYM2；有 `FRED_KEY` 用 API，否則用公開 CSV |
+| `volatility` | VXN 那斯達克100波動率 `vxn`（Nasdaq-100 選擇權隱含的 30 日預期波動率） | Yahoo 日線 `^VXN` |
 
 設計原則：
 
 - 延伸指標**不納入** `data_quality`、`checks_for()` 與排程重抓判斷。抓不到或非同日只記在 `markets_ext.quality`，不會讓當天主要資料寫不進去。
 - 各市場假日不同，亞洲指數可能是較早的交易日；每項都保留自己的 `date` 與 `is_stale`。
+- VXN 採水準分級：`panel_thresholds.vxn` 的 L1 為 25、L2 為 30（2026-11-10 依 2001 年起的歷史回測訂定，回測在 `research/vxn-backtest` 分支）。儀表板「每日監控」的預警分析、重點摘要、趨勢圖與 Email 表格都會顯示 VXN，與 VIX 分開計算警示。
 - 延伸指標門檻放在 `config.json` 的 `panel_thresholds`，不放在 `thresholds` 底下。儀表板設定頁儲存時只會重建 `thresholds` 的固定項目，放在外面才不會被清掉。
 
 * * *

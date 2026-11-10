@@ -330,6 +330,7 @@ canvas{max-height:320px;}
       <label>指標</label><br>
       <select id="trendMetric" onchange="renderTrendChart()">
         <option value="vix">VIX 恐慌指數</option>
+        <option value="vxn">VXN 那斯達克100波動率</option>
         <option value="move">MOVE 指數</option>
         <option value="y2">2年期公債殖利率</option>
         <option value="y10">10年期公債殖利率</option>
@@ -550,7 +551,7 @@ function applyManualOverrides(raw,store,report){
 function renderStaleDisclosure(data,report){
   const box=document.getElementById('staleDisclosure'); if(!box)return;
   const a=[], add=(label,e)=>{if(e && e.value!=null && e.date && e.date!==report)a.push(`${label}：${e.date}`)};
-  add('VIX',data?.vix);add('MOVE',data?.move);add('2Y',data?.y2);add('10Y',data?.y10);add('30Y',data?.y30);add('SOX',data?.sox);
+  add('VIX',data?.vix);add('VXN',vxnOf(data));add('MOVE',data?.move);add('2Y',data?.y2);add('10Y',data?.y10);add('30Y',data?.y30);add('SOX',data?.sox);
   for(const st of (CFG.stocks||[])) add(st.symbol,data?.stocks?.[st.symbol]);
   if(!a.length){box.style.display='none';box.innerHTML='';return;}
   box.style.display='';
@@ -667,6 +668,9 @@ async function loadDate(d){
 }
 
 /* ══ RENDER HELPERS ══ */
+// VXN（Nasdaq-100 波動率）放在 markets_ext.volatility，門檻在 config.json 的 panel_thresholds.vxn
+const vxnOf = d => d?.markets_ext?.volatility?.vxn || null;
+const vxnThr = () => { const t=CFG.panel_thresholds?.vxn||{}; return {l1:t.l1??25, l2:t.l2??30}; };
 const pctHtml = pct => {
   if(pct==null) return '—';
   const cl=pct>0?'c-up':'c-dn', s=pct>0?'▲':'▼';
@@ -703,6 +707,19 @@ function renderMonTable(data){
       `VIX 指數 <span style="font-size:10px;color:var(--text3)">${dateBadge(vix.date)}</span>`,
       v.toFixed(2), `&gt;${tv.warn}`, `&gt;${tv.danger}`, v.toFixed(2),
       wkHtml(v, w?.vix?.value),
+      dotHtml(cl)
+    ]);
+  }
+
+  // VXN（科技股波動）
+  const vxn=vxnOf(data);
+  if(vxn && vxn.value!=null){
+    const v=vxn.value, t=vxnThr();
+    const cl=v>=t.l2?'r':v>=t.l1?'y':'g';
+    rows.push([
+      `VXN 指數（那斯達克100波動率） <span style="font-size:10px;color:var(--text3)">${dateBadge(vxn.date)}</span>`,
+      v.toFixed(2), `&gt;${t.l1}`, `&gt;${t.l2}`, v.toFixed(2),
+      wkHtml(v, vxnOf(w)?.value),
       dotHtml(cl)
     ]);
   }
@@ -861,6 +878,13 @@ function buildSummary(data){
     const cl=v>=tv.danger?'r':v>=tv.warn?'y':null;
     if(cl){ bump(cl); tags.push({label:`VIX ${v.toFixed(2)}`,cl}); }
   }
+  // VXN（與 VIX 分開計算，各自列為一項警示）
+  const vxnS=vxnOf(data);
+  if(vxnS && vxnS.value!=null){
+    const v=vxnS.value, t=vxnThr();
+    const cl=v>=t.l2?'r':v>=t.l1?'y':null;
+    if(cl){ bump(cl); tags.push({label:`VXN ${v.toFixed(2)}`,cl}); }
+  }
   // MOVE
   if(data.move){
     const v=data.move.value;
@@ -996,6 +1020,11 @@ function buildEmailHTML(){
   if(vix){
     const v=vix.value, cl=v>=tv.danger?'r':v>=tv.warn?'y':'g';
     warn+=`<tr><td style="${tdLStyle}">VIX 指數</td><td style="${tdStyle}">${v.toFixed(2)}</td><td style="${tdStyle}">&gt;${tv.warn}</td><td style="${tdStyle}">&gt;${tv.danger}</td><td style="${tdStyle}">${v.toFixed(2)}</td><td style="${tdStyle}">${dot(cl)}</td></tr>`;
+  }
+  const vxnE=vxnOf(d);
+  if(vxnE && vxnE.value!=null){
+    const v=vxnE.value, t=vxnThr(), cl=v>=t.l2?'r':v>=t.l1?'y':'g';
+    warn+=`<tr><td style="${tdLStyle}">VXN 指數（那斯達克100波動率）</td><td style="${tdStyle}">${v.toFixed(2)}</td><td style="${tdStyle}">&gt;${t.l1}</td><td style="${tdStyle}">&gt;${t.l2}</td><td style="${tdStyle}">${v.toFixed(2)}</td><td style="${tdStyle}">${dot(cl)}</td></tr>`;
   }
   const move=d.move;
   if(move){
@@ -1255,6 +1284,7 @@ function getDateRange(){
 function extractValue(data, metric){
   if(!data) return null;
   if(metric==='vix')    return data.vix?.value??null;
+  if(metric==='vxn')    return vxnOf(data)?.value??null;
   if(metric==='move')   return data.move?.value??null;
   if(metric==='y2')     return data.y2?.value??null;
   if(metric==='y10')    return data.y10?.value??null;
@@ -1272,6 +1302,7 @@ function getTrendLineConfig(metric){
   const tv=CFG.thresholds?.vix||{warn:20,danger:30};
   const tm=CFG.thresholds?.move||{warn:110,danger:120};
   if(metric==='vix')  return [{v:tv.warn,c:'#fbbf24',l:`警戒 ${tv.warn}`},{v:tv.danger,c:'#f87171',l:`恐慌 ${tv.danger}`}];
+  if(metric==='vxn'){ const t=vxnThr(); return [{v:t.l1,c:'#fbbf24',l:`L1 ${t.l1}`},{v:t.l2,c:'#f87171',l:`L2 ${t.l2}`}]; }
   if(metric==='move') return [{v:tm.warn,c:'#fbbf24',l:`偏高 ${tm.warn}`},{v:tm.danger,c:'#f87171',l:`警戒 ${tm.danger}`}];
   if(metric==='spread') return [{v:0,c:'#f87171',l:'倒掛線 0'}];
   const cdsLimits = {cds_US:45,cds_KR:30,cds_JP:25,cds_CN:70,cds_HK:35};

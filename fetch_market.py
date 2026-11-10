@@ -21,7 +21,7 @@ Treasury yields:
 - Treasury.gov official XML; latest confirmed row <= TARGET
 
 Extended indicators (markets_ext):
-- Asia/US equity indices, FX and US high-yield OAS for the Risk Intelligence Center.
+- Asia/US equity indices, FX, US high-yield OAS and VXN (Nasdaq-100 volatility) for the Risk Intelligence Center.
 - Stored under data["markets_ext"] with their own quality block.
 - NOT part of checks_for()/validate_data(): a missing or stale extended item
   never blocks writing the day's JSON and never triggers the 06:30/07:00 retry.
@@ -421,7 +421,12 @@ EXT_SYMBOLS = {
         ("usdjpy", "JPY=X", "美元兌日圓"),
         ("audusd", "AUDUSD=X", "澳幣兌美元"),
     ],
+    # VXN：Nasdaq-100 選擇權隱含的 30 日預期波動率（科技股波動壓力）。
+    "volatility": [
+        ("vxn", "^VXN", "VXN 那斯達克100波動率"),
+    ],
 }
+EXT_GROUPS = ("indices", "fx", "credit", "volatility")
 FRED_SERIES = {
     "hy_oas": ("BAMLH0A0HYM2", "美國高收益債利差"),
 }
@@ -597,7 +602,7 @@ def fred_get(series_id, target_date):
     return entry
 
 def fetch_ext(target_date):
-    ext = {"indices": {}, "fx": {}, "credit": {}}
+    ext = {group: {} for group in EXT_GROUPS}
     stale, missing = [], []
 
     def put(group, key, name, symbol, entry):
@@ -807,7 +812,7 @@ def merge_ext(old, new, target_date):
     FRED 暫時失敗），避免重抓反而讓資料變差。"""
     old = old if isinstance(old, dict) else {}
     merged = {}
-    for group in ("indices", "fx", "credit"):
+    for group in EXT_GROUPS:
         merged[group] = {}
         keys = list((new.get(group) or {}).keys()) + [
             k for k in (old.get(group) or {}) if k not in (new.get(group) or {})
@@ -820,8 +825,8 @@ def merge_ext(old, new, target_date):
                 merged[group][key] = o
             else:
                 merged[group][key] = n
-    stale = [k for g in ("indices", "fx", "credit") for k, v in merged[g].items() if v and v.get("is_stale")]
-    missing = [k for g in ("indices", "fx", "credit") for k, v in merged[g].items() if not v]
+    stale = [k for g in EXT_GROUPS for k, v in merged[g].items() if v and v.get("is_stale")]
+    missing = [k for g in EXT_GROUPS for k, v in merged[g].items() if not v]
     merged["quality"] = {
         "target_date": target_date,
         "stale_items": stale,

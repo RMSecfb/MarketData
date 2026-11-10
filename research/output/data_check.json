@@ -1,0 +1,62 @@
+{
+  "VXN": {
+    "symbol": "^VXN",
+    "source": "yahoo_chart:query2.finance.yahoo.com",
+    "rows": 6481,
+    "first": "2001-02-01",
+    "last": "2026-11-09",
+    "min": 10.31,
+    "max": 82.49,
+    "non_positive": 0,
+    "max_abs_daily_change_pct": 59.8,
+    "nyse_days": 6481,
+    "missing_days": 0,
+    "missing_recent": [],
+    "missing_by_year": {}
+  },
+  "VIX": {
+    "symbol": "^VIX",
+    "source": "yahoo_chart:query2.finance.yahoo.com",
+    "rows": 6484,
+    "first": "2001-02-01",
+    "last": "2026-11-10",
+    "min": 9.14,
+    "max": 82.69,
+    "non_positive": 0,
+    "max_abs_daily_change_pct": 115.6,
+    "nyse_days": 6482,
+    "missing_days": 0,
+    "missing_recent": [],
+    "missing_by_year": {}
+  },
+  "NDX": {
+    "symbol": "^NDX",
+    "source": "yahoo_chart:query2.finance.yahoo.com",
+    "rows": 6481,
+    "first": "2001-02-01",
+    "last": "2026-11-09",
+    "min": 804.64,
+    "max": 31224.47,
+    "non_positive": 0,
+    "max_abs_daily_change_pct": 12.6,
+    "nyse_days": 6481,
+    "missing_days": 0,
+    "missing_recent": [],
+    "missing_by_year": {}
+  },
+  "SOX": {
+    "symbol": "^SOX",
+    "source": "yahoo_chart:query2.finance.yahoo.com",
+    "rows": 6481,
+    "first": "2001-02-01",
+    "last": "2026-11-09",
+    "min": 171.32,
+    "max": 14634.72,
+    "non_positive": 0,
+    "max_abs_daily_change_pct": 18.7,
+    "nyse_days": 6481,
+    "missing_days": 0,
+    "missing_recent": [],
+    "missing_by_year": {}
+  }
+}

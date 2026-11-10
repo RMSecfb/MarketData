@@ -2,6 +2,9 @@ name: Scenarios Phase0 Inventory (research)
 
 on:
   workflow_dispatch:
+  push:
+    branches: [scenarios-phase0]
+    paths: ['scenarios/**', '.github/workflows/scenarios_phase0.yml']
 
 permissions:
   contents: read

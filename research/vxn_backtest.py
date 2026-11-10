@@ -275,6 +275,75 @@ def lead_lag(df):
                          for k in range(-5, 6)])
 
 
+# ── 波動預測力（VXN 本身的意義：預期波動幅度，不是方向）────────
+def vol_tests(df):
+    """① VXN 與未來 20 日實現波動率 ② VXN 與未來 5 日絕對報酬 ③ 依 VXN 高低分組的未來最大回撤。"""
+    d = df.copy()
+    lr = np.log(d["NDX"]).diff()
+    ann = np.sqrt(252) * 100
+    d["rv20_past"] = lr.rolling(20).std() * ann
+    d["rv20_fut"] = d["rv20_past"].shift(-20)            # t+1..t+20 的實現波動率（年化 %）
+    d["abs5_fut"] = (d["NDX"].shift(-5) / d["NDX"] - 1).abs() * 100
+    d["ret20_fut"] = (d["NDX"].shift(-20) / d["NDX"] - 1) * 100
+    for h in HORIZONS:
+        mdd, _ = forward_stats(d["NDX"], h)
+        d[f"mdd{h}"] = mdd
+    d["implied5"] = d["VXN"] * np.sqrt(5 / 252) * np.sqrt(2 / np.pi)   # VXN 隱含的 5 日平均絕對變動 %
+
+    periods = {"全期間": d.index >= d.index[0], f"前段（{SPLIT[:4]} 以前）": d.index < SPLIT,
+               f"後段（{SPLIT[:4]} 起）": d.index >= SPLIT}
+    corr_rows = []
+    tests = [("① 未來 20 日實現波動率", "rv20_fut", 20), ("② 未來 5 日絕對報酬", "abs5_fut", 5)]
+    for pname, pm in periods.items():
+        x = d[pm]
+        for label, target, step in tests:
+            for pred, pcol in (("VXN", "VXN"), ("VIX", "VIX"), ("過去 20 日實現波動率", "rv20_past")):
+                y = x[[pcol, target]].dropna()
+                nov = y.iloc[::step]                      # 不重疊樣本
+                corr_rows.append({
+                    "檢驗": label, "期間": pname, "預測變數": pred, "樣本數": len(y),
+                    "Pearson": round(float(y[pcol].corr(y[target])), 3),
+                    "Spearman": round(float(y[pcol].corr(y[target], method="spearman")), 3),
+                    "不重疊樣本 Pearson": round(float(nov[pcol].corr(nov[target])), 3),
+                    "不重疊樣本數": len(nov),
+                })
+    corr = pd.DataFrame(corr_rows)
+
+    def group_table(key, order):
+        g = d.dropna(subset=["rv20_fut"]).groupby(key, observed=True)
+        t = pd.DataFrame({
+            "天數": g.size(),
+            "VXN 平均": g["VXN"].mean(),
+            "未來 20 日實現波動率%": g["rv20_fut"].mean(),
+            "未來 5 日絕對報酬%（平均）": g["abs5_fut"].mean(),
+            "VXN 隱含 5 日變動%": g["implied5"].mean(),
+            "未來 5 日最大回撤%（平均）": g["mdd5"].mean(),
+            "未來 10 日最大回撤%（平均）": g["mdd10"].mean(),
+            "未來 20 日最大回撤%（平均）": g["mdd20"].mean(),
+            "未來 20 日最大回撤%（最差 5%）": g["mdd20"].quantile(0.05),
+            "10 日內回撤 ≥5% 機率%": g["mdd10"].apply(lambda v: (v <= -5).mean() * 100),
+            "20 日內回撤 ≥8% 機率%": g["mdd20"].apply(lambda v: (v <= -8).mean() * 100),
+            "未來 20 日報酬%（平均）": g["ret20_fut"].mean(),
+        }).reindex(order).round(2)
+        t.index.name = "分組"
+        return t.reset_index()
+
+    pct_labels = ["0–20", "20–40", "40–60", "60–80", "80–90", "90–100"]
+    d["pct_group"] = pd.cut(d["vxn_pct"], [-0.1, 20, 40, 60, 80, 90, 100], labels=pct_labels)
+    lvl_labels = ["<15", "15–20", "20–25", "25–30", "30–40", "≥40"]
+    d["lvl_group"] = pd.cut(d["VXN"], [0, 15, 20, 25, 30, 40, 1000], labels=lvl_labels, right=False)
+    by_pct = group_table("pct_group", pct_labels)
+    by_lvl = group_table("lvl_group", lvl_labels)
+    by_lvl_late = None
+    late = d[d.index >= SPLIT]
+    if len(late):
+        keep = d
+        d = late
+        by_lvl_late = group_table("lvl_group", lvl_labels)
+        d = keep
+    return corr, by_pct, by_lvl, by_lvl_late
+
+
 def md_table(d):
     d = d.astype(object).where(d.notna(), "—")
     head = "| " + " | ".join(map(str, d.columns)) + " |\n|" + "---|" * len(d.columns) + "\n"
@@ -329,6 +398,21 @@ def main():
         md_table(ll),
         "## 5. 各年度訊號次數\n", md_table(yearly.reset_index()),
     ]
+    corr, by_pct, by_lvl, by_lvl_late = vol_tests(df)
+    corr.to_csv(OUT / "vol_corr.csv", index=False, encoding="utf-8-sig")
+    by_pct.to_csv(OUT / "vol_by_percentile.csv", index=False, encoding="utf-8-sig")
+    by_lvl.to_csv(OUT / "vol_by_level.csv", index=False, encoding="utf-8-sig")
+    parts += [
+        "## 6. VXN 對未來波動幅度的預測力\n",
+        "實現波動率＝NDX 日對數報酬標準差年化；不重疊樣本每 20 日（①）或 5 日（②）取一筆，避免重疊窗口高估。"
+        "「過去 20 日實現波動率」是不需要 VXN 的簡單對照。\n",
+        md_table(corr),
+        "## 7. 依 VXN 歷史百分位分組（過去 252 日，當下可得）\n", md_table(by_pct),
+        "## 8. 依 VXN 絕對水準分組（全期間）\n", md_table(by_lvl),
+    ]
+    if by_lvl_late is not None:
+        by_lvl_late.to_csv(OUT / "vol_by_level_late.csv", index=False, encoding="utf-8-sig")
+        parts += [f"## 9. 依 VXN 絕對水準分組（{SPLIT[:4]} 起）\n", md_table(by_lvl_late)]
     (OUT / "report.md").write_text("\n".join(parts), encoding="utf-8")
     print(f"✅ 已輸出 {OUT}")
     return 0

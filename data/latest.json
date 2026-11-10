@@ -226,10 +226,10 @@
     },
     "fx": {
       "usdtwd": {
-        "value": 32.932,
+        "value": 32.937,
         "prev": 32.7603,
-        "chg_abs": 0.1717,
-        "chg_pct": 0.5241,
+        "chg_abs": 0.176701,
+        "chg_pct": 0.5394,
         "date": "2026-11-10",
         "target_date": "2026-11-10",
         "is_stale": false,
@@ -238,10 +238,10 @@
         "symbol": "TWD=X"
       },
       "usdhkd": {
-        "value": 7.8468,
+        "value": 7.8443,
         "prev": 7.8393,
-        "chg_abs": 0.00755,
-        "chg_pct": 0.0963,
+        "chg_abs": 0.00505,
+        "chg_pct": 0.0644,
         "date": "2026-11-10",
         "target_date": "2026-11-10",
         "is_stale": false,
@@ -250,10 +250,10 @@
         "symbol": "HKD=X"
       },
       "usdjpy": {
-        "value": 158.72,
+        "value": 158.708,
         "prev": 158.292,
-        "chg_abs": 0.427994,
-        "chg_pct": 0.2704,
+        "chg_abs": 0.415985,
+        "chg_pct": 0.2628,
         "date": "2026-11-10",
         "target_date": "2026-11-10",
         "is_stale": false,
@@ -262,10 +262,10 @@
         "symbol": "JPY=X"
       },
       "audusd": {
-        "value": 0.687,
+        "value": 0.6871,
         "prev": 0.6869,
-        "chg_abs": 0.000179,
-        "chg_pct": 0.0261,
+        "chg_abs": 0.000227,
+        "chg_pct": 0.033,
         "date": "2026-11-10",
         "target_date": "2026-11-10",
         "is_stale": false,
@@ -308,8 +308,8 @@
     "quality": {
       "target_date": "2026-11-10",
       "stale_items": [
-        "vxn",
-        "hy_oas"
+        "hy_oas",
+        "vxn"
       ],
       "missing_items": [],
       "has_stale": true,

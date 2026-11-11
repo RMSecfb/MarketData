@@ -440,6 +440,59 @@ def relation_tests(df):
     return out
 
 
+# ── 25／30 分級：出現頻率、各級後續回撤、穩健性 ──────────────
+def level_tables(df):
+    d = outcomes(df)
+    d["year"] = d.index.year
+    labels = ["正常（<25）", "L1（25–30）", "L2（≥30）"]
+    d["lvl3"] = pd.cut(d["VXN"], [0, 25, 30, 1000], labels=labels, right=False)
+
+    def freq_row(name, g):
+        return {
+            "期間": str(name), "天數": len(g),
+            "VXN 平均": round(g["VXN"].mean(), 1), "VIX 平均": round(g["VIX"].mean(), 1),
+            "VXN−VIX 平均": round((g["VXN"] - g["VIX"]).mean(), 1),
+            "VXN ≥25 占%": round((g["VXN"] >= 25).mean() * 100, 1),
+            "VXN ≥30 占%": round((g["VXN"] >= 30).mean() * 100, 1),
+            "VIX ≥20 占%": round((g["VIX"] >= 20).mean() * 100, 1),
+            "VIX ≥30 占%": round((g["VIX"] >= 30).mean() * 100, 1),
+        }
+    frows = [freq_row(y, g) for y, g in d.groupby("year")]
+    frows += [freq_row("全期間", d), freq_row(f"{SPLIT[:4]} 起", d[d.index >= SPLIT]),
+              freq_row(f"{SPLIT[:4]} 以前", d[d.index < SPLIT])]
+    freq = pd.DataFrame(frows)
+
+    periods = {"全期間": d, f"前段（{SPLIT[:4]} 以前）": d[d.index < SPLIT], f"後段（{SPLIT[:4]} 起）": d[d.index >= SPLIT]}
+    brows = []
+    for pname, g in periods.items():
+        g = g.dropna(subset=["rv20_fut"])
+        no = g.iloc[::10]                                   # 每 10 個交易日取 1 筆，窗口不重疊
+        for lab in ["全部"] + labels:
+            a = g if lab == "全部" else g[g["lvl3"] == lab]
+            b = no if lab == "全部" else no[no["lvl3"] == lab]
+            brows.append({
+                "期間": pname, "分級": lab, "天數": len(a), "占%": round(len(a) / len(g) * 100, 1),
+                "10 日內回撤 ≥5% 機率%": round((a["mdd10"] <= -5).mean() * 100, 1) if len(a) else None,
+                "20 日內回撤 ≥8% 機率%": round((a["mdd20"] <= -8).mean() * 100, 1) if len(a) else None,
+                "未來 20 日最大回撤%（平均）": round(a["mdd20"].mean(), 2) if len(a) else None,
+                "未來 20 日實現波動率%": round(a["rv20_fut"].mean(), 1) if len(a) else None,
+                "不重疊樣本數": len(b),
+                "不重疊：10 日內回撤 ≥5% 機率%": round((b["mdd10"] <= -5).mean() * 100, 1) if len(b) else None,
+            })
+    buckets = pd.DataFrame(brows)
+
+    mrows = []
+    for vlevel in (20, 30):
+        share = float((d["VIX"] >= vlevel).mean())
+        mrows.append({"VIX 門檻": vlevel, "VIX 達標占%": round(share * 100, 1),
+                      "同占比的 VXN 水準": round(float(d["VXN"].quantile(1 - share)), 1)})
+    for vlevel in (25, 30):
+        share = float((d["VXN"] >= vlevel).mean())
+        mrows.append({"VXN 門檻": vlevel, "VXN 達標占%": round(share * 100, 1),
+                      "同占比的 VIX 水準": round(float(d["VIX"].quantile(1 - share)), 1)})
+    return freq, buckets, pd.DataFrame(mrows)
+
+
 def md_table(d):
     d = d.astype(object).where(d.notna(), "—")
     head = "| " + " | ".join(map(str, d.columns)) + " |\n|" + "---|" * len(d.columns) + "\n"
@@ -516,6 +569,14 @@ def main():
     for i, (title, t) in enumerate(rel.items()):
         t.to_csv(OUT / f"rel_{i + 1:02d}.csv", index=False, encoding="utf-8-sig")
         parts += [f"### {title}\n", md_table(t)]
+    freq, buckets, match = level_tables(df)
+    freq.to_csv(OUT / "level_frequency.csv", index=False, encoding="utf-8-sig")
+    buckets.to_csv(OUT / "level_buckets.csv", index=False, encoding="utf-8-sig")
+    match.to_csv(OUT / "level_matching.csv", index=False, encoding="utf-8-sig")
+    parts += ["## 11. L1（VXN 25）／L2（VXN 30）分級：出現頻率與各級後續風險\n",
+              "### 各年度出現頻率（占交易日 %）\n", md_table(freq),
+              "### 正常／L1／L2 三級的後續結果（含不重疊樣本）\n", md_table(buckets),
+              "### 等頻對照：VIX 現行門檻與 VXN 門檻各自對應的水準\n", md_table(match)]
     (OUT / "report.md").write_text("\n".join(parts), encoding="utf-8")
     print(f"✅ 已輸出 {OUT}")
     return 0

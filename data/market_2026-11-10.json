@@ -152,50 +152,50 @@
         "symbol": "^TWII"
       },
       "n225": {
-        "value": 60459.58,
+        "value": 60459.5781,
         "prev": 58775.5,
-        "chg_abs": 1684.08,
+        "chg_abs": 1684.078125,
         "chg_pct": 2.8653,
         "date": "2026-11-10",
         "target_date": "2026-11-10",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "日經 225",
         "symbol": "^N225"
       },
       "kospi": {
-        "value": 5239.13,
+        "value": 5239.1299,
         "prev": 5018.8501,
-        "chg_abs": 220.279902,
-        "chg_pct": 4.3891,
+        "chg_abs": 220.279785,
+        "chg_pct": 4.389,
         "date": "2026-11-10",
         "target_date": "2026-11-10",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "韓國 KOSPI",
         "symbol": "^KS11"
       },
       "hsi": {
-        "value": 24557.04,
+        "value": 24557.0391,
         "prev": 24448.9492,
-        "chg_abs": 108.090781,
+        "chg_abs": 108.089844,
         "chg_pct": 0.4421,
         "date": "2026-11-10",
         "target_date": "2026-11-10",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "香港恒生",
         "symbol": "^HSI"
       },
       "sse": {
-        "value": 3663.723,
+        "value": 3663.7229,
         "prev": 3660.792,
-        "chg_abs": 2.931008,
+        "chg_abs": 2.930908,
         "chg_pct": 0.0801,
         "date": "2026-11-10",
         "target_date": "2026-11-10",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "上海綜合",
         "symbol": "000001.SS"
       },
@@ -226,10 +226,10 @@
     },
     "fx": {
       "usdtwd": {
-        "value": 32.937,
+        "value": 32.7886,
         "prev": 32.7603,
-        "chg_abs": 0.176701,
-        "chg_pct": 0.5394,
+        "chg_abs": 0.028301,
+        "chg_pct": 0.0864,
         "date": "2026-11-10",
         "target_date": "2026-11-10",
         "is_stale": false,
@@ -238,10 +238,10 @@
         "symbol": "TWD=X"
       },
       "usdhkd": {
-        "value": 7.8442,
+        "value": 7.8426,
         "prev": 7.8393,
-        "chg_abs": 0.00496,
-        "chg_pct": 0.0633,
+        "chg_abs": 0.00335,
+        "chg_pct": 0.0427,
         "date": "2026-11-10",
         "target_date": "2026-11-10",
         "is_stale": false,
@@ -250,10 +250,10 @@
         "symbol": "HKD=X"
       },
       "usdjpy": {
-        "value": 158.698,
+        "value": 157.983,
         "prev": 158.292,
-        "chg_abs": 0.405991,
-        "chg_pct": 0.2565,
+        "chg_abs": -0.309006,
+        "chg_pct": -0.1952,
         "date": "2026-11-10",
         "target_date": "2026-11-10",
         "is_stale": false,
@@ -262,10 +262,10 @@
         "symbol": "JPY=X"
       },
       "audusd": {
-        "value": 0.6869,
+        "value": 0.6921,
         "prev": 0.6869,
-        "chg_abs": 0.000038,
-        "chg_pct": 0.0055,
+        "chg_abs": 0.005253,
+        "chg_pct": 0.7648,
         "date": "2026-11-10",
         "target_date": "2026-11-10",
         "is_stale": false,
@@ -292,15 +292,14 @@
     },
     "volatility": {
       "vxn": {
-        "value": 28.97,
-        "prev": 34.02,
-        "chg_abs": -5.050001,
-        "chg_pct": -14.8442,
-        "date": "2026-11-09",
+        "value": 28.57,
+        "prev": 28.97,
+        "chg_abs": -0.4,
+        "chg_pct": -1.3807,
+        "date": "2026-11-10",
         "target_date": "2026-11-10",
-        "is_stale": true,
+        "is_stale": false,
         "source": "yahoo_daily:query2.finance.yahoo.com",
-        "fallback_reason": "target_date_unavailable",
         "name": "VXN 那斯達克100波動率",
         "symbol": "^VXN"
       }
@@ -308,8 +307,7 @@
     "quality": {
       "target_date": "2026-11-10",
       "stale_items": [
-        "hy_oas",
-        "vxn"
+        "hy_oas"
       ],
       "missing_items": [],
       "has_stale": true,

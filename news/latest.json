@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-10T23:17:24.655175+00:00",
-  "date": "2026-11-11",
+  "generated_at": "2026-11-11T23:17:27.671477+00:00",
+  "date": "2026-11-12",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -8,194 +8,41 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 56
+      "count": 51
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 44
+      "count": 46
     },
     {
       "name": "Google News 市場",
       "ok": true,
-      "count": 100
+      "count": 99
     },
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 30
+      "count": 25
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 45
+      "count": 42
     },
     {
       "name": "CNBC",
       "ok": true,
-      "count": 29
+      "count": 27
     },
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 19
+      "count": 13
     }
   ],
-  "status": "ok",
-  "note": "",
-  "items": [
-    {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "美國10月CPI高於預期，通膨升溫",
-      "summary": "10月美國消費者物價指數超出預期，推升債券殖利率並加劇市場對加息的擔憂。",
-      "sources": [
-        {
-          "title": "Stock Market Today: Yields Jump as Inflation Comes in Hotter Than Expected — Live Updates",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAycGFzVmI4Q3NSQ2ZMTC1DdDR0M2R3SG1OZm1DMHZ6OG9qa3dJUllpSThRa1RlYm5uWGZrVDE1VHJZU0xJdlBFRWpZSnhzU2hUMlJ1UDdJXzFxamNqTDE5bkgwUXowRV9JdUhyckdOclgyMHlaZFE2RlZR?oc=5",
-          "source": "WSJ",
-          "published": "2026-11-10T21:46:00+00:00"
-        },
-        {
-          "title": "Wall St ends lower as hot inflation data, Fed comments heighten rate worries",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSEE5eGJXT1lYRVFJMUpWb2VCTENjZ2hBNWk0QWl5QVZBNmJ4TFBodVUtRVRzV0JubVE0NFJYRFlmYkpuc0tlbTBValFhV0ppcGdYNEZERXV4ZnhLZUJKTF9fUzZEeHM3cDRwdmlMdUVIUWlERHprb3lKakQ1S1gzSmI5LVZYWWx2cTBjVC1sVEc1OG8tOS0ta0k5VQ?oc=5",
-          "source": "Reuters",
-          "published": "2026-11-10T21:27:01+00:00"
-        },
-        {
-          "title": "美國10月CPI增幅超預期美股期指下挫| 全球財經| 全球",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBJSHAtcWhGUjlaTFN6NHY3RUVRdktXeDY5ZXZTM1FIVlZ4UTY3VUJHTkVkbXJjNUNFekQxYTYxZXBjT3N1ZE54ODY4REtSc3RZ?oc=5",
-          "source": "udn",
-          "published": "2026-11-10T14:04:51+00:00"
-        }
-      ]
-    },
-    {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "美聯儲官員暗示或再升息0.5%",
-      "summary": "聯儲官員表示通膨惡化，可能在下次會議加碼半個百分點。",
-      "sources": [
-        {
-          "title": "Fed officials open door to a half-percentage-point rate hike as inflation worsens",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNeUFqWXpfckhlT0dYdGgtVkJ5MVIzZzdpRFJwblBoa2F4bDF4VDdxR0hGYjIzbmFCQmxiVFV2SnlXd1BkS2pGS3QteXE1TDdueHVlWU5LUG5DVVhyakNvMl9CaU1rdlB1ZXdWMGNIT2Y5UVhNMG5LWlk3aHUyamtTZHBDWXN0blZGMmJkUE52OU11Z1E0SnBwMVkxWGVsbTBINGdJRHZHTmh1UHJ3c0szT19BZ0loOURWeXY3QjR2R0p5eGJFMlFGZ3lFdm1MUEFmYnpwT1VrYkJ0RWl6NVdj?oc=5",
-          "source": "New Hampshire Union Leader",
-          "published": "2026-11-10T22:16:12+00:00"
-        }
-      ]
-    },
-    {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "Nvidia股價暴跌 受CEO醜聞衝擊",
-      "summary": "因CEO黃仁勳被指涉中國間諜醜聞，Nvidia股價下跌逾5%，投資人情緒受挫。",
-      "sources": [
-        {
-          "title": "Schumer accuses Trump of defending Nvidia CEO Jensen Huang at cost of national security",
-          "url": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
-          "source": "CNBC",
-          "published": "2026-11-10T23:06:44+00:00"
-        },
-        {
-          "title": "What we know so far about Jensen Huang's affair with suspected Chinese spy",
-          "url": "https://www.bbc.co.uk/news/articles/ckgel338xql3o?at_medium=RSS&at_campaign=rss",
-          "source": "BBC Business",
-          "published": "2026-11-10T21:22:36+00:00"
-        },
-        {
-          "title": "Stock Market Today, Nov. 10: Nvidia Stock Plunges 5.5% as CEO Scandal Overshadows Its Upcoming Earnings Report",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWldvSFZJVkE2dnE0Ym1nMUlmMTdJSTZnZGJvUXlWck1jcl9JdHR1bFBUaDIyRV8xRmtKSXFraEZkM2RMUWh0bzRMYThSSWpaR0l6cUphT3J0MG5KWDFVVEJWUk9sT1ptcEJWZWdwZV9zQTByU2xSU3RHM2NoXzRrOHV2SnRaOHVIX0MyaU80VUJpcW5q?oc=5",
-          "source": "Yahoo Finance",
-          "published": "2026-11-10T22:35:02+00:00"
-        }
-      ]
-    },
-    {
-      "market": "fx",
-      "market_name": "匯市",
-      "title": "外資大規模賣出台幣 資金外流加劇",
-      "summary": "外資連續多日拋售台幣，台幣匯率跌至近33元，央行介入收回部分資金。",
-      "sources": [
-        {
-          "title": "Foreign Investors' Nine-Session Selling Spree Tops NT$800 Billion as Taiwan Dollar Slumps to 32.97 Intraday; Taiwan's Central Bank Pulls It Back to Close at 32.865",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9xNjlYZmR6Tno3eVFXWXgzczZ3VW9rWGxob1huNlh6LU1LUkhObU4wMWkxTkNTUHg4b0dqbXI4UHljY05GU2k5dlM0eXI5cXl3djVVbHdqNzhGanBycTZoajFscmRrOXd6WDJqMFNMZzd3Y2ZzdXc?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-11-10T11:55:00+00:00"
-        },
-        {
-          "title": "Taiwan Stocks Surge Nearly 2,000 Points but Foreign Investors Still Flee; Taiwan's Central Bank Confirms Over $10 Billion in Outflows in November",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0zaXA3bVJzMXBGbkN5YnJ0TlU0aGQ4SjFILVd5SVdBZF9jNkNNZW5oeXQ3dDJ6RkxUYmluOXVKM3p3MWFNNkN5cHp5Y041SUtSQzIzZ3lqREpSc003aEtfbUNpWHVtek5EVVNZZFhFS3QtSVhXVUE?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-11-10T09:28:59+00:00"
-        }
-      ]
-    },
-    {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "Anthropic預計創史上最大IPO",
-      "summary": "AI聊天機器人Anthropic計畫以約1.3兆美元規模上市，將成為史上最大IPO之一。",
-      "sources": [
-        {
-          "title": "Anthropic could have largest IPO in Stock Market history",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYndHbDI3SFRidFNjNkUxMUtRSlNDLUpiblJjaGxzdVIxQ3YzVDRCWjVFcXdZTndFMV9zeEx2S21MRFJjOW9idkM2dVhsYmdGN3JMOFdORnZ3X0VUUl9EOGdOMGJPUGYtT1Q4aWd0YlluMWIxMTN4RkllODJsaUZRcU5ldmNlVGs0ZUpoMGo0NS1HODJiWi0xUTVn?oc=5",
-          "source": "wandtv.com",
-          "published": "2026-11-10T23:10:00+00:00"
-        },
-        {
-          "title": "With Its Giant I.P.O., Anthropic Ties Itself Closer to Nvidia",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE40WWRMa0xmRm9vTGdfM2E0MXRhQUtaMmc1QnZzdm4tVG5zSlJsMWxnRzJsMXhxdlJHcC1hb0NTTF8tU25OODhVdjd4Z2JpYnpHQ3BnNktJbUZQcnFrbEJ4UW5EOXR4YVI2TXU5SnhWWXp1Y3AyeVpwVQ?oc=5",
-          "source": "The New York Times",
-          "published": "2026-11-10T20:32:37+00:00"
-        }
-      ]
-    },
-    {
-      "market": "fx",
-      "market_name": "匯市",
-      "title": "日圓持穩於158左右 市場關注美國CPI",
-      "summary": "日本外匯市場在158日圓附近徘徊，投資人等待美國通膨數據公布。",
-      "sources": [
-        {
-          "title": "Tokyo Forex Market Stuck Around 158 Yen as Traders Await US CPI",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5HSnRPeGVMMUZmZXNsVkFENHhKMTI3ek1wXzhhSzNKUW1SdFFyemx2X3draW5ENmdBdm92V3hRcDFMZ1FXdTE4a3oxSXhhaFZVM2QyRHNCZk0wRlV5clN5cWplZGlZXzFNMTlzcXljSXFXVG9vMkE?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-11-10T08:35:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "油價下跌 因特朗普對伊朗示弱",
-      "summary": "美國總統暗示對伊朗採取克制政策，導致國際油價持續走低。",
-      "sources": [
-        {
-          "title": "Oil Prices Extend Decline After Trump Signals Restraint on Iran",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeWY0eGlzV2FfSkxTRE1BTWZaTjNtWmIxSjJocnF1a2YzbzczUWlWUFBLMDhlWFdkN0s2MFJDNThNTUQyQlRkT0s5bTRfZUpWbnE0QWlmV0lDbXQxQlVXUk41M3M3UF9lWVZ2ekM4QnQ5WXE2N0d0RWNRY3NRNHc2YnBQblFkZTFhQ0ZWWURxa3ljN2FBSU5TWERiMlZqektRZl85YTBqb09zNDNZNjNQVVJn?oc=5",
-          "source": "WSJ",
-          "published": "2026-11-10T20:43:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "台灣機械出口破兆元 AI需求帶動",
-      "summary": "台灣機械出口連續21個月成長，全年預計突破2022年34.7億美元紀錄。",
-      "sources": [
-        {
-          "title": "Taiwan's AI Equipment Demand Surges: Machinery Exports Post 21st Straight Month of Growth, Full-Year Total on Track to Top 2022 Record of $34.7 Billion",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5yVXlMZTNWU1k2LWVDZlgtV29MZndBSVI0TDV6UGJlRFRJV0VLZUpyOXk5MjVLeVpXWWRlQS1YN2o4OXdQeVQzZFROOUFIemhMZDZNLXNldmN2NEpNY3o2Zm1Sck5uUHN6TkZWTmRFMUFHWE40cmc?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-11-10T10:35:00+00:00"
-        }
-      ]
-    }
-  ],
-  "usage": {
-    "prompt_tokens": 2454,
-    "completion_tokens": 1999,
-    "total_tokens": 4453
-  }
+  "status": "llm_error",
+  "note": "模型呼叫失敗，今日不產生摘要",
+  "items": [],
+  "error": "RuntimeError: Groq HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n"
 }

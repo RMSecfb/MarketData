@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T22:07:46.240964+00:00",
+  "generated_at": "2026-11-11T22:37:48.623040+00:00",
   "target_date": "2026-11-11",
   "vix": {
     "value": 17.49,
@@ -235,10 +235,10 @@
     },
     "fx": {
       "usdtwd": {
-        "value": 32.869,
+        "value": 32.862,
         "prev": 32.7886,
-        "chg_abs": 0.080399,
-        "chg_pct": 0.2452,
+        "chg_abs": 0.073399,
+        "chg_pct": 0.2239,
         "date": "2026-11-11",
         "target_date": "2026-11-11",
         "is_stale": false,
@@ -259,10 +259,10 @@
         "symbol": "HKD=X"
       },
       "usdjpy": {
-        "value": 159.717,
+        "value": 159.702,
         "prev": 157.983,
-        "chg_abs": 1.733994,
-        "chg_pct": 1.0976,
+        "chg_abs": 1.718994,
+        "chg_pct": 1.0881,
         "date": "2026-11-11",
         "target_date": "2026-11-11",
         "is_stale": false,
@@ -271,10 +271,10 @@
         "symbol": "JPY=X"
       },
       "audusd": {
-        "value": 0.6851,
+        "value": 0.685,
         "prev": 0.6921,
-        "chg_abs": -0.007004,
-        "chg_pct": -1.0119,
+        "chg_abs": -0.007145,
+        "chg_pct": -1.0323,
         "date": "2026-11-11",
         "target_date": "2026-11-11",
         "is_stale": false,

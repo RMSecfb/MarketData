@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T23:17:27.671477+00:00",
+  "generated_at": "2026-11-12T03:51:40.178381+00:00",
   "date": "2026-11-12",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
@@ -28,17 +28,17 @@
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 42
+      "count": 35
     },
     {
       "name": "CNBC",
       "ok": true,
-      "count": 27
+      "count": 29
     },
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 13
+      "count": 14
     }
   ],
   "status": "llm_error",

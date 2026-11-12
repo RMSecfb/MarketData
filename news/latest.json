@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T03:51:40.178381+00:00",
-  "date": "2026-11-12",
+  "generated_at": "2026-11-12T23:17:37.823683+00:00",
+  "date": "2026-11-13",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -8,12 +8,12 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 51
+      "count": 49
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 46
+      "count": 42
     },
     {
       "name": "Google News 市場",
@@ -23,12 +23,12 @@
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 25
+      "count": 21
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 35
+      "count": 38
     },
     {
       "name": "CNBC",
@@ -38,11 +38,124 @@
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 14
+      "count": 11
     }
   ],
-  "status": "llm_error",
-  "note": "模型呼叫失敗，今日不產生摘要",
-  "items": [],
-  "error": "RuntimeError: Groq HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n"
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "Nvidia CEO 辭職 引發全球股市震盪",
+      "summary": "Jensen Huang 辭去 Nvidia 執行長，市場擔憂 AI 產業領導力，股價大幅波動。",
+      "sources": [
+        {
+          "title": "Jensen Huang has resigned, what's next for Nvidia?",
+          "url": "https://www.bbc.co.uk/news/videos/c6wy9l859r94o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-11-12T20:21:03+00:00"
+        },
+        {
+          "title": "Colette Kress named Nvidia interim CEO as Jensen Huang's abrupt resignation raises investor concerns",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQalBfVFQ4LUhaMURVa2puS2NzSWNoemxiQi1mdnFsZTAwaWUwejZ0MG4xb1ZkRTh4bElpN0ZlOHJkaWtVdjJoT2ZodE1rcDRSczZvOHd4c1JsSTF1R21xSXBVRTZraXV5LWdJMDltQnNYZlFYVjRGY1F4c092S3FNN3J6b2lSLXRxQ0pkdEctSUk4alJTTFA3WkVTSWwxNU5VdmNXNDRyeEVkTnQ3YXk1b3B4elZOQVU0WW9sT1l0RUplQnVjeW1zVzRyN3PSAdIBQVVfeXFMTkxjRWg3QWthVTV2SXBfck42bF9yRjNGd0Q4cG04Wk1LQ2ZPZmVtZ1hDOEdHZzhQSFJfNlExYVVCZUNVNTFiZjVkd29qZk1Vd1NRbGNBa01CNmd3cjQyRFhnbGhDTkw1cVVhakd3aUFaLS05T2owT0RuclB3VzZtZ2hXd1R6SnM3cUgtRFBQSVB0UEZPbGduT1JnZG9BODlGandRdUJXTDZjcWlHLTgyd1U5UUM2OGt1OVZfZzd6TXNhWW9kMlhPem5udkVyejRmYlVR?oc=5",
+          "source": "Fox Business",
+          "published": "2026-11-12T21:50:00+00:00"
+        },
+        {
+          "title": "What we know as Nvidia CEO Jensen Huang resigns over affair allegations",
+          "url": "https://www.bbc.co.uk/news/articles/ckgel338xql3o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-11-12T15:26:39+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "美聯儲加息確定推升日圓至 160 附近",
+      "summary": "美聯儲預計12月加息，導致日圓接近 160，亞洲貨幣普遍走弱。",
+      "sources": [
+        {
+          "title": "Fed December Rate Hike All but Certain as Yen Nears 160 Line, Indonesian Rupiah Hits Record Low",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5nWFBaYU5GMm9VVDJaeEhWeGVHTmd1aXlEODVpeVRXci1iMllReHZRVG51WGszTjhsbGtaSFQxaG1ZZFgwV1NPdmdZNUtGcndCb09KRVUzT3d5WVdoOF85bXRZcmczaUI0ZVk2NmM0MHVEcHBBMUE?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-12T09:55:00+00:00"
+        },
+        {
+          "title": "Fed hike 'certainty' pushes Asian currencies lower with yen down near 160",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPY3lnU0VOSkphOWxLV3R4ajNONVlNNmlMLXQ3Sk1mcW40bjF4ZmRGX1E3elAyVkkxa3BXb1FZV1Q0a3RmZ2lERDU2VGduVjZtd0tlR1hjQzB2dWNBQS0wRGVYeVpGb25HQldNMGlVT201MGlLbXJyZTJVQUVFUkVkUi12OFJMZ1Btcl9UQndvS2JfYlhRQ09Ca3VxVWppM215QVQ0UHBYdDdRZkt0c2xwMnUtNFlDMDJqc1dXc0psbTk?oc=5",
+          "source": "Nikkei Asia",
+          "published": "2026-11-12T07:34:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "金價跌破一年低點 因加息預期",
+      "summary": "受美聯儲加息預期刺激，金價下跌至一年低位，國債殖利率上升。",
+      "sources": [
+        {
+          "title": "Gold sinks to more than one-year low as Fed rate hike bets boost dollar, Treasury yields",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPQTJzZktlVFZ2bzY1QnNuM0RwSFhuN0QwQUV2YnIySjR5SlJPYy0zcmhEVUIzTE5CM2lDbHk0dzZDMFdHWDBkYjhiYkdpTEd1ZDhLQ0JDZmxZTHhUUzBXcm9pWWFDblpHcENFREVmRE1hNzc5S2t2VUpiM1RrYmZFejBzd1BVTjNUOWw2T0dRYzhpMndSem9wWjdfc2lqR2htZEFma1dTdUZfYjJRYXYtOUJTNm00dkZSaElaUHJkbVBTdjFjSXloaXdWQXI2dEFBdTYwUGdCcTRXeklrMzlkRFV0Zlc?oc=5",
+          "source": "TradingView",
+          "published": "2026-11-12T22:40:58+00:00"
+        },
+        {
+          "title": "Gold, silver slide as Treasury yields surge, Fed hike concerns intensify - Kitco PM Report",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWGhvbHBVekx2Sm1QRGxIbnVzMWJZMThnNEVJNTJab2N5c0MtZkxzbDNGellpU2MzcHRBQlV1cWtZMVJoVWh1aVNERTJKV3N1R1NVUnl4QXVYZUdWc2VYbjJROWd6RXhsem1ZZ3V2SVR0TkZDbDF0bExDSHV0b3c5YTV3V01Mcl9JTlp0ZmZ6MXlCTk0zOHdTQjVVX3ZtQktJd2dIVUhGN3IxSUVoZGpVMmlOVndyQUwxa1BV?oc=5",
+          "source": "Kitco",
+          "published": "2026-11-12T22:16:45+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "白宮考慮撤換商務部長 因 Nvidia 出口爭議",
+      "summary": "美國白宮討論是否罷免商務部長 Lutnick，焦點在 Nvidia 的出口限制問題。",
+      "sources": [
+        {
+          "title": "White House weighs Commerce Secretary Lutnick's ouster amid Nvidia export concerns, sources say",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQ2JBc1RoY3pGRnZ0R1BzOW43SHY5eGxjZHpwMlZVZWNSRDMxaG51ZkVSdkVuN1I4bkdCTEZTV3ZETGRpVTBxaGhHSlprM25XNFd0b3N6eHJhc3RneHJrWGl2alVlTVh6R0xtbFJVLTRjaEE0djZxTE54Nkp4UHBYWVJKdGlhM2hmNFM2dWRNeWF0d2tRcnVYT0dtOXZDdGx4QXlsUHAzOHNKQUpaTFE?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-12T22:26:27+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "中國貿易順差支撐人民幣升值",
+      "summary": "報導稱中國貿易順差強勁，提升人民幣對美元的匯率。",
+      "sources": [
+        {
+          "title": "China's trade surplus, strong exports to support yuan appreciation against US dollar: Report",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOczFSTkJNdnk5M19PdmxheVZnNkdnSFhVcS1NdERPdTVCX1NYTTNtN0FpeW5GdU1UVHdaWFZxaHVxQm5KM3FhdExVQzJpdGdtd2pZeEFLZzZDcW03aUhJZGIyclBhQ3I1UUkzUmNKNzRHbTlWZVJHLVB2VVlXeHo0SGVodm5CVDdrMDN2Z2hCSVZ1U2dYT24yRGRrV2xUcFl3WDU4Q3J2R29LQnRnQmhSc3c3dFBCV08wb28wbmt4VXFubGE3ZXRnMEhJcGNEcmF3VE5uaE1YWVBfeFk?oc=5",
+          "source": "ANI News",
+          "published": "2026-11-12T09:21:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "美元與歐元走弱 受市場情緒影響",
+      "summary": "美元指數與歐元兌美元走低，投資人避險情緒升溫。",
+      "sources": [
+        {
+          "title": "US Dollar And Euro Weaken On BCSE On November 12",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9Ubk5waWViSUllbHFLbmZXNE04QXZxbDRjSG5Hb0ZJY1VHTTlNbVJNNUE0QW9CNS1ieFg1cmpBcWdTVmk1ZFg1bTdPck9wVGFKaTVlMWtWM1BLUEhlZzNaLXdsNGd5VWNmSFJhVGRjdnF3S01qOWV5cFZEeUXSAYIBQVVfeXFMUDJDLVJOX2NsSC1paFJzWkJkdXYyQmNYSTlQSWF1bTgwYU1ldUw3SERWNGJPaXRybU1nMzFvU1RmX3NmUFlnMmZqWEN4aEJncFo2U2djWXhzcU0xZFNlbnRBNUpYRHpGaW9fdlJDelhjc1JPOU4zcWZ1NHFXM3R6V0pqQQ?oc=5",
+          "source": "REFORM.news",
+          "published": "2026-11-12T10:20:03+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2280,
+    "completion_tokens": 2500,
+    "total_tokens": 4780
+  }
 }

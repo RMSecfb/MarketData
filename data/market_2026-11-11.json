@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T23:07:38.111815+00:00",
+  "generated_at": "2026-11-12T02:54:49.216965+00:00",
   "target_date": "2026-11-11",
   "vix": {
     "value": 17.49,
@@ -55,7 +55,7 @@
     "source": "treasury_gov",
     "fallback_reason": "target_date_unavailable"
   },
-  "spread": 25,
+  "spread": 25.0,
   "sox": {
     "value": 10564.1113,
     "prev": 9998.3301,
@@ -161,50 +161,50 @@
         "symbol": "^TWII"
       },
       "n225": {
-        "value": 61248.59,
+        "value": 61248.5898,
         "prev": 60459.5781,
-        "chg_abs": 789.011875,
+        "chg_abs": 789.011719,
         "chg_pct": 1.305,
         "date": "2026-11-11",
         "target_date": "2026-11-11",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "日經 225",
         "symbol": "^N225"
       },
       "kospi": {
-        "value": 5375.36,
+        "value": 5375.3599,
         "prev": 5239.1299,
-        "chg_abs": 136.230117,
+        "chg_abs": 136.22998,
         "chg_pct": 2.6002,
         "date": "2026-11-11",
         "target_date": "2026-11-11",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "韓國 KOSPI",
         "symbol": "^KS11"
       },
       "hsi": {
-        "value": 24315.92,
+        "value": 24315.9199,
         "prev": 24557.0391,
-        "chg_abs": -241.119063,
+        "chg_abs": -241.119141,
         "chg_pct": -0.9819,
         "date": "2026-11-11",
         "target_date": "2026-11-11",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "香港恒生",
         "symbol": "^HSI"
       },
       "sse": {
-        "value": 3680.643,
+        "value": 3680.6431,
         "prev": 3663.7229,
-        "chg_abs": 16.9201,
+        "chg_abs": 16.920166,
         "chg_pct": 0.4618,
         "date": "2026-11-11",
         "target_date": "2026-11-11",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "上海綜合",
         "symbol": "000001.SS"
       },
@@ -235,10 +235,10 @@
     },
     "fx": {
       "usdtwd": {
-        "value": 32.862,
+        "value": 32.9538,
         "prev": 32.7886,
-        "chg_abs": 0.073399,
-        "chg_pct": 0.2239,
+        "chg_abs": 0.165199,
+        "chg_pct": 0.5038,
         "date": "2026-11-11",
         "target_date": "2026-11-11",
         "is_stale": false,
@@ -247,10 +247,10 @@
         "symbol": "TWD=X"
       },
       "usdhkd": {
-        "value": 7.8441,
+        "value": 7.8448,
         "prev": 7.8426,
-        "chg_abs": 0.0015,
-        "chg_pct": 0.0191,
+        "chg_abs": 0.00221,
+        "chg_pct": 0.0282,
         "date": "2026-11-11",
         "target_date": "2026-11-11",
         "is_stale": false,
@@ -259,10 +259,10 @@
         "symbol": "HKD=X"
       },
       "usdjpy": {
-        "value": 159.612,
+        "value": 158.705,
         "prev": 157.983,
-        "chg_abs": 1.628998,
-        "chg_pct": 1.0311,
+        "chg_abs": 0.722,
+        "chg_pct": 0.457,
         "date": "2026-11-11",
         "target_date": "2026-11-11",
         "is_stale": false,
@@ -271,10 +271,10 @@
         "symbol": "JPY=X"
       },
       "audusd": {
-        "value": 0.6848,
+        "value": 0.687,
         "prev": 0.6921,
-        "chg_abs": -0.007285,
-        "chg_pct": -1.0526,
+        "chg_abs": -0.005159,
+        "chg_pct": -0.7454,
         "date": "2026-11-11",
         "target_date": "2026-11-11",
         "is_stale": false,
@@ -285,9 +285,9 @@
     },
     "credit": {
       "hy_oas": {
-        "value": 334,
-        "prev": 342,
-        "chg_abs": -8,
+        "value": 334.0,
+        "prev": 342.0,
+        "chg_abs": -8.0,
         "chg_pct": -2.3392,
         "date": "2026-11-09",
         "target_date": "2026-11-11",
@@ -375,6 +375,5 @@
       "source": "manual"
     }
   },
-  "cds_updated_at": "2026-11-12T00:37:32.655Z",
-  "cds_updated_by": "Cloudflare Pages user"
+  "cds_updated_at": "2026-11-12T00:37:32.655Z"
 }

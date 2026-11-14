@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-11-14T23:17:33.601210+00:00",
+  "date": "2026-11-15",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 37
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 37
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 99
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 26
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 31
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 20
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 5
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "中國央行承諾加大政策支持",
+      "summary": "中國央行表示將加強政策支援以提振經濟。",
+      "sources": [
+        {
+          "title": "China’s central bank vows to step up policy support for economy",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeVFqWkhRaThmMGE4MmdEY2daRU4tUmdqelhwalRYMGNxcWpGNmNMVDFJVUo3U1J5eXFMVGlrN29QV3hXdGxWOTRhZ2FDXzQ0V2NGM1RXd3luY0I4RkRSOUtoUVBMVTFrME9hM3U5VlQyYzgwTmlBN3NnOTJRRGR0ZXhNcER4Q0ZCRjc2NkliaWRfRXZTTnhhRkgzMW9yRFc5b29PQdIBVkFVX3lxTE1xZzgxZUVoRWtpd0lLaUZvMjU5blNEdW1aX085NE80VXdhQ1dpWXplUXphbHQ5Vk5fa1NEVDd4VWhjZnVTUjduUmNRb2EwRFd0OFpnX0x3?oc=5",
+          "source": "Business Recorder",
+          "published": "2026-11-14T21:35:32+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "波蘭央行受壓恐擾亂市場",
+      "summary": "有報導稱波蘭央行面臨壓力，可能導致市場不穩。",
+      "sources": [
+        {
+          "title": "Pressure on Polish central bank may destabilise markets",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORlJjdHBGYUh1cGxCTkRRTmZfdHZ2TDNIWUlEM1hoMjFWcFZXdHMxRkptb0V2U1R0dTNaX2xtaml2cUNFelhWWl8xMF9rdFZJY3I4a3ZoRzNZZVlROGw5T3pOUDl0ZzFsQ3l6M2RheUVfMVBPMERtc2xXTzJheEx4cFJYMTRWdW5xZ0NwY0lkdVVOOU8tWkJhOEJVd9IBVkFVX3lxTE9FZ2J2TVE3UGJPMktlaWYxREFtUkQ2OGRob0R3UmhEZXhnNHhTSGU3Mkxma1IyR085SnpobXZBNkRaRkNmMjJvRzFMSWxiSjFmbTlfYm9B?oc=5",
+          "source": "Business Recorder",
+          "published": "2026-11-14T21:35:32+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美聯儲加息威脅農場利潤",
+      "summary": "美聯儲加息被認為會削弱美國農場的利潤，債務達6050億美元。",
+      "sources": [
+        {
+          "title": "Fed Rate Hikes Threaten U.S. Farm Margins as Debt Hits $605 Billion",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzeVIwRHdsY045UWNkZThtVkhWb2QwWVhVSlVFaUM1TTRCV1dNRVh5ZDJEV1JqZnNGYlBlam5sS2RhVkJ1dWUwTVhLRmNfdEpUeDVpVldtcDZibUJ5eHdOUTVOa0U3eTBpSFlQaGpVSVZoXzZMUGtjelBHQQ?oc=5",
+          "source": "AgroLatam",
+          "published": "2026-11-14T21:04:04+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "台灣燃油價格連續第九週凍漲",
+      "summary": "台灣油品價格連續第九週凍結，政府吸收每公升6.0與5.8元成本。",
+      "sources": [
+        {
+          "title": "Taiwan's CPC Keeps Fuel Prices Frozen for 9th Straight Week, Absorbing NT$6.0 and NT$5.8 per Liter of Gasoline and Diesel",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBEaVhCNHd5VHBKUDYySklHcEV3clFoZ3F4OW91c3huNEY3Y1BJeExtR2R3bVNkY25rQV9aWlFaYjVkTVJwdzgtUjM2UEJuUkZSN3JXN0ZsRUlkaXJJaWV4MFJBZ1VMdFE5aUZKQjVjNFpWeFdIWmc?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-14T10:35:00+00:00"
+        },
+        {
+          "title": "CPC to keep domestic gasoline, diesel prices steady",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5GQ2lLV3dIOFE2RUZoYzQ5aGI1cnk0RVVHLWJxNVprZGZjREpoMnlKM3VCNk9selFUSTRJX3FnenY4UU5qaFl4WFJQT0xqRFdpU0lDX1hlYw?oc=5",
+          "source": "Focus Taiwan",
+          "published": "2026-11-14T09:55:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "伊朗海軍稱霍爾木茲三艘油輪起火",
+      "summary": "伊朗海軍表示在霍爾木茲海域三艘油輪因雷擊起火。",
+      "sources": [
+        {
+          "title": "Iran's navy says three tankers on fire after hitting mines in Hormuz",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZWt1cHFualJEVktnTTVvd21uVnljc0FqR2dRaWpaRnYwZ3luZ2t1dUlJNVUtLTVlWHJFOS1ocDBlaVZsTFNZdjRMeldFVFE1Q0Jqem9FbU9fMmp1YTBUTUhqTmYzR3FJN1Z1Y1dHY2d0Yjlzb2lBR0JvNllyT3pScjI2SEpkbkhiYzZSWW9Tb3dwemdWaVVmMjBPbXZqd0hOZzdpRDVSZlVlbzBnV1BjMQ?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-14T22:54:19+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美國提出烏克蘭割讓頓巴斯方案",
+      "summary": "美國傳出烏克蘭為加入北約而割讓頓巴斯的提議。",
+      "sources": [
+        {
+          "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Sc2FZdms0a2VhSnZ3bHhCakcwcnl4SWhTWi1HaDJUdmZXdzVKTmtocFp0aFRYQk9VYllVZ1Uzdkp5OV9Ic2l5NmtUUXU4WVBaNFpMdDVselhoS2c?oc=5",
+          "source": "BBC",
+          "published": "2026-11-14T22:37:25+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "Nvidia第二大股東三週狂賣301億股",
+      "summary": "Nvidia第二大股東在三週內賣出價值301億美元的股票，引發關注。",
+      "sources": [
+        {
+          "title": "黃仁勳辭職前！輝達第二大股東3週狂賣301億股票出售時機引關注| 國際",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1FRnEtTzRDcTZURi00TEpIUW9rdkVWTGNXMzVyUFp5ck9jQ2JSX0tTeFNNV0swbmEwREZfQnU1NUZHNFpvaXAzNw?oc=5",
+          "source": "三立新聞網SETN.com",
+          "published": "2026-11-14T11:50:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "伊朗電視稱導彈可擊英國美軍基地",
+      "summary": "伊朗國家電視稱其改良導彈能夠擊中位於英國的美軍基地。",
+      "sources": [
+        {
+          "title": "Iran state TV says modified missile could reach US base in Britain",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBndmRoOUZWUkR1MVRJblRxYWNKWElFbl9WbjYyanUzVWswb1k4ZGExQzhsWUFPa1lxbUhVUzNRZU9wOFpRNlVNOVAtcjdEUTVpNWc?oc=5",
+          "source": "Iran International",
+          "published": "2026-11-14T19:04:34+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2420,
+    "completion_tokens": 2234,
+    "total_tokens": 4654
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T23:17:24.009673+00:00",
+  "generated_at": "2026-11-14T03:21:28.477156+00:00",
   "date": "2026-11-14",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
@@ -8,12 +8,12 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 39
+      "count": 51
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 38
+      "count": 44
     },
     {
       "name": "Google News 市場",
@@ -23,12 +23,12 @@
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 25
+      "count": 23
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 36
+      "count": 33
     },
     {
       "name": "CNBC",
@@ -38,11 +38,138 @@
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 15
+      "count": 11
     }
   ],
-  "status": "llm_error",
-  "note": "模型呼叫失敗，今日不產生摘要",
-  "items": [],
-  "error": "RuntimeError: Groq HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n"
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美聯儲Jefferson談通膨與利率走向",
+      "summary": "聯儲官員Jefferson表示將以通膨為主要依據制定利率政策，暗示未來可能維持緊縮。",
+      "sources": [
+        {
+          "title": "Fed's Jefferson says he is taking his policy cues from inflation",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZW1TY0lTUklmN2JmVC0zMm5qMUdfOUFjWk43S1NTS1RpcGx1Ni0tWkJCX1NXWDg1cHdzazZsQUZlREpWRkl2UER3S2t0TjFON1lXeTNNLXA4SXZYYjFjbXh0SnJzcXFGV2FPZkhoc1dNc1ZhUXNTRjdmX3R2SUR0ZlZwcHlnT2F2ZzdLdnNkQ1I5Sy1tRmVGTS1GTEpUTmRTWVlkYXRR?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-14T00:03:00+00:00"
+        },
+        {
+          "title": "Fed’s Jefferson Says Inflation Will Determine Rate Decisions",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZzBwMC1SRHV2ZUJHLTJ2STdWWFlSSXhKN1lkajNFZ0VTNUZNTnRGeW1uMXJRWXhyR05ic2JDMU9xcGxTV0JKZFM3WVByb0gwbEhrQW1WaTViQm12d1FZT1FnU29xX0tZSjJXOXhaWkI5bnk0aENFVTNOTUNYV09RQmJid1E4bFZxeUliR01kTkVCcXFMRDVnTWFUbTFrbk1HM1Q4MDBHbkVVSm9LUHNxMA?oc=5",
+          "source": "Bloomberg.com",
+          "published": "2026-11-14T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "美國10年期國債收益率大幅上升",
+      "summary": "受通膨數據與鷹派言論影響，美國10年期國債收益率本週上漲約30個基點，突破5.15%。",
+      "sources": [
+        {
+          "title": "Treasury Yields Jump as Inflation Data and Hawkish Fed Talk Kill Post-Election Rally",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1MLUV1ZUU2cWEwbUl5VG9DNElJRXhOQ3B5OGx2RTAzMmlac1hBcFhHM2t1WmxmNWZvdy12Nzh1azZzWDdTVGRwSHoya0pKWWJydTluY29iX2V3LTJ1UDN6RFlYM0dYd2pqbGFDUEg1b2R5NzlUQ1E?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-14T02:08:32+00:00"
+        },
+        {
+          "title": "10-Year Treasury yields climb 30 bps on week to top 5.15%.",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOelZMcjBaRzdEdTVyeTNjM2dsVWxFV2dWdGJNSXo3czI4QzVscUlyb1c5S0RtOVM5MHdfOUhaejRHU1ZRUFFRZEVJbGx3OW85aVZGeGljWVZXX3pnZVNJSDRjU0djc2IweEVWS1ZSVTlFSV9fdXdlX0NSNWR5NEZtWVNseUtPOWhOS19hUUdxWWJTc1lFcEdfcXFycThtS1Q4WGJibGFYQ2ZleUhPZWx5NnRNME5iVFZ2WmdHWE9uOU0yUGRKVWRVVmN3?oc=5",
+          "source": "CME Group",
+          "published": "2026-11-14T00:04:43+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "Nvidia高層醜聞致股價大跌",
+      "summary": "Nvidia前CEO涉醜聞與間諜案曝光，股價連續下跌，市值蒸發逾1.6兆美元。",
+      "sources": [
+        {
+          "title": "EXCLUSIVE: Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONzdHUzc1NjBCWjJNbldoNEhWS3RkQzJNdHJGTXFfX0h0YWR5QjhHbjdkd3NENnU2eXZpMktjMWRzT216Y2tMbnB0dS04T25QZEtxQmNpZzQ2SjNXRHNwQ2h4ckdOdkJ3d19IRDBYaUs5dzZzc2o2WmliV3hnRjNSN3VyM0trT1hxMEh4M2ppd3RBQ2RXTVUtWE40MmI0S2Z1d0ZBVjZGV2FSa2tDVEpDWU02WXR0QjBOdHRmTHJRV09faXc?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-14T00:25:00+00:00"
+        },
+        {
+          "title": "Nvidia is done with Jensen Huang. The fallout in Washington is just beginning",
+          "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
+          "source": "CNBC",
+          "published": "2026-11-13T23:54:36+00:00"
+        },
+        {
+          "title": "Stock Market News, Nov. 13, 2026: Nvidia Shares Drop Again as Investors Eye Fallout From Huang's Removal",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOOG9vVjRkb0hxUE1ybFptSEtacTBMTjBOOFBETTU3TkJ1YlVvbkoxN1BnR3hmRDZHZzdZZURNY0pwZTFCb1pzRXFaQzJMZnB0ZGxXRF9SODZxOXZ0SktNUDBNX1BFOUcxaDlPcGlIeGM1M2Z6VkN3V1g3YnN3QmFHQlJYaFRtLTA?oc=5",
+          "source": "WSJ",
+          "published": "2026-11-14T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "美元指數走弱，日圓逼近160",
+      "summary": "受美國PPI回升與市場干預預期影響，美元走弱，日圓匯率在160左右波動。",
+      "sources": [
+        {
+          "title": "Yen Whipsaws Around 160 Per Dollar as Soft U.S. PPI Caps Rebound on Intervention Jitters",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBJeEJENjVZX2Izd25VQXdycmExNG9Xc2JZaHdLNUI2Y05pNzhRRzd0OFRGeEpCaVRDN2VIbDdNWEl1ODdNanFWR1p2bURoeks3SjlUdFBZaDdnaTlVa3M2MUd6czdnRHZJMXU4MlpncE1QdHd5YVE?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-13T15:55:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "日本央行預計12月加息",
+      "summary": "日本央行預告將於12月進行加息，市場預期日圓持續走弱。",
+      "sources": [
+        {
+          "title": "Bank of Japan set to hike in December: Why the Japanese Yen is still weakening anyway",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUkpLNjE3RzVhdElkUWdwYXpFall0S1pQLXJCRGpLNW55MUl3clpZY3p3YS01TmdnZlpzdDhlbDhqbXg1MnlXYzNtWWhiNUpBbEtwelFVVUoxOFdTTDlTTV8wVWtUSEd0UF83T2F3N3QwbFhLalkxZUJCRDJ6aEhFYVlRSVZSZHNySnUyWU8xWmdzOURMVEEwbVdoME5TY09YZ25aZDdzOE1nU3V6cl94Vy1lTUNSQndZSmtnLTgtc2JTR1AweHZ6TnQyZk96TFVIdkpxSXBvLXFlS0FzYjc4ZHk0Nno?oc=5",
+          "source": "www.tmgm.com",
+          "published": "2026-11-13T14:34:41+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "中國央行調整外匯儲備規則穩元",
+      "summary": "中國人民銀行調整外匯儲備管理規則，以穩定人民幣匯率，預期將影響離岸人民幣市場。",
+      "sources": [
+        {
+          "title": "China’s Central Bank Tweaks Forex Reserve Rules to Steady Yuan",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaUVpai1RSG9LWk82anFJT1hrZlgtM0t3LTQ5ZDBHLXFOLVpyOFhiR0xZa3pLMkluNnpOdzBHWDdwbnZESzk2bWhybUhmdGZUSFFVd0owXzV1ZXJlcXliazhtclhMTV9vQzlSOGlZd0VlNUFLM2V2RUFwNG9SUjFWSG5aeXNUdzBlcmlvRl9RR3JvNUJwZFluUGVrVGduVXpNUEdCcjFTVFI5RktrU1JyMnd0R2E?oc=5",
+          "source": "WSJ",
+          "published": "2026-11-13T21:23:28+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "香港離岸人民幣債市加速成長",
+      "summary": "香港離岸人民幣債券市場交易活躍，規模持續擴大，吸引國際投資者。",
+      "sources": [
+        {
+          "title": "Hong Kong's offshore RMB bond market gathers pace",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE16X0JpRkFfOC1pMDBxZk5weVZXNG8xMl9uOGNtbGVKT1dTb0cxZHBpTlFUWlJFdV9pSG1UZV9oaE1Hclo1QW12a0pJekNVWGQ4UlI2TTZxd3g?oc=5",
+          "source": "chinadailyhk",
+          "published": "2026-11-14T02:12:50+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2308,
+    "completion_tokens": 2263,
+    "total_tokens": 4571
+  }
 }

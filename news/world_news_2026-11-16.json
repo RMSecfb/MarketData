@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-11-15T23:17:24.045760+00:00",
+  "date": "2026-11-16",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 46
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 47
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 99
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 21
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 38
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 11
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 5
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "中國央行首次5年上調外匯存款準備金率",
+      "summary": "中國央行5年來首次提高外匯存款準備金率，可能影響人民幣匯率與資金流向。",
+      "sources": [
+        {
+          "title": "China central bank hikes foreign reserve requirement for 1st time in 5 years",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQR1hqenFpYk0zMzBnaDExcHJ1cUxGR29lSlBQQ25GWHRRRUtzallEMWVnekJfai1mWWhuR2dKZXJKcjB5RWZzYmdwS3k2V0toUExpY1VmenlqMFBhbmRpMi14azhDLW1ubkFXa1YzOVl1R1czTHlvOWdrQlpVVDljTHAta0lpSHJNUHRNSWVFSUg4b1Btd253Q0NwemFiWjZaS2NoZnVHaUVIUEU4?oc=5",
+          "source": "Nikkei Asia",
+          "published": "2026-11-15T21:51:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "美國債市因殖利率飆升待聯儲訊號",
+      "summary": "美國債券市場在殖利率急升後，投資人關注聯儲未來政策指引。",
+      "sources": [
+        {
+          "title": "U.S. bond market braces for Fed signals after yield surge",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOeTVINHR4a2pIMjJMVUx1X3QySzNHbGo4MmQ0X2c2WG1CNnFyYWRCMFU3elhfa0FtcFB2LTJhQTduZ3JWVjdEcm1HV3NPbFl0NGhoc2J6dzJCTElwYWVMTW4xRE01a1RVbWFBVXIxUE9jeGFzc1RsNlg4TzJ4SzBtb2xfYXBxcFdJTkdGSXB1NnZmQQ?oc=5",
+          "source": "Traders Union",
+          "published": "2026-11-15T20:39:21+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "堪薩斯城聯儲主席稱通膨仍需努力",
+      "summary": "堪薩斯城聯儲主席指出通膨仍未受控，暗示未來可能維持緊縮政策。",
+      "sources": [
+        {
+          "title": "Federal Reserve ‘has some work to do on inflation,’ Kansas City Fed chief says",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSzN5SzlKUEpsS0pueEloNzJ1U0dIRnlGVTBMeGl4dkxYS3lDWjdMZUkyM2N3RGRzbzY0ZHRmSGJidnY0eWRHMzVKZ2syWDVDTEdwbzZUaXVZUnBHeXdTbFE1eDBUelE0NmRpbFJLZUt3T3NIMlJxbjY4aHliV1ZnMTNpaDY0Si1MWE1iTTRKNFF6eGk2NThUU284bTNkOXhDVzBQOC02b3FkcHpCZG5xeUduWGxFWXhQaWhnbVZucHdIZEN2ZWlCSm5uVHVvSXdRVVE?oc=5",
+          "source": "The Business Times",
+          "published": "2026-11-15T22:12:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美國與盟友簽署AI供應鏈保護協議",
+      "summary": "美國及其盟國簽署協議，旨在防範中國在人工智慧供應鏈的影響。",
+      "sources": [
+        {
+          "title": "US and allies sign accord to protect AI supply chains from China",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeVM3Y2hkVkZKUTFFcUhkRUJlX3pWbFBGZlZ6QW1tMjJTUUZ5WUgtS0lWMmh5V3YweURabUtma0pDeTBNM0M1cTYtUkQwcDhrODFmM0RPdmoxYzNZYldpdmxKN0ROTVNmMFhOZ3dpVFpnQ2VSUkRyOWtnaG9udTNpbTdRemg?oc=5",
+          "source": "Financial Times",
+          "published": "2026-11-15T17:47:43+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "美國油氣公司擬投5億美元擴Permian油氣",
+      "summary": "一家美國油氣公司計畫投入約5億美元，擴大在Permian盆地的油氣開採。",
+      "sources": [
+        {
+          "title": "Diamondback nears $5bn deal to expand drilling in oil-rich Permian Basin",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOV3B2VmdHSUxiU3lZeEo1UVExQlkxU1VWeEtvcjlhcUpud2xabDVHc0w3M3dVV0Y3ZGJEdzRDbjduYmpjbDVTQ1VKSU5GUldSeXlUZnNYMWl1OFBybmpGektyblI3X3BndmxRaENDTE1MNVY5SkdOYXNNakJtR25oS3kyU1k?oc=5",
+          "source": "Financial Times",
+          "published": "2026-11-15T18:27:27+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2330,
+    "completion_tokens": 2500,
+    "total_tokens": 4830
+  }
+}

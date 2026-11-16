@@ -1,0 +1,159 @@
+{
+  "generated_at": "2026-11-16T23:17:26.014103+00:00",
+  "date": "2026-11-17",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": false,
+      "count": 0,
+      "error": "HTTPError"
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 46
+    },
+    {
+      "name": "Google News 市場",
+      "ok": false,
+      "count": 0,
+      "error": "HTTPError"
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 24
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 39
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 29
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 12
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美聯儲官員警示通膨與升息",
+      "summary": "官員指出通膨走錯方向，市場預期12月再升息1碼，明年1月亦可能升息。",
+      "sources": [
+        {
+          "title": "Fed官員示警通膨「走錯方向」！市場完全押注12月升息1碼、明年1月也可能升息",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1Oa1UwMVlBQXJ0RjA4OUlIQmdrNFFBTHVsTUhZZGFDa1ZHTXJoWFpJT1ZjdmhmVWdsNFZaRnYxYzRwZWs5S1NpWjhibjEtN2c?oc=5",
+          "source": "鉅亨網",
+          "published": "2026-11-16T13:10:05+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "香港推出離岸人民幣債券指數",
+      "summary": "香港首次發佈離岸人民幣債券指數，首日銷售額超過美元債務，推動人民幣資產國際化。",
+      "sources": [
+        {
+          "title": "Hong Kong debuts offshore yuan bond index to promote RMB assets",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUHJJbmI0WmUya3hLSFM5X3NjTTJmampxUFFOQWxfYVg5N2ZlOVFSMHVDaU9xWHhzS0tvXy0wUUJrUGFjWlBMMnJPeXc3bGJCTEUxb0dUUnJYLUo4LVpxbEtSeTRrdkw4dFV6RUpFN19LNjhjZFhZNGhjNWh0MVJlWDNBNHJaQnNKWVhyXzN0UWFCVlJIZDdFU29ZdC1fQTFxNkNNb2RmeS1vamV6SGhfcUo1S25pTEZEVmxzY0RRX1ZhX2h3aXJfVmdIUdIB0AFBVV95cUxOWVdSa3k3R0doNERnVXNWMlhqU2xQaGRLdEJoX3kxZjBwMld0UlVLalE3Tk1VT3k0ZWZJc01VY2NRT1lGdW1oWmZlbWJaY3lJVlJuTFRqdE4xUkhtdThfcl84RUF3SGFxTmRNVmU2dVV2Ti00dW9iNVdTdjloVmZMWFhYenhONlZWNkRRRWNtX2lXY1Q5ZFk5OEVqbElCN2tyc0YzLTU4cUM1YnA2Sm5SN1VZMWRxTXUyTnBJc0M3ZTVxaEtvTGxBb3kxczZ2d3px?oc=5",
+          "source": "The Economic Times",
+          "published": "2026-11-16T12:02:10+00:00"
+        },
+        {
+          "title": "Offshore yuan bond sales top US dollar debt in Hong Kong for first time",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQT21MQVJPLXRhODN4R1FOanpzeEx1dm1pdFlsNDJIc1hrQzNwZzdJUjl5YkkyWXJfd0U0RF9CMjZQVGRjZXgtbmpibUpoV0F0c0FtQUR1cDZ6clAweHJ4b0QzckVBc3hIN2wxcVZ4QVFGTDFXX18tYmJabUU2cERWb0MyMFQ2VkxYd3d0aTJXaWJiSTE2NlU4UXMtQ1l4by1PNkI3OHlueU5SYk92OG1ZbVMyMERvR195UXNLN1ViZXBJMFo5SFBYMTdUSWxFaXBxcWJBYjRuOURlN0E5SUdCYQ?oc=5",
+          "source": "South China Morning Post",
+          "published": "2026-11-16T11:00:09+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "人民幣匯率在內部數據疲弱下保持穩健",
+      "summary": "儘管國內經濟數據走弱，人民幣兌美元仍維持相對穩定，美元-人民幣利差擴大。",
+      "sources": [
+        {
+          "title": "Chinese Yuan Holds Firm Despite Softer Domestic Data as the Dollar-Renminbi Gap Widens",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQS3dzNVZVeHo1RGxISnUyemd3dG5WSkdtaW5hNUhWMDRfQUpqX01xZWhoaFdnYTBsc21ONHJSU2hJQTJ2YllnZUhEN1J4QkZJZlpPMFFPb3BMaExlNWlYZmplTXlDNHdKUVQ0Y0pTOTc3S2pKYWx3RWc3MkduZ3JEVW1TRmxub252c0hwbUJsOWlfU04zbG5PcGtzWWgwbUw1SlZuNi1mbGUwdWZvREdXd3VwWXhEQ05QaDduMFI5NVFRQQ?oc=5",
+          "source": "kalkine.ca",
+          "published": "2026-11-16T14:48:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "輝達財報前AI股大跌 美股跌逾740點",
+      "summary": "輝達財報前市場拋售AI相關股票，道瓊指數下跌近740點，費城半導體指數及台積ADR跌超5%。",
+      "sources": [
+        {
+          "title": "〈美股盤後〉輝達財報前AI股掀賣壓 道瓊瀉近740點 費半、台積ADR重挫超5%",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBDTzNaRVp1cFVsZ0tJcjJYMEFsbDB4eUppWkw5YVVrdzVEaFpsUy10LV9nMU9IQnkzM0JCWGdERGNDWVV3VVhuYmlUZDIzQVU?oc=5",
+          "source": "鉅亨網",
+          "published": "2026-11-16T22:18:45+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "台股大跌 央行出手干預匯率",
+      "summary": "台股指數跌2,635點，央行以「活彈藥」方式介入，台幣匯率維持在32.8左右。",
+      "sources": [
+        {
+          "title": "Taiwan Stocks Plunge 2,635 Points; Taiwan's Central Bank Intervenes With \"Live Ammunition,\" Taiwan Dollar Narrowly Holds 32.8",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5taFhDUHZjQlN5bFowaDlNTTRBSkdvSXZfdExuOThueEtSQ0l6T0pLQUFlNDI2ODQ4eldqSFpFY1Z0aGt1cVZoNHNsN2hjX0R3NzBQcExrczdGUzZFQ0F2MWpOWmU5U3Q5UjJ3S3ZqRS1HNkZmblE?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-16T11:25:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "台灣股市單日跌超6%",
+      "summary": "台灣股市當日下跌6.03%，顯示本地市場承壓。",
+      "sources": [
+        {
+          "title": "Taiwanese shares plunge 6.03 percent",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5uSUVaMGNIeUU2cThhaXVVVktaQlF6T2lNZnFsZWNPa3VvYS1QSmVGYTAwQjdJYnFocVJ5TFNoWHdfRUdtREdIQUNBOUg3VDdhalFGelZyTHk5VVJuVDVXY2hpMnNJMDJSTDhkVjBFOW0yaXN6bGc?oc=5",
+          "source": "Taipei Times",
+          "published": "2026-11-16T16:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美商務部針對中國資料中心漏洞採取行動",
+      "summary": "美國商務部著手堵塞中國資料中心使用的漏洞，可能影響相關科技公司營收。",
+      "sources": [
+        {
+          "title": "Nvidia fallout: Commerce targets loophole for China's data center use",
+          "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
+          "source": "CNBC",
+          "published": "2026-11-16T21:51:43+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2364,
+    "completion_tokens": 2127,
+    "total_tokens": 4491
+  }
+}

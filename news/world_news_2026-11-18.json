@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T23:17:25.933401+00:00",
+  "generated_at": "2026-11-18T04:29:03.739939+00:00",
   "date": "2026-11-18",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
@@ -8,12 +8,12 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 42
+      "count": 49
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 41
+      "count": 46
     },
     {
       "name": "Google News 市場",
@@ -23,12 +23,12 @@
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 26
+      "count": 25
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 42
+      "count": 36
     },
     {
       "name": "CNBC",
@@ -38,11 +38,126 @@
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 13
+      "count": 15
     }
   ],
-  "status": "llm_error",
-  "note": "模型呼叫失敗，今日不產生摘要",
-  "items": [],
-  "error": "RuntimeError: Groq HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n"
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "人民幣匯率創2022以來最強固定價",
+      "summary": "中國央行將人民幣匯率定盤至2022以來最高水平，預期人民幣進一步升值。",
+      "sources": [
+        {
+          "title": "PBOC Sets Strongest Yuan Fix Since 2022 to Allow Further Gains",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWktWbDdabmdxdFFjUXFFZkFPRnlxY2tOVlk0a2U0ZUM5VENHVlRnNDZoemFGSWdCbGRjTWpSbHI5X09pSUg1dENHaFZQTUhqTnRMNjlJYmM1ZHVObllRYTkwQm1obDJONnEwWkZiSEZuV0dJbWpuVm5GMHZQbEJ6VVR1VUROYTdfbXJDSWRZQ3Npd3lDektpZkhnLVJyejh4eG5LalUyS01IWFRRM28wTmxINA?oc=5",
+          "source": "Bloomberg.com",
+          "published": "2026-11-18T02:19:00+00:00"
+        },
+        {
+          "title": "China sets strongest yuan fixing since 2022 as APEC begins",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOa25tWjVMWV9kRDRwUlgxVDVtbmxxMlhsRml5TUkxSENtdDlGY1V1T0FteHBSekJfNEtFdWtvSkx0dWJ2akZjNm1KR1dQQ0JEZ1VORUV3RUY0U29tNVFpY2htWVpwblhUWnNROXpDeHRWVEptb0V0VV9uSzZTdldGVDUta292NmlBNWNUMWtSOEFKUWk3TlI2VU9hT0E5djlGa05BTHN6QXRtMHluU1FxUWpsTjc2Z9IBuwFBVV95cUxOcU9wbmQ3TTU3N20yQUlTVUVYSm5qMnoxd0pBR3pSUWRJNnNwelZwRy1hZFNVUFNKWXlWSWN3a0dobkxhLUNLMWlUQWdpUFQyR0dxMDlMWlpJaFhQUVhpanZZVHNSWlFsVmZxbVF4MDR3cmxneVdYTENPcUJoNkc2V0dTQTA2d1JfUG1TOThMdWlPY1JIdzFFMExjRkFGYnh1RU00NHdnckZuc2pCUkcyNW14OHhPWlpQRFlz?oc=5",
+          "source": "Moneycontrol.com",
+          "published": "2026-11-18T02:02:33+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美聯儲暗示12月加息在即",
+      "summary": "美聯儲官員發出鷹派訊號，預計12月將再度升息。",
+      "sources": [
+        {
+          "title": "With hawkish signals mounting at the Federal Reserve, a December rate hike is all but assured! Will gold prices fall further? Keep an eye on the meeting minutes tonight.",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSV91MHdWWU85aXROZHB0dHhva3FyTDNFM3dtbzE2VVlNM3JiTmREZHp6aGN3bkpkR3ZGNW1mMkdfYi1rQzJUYmN3LU5QM29kVVQxV3lLTmtBcXlzckdzZk5kRW5qTUpLbmhHLVlqLTY2TEFILTRKWHVfZEFKQ3NSbmszWUg1cGQ2Ym1vZTZvNkRsOGgzelNWZWRDdWwzTWdHRUVxbGs1ZkMzQQ?oc=5",
+          "source": "富途牛牛",
+          "published": "2026-11-18T03:56:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "日本央行行長主張持續升息",
+      "summary": "日本央行行長表示應持續加息，以抑制通脹。",
+      "sources": [
+        {
+          "title": "Bank of Japan governor says central bank should keep raising rates",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLXVIT0VoOTAtWnNpWjBvTlRGS0o1aEp1RklzQjZLTVFOb1pha3FPSUJJaFJrMjIzQzZ5WGtOUG5OUl9VM2paLTZ3aEY4d3ZLMFN5NUdkSU5aT09EOWs1MFp1eUVSbzh6VVkyaEFuTWo0cS1Tb1RGVlJKdWdoSXlsbkZJRFJnT2tDMHNINXhGSDlDVzZnWTVkV2pYWGcwZnhjMEk1RHZQSWlsQkJCNW5KbGJR?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-18T02:39:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "Nvidia 停止向中國供應 AI 晶片",
+      "summary": "Nvidia 宣布不再向中國出貨 AI 晶片，影響供應鏈與相關股價。",
+      "sources": [
+        {
+          "title": "震撼！黃仁勳才剛下台 輝達宣布H200晶片不賣中國了",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBzSkRfRWE3Rm8tUXFOVDNPeGpwZG9oVzl5UU1ZMjNmVFQ2Uk9qM05tWkt4U3pxcGxKTXhWNlhUZkU2R1JlQzBOUkVKNmRwQ0R2N0hHSmFXX05WZXlHaDNj0gFkQVVfeXFMT0hXSXJ6X0JZN3V3MVpnNEswaTJRd3Q3aEN6WmhyS3FvT1F4b3NJUkdfMmpxWW9wSmd4T3gwUE1CVUJnMURJeWJfeUpFZFBYOEFYalhSc2pIcmZEMUo4b1NCNG1YYQ?oc=5",
+          "source": "自由財經",
+          "published": "2026-11-18T02:15:17+00:00"
+        },
+        {
+          "title": "Interim Nvidia CEO Says It’s No Longer Sending AI Chips to China",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVk5ZV2dpR3EyVEtJcVdSZTBCVGl6UE1qZ1gzNWdiaHJ3WGR1S3NUd2VRcWVzUWhjanFicXVzNi1zRWZNel9EdlVOaC1uMUFCckRXMkRGWkRZeHdZUnE4VTdtUkZ2N0dITkRYa040X29HanoxODdGVXV3NzEyOGhnR1VOb2VwcFNIcHFJQlFrNXM3T1hqQlN5WnB0MHJTU0R2cTZOUnBNbV9Ubm81clFKM0x5cHRxdw?oc=5",
+          "source": "Bloomberg.com",
+          "published": "2026-11-18T00:09:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "Fitch 警示超大規模雲端發債將提升債市波動",
+      "summary": "Fitch 預測大型雲端公司發行債券將加劇全球債券市場波動。",
+      "sources": [
+        {
+          "title": "Booming Hyperscaler Issuance Set To Raise Bond Market Volatility, Fitch",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdnQtWjdxbGs2dVN5V25zUHFPeDlQelZvamVYb2Y5Q2JpOUhZcVBKaHBFMTJFWlFtUXNYWGF3ZElmdURNYVhKak5lUUNINHFYc1h5cFFZT0dZU2JkUTBoaXNsUDFzM1F6ZHpHaF9GTW9HZUhUZE1pY0RJdndPYVJHZHBCbnNmMWJyT1pUSTBwS2h2WWdLQ2lpTEhVcjQtUzd0aHpTQ3BBZXRnQ19mQTZlTGhmUkkzdw?oc=5",
+          "source": "BusinessToday Malaysia",
+          "published": "2026-11-18T02:16:12+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "中國央行示意放寬政策限制",
+      "summary": "中國央行傳出放寬貨幣政策的訊號，顯示經濟增長仍具韌性。",
+      "sources": [
+        {
+          "title": "China’s Central Bank Signals Easing Restraint as Growth Holds Up",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQa0Zqa3ZJTXIwVExheGlDTktPOFJYT0FzY3NNNWllbjNsMXd2OW9uNGlpMU55RzN0S1F1V1ZuVWFDUDdrOFdsZE5HWkphZ3E3Q3R4THpFeXg1Y0gyRGhNSWxFakE3R1ROUFJTX1Q2eG94clAzMm5ER0FHTFFvNUZsN2k3V2gycjlPU2dlbHZsaW8tMjA0WWt3WG5fY1EtR29ob2d6MUZjVnl4ZmwxZ1NNNURoVGRJejg?oc=5",
+          "source": "WSJ",
+          "published": "2026-11-18T02:08:01+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "亞洲股市或下跌 Nvidia 營收超預期",
+      "summary": "受 Nvidia 營收強勁與前景指引影響，分析師預測亞洲股市將走低。",
+      "sources": [
+        {
+          "title": "Asian Stocks to Fall, Nvidia Sales Outlook Beats: Markets Wrap",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUHhZZG5FcFhON3BCMkRyY201M2FVdVRTaUF2a29ScWc3ZTd4TkI1Zm44SXNOcmZoOE9tN29nalFxMllaQV9ZQVp5SFNKbFlmVWtxVmtjdGl4WVVRRnpFeVZaVjVCVGozeFVWYzF6NnM1dERENnQ5SWpLTlNsejBDS21mS2k2aUhQeHZHNU80V2dvbG9h?oc=5",
+          "source": "Bloomberg.com",
+          "published": "2026-11-18T03:56:00+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2307,
+    "completion_tokens": 1857,
+    "total_tokens": 4164
+  }
 }

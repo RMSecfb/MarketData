@@ -1,0 +1,185 @@
+{
+  "generated_at": "2026-11-18T23:17:22.835398+00:00",
+  "date": "2026-11-19",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 43
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 44
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 99
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 22
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 33
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 30
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 16
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美聯儲會議紀要顯示或再加息50基點",
+      "summary": "聯儲會議紀要透露官員考慮再加息50個基點，暗示未來利率上行。",
+      "sources": [
+        {
+          "title": "Stock Market Today, Nov. 18: S&P 500 Breaks Key Support as Fed Minutes Signal More Rate Hikes Ahead",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQ0NhQ0JLODM0S1FxM2RYX3RiY3JrelIwRDE5NEhnLVJPVWxUUUp5TWI5aF8wdGo0bjJqS3lUdTZNYVRKNTJJbFJQSVJsNzVqVzhHd2paTlFCOXlHeXc5Ui1aU1FiaWR4YWt2Q2RpWElveGFqTGVBMDA3bEJzeXlJb1U2ajdtWFNTYWdpWkFzZktfNzY5?oc=5",
+          "source": "Yahoo Finance",
+          "published": "2026-11-18T23:00:02+00:00"
+        },
+        {
+          "title": "Federal Reserve policymakers concerned about financial system risks, minutes show",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOQVI1LVVoeHJ0SVhCdkluZ2tiSnA5NmcxcVlkR2FCQVVVdW1tUEktbXNZcXdOMXR4U1c2X0pONDk1NW5YWEt6SWhKRndUQkRfekk1Y1FtTS03YTZPWlgySmRyNnFaWE8xRFZhTU1tMEVsQWRYTUhkOW9Db3g3V3RaWjcxSThKUV9sa29CSkxWVmg3SDBsbUlyVHlDSjhvYktmNHZRbUVwaC1ub2xRSDhlNTdwaWRINlhGMUx1NkVxQ2Raa0NFLTJsM2tTYi1rek5QaDJmdnktMzJBYzlSNkVhWg?oc=5",
+          "source": "The Business Times",
+          "published": "2026-11-18T22:20:00+00:00"
+        },
+        {
+          "title": "Federal Reserve Minutes: Fed Officials Weigh 50 BPS Rate Hike Amid Inflation Concerns",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1HZ2ducnpBekpULUNSQVFPWnRMcjVGWE9vTEdqVmxoelk2WndoS21KODVEaXp2Z0hBSk1OaXJGTG5Mekg4aTNIZjFGbGEtRUZPdGM5VmgyWDI?oc=5",
+          "source": "Cryptonews.net",
+          "published": "2026-11-18T22:16:37+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "Kashkari警告市場預期加息超預期",
+      "summary": "Kashkari表示市場預期加息幅度將超過官員目前預測。",
+      "sources": [
+        {
+          "title": "Fed’s Kashkari: Markets believe central bank will have to hike more than officials now expect",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPOW55eFcyRi1pd01QaVluS0R5bFFZeEZ0eEhlVmdjbnQ5VjNaNlBfeC1vSUZlUXNZWUkzUUFjdU8yd1MyekpOQm4wYUhMZl81Y1EwN3V6QzRjd0hrRTJPMFc1RUExRzA0S0JJNDlFRmFfNzZrNGFVNlBVUnhocEhuT0xENmJQLWJRS1lTRzY3cjd2XzBWLWRYQWdxczBsYVR3cUljdWV1N1dWd2tvZ0RJTEpVZFF5Z09rcUdsdXlOSTJ1RGJIekd4cnJYSDJZN2M?oc=5",
+          "source": "FXStreet",
+          "published": "2026-11-18T23:06:01+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "台央行行長暗示升息不可避免",
+      "summary": "台灣央行行長楊金龍暗示升息勢在必行，呼籲政府配合財政。",
+      "sources": [
+        {
+          "title": "Taiwan's Central Bank Chief Yang Chin-long Signals Rate-Hike Stance; Lin Po-feng Says Hike \"Unavoidable,\" Urges Government to Prepare Financing and Tax Support",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Ya0dObkVaX2h0akxjaUNJcThuU0o0MXBWYm1zd2RYQkdaZnAtOUpNU3dBQ2dPaEtGM3hDaUhRQ05JNWNVVjViYXBlQjZVaVBmWmVtdExnME04c1ZtTUt3MWlqamwzUk55UmIyUGJJcDRzcHZYZHc?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-18T12:25:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "人民幣升至四年高點央行設定強勢基準",
+      "summary": "人民幣兌美元升至四年最高，央行設定自2022年7月以來最強匯率。",
+      "sources": [
+        {
+          "title": "China Lifts Yuan to Four-Year High Before Trump-Xi Talks as Dollar Knocks Euro Below $1.10",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQW1GMWVveXlBZVBIeG81V3NLWDVtX3lMazFVUVlsVG5Pc0dwVTlMdjVSSDVjRjNhR3ZHbHhMT1BLSjlaZF9uODVPMWFZU0ZiZ1Z4TVBYeHFCVXEtb1BRenE3SjhBVmFOc25uZVRlbTVOZFRsbG9jVmh4MUdSeXlTN3dmQ0VQd2lZS25NOGtsV09wVmJhN3h5MFZXYjJvTTE4emtDb213UXdnZE5ObF8yOW1pUlhHanJvYWJJ?oc=5",
+          "source": "TipRanks",
+          "published": "2026-11-18T15:41:07+00:00"
+        },
+        {
+          "title": "PBOC Sets Yuan Fixing at Strongest Level Since July 2022 Ahead of APEC Summit",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNGZIUjBBQU9yaDBVSk9EQVFxZElpWnVCRXYwVm5iS1o4TjJFOFNKYkNCR01nblNwVzJMOXRKakpheHpjUWJEZDhGV2RUaUQtQ21LeVpNSGFUV0d0MERiZWlET3Brd1U1SDMxcVVBMFpPRGJZc1J6NWxIT1FEdHdCYW1ycG9DTnJuSVpkMW05V0NQdw?oc=5",
+          "source": "Briefs Finance",
+          "published": "2026-11-18T09:30:00+00:00"
+        },
+        {
+          "title": "Chinese Yuan: Gradual upside bias toward 6.6520 against US Dollar – UOB",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOalNZenptb0VGODM3UHJYa3JPbndQQ3YwR01BVF8weE5DaWNCOWpzOEFBbVBhaEVHRXVOb3MyVGY5WDd3MU1uVko1MFdJd1hWODRMUWFxdllCM1p6WG1LcC0xczhYc3h3N1c2WE41V1VRdVA2X0J6YzJpVkoydWVBd3k5ejlodVdHcUltS2s2QkthRlNlRndocVBNbjdPRWNlY1BoLVZuTkR6QkV1VFNr?oc=5",
+          "source": "FXStreet",
+          "published": "2026-11-18T18:05:19+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "Nvidia財報不佳拖累美股大跌",
+      "summary": "Nvidia公布財報不及預期，致美股指數下跌，科技股受挫。",
+      "sources": [
+        {
+          "title": "Stock Market Today: Dow Falls as Nvidia Earnings Fail to Soothe Investors' Nerves",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWF9SSWdwQ1BBTkhfMnRGdVRodTBUeEpibW9RRlgzWURreHZVY2RKYXM5el9YQU1XeVpnTnl3QWJnbzRpdEVBT1JDbWNodTRKWHBsdnFKOGFYM1lGaUtNbmRlYUJhaTZrandnaFpUVHFDaEV6UUVaSW9jU05fakc1UVRTRkhibWM?oc=5",
+          "source": "WSJ",
+          "published": "2026-11-18T22:43:00+00:00"
+        },
+        {
+          "title": "美股早盤／輝達財報亮眼也難救 大盤由紅翻黑、台積電ADR跌0.4%",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1nNEFpVEx0X21VdS1hWWJHT3MxajF2VjhKRTM3dEo2QlpuNlhQUWlRckZtVjlCd3dmb052RXhpQ3RMREEtU0xxTzRvcVJaRll2?oc=5",
+          "source": "UDN",
+          "published": "2026-11-18T14:54:08+00:00"
+        },
+        {
+          "title": "US Stock Futures Rally as Nvidia Results Ease AI Trade Worries",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRi1ZbVpsWDREeUZoOV8tRHkxLVZ2WnNtaFdXWENZbkVWVHRITUNZRmFFX1V1X2RCV1ctdWFBMk14emVFTEl0eDV0cERXU0ZmN3A5NnphRDZkU3FEdmpCSXpJRU5HMnFHbENrbmhoYkhsX2VIZUxrU0VlUTUycFo0a3l0UFoxaEVOS2ZxaGxwRmdRd3lJSktTZy14VUdRTVJCNlVTb3BmZW44ankzblhKWFZ6dw?oc=5",
+          "source": "Bloomberg.com",
+          "published": "2026-11-18T21:13:26+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "Anthropic AI IPO定價83美元創新高",
+      "summary": "Anthropic在美上市，定價每股83美元，高於預期，顯示AI股熱度。",
+      "sources": [
+        {
+          "title": "Anthropic IPO live: Company said to price stock at $83, begin trading Thursday",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYmJBc3JzY0NwYkFWVWFEbGtLUTlvYTRHeFdVUlhTTUhhNFp6TzNIS1ZhejNINXk3ekxNc2lwNklyaXRDNWt3NjJkRldjZkpsTmNDSVYyNHNOTG1FRjBtOFZYelV6b3d1YXk5NmM0LW5RZUp1UHVHLU5FNVgzNlZQX2ZxUmpfTkhpYVBEYm5ZclBZUlk4dEJfYm95SF9aaFV1ZVAtclZZbVJnVE1Sd0xmN21ZLU9uSFh1Si1KRUhfRzhHVGJhT0VYQlEzNmg?oc=5",
+          "source": "Yahoo Finance",
+          "published": "2026-11-18T22:29:58+00:00"
+        },
+        {
+          "title": "Anthropic sets share price at $83 for stock market debut, above expected range",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeFBzdE04UURGVW9hMHJRNm1JLTI4NS01eGczYnhHRy1Fam5Na2RaajdaS1lwcnRhVHNfTWRZelRWSHNSVFJYM05CbmV5ZTViWG9laHFaNDFZQTlQbmJSNFFvY0M5SWFBQklMWVN1Mi14LWR6QVV2LXE5UEtJYkFicHU3cVUzVmlOSU1TMTF5MFhSRkk?oc=5",
+          "source": "The Guardian",
+          "published": "2026-11-18T22:44:00+00:00"
+        },
+        {
+          "title": "Anthropic prices IPO at $83 per share, above expected range, source tells CNBC",
+          "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+          "source": "CNBC",
+          "published": "2026-11-18T21:42:35+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2445,
+    "completion_tokens": 2160,
+    "total_tokens": 4605
+  }
+}

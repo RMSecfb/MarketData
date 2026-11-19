@@ -1,0 +1,317 @@
+{
+  "generated_at": "2026-11-19T22:07:47.410783+00:00",
+  "target_date": "2026-11-19",
+  "vix": {
+    "value": 28.44,
+    "prev": 24.56,
+    "chg_abs": 3.880001,
+    "chg_pct": 15.7981,
+    "date": "2026-11-19",
+    "target_date": "2026-11-19",
+    "is_stale": false,
+    "source": "yahoo_daily:query2.finance.yahoo.com"
+  },
+  "move": {
+    "value": 96.0363,
+    "prev": 98.15,
+    "chg_abs": -2.113701,
+    "chg_pct": -2.1535,
+    "date": "2026-11-19",
+    "target_date": "2026-11-19",
+    "is_stale": false,
+    "source": "yahoo_daily:query2.finance.yahoo.com"
+  },
+  "y2": {
+    "value": 4.76,
+    "prev": 4.8,
+    "chg_abs": -0.04,
+    "chg_pct": -0.8333,
+    "date": "2026-11-19",
+    "target_date": "2026-11-19",
+    "is_stale": false,
+    "source": "treasury_gov"
+  },
+  "y10": {
+    "value": 5.04,
+    "prev": 5.07,
+    "chg_abs": -0.03,
+    "chg_pct": -0.5917,
+    "date": "2026-11-19",
+    "target_date": "2026-11-19",
+    "is_stale": false,
+    "source": "treasury_gov"
+  },
+  "y30": {
+    "value": 5.4,
+    "prev": 5.41,
+    "chg_abs": -0.01,
+    "chg_pct": -0.1848,
+    "date": "2026-11-19",
+    "target_date": "2026-11-19",
+    "is_stale": false,
+    "source": "treasury_gov"
+  },
+  "spread": 28.0,
+  "sox": {
+    "value": 9419.7227,
+    "prev": 9652.7998,
+    "chg_abs": -233.077148,
+    "chg_pct": -2.4146,
+    "date": "2026-11-19",
+    "target_date": "2026-11-19",
+    "is_stale": false,
+    "source": "yahoo_daily:query2.finance.yahoo.com"
+  },
+  "stocks": {
+    "NVDA": {
+      "value": 145.98,
+      "prev": 150.96,
+      "chg_abs": -4.980011,
+      "chg_pct": -3.2989,
+      "date": "2026-11-19",
+      "target_date": "2026-11-19",
+      "is_stale": false,
+      "source": "yahoo_daily:query2.finance.yahoo.com",
+      "name": "輝達",
+      "emoji": "🟢",
+      "grade": "IG1"
+    },
+    "TSM": {
+      "value": 352.09,
+      "prev": 362.62,
+      "chg_abs": -10.529999,
+      "chg_pct": -2.9039,
+      "date": "2026-11-19",
+      "target_date": "2026-11-19",
+      "is_stale": false,
+      "source": "yahoo_daily:query2.finance.yahoo.com",
+      "name": "台積電",
+      "emoji": "🔵",
+      "grade": "IG1"
+    },
+    "SMCI": {
+      "value": 23.84,
+      "prev": 24.37,
+      "chg_abs": -0.530001,
+      "chg_pct": -2.1748,
+      "date": "2026-11-19",
+      "target_date": "2026-11-19",
+      "is_stale": false,
+      "source": "yahoo_daily:query2.finance.yahoo.com",
+      "name": "超微電腦",
+      "emoji": "⚡",
+      "grade": "HY1"
+    },
+    "ARM": {
+      "value": 177.17,
+      "prev": 182.76,
+      "chg_abs": -5.589996,
+      "chg_pct": -3.0587,
+      "date": "2026-11-19",
+      "target_date": "2026-11-19",
+      "is_stale": false,
+      "source": "yahoo_daily:query2.finance.yahoo.com",
+      "name": "安謀控股",
+      "emoji": "💻",
+      "grade": "IG1"
+    },
+    "TSLA": {
+      "value": 374.41,
+      "prev": 383.72,
+      "chg_abs": -9.309998,
+      "chg_pct": -2.4262,
+      "date": "2026-11-19",
+      "target_date": "2026-11-19",
+      "is_stale": false,
+      "source": "yahoo_daily:query2.finance.yahoo.com",
+      "name": "特斯拉",
+      "emoji": "🚗",
+      "grade": "IG3"
+    }
+  },
+  "data_quality": {
+    "target_date": "2026-11-19",
+    "stale_items": [],
+    "missing_items": [],
+    "has_stale": false,
+    "has_missing": false,
+    "all_same_day": true
+  },
+  "markets_ext": {
+    "indices": {
+      "twii": {
+        "value": 38426.89,
+        "prev": 40194.91,
+        "chg_abs": -1768.02,
+        "chg_pct": -4.3986,
+        "date": "2026-11-19",
+        "target_date": "2026-11-19",
+        "is_stale": false,
+        "source": "twse_mi_index",
+        "name": "台股加權",
+        "symbol": "^TWII"
+      },
+      "n225": {
+        "value": 59444.21,
+        "prev": 59024.2812,
+        "chg_abs": 419.92875,
+        "chg_pct": 0.7115,
+        "date": "2026-11-19",
+        "target_date": "2026-11-19",
+        "is_stale": false,
+        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "name": "日經 225",
+        "symbol": "^N225"
+      },
+      "kospi": {
+        "value": 5137.89,
+        "prev": 5067.4399,
+        "chg_abs": 70.450059,
+        "chg_pct": 1.3902,
+        "date": "2026-11-19",
+        "target_date": "2026-11-19",
+        "is_stale": false,
+        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "name": "韓國 KOSPI",
+        "symbol": "^KS11"
+      },
+      "hsi": {
+        "value": 22841.62,
+        "prev": 23294.75,
+        "chg_abs": -453.13,
+        "chg_pct": -1.9452,
+        "date": "2026-11-19",
+        "target_date": "2026-11-19",
+        "is_stale": false,
+        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "name": "香港恒生",
+        "symbol": "^HSI"
+      },
+      "sse": {
+        "value": 3577.617,
+        "prev": 3587.832,
+        "chg_abs": -10.215031,
+        "chg_pct": -0.2847,
+        "date": "2026-11-19",
+        "target_date": "2026-11-19",
+        "is_stale": false,
+        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "name": "上海綜合",
+        "symbol": "000001.SS"
+      },
+      "spx": {
+        "value": 7175.8301,
+        "prev": 7323.6299,
+        "chg_abs": -147.799805,
+        "chg_pct": -2.0181,
+        "date": "2026-11-19",
+        "target_date": "2026-11-19",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "S&P 500",
+        "symbol": "^GSPC"
+      },
+      "ixic": {
+        "value": 23879.1992,
+        "prev": 24429.8809,
+        "chg_abs": -550.681641,
+        "chg_pct": -2.2541,
+        "date": "2026-11-19",
+        "target_date": "2026-11-19",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "NASDAQ 綜合",
+        "symbol": "^IXIC"
+      }
+    },
+    "fx": {
+      "usdtwd": {
+        "value": 32.973,
+        "prev": 32.9108,
+        "chg_abs": 0.062199,
+        "chg_pct": 0.189,
+        "date": "2026-11-19",
+        "target_date": "2026-11-19",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "美元兌台幣",
+        "symbol": "TWD=X"
+      },
+      "usdhkd": {
+        "value": 7.8429,
+        "prev": 7.8461,
+        "chg_abs": -0.00324,
+        "chg_pct": -0.0413,
+        "date": "2026-11-19",
+        "target_date": "2026-11-19",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "美元兌港幣",
+        "symbol": "HKD=X"
+      },
+      "usdjpy": {
+        "value": 159.641,
+        "prev": 159.504,
+        "chg_abs": 0.137009,
+        "chg_pct": 0.0859,
+        "date": "2026-11-19",
+        "target_date": "2026-11-19",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "美元兌日圓",
+        "symbol": "JPY=X"
+      },
+      "audusd": {
+        "value": 0.6663,
+        "prev": 0.674,
+        "chg_abs": -0.007666,
+        "chg_pct": -1.1374,
+        "date": "2026-11-19",
+        "target_date": "2026-11-19",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "澳幣兌美元",
+        "symbol": "AUDUSD=X"
+      }
+    },
+    "credit": {
+      "hy_oas": {
+        "value": 347.0,
+        "prev": 343.0,
+        "chg_abs": 4.0,
+        "chg_pct": 1.1662,
+        "date": "2026-11-18",
+        "target_date": "2026-11-19",
+        "is_stale": true,
+        "source": "fred_api",
+        "unit": "bp",
+        "fallback_reason": "target_date_unavailable",
+        "name": "美國高收益債利差",
+        "symbol": "FRED:BAMLH0A0HYM2"
+      }
+    },
+    "volatility": {
+      "vxn": {
+        "value": 36.48,
+        "prev": 33.12,
+        "chg_abs": 3.360001,
+        "chg_pct": 10.1449,
+        "date": "2026-11-19",
+        "target_date": "2026-11-19",
+        "is_stale": false,
+        "source": "yahoo_daily:query2.finance.yahoo.com",
+        "name": "VXN 那斯達克100波動率",
+        "symbol": "^VXN"
+      }
+    },
+    "quality": {
+      "target_date": "2026-11-19",
+      "stale_items": [
+        "hy_oas"
+      ],
+      "missing_items": [],
+      "has_stale": true,
+      "has_missing": false
+    }
+  }
+}

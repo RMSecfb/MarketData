@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-11-19T23:17:30.954331+00:00",
+  "date": "2026-11-20",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 31,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": false,
+      "count": 0,
+      "error": "HTTPError"
+    },
+    {
+      "name": "Google News 國際",
+      "ok": false,
+      "count": 0,
+      "error": "HTTPError"
+    },
+    {
+      "name": "Google News 市場",
+      "ok": false,
+      "count": 0,
+      "error": "HTTPError"
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": false,
+      "count": 0,
+      "error": "HTTPError"
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": false,
+      "count": 0,
+      "error": "HTTPError"
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 30
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 13
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "加州檢察長傳喚 Nvidia 調查中國晶片轉移",
+      "summary": "加州檢察長發出傳票，要求 Nvidia 提供與中國晶片轉移相關資料。",
+      "sources": [
+        {
+          "title": "California attorney general issues Nvidia subpoena in probe of China chip diversion",
+          "url": "https://www.cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html",
+          "source": "CNBC",
+          "published": "2026-11-19T23:16:07+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美國商務部批准 87.9 萬顆 AI 晶片出口中國",
+      "summary": "美國商務部核准超過 87.9 萬顆 AI 晶片銷往中國公司，涉及貿易政策。",
+      "sources": [
+        {
+          "title": "Commerce approved sales of more than 879,000 AI chips to Chinese companies, Rep. Mast says",
+          "url": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
+          "source": "CNBC",
+          "published": "2026-11-19T21:43:30+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "Anthropic IPO 破紀錄上市，市值創新高",
+      "summary": "Anthropic 在美國首次公開募股，創下史上最大規模，股價大幅上揚。",
+      "sources": [
+        {
+          "title": "Anthropic becomes one of world's most valuable public companies in stock market debut",
+          "url": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-11-19T21:38:42+00:00"
+        },
+        {
+          "title": "Anthropic raises $81bn in record-breaking stock market debut",
+          "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Business",
+          "published": "2026-11-19T15:58:58+00:00"
+        },
+        {
+          "title": "Anthropic IPO: Investors who flip the stock may face brokerage penalty",
+          "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-flipping-rules.html",
+          "source": "CNBC",
+          "published": "2026-11-19T21:16:41+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "AMD 因中國曝露遭短線賣空報告股價大跌",
+      "summary": "短線賣空報告指 AMD 可能在中國有未披露曝露，導致股價下挫。",
+      "sources": [
+        {
+          "title": "AMD dives on short-seller report of alleged China exposure",
+          "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
+          "source": "CNBC",
+          "published": "2026-11-19T21:14:46+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "Walmart 上調營運展望，預期燃油成本上升",
+      "summary": "Walmart 公布上調未來營運展望，並指出燃油成本上升將影響成本結構。",
+      "sources": [
+        {
+          "title": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
+          "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
+          "source": "CNBC",
+          "published": "2026-11-19T19:58:30+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1202,
+    "completion_tokens": 964,
+    "total_tokens": 2166
+  }
+}

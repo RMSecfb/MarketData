@@ -1,49 +1,44 @@
 {
-  "generated_at": "2026-11-19T23:17:30.954331+00:00",
-  "date": "2026-11-20",
+  "generated_at": "2026-11-20T23:17:23.113529+00:00",
+  "date": "2026-11-21",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
-  "headline_count": 31,
+  "headline_count": 70,
   "feeds": [
     {
       "name": "Google News 商業",
-      "ok": false,
-      "count": 0,
-      "error": "HTTPError"
+      "ok": true,
+      "count": 49
     },
     {
       "name": "Google News 國際",
-      "ok": false,
-      "count": 0,
-      "error": "HTTPError"
+      "ok": true,
+      "count": 40
     },
     {
       "name": "Google News 市場",
-      "ok": false,
-      "count": 0,
-      "error": "HTTPError"
+      "ok": true,
+      "count": 98
     },
     {
       "name": "Google News 亞洲",
-      "ok": false,
-      "count": 0,
-      "error": "HTTPError"
+      "ok": true,
+      "count": 25
     },
     {
       "name": "Google News 台灣財經",
-      "ok": false,
-      "count": 0,
-      "error": "HTTPError"
+      "ok": true,
+      "count": 35
     },
     {
       "name": "CNBC",
       "ok": true,
-      "count": 30
+      "count": 29
     },
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 13
+      "count": 20
     }
   ],
   "status": "ok",
@@ -52,89 +47,103 @@
     {
       "market": "macro",
       "market_name": "總經",
-      "title": "加州檢察長傳喚 Nvidia 調查中國晶片轉移",
-      "summary": "加州檢察長發出傳票，要求 Nvidia 提供與中國晶片轉移相關資料。",
+      "title": "美聯儲預計下月升息",
+      "summary": "《Barron's》報導指出聯儲局預計於下月加息，市場關注加幅大小。",
       "sources": [
         {
-          "title": "California attorney general issues Nvidia subpoena in probe of China chip diversion",
-          "url": "https://www.cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html",
-          "source": "CNBC",
-          "published": "2026-11-19T23:16:07+00:00"
+          "title": "The Federal Reserve is Expected to Raise Interest Rates Next Month. By How Much Is an Open Question.",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdTFoLTh6OXU1N2ZjSmNYN09CTWhISTZuaVhMSXJCbklsdEFyWGpQN3B3c0NieVdVRUV6VnRDYjdIWG1vaFVOQWRRM19ZaklQMUZuUktlT2hCT3V3NnhCZDg2Y215b09aVmFFRkNyeTNmYzZYYWt1LXlnRkM3bG1ad1YxdGVNUnVhcE82RXh4TQ?oc=5",
+          "source": "Barron's",
+          "published": "2026-11-20T22:39:00+00:00"
         }
       ]
     },
     {
       "market": "macro",
       "market_name": "總經",
-      "title": "美國商務部批准 87.9 萬顆 AI 晶片出口中國",
-      "summary": "美國商務部核准超過 87.9 萬顆 AI 晶片銷往中國公司，涉及貿易政策。",
+      "title": "堪薩斯城聯儲服務指數暴跌",
+      "summary": "指數跌至3，顯示美國服務業活動急速下滑，僱用轉負。",
       "sources": [
         {
-          "title": "Commerce approved sales of more than 879,000 AI chips to Chinese companies, Rep. Mast says",
-          "url": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
-          "source": "CNBC",
-          "published": "2026-11-19T21:43:30+00:00"
+          "title": "Kansas City Fed Services Index Plunges to 3 in November; Employment Turns Negative",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5LSlBna2c4MVNnelBCeEhzN2tjUVRyWDZwUW9tOTlwdHMtaEhmS3F2aEFLYkNPQWVBbHZ6V25UWXVCWXBYV3BKRndFQmUxeEd6dS1tVkduQi1UcjNEWmx1MmpvOWIzQlVaTmJKMjNQN1VIVUhqb1E?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-20T16:35:00+00:00"
         }
       ]
     },
     {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "Anthropic IPO 破紀錄上市，市值創新高",
-      "summary": "Anthropic 在美國首次公開募股，創下史上最大規模，股價大幅上揚。",
+      "market": "macro",
+      "market_name": "總經",
+      "title": "俄導彈擊中波蘭 引發北約譴責",
+      "summary": "俄羅斯導彈落在波蘭，北約稱為違規，同時11國部隊在波蘭演習。",
       "sources": [
         {
-          "title": "Anthropic becomes one of world's most valuable public companies in stock market debut",
-          "url": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss",
-          "source": "BBC Business",
-          "published": "2026-11-19T21:38:42+00:00"
+          "title": "Russian missiles land in Poland, as Europe held military drills nearby. NATO calls it a violation",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNXhFLWVHeVA2TTIyRTRBRklRM29NQlpLTkNSbkdUYlNWVTNLek1BNG52cDFJRjNNVGNxNW04V3RDTEJPNGtDZ1R6WXE5TVV3SDJhQkFDRVFEMXZaTF92aWhZdS1xS1A0QnR2dE9selFRNGJYclZkRmdKUlJrWjB3VGxzTFE3aVBjYWJCUXhsM0Q1Sk5qR1U3TFlIekxkUE43MUNNenk2bw?oc=5",
+          "source": "AP News",
+          "published": "2026-11-20T22:15:00+00:00"
         },
         {
-          "title": "Anthropic raises $81bn in record-breaking stock market debut",
-          "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
-          "source": "BBC Business",
-          "published": "2026-11-19T15:58:58+00:00"
+          "title": "European troops from 11 countries hold a drill in Poland for a potential postwar Ukraine mission",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVGl6dU85bExfQlhuODY0Rkh6a3M2UVhRTlV1QmRsclI5ZHpRbWo5M3JIbUdydkRzOFNrZkZ6RDBIMHJVNGhqeklnRl9UVVAzRFpFUUk0OTVDVnU3RVh2VjdWZ2ktMUhMNmZZMUZkVDE5RFAtTjJ4UEZjUDlKZWd4YlhSaFBoYXdnYVI1ajFaRkdnTkpyMExkU0U4YjBHMTNSblZkRWt6aUVtTGJ5UWU1RVdrNA?oc=5",
+          "source": "AP News",
+          "published": "2026-11-20T19:47:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "人民幣短暫下跌後受管制",
+      "summary": "FXStreet稱人民幣對美元小幅回落，隨即出現資本流動管制。",
+      "sources": [
+        {
+          "title": "Chinese Yuan: Brief dip against US Dollar prompts controls - Commerzbank",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcHFpVmpxNUt5clBtQ3dZSFBMVk1YN0xFZGY2b0dnRTBXTnpuV09veVdkbWNEMTFjeF9iQXlHdEZBNjFCNTAtcjNfcnhDYjgzcHpTZVRXY0NTRWZJVVlzUHJsdjJQdzU0TVB3OEg2QjdLekJtQzZ1QmttQnN1VDA0WWFPZVRlY3BYZ3JJRjloa1ZGMDZWUGhrb3hvblRiVEdUMWp2Zms0Z1N5bmV2a0J4X21B?oc=5",
+          "source": "FXStreet",
+          "published": "2026-11-20T20:02:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "台股大跌央行介入防守新台幣",
+      "summary": "台股一週跌逾17%，央行出手干預匯率，台幣收盤升至32.936元。",
+      "sources": [
+        {
+          "title": "台股崩跌「新台幣尾盤翻揚」！央行：亂流後可恢復正常",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB0LWNXT3I1X2JuY1VZQmRMUjl0dmpNUUpEbWZxZ1NUZUJkLVhOOEJDdTI2dzFNSHRXaVpBaGppb2Yybl9NYk5ra1F0QzBkSW00N29V?oc=5",
+          "source": "中天新聞網",
+          "published": "2026-11-20T12:44:19+00:00"
         },
         {
-          "title": "Anthropic IPO: Investors who flip the stock may face brokerage penalty",
-          "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-flipping-rules.html",
-          "source": "CNBC",
-          "published": "2026-11-19T21:16:41+00:00"
+          "title": "Taiwan Stocks Plunge 17.5% in a Week, Slipping Below 37,000 Points; Taiwan's Central Bank Intervenes to Defend Currency as Taiwan Dollar Defies Trend to Close Stronger at NT$32.936",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5HYmo3eEM1RkZNWmFVYW9ZUW9hRzFfR1RkWnBRcjQtdXMtbU9ScWR6N2F3X0tNYVgwUlExQzQwSERjc1cyWG5seEFpVVNodHBqR2g2NVpaclFtMVdKamRObG9XRXVWblBDMmdiVVZVZXZCQkZFOWc?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-20T09:25:00+00:00"
         }
       ]
     },
     {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "AMD 因中國曝露遭短線賣空報告股價大跌",
-      "summary": "短線賣空報告指 AMD 可能在中國有未披露曝露，導致股價下挫。",
+      "market": "bond",
+      "market_name": "債市",
+      "title": "中國20億美元債券獲大額認購",
+      "summary": "路透報導中國發行2億美元債券，認購量大，價格與美國國債持平。",
       "sources": [
         {
-          "title": "AMD dives on short-seller report of alleged China exposure",
-          "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
-          "source": "CNBC",
-          "published": "2026-11-19T21:14:46+00:00"
-        }
-      ]
-    },
-    {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "Walmart 上調營運展望，預期燃油成本上升",
-      "summary": "Walmart 公布上調未來營運展望，並指出燃油成本上升將影響成本結構。",
-      "sources": [
-        {
-          "title": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
-          "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-          "source": "CNBC",
-          "published": "2026-11-19T19:58:30+00:00"
+          "title": "China's $2 billion bond draws large orders, prices in line with US Treasuries",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRmFlRXRaWmZxdWlYSTcwWU9aUkhTenFOYXQ4UEVVSDRpLTVwOUlrUlpHVjUwLXh0cm4zNzdBWFpFdUtXOENNbWduM1JCc2hseVVMTkpwVlhLVGM5T0JiSWhFZG5CMGlZZTBuNXNwT2NCQTYxVDUwWFprNEZZVDl0T19FbTY5cHZXUDJCbG1tOXIyeXpBSWNtelBkVk43SmFPWFVETHk1bmNkSlRlTFpHdWNVazVsR0lFeV83cA?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-20T11:35:44+00:00"
         }
       ]
     }
   ],
   "usage": {
-    "prompt_tokens": 1202,
-    "completion_tokens": 964,
-    "total_tokens": 2166
+    "prompt_tokens": 2399,
+    "completion_tokens": 2500,
+    "total_tokens": 4899
   }
 }

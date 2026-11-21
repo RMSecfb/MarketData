@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-11-21T23:17:29.943906+00:00",
+  "date": "2026-11-22",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 39
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 43
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 91
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 25
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 26
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 14
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 1
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "伊朗在波斯灣及巴林發動攻擊，擊沉油輪",
+      "summary": "伊朗對巴林、霍爾木茲及美國封鎖發動攻擊，並擊沉3艘油輪。",
+      "sources": [
+        {
+          "title": "Iran launches attacks in Bahrain, Hormuz and moves against US blockade",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWUJYOUdFdXlpMHE3RUhFVzFQTENEc2pUcEJ5WDZuckZlQjN1bF9aX055VUZUelpSSGVwT2dHLXFVQmR2Yk9IYUxPU1d0MlJhS2lWRDlWaTRleFZkeXlHTExaVTNTamZ0Y216QTJEVXpEYkdfN2pGN0xYSXZ5Y01Yb05FRE1qOVpXMW1yUWgtcEt2RVBzRURyOHJhRnZWcjNDbmh4aWI5RWE1ZDFVQW5UaTAwZFhmOVp0TEE?oc=5",
+          "source": "Euronews.com",
+          "published": "2026-11-21T22:54:42+00:00"
+        },
+        {
+          "title": "Iran strikes 3 tankers as it shows off missile launchers, and other Mideast news",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUVlUcjlPZURmRnhmY2JJZVVBTkhfUEM2bmhqRDZfQkZJMTBEc2hQSDdRVFQ0N1BjTW1rMXNrSnM4R0R6SVcyZXJpWEVVU3hkU0dsX0otVk1HNV9abFFBTkVUeXMtdHk2WVFUcEVFOVVUVlZUeTFUdXBuVzVHMVFmeFdFVExwTWtJVC1sd0dEVDVSdXdHZUhVRDc4MU5rYU1laFBn?oc=5",
+          "source": "AP News",
+          "published": "2026-11-21T19:38:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "美元兌日圓卡在160，聚焦美國PCE與東京CPI",
+      "summary": "市場預期美元與日圓在160關口持平，關注美國個人消費支出與日本消費者物價指數。",
+      "sources": [
+        {
+          "title": "Dollar-Yen Seen Locked in 160 Battle; US PCE and Tokyo CPI in Focus",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE14UEhVRlN4SVR0aGFWejZfVEJYQTFjZEJYYU5jbElPUUtPUTl1MXdYbHAzUWxSRlhKNnJZMU8xY256d2JkUjdReFFuNU83TWRfLVBoQ19CUEtRRGtlSzZlbzQ4cTdjcldKQjZoRnBpWF9naFpPcEE?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-21T22:25:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "斯里蘭卡央行因通膨驚慌意外升息",
+      "summary": "斯里蘭卡中央銀行在通膨擔憂下意外上調關鍵利率。",
+      "sources": [
+        {
+          "title": "Sri Lanka central bank surprises with key rate hike on inflation fears",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYUdRYU5fZ1hJV2RqSE96dndfM2YtRThmdlVSZTJ1QkkydkswdmlpM1I5Z2VJaFNGYmI5anE0YjlPTWVTUnNnbUVkSVZiYzc5Mi00dGhEb3hubEgxa2lOREJTeE5qRFVtbW1NZ2VkMXAyZVNhTk1ESzROOGxYOTQ3OUNfQl95cWEyQjNYVXpkMHBVbzRyaXFWblZFbnpCMEZWOEhpQmpzMjZHWEN0TGo00gFWQVVfeXFMT2p5NEpXMDJpcEtwLTNCRERsSE81c1hzNXlCY1g1SC1NbHkwWEgzRzB4b2t0M0xXcUN1OWdoMXNIRW80MkQ2cHFQYjBTeUZfLW9pQ1NQMWc?oc=5",
+          "source": "Business Recorder",
+          "published": "2026-11-21T21:23:59+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2339,
+    "completion_tokens": 2500,
+    "total_tokens": 4839
+  }
+}

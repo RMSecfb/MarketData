@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T23:17:29.943906+00:00",
-  "date": "2026-11-22",
+  "generated_at": "2026-11-22T23:17:24.384098+00:00",
+  "date": "2026-11-23",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -8,17 +8,17 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 39
+      "count": 49
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 43
+      "count": 39
     },
     {
       "name": "Google News 市場",
       "ok": true,
-      "count": 91
+      "count": 100
     },
     {
       "name": "Google News 亞洲",
@@ -33,12 +33,12 @@
     {
       "name": "CNBC",
       "ok": true,
-      "count": 14
+      "count": 10
     },
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 1
+      "count": 5
     }
   ],
   "status": "ok",
@@ -47,55 +47,105 @@
     {
       "market": "macro",
       "market_name": "總經",
-      "title": "伊朗在波斯灣及巴林發動攻擊，擊沉油輪",
-      "summary": "伊朗對巴林、霍爾木茲及美國封鎖發動攻擊，並擊沉3艘油輪。",
+      "title": "韓國央行考慮再加息",
+      "summary": "韓國央行正在評估是否再度提升利率。",
       "sources": [
         {
-          "title": "Iran launches attacks in Bahrain, Hormuz and moves against US blockade",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWUJYOUdFdXlpMHE3RUhFVzFQTENEc2pUcEJ5WDZuckZlQjN1bF9aX055VUZUelpSSGVwT2dHLXFVQmR2Yk9IYUxPU1d0MlJhS2lWRDlWaTRleFZkeXlHTExaVTNTamZ0Y216QTJEVXpEYkdfN2pGN0xYSXZ5Y01Yb05FRE1qOVpXMW1yUWgtcEt2RVBzRURyOHJhRnZWcjNDbmh4aWI5RWE1ZDFVQW5UaTAwZFhmOVp0TEE?oc=5",
+          "title": "South Korea's central bank weighs another rate increase",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM0FReWhES0gxbDRYOC1sY3hWeDlzNndRX255M1VUMS1BcUg3aEY5cU0zNDdXRXBwclNNM2hzT0t2Z09qZ2FLOXhmNzdob1ozTEtMd2xPOUpjMzE1M0hjU0pQa0xLd3NtN1lTT0Y1TnV5T2x1QW1MSnBxR2tLOWxpSDVOZDlBSVZqSkhNcTZ5NjlhNzNQUW9IZTNHTdIBoAFBVV95cUxPdTdFMDN1akhOX0FVMENmcHl0dHZIdUpram9OMGkwNUx3azhKUG9jMDM1UTQyYjA5SkdjM3Z6YTJvT0R3LTd0aU5wRThTcXA5am1qNm5UaDB5RUttNDRGa0N2ekZzekxRMW5ONWJuTVJNWXF2VTV3aDk5VGtVS01XNW1PSDZWSV91V2FZTnBGYVREa1hKbGVWeWtYQ1FsRVpT?oc=5",
+          "source": "upi",
+          "published": "2026-11-22T23:08:41+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美政府批准向中國出貨90萬AI晶片",
+      "summary": "美國行政部門核准近90萬顆AI晶片出口至中國。",
+      "sources": [
+        {
+          "title": "Trump administration approved shipment of nearly 900,000 AI chips to China",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbVVwT0ViR3ViS1pxSEY1U01ybWJkT05wLTVwcGRHVXhVWlRFc0IwUGhYNjlISU9GZXJyT0NldmhFbk1XdDRXa3ZlS0xud1cwYUdqUzZxbUFiOW8zNElHd2FfdFFMWi03aWlqRG1GNWRsLTdldzJKSi11X3N6dS1KakR1NFQxbG04bGUzcTZfamZVaEMtZWdkQXFR?oc=5",
+          "source": "Yahoo",
+          "published": "2026-11-22T21:19:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "俄貨船在芬蘭領海遭無人機攻擊後離開",
+      "summary": "俄羅斯貨船在芬蘭領海遭無人機攻擊後撤離。",
+      "sources": [
+        {
+          "title": "Russian cargo ship leaves Finland’s territorial waters after drone attack",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd2NCaGF6MUxSRzUwVFhLTFAxUzR6bnU3TW5PSE9vQzRrRnk4Qnd3d0ZpQ1RMYk1wZEd3eHVla1lNOFhZTHktekYwZWJ2eElMaXRpamVCWWFrSEpUTVQxVjRpdHJ2WG9SSFp1aXVHTTBXUWVCdHFHTFJzc0I3Zks1dzZxNS1zWjhCTFhKR0tCM3RJdy1YLXJsTWhwSGhJUktORXJwaTBaQjHSAa4BQVVfeXFMTjJuTVlYMUFraG1VUWhHUXY5TTJiMF9SajVvX1lqLWNtOTRqaHNsei1OcUVuN1NuVU5ucDNoa2lZZFk3ZGkzRm1ybW50UllFcUZveEhIMDBnaG5pVmdzTktDeWpfejBrVk9kQ0NQV2pWNDBfcTJ0eHNfYTM0cUNaZjNTdVFWV3VWWWFEeS0wWDFMYTZrbHBMeEl5NzItRE1jRE5qZG5mdFJ5VUxoV3lB?oc=5",
+          "source": "Al Jazeera",
+          "published": "2026-11-22T19:55:45+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "霍爾木茲海峽發生軍事油輪事件",
+      "summary": "霍爾木茲海峽出現涉及軍事力量的油輪事故。",
+      "sources": [
+        {
+          "title": "Tanker incident “involving military forces” reported in Strait of Hormuz",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQm96RExBbGw0OERZX1lMWGxhczRYS00yOXR6Rlg0XzJ0VHk2bEhZVHVFNmFRYllVUjZvZUhqYzFQSnNULTNhRjNhcE5IOXFNQmFOU2RlZlRZYWxrUnVZbWJrWGEyQWF6T1Z4MUUweHVKTmsyNnMtSS1KeHhxeWdoUWlZYU03eUR0X242RVdjNUp5dnU1R3hXRmNwOV94Nkx5UGtySXZMVnV2QQ?oc=5",
           "source": "Euronews.com",
-          "published": "2026-11-21T22:54:42+00:00"
-        },
-        {
-          "title": "Iran strikes 3 tankers as it shows off missile launchers, and other Mideast news",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUVlUcjlPZURmRnhmY2JJZVVBTkhfUEM2bmhqRDZfQkZJMTBEc2hQSDdRVFQ0N1BjTW1rMXNrSnM4R0R6SVcyZXJpWEVVU3hkU0dsX0otVk1HNV9abFFBTkVUeXMtdHk2WVFUcEVFOVVUVlZUeTFUdXBuVzVHMVFmeFdFVExwTWtJVC1sd0dEVDVSdXdHZUhVRDc4MU5rYU1laFBn?oc=5",
-          "source": "AP News",
-          "published": "2026-11-21T19:38:00+00:00"
+          "published": "2026-11-22T18:07:13+00:00"
         }
       ]
     },
     {
-      "market": "fx",
-      "market_name": "匯市",
-      "title": "美元兌日圓卡在160，聚焦美國PCE與東京CPI",
-      "summary": "市場預期美元與日圓在160關口持平，關注美國個人消費支出與日本消費者物價指數。",
+      "market": "equity",
+      "market_name": "股市",
+      "title": "首爾啟用自2008以來未用市場基金",
+      "summary": "首爾在Kospi下跌後準備啟用自2008年以來未使用的市場基金。",
       "sources": [
         {
-          "title": "Dollar-Yen Seen Locked in 160 Battle; US PCE and Tokyo CPI in Focus",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE14UEhVRlN4SVR0aGFWejZfVEJYQTFjZEJYYU5jbElPUUtPUTl1MXdYbHAzUWxSRlhKNnJZMU8xY256d2JkUjdReFFuNU83TWRfLVBoQ19CUEtRRGtlSzZlbzQ4cTdjcldKQjZoRnBpWF9naFpPcEE?oc=5",
-          "source": "BigGo Finance",
-          "published": "2026-11-21T22:25:00+00:00"
+          "title": "Seoul readies a market fund unused since 2008 after the Kospi sinks",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSC1tR0RZN05Rb05IZUJwUjZQMFhabnVGZk1VNVp4WEhfcXd5czZTZlM5OE10UDVlemx3RFAwZ2lLLWxCYng4MjlBbTlNVkpobkdGS2ltMDBwOTdwVUR2T3NsVDVaNm9UNFl3N2ItMUtuMVVHd2tXekZ3d1YtaTlFWElvNlE0ZzUxT3F1allMQW5pUkJUQno2NGNJU3ZrZlhKdVNPSnFPbDJWYUpVeGdoR3l1ak0?oc=5",
+          "source": "investingLive",
+          "published": "2026-11-22T21:41:34+00:00"
         }
       ]
     },
     {
-      "market": "bond",
-      "market_name": "債市",
-      "title": "斯里蘭卡央行因通膨驚慌意外升息",
-      "summary": "斯里蘭卡中央銀行在通膨擔憂下意外上調關鍵利率。",
+      "market": "equity",
+      "market_name": "股市",
+      "title": "中、韓、台啟動股市穩定措施",
+      "summary": "中國、韓國與台灣同時推出股市穩定方案。",
       "sources": [
         {
-          "title": "Sri Lanka central bank surprises with key rate hike on inflation fears",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYUdRYU5fZ1hJV2RqSE96dndfM2YtRThmdlVSZTJ1QkkydkswdmlpM1I5Z2VJaFNGYmI5anE0YjlPTWVTUnNnbUVkSVZiYzc5Mi00dGhEb3hubEgxa2lOREJTeE5qRFVtbW1NZ2VkMXAyZVNhTk1ESzROOGxYOTQ3OUNfQl95cWEyQjNYVXpkMHBVbzRyaXFWblZFbnpCMEZWOEhpQmpzMjZHWEN0TGo00gFWQVVfeXFMT2p5NEpXMDJpcEtwLTNCRERsSE81c1hzNXlCY1g1SC1NbHkwWEgzRzB4b2t0M0xXcUN1OWdoMXNIRW80MkQ2cHFQYjBTeUZfLW9pQ1NQMWc?oc=5",
-          "source": "Business Recorder",
-          "published": "2026-11-21T21:23:59+00:00"
+          "title": "China, Korea, and Taiwan Launch Stock Market Stabilization Measures Ahead of Monday",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeDROS1pFUHk4UkJkVmJ5ZGZnMTRGSlQzclZWTWJNb2JpbXl5OUdXNHFzRXNpYTB3XzVDamZhdHZfdzBoRE1vei1qdHdqTHRSR2hHRWQ0dnQtM3BoeGs5MjhjRjJUQ0tGMG9uYmtOX0I2ZloxSFNzUFF5TGdkaTZTRUVILVhwYkhkaDZaZm9FbEJTWjRkMmhCU3NXNVl1UXRxUS1tUzFhUXRGOGxSd1p5cXA1dVpyUQ?oc=5",
+          "source": "KuCoin",
+          "published": "2026-11-22T21:13:52+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "黃仁勳下台致台股大跌",
+      "summary": "Nvidia執行長黃仁勳離任引發台股顯著下挫。",
+      "sources": [
+        {
+          "title": "黃仁勳下台撞擊台股重挫！謝金河「恐懼常醞釀轉折」：危機入市機會來了",
+          "url": "https://news.google.com/rss/articles/CBMiswNBVV95cUxNVmVNLWhubmhZOFEyUUpjNGtTZ0hHWnFFcWhfa19mek1rYnFGUTJuMDlsZ2ZBRFNqTW1WSGlHaUd4LU5BcjBxc21OUU42dDdCY09nX0RVdVJlTVFPMjkzWTNkdDZMVHJsTU14UjBnNEhDSURBb055dm5sUUI0SG83V3BSYlVxQ2RjeHAtUHMtMC1OWVdLYlZ0eFlBOHZLV0Nvd0JZdEIwRTBCMDlwVGRGVE9mX0Q2Uk10WWlER085NF9IUUlrV1ZuTjlSc0FvcW1oaGlIbURDcEM0eTNZUHNjREZrRU9QXzFGR2hWdjBUc2Y3SUREcTBYMGZGM3pNaUxRZnFpR0JxTmowT19JS01STlM1Sk0wVjNfOF9Pd0FBSTNVRjUzMzlNZ1hPVndmbjF6VkRRSTlldWFDX1JZb2dWdHNWV1plZzhTQ01PM3U2LTBsZTFhTFBkcFNDVXVYaThiRTVKMHBtS1kxOGZ1eVRlYVpPUVRaS3Z5SHN2elBMZUJIZ0hlaGlNaEMwY1E1Zkllc0Q3N2hNUktHUzR4dS1jcjBwbmtzaENIVnVfSVJ1NU9hYlU?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-11-22T22:22:00+00:00"
         }
       ]
     }
   ],
   "usage": {
-    "prompt_tokens": 2339,
+    "prompt_tokens": 2354,
     "completion_tokens": 2500,
-    "total_tokens": 4839
+    "total_tokens": 4854
   }
 }

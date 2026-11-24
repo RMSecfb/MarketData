@@ -167,36 +167,36 @@
       "kospi": {
         "value": 4708.54,
         "prev": 4869.96,
-        "chg_abs": -161.419961,
+        "chg_abs": -161.419922,
         "chg_pct": -3.3146,
         "date": "2026-11-23",
         "target_date": "2026-11-23",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "韓國 KOSPI",
         "symbol": "^KS11"
       },
       "hsi": {
-        "value": 22383.74,
+        "value": 22383.7402,
         "prev": 22410.8008,
-        "chg_abs": -27.060781,
+        "chg_abs": -27.060547,
         "chg_pct": -0.1207,
         "date": "2026-11-23",
         "target_date": "2026-11-23",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "香港恒生",
         "symbol": "^HSI"
       },
       "sse": {
         "value": 3538.948,
         "prev": 3533.793,
-        "chg_abs": 5.155031,
+        "chg_abs": 5.155029,
         "chg_pct": 0.1459,
         "date": "2026-11-23",
         "target_date": "2026-11-23",
         "is_stale": false,
-        "source": "yahoo_meta:query2.finance.yahoo.com",
+        "source": "yahoo_daily:query2.finance.yahoo.com",
         "name": "上海綜合",
         "symbol": "000001.SS"
       },
@@ -213,9 +213,9 @@
         "symbol": "^GSPC"
       },
       "ixic": {
-        "value": 24089.5586,
+        "value": 24089.5605,
         "prev": 22617.7305,
-        "chg_abs": 1471.828125,
+        "chg_abs": 1471.830078,
         "chg_pct": 6.5074,
         "date": "2026-11-23",
         "target_date": "2026-11-23",
@@ -227,10 +227,10 @@
     },
     "fx": {
       "usdtwd": {
-        "value": 32.845,
+        "value": 32.9546,
         "prev": 33.0263,
-        "chg_abs": -0.181297,
-        "chg_pct": -0.5489,
+        "chg_abs": -0.071697,
+        "chg_pct": -0.2171,
         "date": "2026-11-23",
         "target_date": "2026-11-23",
         "is_stale": false,
@@ -239,10 +239,10 @@
         "symbol": "TWD=X"
       },
       "usdhkd": {
-        "value": 7.8416,
+        "value": 7.84,
         "prev": 7.8426,
-        "chg_abs": -0.001,
-        "chg_pct": -0.0127,
+        "chg_abs": -0.00257,
+        "chg_pct": -0.0328,
         "date": "2026-11-23",
         "target_date": "2026-11-23",
         "is_stale": false,
@@ -251,10 +251,10 @@
         "symbol": "HKD=X"
       },
       "usdjpy": {
-        "value": 159.028,
+        "value": 158.931,
         "prev": 159.707,
-        "chg_abs": -0.679001,
-        "chg_pct": -0.4252,
+        "chg_abs": -0.776001,
+        "chg_pct": -0.4859,
         "date": "2026-11-23",
         "target_date": "2026-11-23",
         "is_stale": false,
@@ -263,10 +263,10 @@
         "symbol": "JPY=X"
       },
       "audusd": {
-        "value": 0.6632,
+        "value": 0.6641,
         "prev": 0.6656,
-        "chg_abs": -0.002401,
-        "chg_pct": -0.3608,
+        "chg_abs": -0.001529,
+        "chg_pct": -0.2298,
         "date": "2026-11-23",
         "target_date": "2026-11-23",
         "is_stale": false,

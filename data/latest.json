@@ -24,8 +24,8 @@
   "y2": {
     "value": 4.63,
     "prev": 4.63,
-    "chg_abs": 0.0,
-    "chg_pct": 0.0,
+    "chg_abs": 0,
+    "chg_pct": 0,
     "date": "2026-11-23",
     "target_date": "2026-11-23",
     "is_stale": false,
@@ -34,8 +34,8 @@
   "y10": {
     "value": 4.92,
     "prev": 4.92,
-    "chg_abs": 0.0,
-    "chg_pct": 0.0,
+    "chg_abs": 0,
+    "chg_pct": 0,
     "date": "2026-11-23",
     "target_date": "2026-11-23",
     "is_stale": false,
@@ -51,7 +51,7 @@
     "is_stale": false,
     "source": "treasury_gov"
   },
-  "spread": 29.0,
+  "spread": 29,
   "sox": {
     "value": 9588.0498,
     "prev": 8408.5898,
@@ -277,9 +277,9 @@
     },
     "credit": {
       "hy_oas": {
-        "value": 376.0,
-        "prev": 352.0,
-        "chg_abs": 24.0,
+        "value": 376,
+        "prev": 352,
+        "chg_abs": 24,
         "chg_pct": 6.8182,
         "date": "2026-11-20",
         "target_date": "2026-11-23",
@@ -315,5 +315,59 @@
       "has_stale": true,
       "has_missing": false
     }
-  }
+  },
+  "cds": {
+    "US": {
+      "value": 47.84,
+      "prev": 48.36,
+      "chg_abs": -0.52,
+      "chg_pct": -1.08,
+      "date": "2026-11-23",
+      "name": "美國",
+      "flag": "🇺🇸",
+      "source": "manual"
+    },
+    "KR": {
+      "value": 23.46,
+      "prev": 23.65,
+      "chg_abs": -0.19,
+      "chg_pct": -0.8,
+      "date": "2026-11-23",
+      "name": "南韓",
+      "flag": "🇰🇷",
+      "source": "manual"
+    },
+    "JP": {
+      "value": 29.81,
+      "prev": 29.68,
+      "chg_abs": 0.13,
+      "chg_pct": 0.44,
+      "date": "2026-11-23",
+      "name": "日本",
+      "flag": "🇯🇵",
+      "source": "manual"
+    },
+    "CN": {
+      "value": 34.04,
+      "prev": 34.91,
+      "chg_abs": -0.87,
+      "chg_pct": -2.49,
+      "date": "2026-11-23",
+      "name": "中國",
+      "flag": "🇨🇳",
+      "source": "manual"
+    },
+    "HK": {
+      "value": 25.25,
+      "prev": 25.12,
+      "chg_abs": 0.13,
+      "chg_pct": 0.52,
+      "date": "2026-11-23",
+      "name": "香港",
+      "flag": "🇭🇰",
+      "source": "manual"
+    }
+  },
+  "cds_updated_at": "2026-11-24T00:39:10.066Z",
+  "cds_updated_by": "Cloudflare Pages user"
 }

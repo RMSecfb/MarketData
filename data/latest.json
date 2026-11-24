@@ -226,10 +226,10 @@
     },
     "fx": {
       "usdtwd": {
-        "value": 32.955,
+        "value": 32.966,
         "prev": 32.9546,
-        "chg_abs": 0.000401,
-        "chg_pct": 0.0012,
+        "chg_abs": 0.011398,
+        "chg_pct": 0.0346,
         "date": "2026-11-24",
         "target_date": "2026-11-24",
         "is_stale": false,
@@ -238,10 +238,10 @@
         "symbol": "TWD=X"
       },
       "usdhkd": {
-        "value": 7.8411,
+        "value": 7.841,
         "prev": 7.84,
-        "chg_abs": 0.00107,
-        "chg_pct": 0.0136,
+        "chg_abs": 0.00097,
+        "chg_pct": 0.0124,
         "date": "2026-11-24",
         "target_date": "2026-11-24",
         "is_stale": false,
@@ -250,10 +250,10 @@
         "symbol": "HKD=X"
       },
       "usdjpy": {
-        "value": 159.223,
+        "value": 159.229,
         "prev": 158.931,
-        "chg_abs": 0.292007,
-        "chg_pct": 0.1837,
+        "chg_abs": 0.298004,
+        "chg_pct": 0.1875,
         "date": "2026-11-24",
         "target_date": "2026-11-24",
         "is_stale": false,
@@ -262,10 +262,10 @@
         "symbol": "JPY=X"
       },
       "audusd": {
-        "value": 0.6641,
+        "value": 0.6642,
         "prev": 0.6641,
-        "chg_abs": 5.3e-05,
-        "chg_pct": 0.008,
+        "chg_abs": 0.000141,
+        "chg_pct": 0.0213,
         "date": "2026-11-24",
         "target_date": "2026-11-24",
         "is_stale": false,
@@ -308,8 +308,8 @@
     "quality": {
       "target_date": "2026-11-24",
       "stale_items": [
-        "vxn",
-        "hy_oas"
+        "hy_oas",
+        "vxn"
       ],
       "missing_items": [],
       "has_stale": true,

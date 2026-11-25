@@ -1,0 +1,183 @@
+{
+  "generated_at": "2026-11-25T23:17:24.772246+00:00",
+  "date": "2026-11-26",
+  "window_hours": 24,
+  "model": "openai/gpt-oss-120b",
+  "headline_count": 70,
+  "feeds": [
+    {
+      "name": "Google News 商業",
+      "ok": true,
+      "count": 48
+    },
+    {
+      "name": "Google News 國際",
+      "ok": true,
+      "count": 35
+    },
+    {
+      "name": "Google News 市場",
+      "ok": true,
+      "count": 98
+    },
+    {
+      "name": "Google News 亞洲",
+      "ok": true,
+      "count": 41
+    },
+    {
+      "name": "Google News 台灣財經",
+      "ok": true,
+      "count": 37
+    },
+    {
+      "name": "CNBC",
+      "ok": true,
+      "count": 26
+    },
+    {
+      "name": "BBC Business",
+      "ok": true,
+      "count": 23
+    }
+  ],
+  "status": "ok",
+  "note": "",
+  "items": [
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美國宣布新關稅計畫",
+      "summary": "美國總統川普公布對中國、歐盟、巴西等12國的新增關稅，預計影響貿易與市場情緒。",
+      "sources": [
+        {
+          "title": "Trump unveils new tariffs over excess industrial capacity, undeterred by midterms defeat",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcjZ1MUw5RG5fdk0tUjNTRFNIRzl5amR0VklFSzdTOUlUS2hxNWk5aV9xcm5VWmQtZGRkdXVKMWZ3Um5qZHluSFp4MGNIdHNETlZPck1RcmJmUC1oZHFtWFdYT29PbkdjUU1IbjQyWE9GRFJZdXFwTVFRMEtDcl81bXpDS3RHSHNka3VSbGlHNmNFV09uMTE1aExBRVkxUldZUmpwX3hYdGduS1BJcW1QRlY4ZjdyYkZyWTI0dVBB?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-25T22:47:39+00:00"
+        },
+        {
+          "title": "US to hike tariffs on China, EU, Brazil and others over subsidized factories",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcWJ0MDE3ZEJzV2tVdThRbXdzcGxXN0phLUpNTHAyVWlEQV9JNzVUWlpsRXp6ZHFTNnY1dnpKMHJjNExkUnZxTlRXdzZNTUFOeXhkUTk5XzF0ZW55b1lZcnhJYTkyYUt5N1lvdm5TZ3QyZDh5UkNsVmtHMmhuNm5xcGc3VmVUcV9fellldEtWcTdaYWJpRUlBcm5R?oc=5",
+          "source": "AP News",
+          "published": "2026-11-25T22:06:00+00:00"
+        },
+        {
+          "title": "Trump proposes new tariffs on China, EU and 12 other partners",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYmVQRVFwSGZBVDlnMXhPRTlYdGloamM0YzRiY0tqZnNQcTBXRWl3cGkxMmVMSGlsUHRDM1VBTGxhUEhPN3dFVVBCQ0VsVjdXQ3pycDNkaHBwbjB5RGlOUmhHcHJxdXNRa3ZORVFxQXlUcEhIb0h1c2xqRlBnQlJCTmktMm51Ym1rRFFucFJpYVNUVHN0bG1NTDR2UlcxRl9zTmdQQWpwb0NMdWROWllDakNPOEh1aVhq?oc=5",
+          "source": "TradingView",
+          "published": "2026-11-25T14:40:05+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "博爾希收購盧克石油資產",
+      "summary": "億萬富翁博爾希簽署美國支持的股權交換協議，收購盧克石油全球資產，涉及能源股與相關債務。",
+      "sources": [
+        {
+          "title": "EXCLUSIVE: Billionaire Boehly signs US-backed share swap deal to buy Lukoil global assets",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQM05VWXNudnhTWW1BY2VFUHpZRzdNSjU4TG1Ob3NYZTRKM0tNUWNGQmxyNEp6NW0yTEJWaTZabF9UNW9CUUZTclBhaGpnQmZ6WVRZTVhqS3dpOTBsZEtaOGZnMzFPQlR5MDRpZThJNmU0cXc5Q0trMDNhdWtxVjV4V1lMYzYyR1RHU0lBNDdWZDlzOWxBN1J1Wm0xWlJkNEVMaVNXUXdQcTRuUHlvczlnMTd1VGRWQQ?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-25T22:54:57+00:00"
+        }
+      ]
+    },
+    {
+      "market": "bond",
+      "market_name": "債市",
+      "title": "10年期美債殖利率下滑",
+      "summary": "儘管通膨數據黏性，10年期美國國債殖利率仍下跌，投資人轉向債券避險。",
+      "sources": [
+        {
+          "title": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
+          "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
+          "source": "CNBC",
+          "published": "2026-11-25T21:02:05+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "台股大跌、台幣貶值",
+      "summary": "台股指數跌逾1900點，金管會指出庫藏股回購與證券借貸減少，同時台幣匯率跌破33元。",
+      "sources": [
+        {
+          "title": "Taiwan Stocks Plunge 1,926 Points, Break Below Annual Line; Taiwan's FSC Says Securities Lending Sales Cooling, 57 Treasury Stock Buyback Programs Underway",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9uTm50YTJKb1hCLWdCN0ZlRHVCTm9UNk1fNWZIMndEZmNjNnI1ck0tc0xUMWNHVk54OGY3LU1DcGZzUjRIb0dnX0NxZnk4LWN0RUQzZ25ScVZ3dk9nLW5rMEZ0dkdOb3B6UkdIT3RHUXFwVWlIY1E?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-25T11:25:00+00:00"
+        },
+        {
+          "title": "Stocks and Currency Both Slump! Taiwan Stock Market Plunges 1,926 Points, Loses 40,000 Level; Taiwan Dollar Tumbles 1.87 Dimes to Break Below 33",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YSDRiWDBialFad0FsdHVibm1PNXNkcTN4eUpWU05iZTdMalpnQ0xfdnVEa0tMTmlCRUhoc1QzN01hejBKcTN0ZXZMN000S3R2b1hJWFhaOWkxa25DRy15cGRVcm56SFJXeC1LOWJxd05aaUhaN3c?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-25T10:55:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "俄盧布拋售美元升值",
+      "summary": "在11月25日拍賣中，俄羅斯盧布跌價，美元、歐元與人民幣同步上漲。",
+      "sources": [
+        {
+          "title": "The Russian ruble fell in price, the dollar, the euro and the yuan rose at auction on November 25",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPemJReW85TmdoRVdocGhfZ3FtWXVpeG9aNU1tUWwtMEVzR1VxZFpWZTR5bkF1MW1GWU03eXgtMVkxeHk1aENSbzh2eDdBQ21TbEQ1a09yamREY0Zxa1BFd2dsa0RxNzZ3T1FfLUVpNkd1eGljeXJfTjM3VHZyczloUDJMNmQ0NzhNelJfMTFsazBtWTZNZjUwazl0Vy0yU1JYX0RQX3JGX0RGU2hsX2EtQ1Y2Ulgtdmww?oc=5",
+          "source": "eia.media",
+          "published": "2026-11-25T10:09:32+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "人民幣匯率穩定在新高附近",
+      "summary": "在央行堅定匯率政策下，人民幣匯率維持在近期高點附近。",
+      "sources": [
+        {
+          "title": "Yuan steadies near recent high on firm central bank fixing",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZnNyemliQnBSNGxLOUhuaXpPQml6VlZfSnZOdlRsZnhad1NwWktxd0hJZlItS2J3NjFfZDkzdHZ2dS12X1l5MnFCbkNtRzRiMy11TnVDVUFRVm5PV29WQzJyY0NXWk12bVJfOU8wQmQ3d2FheDY3UGhRSEJvSTBhWlhZOG9qelZ3NG9fYkpla0FkWTBXSE9WWlhZcEdMSDJBam02MQ?oc=5",
+          "source": "TipRanks",
+          "published": "2026-11-25T10:05:54+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "鴻海子公司申請破產",
+      "summary": "鴻海子公司傳出破產申請，市場關注其債務償付與供應鏈影響。",
+      "sources": [
+        {
+          "title": "鴻海子公司驚傳遭聲請破產 公司回應了",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE83SWNFZDVrZmZ1V09adnY5WW1OczFBVEZhUVJBV0U0RW03TGZFUHFTeFRKaUFUdjNiaEdaQXNnVk5oNHFVM1ZoTGJiNV9hd3lsN3BIenQ5OA?oc=5",
+          "source": "東森新聞",
+          "published": "2026-11-25T11:16:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "巴西央行批准信貸風險新規",
+      "summary": "巴西央行與國家貨幣委員會通過新審慎措施，限制信貸風險，可能影響國內債市。",
+      "sources": [
+        {
+          "title": "Brazil's Central Bank and National Monetary Council approve prudential measures for credit‑granting risks",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWWZEMVBwLVdZWDhPaFFBajJ3aTVSblpKejdISklkY3pyNlUzcC1oWHBfT0o4N3kwNnhQUWhuYTdKNUt3azl0aDVNUU9vb3FJcTViblhPM1l0YnNuZUpGMDFXMlRjRzhyYS1QbkRBUW5hOUhxdk5IckZwV09DN1cwRk8xdk51WmsyV0ZoYXJNZmpGU2FQSjdHcW5xLWZLZm5KbWRnRG00bVliNjBrSGlCajhDQi0tWUkzVnlkaENESDFhZFppYUhxcktGRVRqM2tVSlpnWFRn?oc=5",
+          "source": "Newsquawk",
+          "published": "2026-11-25T22:08:43+00:00"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2342,
+    "completion_tokens": 2240,
+    "total_tokens": 4582
+  }
+}

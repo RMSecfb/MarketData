@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T23:17:22.613880+00:00",
-  "date": "2026-11-25",
+  "generated_at": "2026-11-25T23:17:24.772246+00:00",
+  "date": "2026-11-26",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -8,37 +8,37 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 42
+      "count": 48
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 48
+      "count": 35
     },
     {
       "name": "Google News 市場",
       "ok": true,
-      "count": 99
+      "count": 98
     },
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 21
+      "count": 41
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 25
+      "count": 37
     },
     {
       "name": "CNBC",
       "ok": true,
-      "count": 28
+      "count": 26
     },
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 11
+      "count": 23
     }
   ],
   "status": "ok",
@@ -47,119 +47,137 @@
     {
       "market": "macro",
       "market_name": "總經",
-      "title": "美國將提升對中國等國關稅",
-      "summary": "美國計畫本週宣布對中國及其他數十國提高關稅，可能衝擊美中股債市場。",
+      "title": "美國宣布新關稅計畫",
+      "summary": "美國總統川普公布對中國、歐盟、巴西等12國的新增關稅，預計影響貿易與市場情緒。",
       "sources": [
         {
-          "title": "WSJ：美國最快本周宣布對中國在內數十國調高關稅- 國際",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4tUUQtd2tvYmVXZG1OUmdfMnNnLUU3NFh2Wm9CQV9HbTFKVEJRMWtTcWo5aWx6cUp1S2tZT0FZeExiMFhXaDVCcU9lUlRxUGNYVzhhUUd0VnBtOVpIeUZZ?oc=5",
-          "source": "工商時報",
-          "published": "2026-11-24T14:23:00+00:00"
+          "title": "Trump unveils new tariffs over excess industrial capacity, undeterred by midterms defeat",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcjZ1MUw5RG5fdk0tUjNTRFNIRzl5amR0VklFSzdTOUlUS2hxNWk5aV9xcm5VWmQtZGRkdXVKMWZ3Um5qZHluSFp4MGNIdHNETlZPck1RcmJmUC1oZHFtWFdYT29PbkdjUU1IbjQyWE9GRFJZdXFwTVFRMEtDcl81bXpDS3RHSHNka3VSbGlHNmNFV09uMTE1aExBRVkxUldZUmpwX3hYdGduS1BJcW1QRlY4ZjdyYkZyWTI0dVBB?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-25T22:47:39+00:00"
+        },
+        {
+          "title": "US to hike tariffs on China, EU, Brazil and others over subsidized factories",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcWJ0MDE3ZEJzV2tVdThRbXdzcGxXN0phLUpNTHAyVWlEQV9JNzVUWlpsRXp6ZHFTNnY1dnpKMHJjNExkUnZxTlRXdzZNTUFOeXhkUTk5XzF0ZW55b1lZcnhJYTkyYUt5N1lvdm5TZ3QyZDh5UkNsVmtHMmhuNm5xcGc3VmVUcV9fellldEtWcTdaYWJpRUlBcm5R?oc=5",
+          "source": "AP News",
+          "published": "2026-11-25T22:06:00+00:00"
+        },
+        {
+          "title": "Trump proposes new tariffs on China, EU and 12 other partners",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYmVQRVFwSGZBVDlnMXhPRTlYdGloamM0YzRiY0tqZnNQcTBXRWl3cGkxMmVMSGlsUHRDM1VBTGxhUEhPN3dFVVBCQ0VsVjdXQ3pycDNkaHBwbjB5RGlOUmhHcHJxdXNRa3ZORVFxQXlUcEhIb0h1c2xqRlBnQlJCTmktMm51Ym1rRFFucFJpYVNUVHN0bG1NTDR2UlcxRl9zTmdQQWpwb0NMdWROWllDakNPOEh1aVhq?oc=5",
+          "source": "TradingView",
+          "published": "2026-11-25T14:40:05+00:00"
+        }
+      ]
+    },
+    {
+      "market": "equity",
+      "market_name": "股市",
+      "title": "博爾希收購盧克石油資產",
+      "summary": "億萬富翁博爾希簽署美國支持的股權交換協議，收購盧克石油全球資產，涉及能源股與相關債務。",
+      "sources": [
+        {
+          "title": "EXCLUSIVE: Billionaire Boehly signs US-backed share swap deal to buy Lukoil global assets",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQM05VWXNudnhTWW1BY2VFUHpZRzdNSjU4TG1Ob3NYZTRKM0tNUWNGQmxyNEp6NW0yTEJWaTZabF9UNW9CUUZTclBhaGpnQmZ6WVRZTVhqS3dpOTBsZEtaOGZnMzFPQlR5MDRpZThJNmU0cXc5Q0trMDNhdWtxVjV4V1lMYzYyR1RHU0lBNDdWZDlzOWxBN1J1Wm0xWlJkNEVMaVNXUXdQcTRuUHlvczlnMTd1VGRWQQ?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-25T22:54:57+00:00"
         }
       ]
     },
     {
       "market": "bond",
       "market_name": "債市",
-      "title": "委內瑞拉公布2375億美元公債待重組",
-      "summary": "委內瑞拉披露總額2375億美元公共債務，正朝大規模債務重組方向前進。",
+      "title": "10年期美債殖利率下滑",
+      "summary": "儘管通膨數據黏性，10年期美國國債殖利率仍下跌，投資人轉向債券避險。",
       "sources": [
         {
-          "title": "Venezuela reports $237.5 billion in public debt in step toward massive restructuring",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOakxRRS1xODNKVEMzdlowcjUzd2g4amNoV0JSSzdQc0JEUXg1WWxSbGxOaGhYWDZWSlQzeldBelpvUnpXb3g3bHdMUWd4NWhiZFJRZnEtSWU4TDBXS0Q1Q21CWE9QUkxkT2YxYVI5MzlJNkVJS3FRZ3NuMG90Y0JBMFNKRGEtOEhlOUktTVJwU2hoSHVVVW56NXI0ZlZIOHo3TGt0UTc3VnA4VlV5MGZoTmlfS05qQlpQcWpiUWNtSjI?oc=5",
-          "source": "Reuters",
-          "published": "2026-11-24T20:53:37+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "台灣考慮將金融穩定基金規模加倍",
-      "summary": "台灣政府討論將國家金融穩定基金規模翻倍，以增強金融市場防護。",
-      "sources": [
-        {
-          "title": "The Taiwanese government is considering doubling the size of the National Financial Stability Fund",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAzOEcxSzBDb3RMa0hhc25BZDJmNXhaR0c2SGZVZGVCTVNhaVlPMGw5SEtKRXM5TmVUU25NYUxCSGRyT0lUWm1WNTNPLVcwV28?oc=5",
-          "source": "매일경제",
-          "published": "2026-11-24T22:08:59+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "中國調查政壇要員陳京寧",
-      "summary": "中國展開對政壇要員、上海黨委書記陳京寧的調查，提升政治風險。",
-      "sources": [
-        {
-          "title": "China investigates Politburo member and Shanghai party chief Chen Jining",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMG44bXNIbVRoRkdsc1FsaEg0ajBQekRydkVTeDZTbWN0TnBCSWZ1MFQxTzMxc2p0VWFTQzBQRWhHdUVrQUItOC1FNGlVQlZkeVRQWjFRRTZUTkFUeHIyWkRIOXIzbktKZk5HdGxNWGFTSldPN1p3QUtFSEM2dUJHYmRXN0g4UVAzSW9rTkZGOTd3cmZJYU1VdEJJNFE?oc=5",
-          "source": "AP News",
-          "published": "2026-11-24T22:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "market": "fx",
-      "market_name": "匯市",
-      "title": "中新擴大人民幣企業融資",
-      "summary": "中國與新加坡合作擴大人民幣對企業的融資規模，提升人民幣資金供給。",
-      "sources": [
-        {
-          "title": "China and Singapore expand yuan financing for businesses",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSHRhbXo1VUFpaE40ZVlkdm95cU56bzRHalVXZ0ZUb1FEUERKWjN6RGhoWDZpZEZSV1YyNU1RVFVyT1Q0ZVNIQ1BUMVpQM2cxR09LbWdXM3ZHX0NoWjBMZmFpOUtkY3ZZcWhMYmZhZjdDX3lOY1hOVWFVUU5hQW9oR0ZrNXB2azlnYU14VS1td1hwODlpSGpVeWJ4Y1JBeUFDU2hUb21xcnFIZmdpLU1XSTRMS2RyZkU?oc=5",
-          "source": "Euronews.com",
-          "published": "2026-11-24T13:04:30+00:00"
-        }
-      ]
-    },
-    {
-      "market": "equity",
-      "market_name": "股市",
-      "title": "Nvidia股價跌逾5% 市場情緒降溫",
-      "summary": "在黃仁勳回歸後，Nvidia股價下跌超過5%，顯示AI股熱潮降溫。",
-      "sources": [
-        {
-          "title": "Nvidia shares fall more than 5% as Huang comeback rally cools",
-          "url": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
+          "title": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
+          "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
           "source": "CNBC",
-          "published": "2026-11-24T21:15:23+00:00"
+          "published": "2026-11-25T21:02:05+00:00"
         }
       ]
     },
     {
       "market": "equity",
       "market_name": "股市",
-      "title": "Anthropic股價跌破IPO 失200億市值",
-      "summary": "AI公司Anthropic股價跌破IPO價，市值蒸發近200億美元。",
+      "title": "台股大跌、台幣貶值",
+      "summary": "台股指數跌逾1900點，金管會指出庫藏股回購與證券借貸減少，同時台幣匯率跌破33元。",
       "sources": [
         {
-          "title": "Anthropic shares tumble below $83 IPO price, on track to lose nearly $200 billion in value",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMHBNOVY5RDc1NmxUUjNnZkNhLWROQkhUOFZpVmQ0SEI0UG9aSUpTTjhpV3EydTNkdW8xYm1KOWF6OXg2Z3BMaUJCWTE3WnFCM0hCZGNuQ3ZKUklsYUROVWQzdExOamNKVlJLRTgwYWpoYVdOUjlDY0pxTmxZajlvckJ4cHc0TG1hbW1ZUkszaDZ2M2Rvd3RqTWRFaVRENXVWT0pr?oc=5",
-          "source": "Reuters",
-          "published": "2026-11-24T20:47:56+00:00"
+          "title": "Taiwan Stocks Plunge 1,926 Points, Break Below Annual Line; Taiwan's FSC Says Securities Lending Sales Cooling, 57 Treasury Stock Buyback Programs Underway",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9uTm50YTJKb1hCLWdCN0ZlRHVCTm9UNk1fNWZIMndEZmNjNnI1ck0tc0xUMWNHVk54OGY3LU1DcGZzUjRIb0dnX0NxZnk4LWN0RUQzZ25ScVZ3dk9nLW5rMEZ0dkdOb3B6UkdIT3RHUXFwVWlIY1E?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-25T11:25:00+00:00"
+        },
+        {
+          "title": "Stocks and Currency Both Slump! Taiwan Stock Market Plunges 1,926 Points, Loses 40,000 Level; Taiwan Dollar Tumbles 1.87 Dimes to Break Below 33",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YSDRiWDBialFad0FsdHVibm1PNXNkcTN4eUpWU05iZTdMalpnQ0xfdnVEa0tMTmlCRUhoc1QzN01hejBKcTN0ZXZMN000S3R2b1hJWFhaOWkxa25DRy15cGRVcm56SFJXeC1LOWJxd05aaUhaN3c?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-25T10:55:00+00:00"
         }
       ]
     },
     {
       "market": "fx",
       "market_name": "匯市",
-      "title": "央行微調人民幣匯率中間價",
-      "summary": "中國人民銀行將人民幣中間價略微上調，對匯市產生小幅波動。",
+      "title": "俄盧布拋售美元升值",
+      "summary": "在11月25日拍賣中，俄羅斯盧布跌價，美元、歐元與人民幣同步上漲。",
       "sources": [
         {
-          "title": "PBOC Nudges Yuan Fix Slightly Stronger Against Dollar",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSlcwTFZjd3hxWWY3OUNrNDkyWnluN0FGd2dJMGZJN1pKM2xpYk5pdlBDWGJuM2dxajg1MWw1MFdIZmRDbk9la2gzT281QjY3NGxjYTlLaGdLdlF3dllTRzNJMGhpYzVOQkplUzhCWE9DbmFVUUxocGRnVFpPMmJHRUFPRlF1VUNqNURsWEZYYlFkYl9XZ1FyYWRR?oc=5",
-          "source": "TradingPedia",
-          "published": "2026-11-24T07:02:52+00:00"
+          "title": "The Russian ruble fell in price, the dollar, the euro and the yuan rose at auction on November 25",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPemJReW85TmdoRVdocGhfZ3FtWXVpeG9aNU1tUWwtMEVzR1VxZFpWZTR5bkF1MW1GWU03eXgtMVkxeHk1aENSbzh2eDdBQ21TbEQ1a09yamREY0Zxa1BFd2dsa0RxNzZ3T1FfLUVpNkd1eGljeXJfTjM3VHZyczloUDJMNmQ0NzhNelJfMTFsazBtWTZNZjUwazl0Vy0yU1JYX0RQX3JGX0RGU2hsX2EtQ1Y2Ulgtdmww?oc=5",
+          "source": "eia.media",
+          "published": "2026-11-25T10:09:32+00:00"
+        }
+      ]
+    },
+    {
+      "market": "fx",
+      "market_name": "匯市",
+      "title": "人民幣匯率穩定在新高附近",
+      "summary": "在央行堅定匯率政策下，人民幣匯率維持在近期高點附近。",
+      "sources": [
+        {
+          "title": "Yuan steadies near recent high on firm central bank fixing",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZnNyemliQnBSNGxLOUhuaXpPQml6VlZfSnZOdlRsZnhad1NwWktxd0hJZlItS2J3NjFfZDkzdHZ2dS12X1l5MnFCbkNtRzRiMy11TnVDVUFRVm5PV29WQzJyY0NXWk12bVJfOU8wQmQ3d2FheDY3UGhRSEJvSTBhWlhZOG9qelZ3NG9fYkpla0FkWTBXSE9WWlhZcEdMSDJBam02MQ?oc=5",
+          "source": "TipRanks",
+          "published": "2026-11-25T10:05:54+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "鴻海子公司申請破產",
+      "summary": "鴻海子公司傳出破產申請，市場關注其債務償付與供應鏈影響。",
+      "sources": [
+        {
+          "title": "鴻海子公司驚傳遭聲請破產 公司回應了",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE83SWNFZDVrZmZ1V09adnY5WW1OczFBVEZhUVJBV0U0RW03TGZFUHFTeFRKaUFUdjNiaEdaQXNnVk5oNHFVM1ZoTGJiNV9hd3lsN3BIenQ5OA?oc=5",
+          "source": "東森新聞",
+          "published": "2026-11-25T11:16:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "巴西央行批准信貸風險新規",
+      "summary": "巴西央行與國家貨幣委員會通過新審慎措施，限制信貸風險，可能影響國內債市。",
+      "sources": [
+        {
+          "title": "Brazil's Central Bank and National Monetary Council approve prudential measures for credit‑granting risks",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWWZEMVBwLVdZWDhPaFFBajJ3aTVSblpKejdISklkY3pyNlUzcC1oWHBfT0o4N3kwNnhQUWhuYTdKNUt3azl0aDVNUU9vb3FJcTViblhPM1l0YnNuZUpGMDFXMlRjRzhyYS1QbkRBUW5hOUhxdk5IckZwV09DN1cwRk8xdk51WmsyV0ZoYXJNZmpGU2FQSjdHcW5xLWZLZm5KbWRnRG00bVliNjBrSGlCajhDQi0tWUkzVnlkaENESDFhZFppYUhxcktGRVRqM2tVSlpnWFRn?oc=5",
+          "source": "Newsquawk",
+          "published": "2026-11-25T22:08:43+00:00"
         }
       ]
     }
   ],
   "usage": {
-    "prompt_tokens": 2289,
-    "completion_tokens": 2074,
-    "total_tokens": 4363
+    "prompt_tokens": 2342,
+    "completion_tokens": 2240,
+    "total_tokens": 4582
   }
 }

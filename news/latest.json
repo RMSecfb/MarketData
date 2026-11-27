@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T23:17:22.035745+00:00",
-  "date": "2026-11-27",
+  "generated_at": "2026-11-27T23:17:23.947177+00:00",
+  "date": "2026-11-28",
   "window_hours": 24,
   "model": "openai/gpt-oss-120b",
   "headline_count": 70,
@@ -8,88 +8,80 @@
     {
       "name": "Google News 商業",
       "ok": true,
-      "count": 31
+      "count": 45
     },
     {
       "name": "Google News 國際",
       "ok": true,
-      "count": 39
+      "count": 40
     },
     {
       "name": "Google News 市場",
       "ok": true,
-      "count": 100
+      "count": 99
     },
     {
       "name": "Google News 亞洲",
       "ok": true,
-      "count": 28
+      "count": 42
     },
     {
       "name": "Google News 台灣財經",
       "ok": true,
-      "count": 32
+      "count": 29
     },
     {
       "name": "CNBC",
       "ok": true,
-      "count": 22
+      "count": 20
     },
     {
       "name": "BBC Business",
       "ok": true,
-      "count": 19
+      "count": 9
     }
   ],
   "status": "ok",
   "note": "",
   "items": [
     {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "美聯儲官員稱AI股暴跌提升升息門檻",
-      "summary": "聯準會傳聲筒指出AI股大跌使升息門檻提高，暗示未來貨幣政策可能更緊。",
-      "sources": [
-        {
-          "title": "別指望聯準會出手救市？Fed傳聲筒：AI股暴跌拉高升息門檻 華許陷政策兩難",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAzZlZOZDRCNnRUczg2cVlFRzhrTDJDTHpERHZpUHJEekQ5azVUYlhFQl9RWkNSdS1ueU1ZTWRhNllTVXlTUjNUR1QzdnZSSFU?oc=5",
-          "source": "鉅亨網",
-          "published": "2026-11-26T14:00:06+00:00"
-        }
-      ]
-    },
-    {
-      "market": "macro",
-      "market_name": "總經",
-      "title": "特朗普要求調查美國第三季GDP大幅上修",
-      "summary": "美國第三季GDP資料被大幅上修，特朗普要求調查，可能影響市場對經濟成長預期。",
-      "sources": [
-        {
-          "title": "Trump demands probe into ‘record setting error’ after third-quarter GDP data gets massive revision higher",
-          "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
-          "source": "CNBC",
-          "published": "2026-11-26T21:13:17+00:00"
-        }
-      ]
-    },
-    {
       "market": "fx",
       "market_name": "匯市",
-      "title": "中國與拉美最大經濟體拋棄美元改用本幣貿易",
-      "summary": "中國與拉美最大經濟體協議以本幣結算貿易，減少美元使用，可能衝擊全球外匯與債市。",
+      "title": "美元因美債殖利率上升大幅上揚",
+      "summary": "美國國債殖利率上升，推動美元走強，兌主要貨幣均上漲。",
       "sources": [
         {
-          "title": "Confirmed | China and Latin America’s largest economy leave the dollar out and agree to trade in their own currencies",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQS2dPQ19ydlNpSGlMMHFNSFhpSVFkc3NLMk5SRnVIeE5ud2lueENza1NQZVFSZ1QxMjVwQ0hjSkNlekwzSE81ZGI4NGtHQnd0NGFwXzNFTlRHal84dHJMaUhNX2MyRUxMNUZwcURRWkNuUkdTZGxoQVo0b0dsczB3M2tWV0tuU2tRNkNsSUN0OU91SEEzMlR3Z211VkZyTldUYVBuanVtRTBORDF6ak5yOVpKNmlzZ2I1aXpWbTNkckdmdnlyVXBDV1pyd0VyaC1Yb0tkX3lPT0VsanBuRUJfeVhDdnh2Zw?oc=5",
-          "source": "El Cronista",
-          "published": "2026-11-26T19:08:31+00:00"
+          "title": "U.S. Dollar Gains Ground Amid Rising Treasury Yields: Analysis For EUR/USD, GBP/USD, USD/CAD, USD/JPY",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQNkFkUGhqUTRReFFqcE1hd1dsdTd1cVltSlJhd2tmT29VSzRxTGR0cGs2YXFRRDZudUtnSGFFamQzSjE4bmZ1R2ktbXJIQl93aEtpTzVQd1NfRzRyUS16UFBZSFdCNDFENnNORFdwR3ljS2o5SGl3NTEyemdMbDNOU09UdkdTd3hCUnQ2Wl9rNmIzNTFRbnVPRFNxTFlIdC1JeFJ3czF1NlFhMmJnV1VNakVfX0lDQWVzNmVNcm9pMFNKUTF5aXVVckJ4TnJLU0FHSjgxZjk4bjlVekpiSmxPOQ?oc=5",
+          "source": "FXEmpire",
+          "published": "2026-11-27T22:57:56+00:00"
+        },
+        {
+          "title": "Dollar Surges Day After US Stock Rout: Citi Explains the \"Hedge Rebalancing\" Mechanism",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1fRU1iSjBscE9TUFUxMG5zRzlDUjRHU2YxdTd0YmlhUnBOak5FSnNKbjU5OGFpXy1Lc24yZUtKTkFLd0JUZkFNUGRwcWhUTjZyRFRLaVB6WXlfWnJEMW9QalZQNkxDbHoyRUMyMzNtcXdtVGd3SXc?oc=5",
+          "source": "BigGo Finance",
+          "published": "2026-11-27T16:55:00+00:00"
+        }
+      ]
+    },
+    {
+      "market": "macro",
+      "market_name": "總經",
+      "title": "美國GDP數據大幅修正引發關注",
+      "summary": "特朗普要求調查第三季GDP大幅上修，可能影響利率預期。",
+      "sources": [
+        {
+          "title": "Trump demands probe into 'record setting error' after third-quarter GDP data gets massive revision higher",
+          "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
+          "source": "CNBC",
+          "published": "2026-11-27T15:52:00+00:00"
         }
       ]
     }
   ],
   "usage": {
-    "prompt_tokens": 2350,
+    "prompt_tokens": 2401,
     "completion_tokens": 2500,
-    "total_tokens": 4850
+    "total_tokens": 4901
   }
 }

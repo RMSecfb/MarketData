@@ -238,10 +238,10 @@
         "symbol": "TWD=X"
       },
       "usdhkd": {
-        "value": 7.8294,
+        "value": 7.8297,
         "prev": 7.8385,
-        "chg_abs": -0.0091,
-        "chg_pct": -0.1161,
+        "chg_abs": -0.0088,
+        "chg_pct": -0.1123,
         "date": "2026-11-27",
         "target_date": "2026-11-27",
         "is_stale": false,
@@ -308,8 +308,8 @@
     "quality": {
       "target_date": "2026-11-27",
       "stale_items": [
-        "vxn",
-        "hy_oas"
+        "hy_oas",
+        "vxn"
       ],
       "missing_items": [],
       "has_stale": true,
